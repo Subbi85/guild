@@ -1,0 +1,48 @@
+/* Index.html style*/
+/* Überschriften und Allgemeines */
+
+body{background-color: #5e2b2c }
+h1 { color: red;}
+h1:hover{  color: white; position: center;}
+
+/* Divs */
+#wrapper{
+    width: 90%;
+    height:100vh;
+    margin: auto auto;
+    background-color: #fff;
+}
+
+/* Header */
+header{
+    height: 40px;
+    background-color: blue;
+    width: 100%;
+}
+
+/* Nav */
+nav ul li{
+    display: inline-block;
+    padding: 15px;
+    color:#5e2b2c;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.logo{
+    width: 30px;
+    height:30px;
+    background-color: #fff;
+    float:left;
+    border-radius: 50%;
+}
+
+li:hover .logo{
+    background-color: #5e2b2c;
+    display: inline;
+}
+
+li:hover{
+    font-size: 35px;
+    padding: 7px;
+}
