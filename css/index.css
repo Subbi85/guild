@@ -67,6 +67,9 @@ li:hover{
     background-color: aqua;
 }
 
+
+
+/* */
 .number{
     font-size: 30px;
     color: white;
@@ -90,4 +93,10 @@ li:hover{
 #wahlfeld #ok{
     color: black;
     font-size: 28px;
+}
+
+#zahl{
+    width:40px;
+    height: 40px;
+    background-color: #ff6600;
 }

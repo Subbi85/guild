@@ -44,7 +44,12 @@
         <div class="number" id="ok">OK</div>
     </div>
 
+
+    <div id="zahl"></div>
+
     <script>
+        var number = document.getElementById("1");
+        console.log(x);
 
 
     </script>
