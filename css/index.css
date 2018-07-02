@@ -15,9 +15,18 @@ h1:hover{  color: white; position: center;}
 
 /* Header */
 header{
-    height: 40px;
+    height: 200px;
     background-color: blue;
     width: 100%;
+}
+
+#banner{
+    width: 20%;
+    height: 80%;
+    background-color: #ff6600;
+    margin: 20px;
+    float:left;
+    background-image: url(img/wappen.pmg);
 }
 
 /* Nav */

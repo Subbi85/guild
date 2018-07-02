@@ -9,7 +9,13 @@
 </head>
     <div id="wrapper">
         <header>
-            <h1>Order and Chaos </h1>
+            <div id="banner">
+            
+            </div>
+            <div id="text">
+                <h1>Order and Chaos </h1>
+            </div>
+
         </header>
         <nav> <!-- Nav Bar -->
             <ul>
@@ -22,7 +28,6 @@
         </nav>
     </div>
 
-    <div id="js-viewport-breitenanzeiger"></div>
 
 
 
