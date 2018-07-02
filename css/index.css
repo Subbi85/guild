@@ -32,10 +32,12 @@ header{
 /* Nav */
 nav ul li{
     display: inline-block;
-    padding: 15px;
+    padding: 10px;
     color:#5e2b2c;
     text-decoration: none;
     font-size: 30px;
+    cursor: pointer;
+    margin:auto auto;
 }
 
 .logo{
@@ -52,6 +54,40 @@ li:hover .logo{
 }
 
 li:hover{
-    font-size: 35px;
-    padding: 7px;
+    text-decoration: underline;
+}
+
+
+
+
+/* Nummernfeld */
+#wahlfeld{
+    width: 190px;
+    height:250px;
+    background-color: aqua;
+}
+
+.number{
+    font-size: 30px;
+    color: white;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    margin: 5px;
+    text-align: center;
+    border-radius: 50%;
+    float:left;
+    cursor: pointer;
+}
+
+.number:hover{
+    background-color: #fff;
+    color: #111;
+    transition: 500ms;
+}
+
+#wahlfeld #ok{
+    color: black;
+    font-size: 28px;
 }
