@@ -22,7 +22,7 @@
             
             </div>
             <div id="text">
-                <h1>Order and Chaos - Anetheron</h1>
+                <h1>Order and Chaos</h1>
             </div>
 
         </header>
