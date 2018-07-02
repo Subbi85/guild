@@ -29,12 +29,12 @@
 
 
 
-    <div id="wahlfeld">
-        <div class="number" id="1">1</div>
-        <div class="number" id="2">2</div>
-        <div class="number" id="3">3</div>
-        <div class="number" id="4">4</div>
-        <div class="number" id="5">5</div>
+    <div id="wahlfeld" >
+        <div class="number" id="1" value="1">1</div>
+        <div class="number" id="2" value="1">2</div>
+        <div class="number" id="3" value="1">3</div>
+        <div class="number" id="4" value="1">4</div>
+        <div class="number" id="5" value="1">5</div>
         <div class="number" id="6">6</div>
         <div class="number" id="7">7</div>
         <div class="number" id="8">8</div>
@@ -45,11 +45,20 @@
     </div>
 
 
-    <div id="zahl"></div>
+    <div id="zahl" onClick="hideAndSeek">
+    </div>
 
     <script>
-        var number = document.getElementById("1");
-        console.log(x);
+        function hideAndSeek(){
+            console.logh("clicked");
+            var element = document.getElementById("wahlfeld");
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else{
+                element.style.display ="none";
+
+            }
+        }
 
 
     </script>

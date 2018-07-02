@@ -21,12 +21,11 @@ header{
 }
 
 #banner{
-    width: 20%;
-    height: 80%;
+    width: 200px;
+    height: 200px;
     background-color: #ff6600;
-    margin: 20px;
     float:left;
-    background-image: url(img/wappen.pmg);
+    background-image: url(img/wappen_middle.png);
 }
 
 /* Nav */
@@ -49,12 +48,14 @@ nav ul li{
 }
 
 li:hover .logo{
-    background-color: #5e2b2c;
+
     display: inline;
+    background-image: url(img/wappen_small.png);
 }
 
 li:hover{
     text-decoration: underline;
+
 }
 
 
