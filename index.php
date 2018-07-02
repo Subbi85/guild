@@ -8,27 +8,31 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
 </head>
     <div id="wrapper">
-        <nav> <!-- Nav Bar -->
-            <ul>
-                <li><div class="logo"></div> Home</li>
-                <li><div class="logo"></div>Über uns</li>
-                <li><div class="logo"></div>Rankings</li>
-                <li><div class="logo"></div>Kontakt</li>
-                <li></li>
-            </ul>
-        </nav>
-        <header>
-            <div id="banner">
-            
-            </div>
-            <div id="text">
-                <h1>Order and Chaos</h1>
-            </div>
+        <section id="header">
+            <nav> <!-- Nav Bar -->
+                <ul>
+                    <li><div class="logo"></div> Home</li>
+                    <li><div class="logo"></div>Über uns</li>
+                    <li><div class="logo"></div>Rankings</li>
+                    <li><div class="logo"></div>Kontakt</li>
+                    <li></li>
+                </ul>
+            </nav>
+            <header>
+                <div id="banner">
+                
+                </div>
+                <div id="text">
+                    <h1>Order and Chaos</h1>
+                </div>
+            </header>
+        </section>
 
-        </header>
 
 
 
+
+    <!--
     <div id="wahlfeld" >
         <div class="number" id="1" value="1">1</div>
         <div class="number" id="2" value="1">2</div>
@@ -43,22 +47,10 @@
         <div class="number" id="0">0</div>
         <div class="number" id="ok">OK</div>
     </div>
+    -->
 
-
-    <div id="zahl" onClick="hideAndSeek">
-    </div>
 
     <script>
-        function hideAndSeek(){
-            console.logh("clicked");
-            var element = document.getElementById("wahlfeld");
-            if (element.style.display === "none") {
-                element.style.display = "block";
-            } else{
-                element.style.display ="none";
-
-            }
-        }
 
 
     </script>
