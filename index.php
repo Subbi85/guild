@@ -7,26 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
 </head>
+
+<body>
     <div id="wrapper">
-        <section id="header">
-            <nav> <!-- Nav Bar -->
-                <ul>
-                    <li><div class="logo"></div> Home</li>
-                    <li><div class="logo"></div>Über uns</li>
-                    <li><div class="logo"></div>Rankings</li>
-                    <li><div class="logo"></div>Kontakt</li>
-                    <li></li>
-                </ul>
-            </nav>
-            <header>
-                <div id="banner">
-                
-                </div>
-                <div id="text">
-                    <h1>Order and Chaos</h1>
-                </div>
-            </header>
-        </section>
+        <nav> <!-- Nav Bar -->
+            <ul>
+                <li><div class="logo"></div> Home</li>
+                <li><div class="logo"></div>Über uns</li>
+                <li><div class="logo"></div>Rankings</li>
+                <li><div class="logo"></div>Kontakt</li>
+            </ul>
+        </nav>
+    <section id="header">
+        <div id="banner">
+        </div>
+    
+    </section>
 
 
 
@@ -50,18 +46,12 @@
     -->
 
 
-    <script>
-
-
-    </script>
-
-
     </div>
 
 
 
 
-<body>
+
     
 </body>
 </html>

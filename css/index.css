@@ -14,10 +14,10 @@ h1:hover{  color: white; position: center;}
 }
 
 /* Header */
-header{
-    height: 200px;
-    background-color: blue;
+#header{
     width: 100%;
+    height: 95%;
+    background-image: url("img/background/og.jpg")
 }
 
 #banner{
