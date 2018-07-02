@@ -24,6 +24,14 @@
     
     </section>
 
+    <section id="contact">
+
+
+        <div id="footer">
+
+
+        </div>
+    </section>
 
 
 
