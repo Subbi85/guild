@@ -18,10 +18,17 @@
                 <li><div class="logo"></div>Kontakt</li>
             </ul>
         </nav>
-    <section id="header">
-        <div id="banner">
+    <section id="header"><!-- Grid im Header -->
+        <div id="banner"></div>
+        <div id="guildname1">
+            Order 
         </div>
-    
+        <div id="guildname2">
+            and 
+        </div>
+        <div id="guildname3">
+            Chaos
+        </div>
     </section>
 
     <section id="contact">
