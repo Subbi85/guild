@@ -1,5 +1,5 @@
 # guild
-Website project for our WoW-Guild
+Website project for WoW-Guild
 
 Including:
 - Api calls
