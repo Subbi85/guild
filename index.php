@@ -13,9 +13,10 @@
         <nav> <!-- Nav Bar -->
             <ul>
                 <li><div class="logo"></div> Home</li>
-                <li><div class="logo"></div>Über uns</li>
-                <li><div class="logo"></div>Rankings</li>
-                <li><div class="logo"></div>Kontakt</li>
+                <a href="#aboutUs"><li><div class="logo"></div>Über uns</li></a>
+                <a href="#progress"><li><div class="logo"></div>Progress</li></a>
+                <a href="#rankings"><li><div class="logo"></div>Rankings</li></a>
+                <a href="#contact"><li><div class="logo"></div>Kontakt</li></a>
             </ul>
         </nav>
     <section id="header"><!-- Grid im Header -->
@@ -31,42 +32,55 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="aboutUs">
+    <div class="space">.</div>
+        <h1>Das sind wir</h1>
+    
 
+    </section>
 
-        <div id="footer">
-
-
-        </div>
+    <section id="progress">
+    <div class="space">.</div>
+    <h1>Progress</h1>
+    
+    
     </section>
 
 
+    <section id="rankings">
+    <div class="space">.</div>
+    <h1>Rankings</h1>
+    
+    
+    </section>
+
+    
 
 
-    <!--
-    <div id="wahlfeld" >
-        <div class="number" id="1" value="1">1</div>
-        <div class="number" id="2" value="1">2</div>
-        <div class="number" id="3" value="1">3</div>
-        <div class="number" id="4" value="1">4</div>
-        <div class="number" id="5" value="1">5</div>
-        <div class="number" id="6">6</div>
-        <div class="number" id="7">7</div>
-        <div class="number" id="8">8</div>
-        <div class="number" id="9">9</div>
-        <div class="number" id="#">#</div>
-        <div class="number" id="0">0</div>
-        <div class="number" id="ok">OK</div>
-    </div>
-    -->
+    <section id="contact">
+           <div class="space">.</div>
+        <h1>Du hast Interesse?</h1>
+        <div id="container">
+            <input type="text" name="name" value="Name *"> </input>
+            <input type="text" name="email" value="E-Mail *"> </input><br><br><br>
+            <textarea rows="4" cols="55">Gib hier bitte deine Nachricht ein... *</textarea>
+            <div class="button">Abschicken</div>
+        </div>
+    </section>
 
-
-    </div>
-
-
+    <div id="footer">
+        <ul>
+            <a href="http://eu.battle.net/wow/de/guild/anetheron/Order_and_Chaos/" target:"_blank"><li><div class="logo"></div> Battle Net</li></a>
+            <li><div class="logo"></div>Gildeninfos</li>
+            <li><div class="logo"></div>Sonstiges</li>
+        </ul>
+    </div> 
 
 
 
+
+
+    </div> <!-- Ende Wrapper -->
     
 </body>
 </html>

@@ -2,8 +2,7 @@
 /* Überschriften und Allgemeines */
 
 body{background-color: #5e2b2c }
-h1 { color:#5e2b2c ;}
-h1:hover{  color: white; position: center;}
+h1 { color:#5e2b2c ; font-size:48px; padding: 50px;}
 
 /* Divs */
 #wrapper{
@@ -11,6 +10,25 @@ h1:hover{  color: white; position: center;}
     height:100vh;
     margin: auto auto;
     background-color: #fff;
+}
+
+.button{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #ff6600;
+    transition: 1000ms;
 }
 
 /* Header mit Grid */
@@ -68,7 +86,7 @@ h1:hover{  color: white; position: center;}
 }
 
 /* Nav */
-nav ul li{
+nav ul li, #footer ul li{
     display: inline-block;
     padding: 5px;
     color:#5e2b2c;
@@ -96,19 +114,78 @@ li:hover{
 
 }
 
+/* About Us */
+#aboutUs{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+
+#aboutUs h1{
+    padding:0;
+}
+
+/* Progress */
+#progress{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+/* Rankings */
+#rankings{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+#rankings h1{
+    padding:0;
+ text-align: right;
+    padding-right: 50px;
+}
+
 /* Contact */
 #contact{
     width: 100%;
     height: 70%;
-    background-color: #FFFFFF;
+    background-color: #fff;
 }
 
 #footer{
-    background-color: #ff6600;
     width: 100%;
-    height: 100px;
-    bottom: 0;
+    height: 200px;
+    background-color: #fff;
+    text-decoration: none;
 }
+
+/* Form */
+#container{
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    background-color: #5e2b2c;
+    margin-left: 50px;
+
+}
+
+input, textarea{
+    border: none;
+    border-bottom: 2px solid #5e2b2c;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+
+
+textarea{
+    font-size: 20px;
+}
+
+
 
 @media screen and (max-width:1200px){
     #banner{
