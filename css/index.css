@@ -179,14 +179,12 @@ input, textarea{
     padding: 10px;
 }
 
-
-
 textarea{
     font-size: 20px;
 }
 
 
-
+/* _______________ MEDIA QUERIES ______________ */
 @media screen and (max-width:1200px){
     #banner{
         width: 200px;
@@ -197,6 +195,4 @@ textarea{
     #guildname1,#guildname2,#guildname3{
         font-size: 80px;
     }
-
-
 }

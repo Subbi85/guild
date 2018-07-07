@@ -21,15 +21,9 @@
         </nav>
     <section id="header"><!-- Grid im Header -->
         <div id="banner"></div>
-        <div id="guildname1">
-            Order 
-        </div>
-        <div id="guildname2">
-            and 
-        </div>
-        <div id="guildname3">
-            Chaos
-        </div>
+        <div id="guildname1">Order</div>
+        <div id="guildname2">and</div>
+        <div id="guildname3">Chaos</div>
     </section>
 
     <section id="aboutUs">
@@ -50,7 +44,20 @@
     <section id="rankings">
     <div class="space">.</div>
     <h1>Rankings</h1>
-    
+    <script>
+        apicall_blizz();
+        function apicall_blizz(){
+        var blizzRequest = new XMLHttpRequest();
+            blizzRequest.open('GET', 'https://raider.io/api/v1/mythic-plus/affixes?region=EU&locale=en')
+            blizzRequest.onload=function(){
+                var test = JSON.parse(blizzRequest.responseText);
+                console.log(blizzRequest.responseText);
+            }  
+        blizzRequest.send();
+        var result = blizzRequest.responseText.title;
+
+        }
+    </script>
     
     </section>
 
@@ -81,6 +88,6 @@
 
 
     </div> <!-- Ende Wrapper -->
-    
+
 </body>
 </html>
