@@ -47,13 +47,15 @@
         </p>
 
     <div id="accordion">
+  
         <button class="accordion">Merlicat - Anetheron</button>
         <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <br><br><a href="">Hier</a> geht es zum Battle.net.</p>
         </div>
         <button class="accordion">Knusperkeks - Anetheron</button>
         <div class="panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Ein Teil unseres "Gute Seele der Gilde"-Kompetenzteams. Knusper </p>
         </div>
         <button class="accordion">Kreischi - Nathrezim</button>
         <div class="panel">
@@ -75,9 +77,7 @@
         <div class="panel">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-        
-        
-        
+
     </div>
 
     </section>
@@ -156,12 +156,14 @@
     // Menu Script
     for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function() {
+        
         this.classList.toggle("active");
         var panel = this.nextElementSibling;
         if (panel.style.maxHeight){
             panel.style.maxHeight = null;
         } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
+            this.parent().children().removeClass(active);
         } 
         });
     }

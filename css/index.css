@@ -133,7 +133,6 @@ li:hover{
 #accordion{
     width: 50%;
     height: 42%;
-    background-color: #ff6600;
     margin: auto auto;
     float: right;
     margin-right: 30px;
@@ -169,16 +168,21 @@ li:hover{
 }
 
 .panel {
-    padding: 0 18px;
-    background-color: white;
+    padding: 0 10px;
+    background-color: #fff;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
 
+.panel p{
+    color: green;
+}
 
-
-
+.panel p:before{
+    content: url(img/icon.png);
+    float:left;
+}
 
 
 /* Progress */
