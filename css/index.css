@@ -111,7 +111,6 @@ li:hover .logo{
 
 li:hover{
     text-decoration: underline;
-
 }
 
 /* About Us */
@@ -124,6 +123,63 @@ li:hover{
 #aboutUs h1{
     padding:0;
 }
+
+#aboutUs p{
+    font-size: 20px;
+    padding: 30px;
+}
+
+/* Accordion Menu */
+#accordion{
+    width: 50%;
+    height: 42%;
+    background-color: #ff6600;
+    margin: auto auto;
+    float: right;
+    margin-right: 30px;
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 13px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+
+
+
 
 /* Progress */
 #progress{
@@ -141,7 +197,7 @@ li:hover{
 
 #rankings h1{
     padding:0;
- text-align: right;
+    text-align: right;
     padding-right: 50px;
 }
 
@@ -166,7 +222,6 @@ li:hover{
     height: 400px;
     background-color: #5e2b2c;
     margin-left: 50px;
-
 }
 
 input, textarea{
@@ -178,11 +233,6 @@ input, textarea{
     margin-top: 30px;
     padding: 10px;
 }
-
-textarea{
-    font-size: 20px;
-}
-
 
 /* _______________ MEDIA QUERIES ______________ */
 @media screen and (max-width:1200px){
