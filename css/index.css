@@ -184,7 +184,6 @@ li:hover{
     float:left;
 }
 
-
 /* Progress */
 #progress{
     width: 100%;
@@ -203,6 +202,34 @@ li:hover{
     padding:0;
     text-align: right;
     padding-right: 50px;
+}
+
+/* Affixes der Woche */
+#affixes{
+    height: 100px;
+    width: 50%;
+    background-color: #ff6600;
+    margin: auto auto;
+}
+
+.affix{
+    height: 100%;
+    width: 33.3%;
+}
+
+#affixOne{
+    background-color: blue;
+    float:left;
+}
+
+#affixTwo{
+    background-color: red;
+    float:left;
+}
+
+#affixThree{
+    background-color: green;
+    float:left;
 }
 
 /* Contact */

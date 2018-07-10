@@ -89,18 +89,16 @@
     </section>
 
     <section id="rankings">
-    <div class="space">.</div>
-        <h1>Rankings</h1>
+    <div class="space">.</div>        
+    <h1>Rankings</h1>
+
+
+        <div id="affixes">
+            <div class="affix" id="affixOne"></div><div class="affix" id="affixTwo"></div><div class="affix" id="affixThree"></div>
+        </div>
 
     <script>
-
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-
-    guildMembers();
-    array();
     affixe();
-    
 
     function guildMembers(){    /*Erstellen der Memberliste für weitere Funktionen */
 
@@ -110,12 +108,12 @@
         guildRequest.onload=function(){
             var test = JSON.parse(guildRequest.responseText);
             console.log(guildRequest.responseText);
+            console.log(test);
         }  
         guildRequest.send();
     }
 
-    
-    function array(){       	                /* Aufbau der Memberliste der Gilde */
+    function array(){       	 /* Aufbau der Memberliste der Gilde */
         var chars = ["Kreischi", "Hauie", "Hexenseele"];
         var server = ["Nathrezim", "Anetheron", "Thrall"];
             
@@ -128,10 +126,8 @@
     }
 
     function score(name, realm,i){
-
         var char = name;
         var realm = realm;
-
         var blizzRequest = new XMLHttpRequest();
 
         blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=EU&realm='+realm+'&name='+char+'&fields=mythic_plus_scores%2C%20mythic_plus_best_runs%2C%20mythic_plus_recent_runs')
@@ -142,18 +138,31 @@
         blizzRequest.send();
     }
 
-    function affixe(){
+    function affixe(){                  /* Affixe der aktuellen Woche */
     var blizzRequest = new XMLHttpRequest();
-        blizzRequest.open('GET', 'https://raider.io/api/v1/mythic-plus/affixes?region=EU&locale=en')
+    var affixes = [];
+    var descriptions = [];
+        blizzRequest.open('GET', 'https://raider.io/api/v1/mythic-plus/affixes?region=EU&locale=de')
         blizzRequest.onload=function(){
             var test = JSON.parse(blizzRequest.responseText);
-            console.log(blizzRequest.responseText);
+            for(i=0; i<test.affix_details.length; i++){
+                var affix = test.affix_details[i].name;
+                var detail = test.affix_details[i].description;
+
+                affixes.push(affix);
+                descriptions.push(detail);
+
+            }
+            document.getElementById("affixOne").innerHTML=affixes[0];
+            document.getElementById("affixTwo").innerHTML=affixes[1];
+            document.getElementById("affixThree").innerHTML=affixes[2];
         }  
     blizzRequest.send();
-
     }
 
     // Menu Script
+    var acc = document.getElementsByClassName("accordion");
+    var i;
     for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function() {
         
@@ -163,7 +172,7 @@
             panel.style.maxHeight = null;
         } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
-            this.parent().children().removeClass(active);
+        
         } 
         });
     }
