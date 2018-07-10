@@ -156,6 +156,12 @@
             document.getElementById("affixOne").innerHTML=affixes[0];
             document.getElementById("affixTwo").innerHTML=affixes[1];
             document.getElementById("affixThree").innerHTML=affixes[2];
+            
+            if(!affixes[3]){
+                document.getElementById("affixFour").innerHTML= "kommt mit BFA";
+            }else{
+            document.getElementById("affixFour").innerHTML=affixes[3];
+            }
         }  
     blizzRequest.send();
     }
