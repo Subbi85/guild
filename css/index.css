@@ -236,6 +236,20 @@ li:hover{
     float:left;
 }
 
+#memberlist{
+    margin: auto;
+    margin-top: 30px;
+    width: 50%;
+    height: 70%;
+    background-color: #aaa;
+
+}
+
+
+
+
+
+
 /*
 #affixFour{
     background-color: #ff6600;

@@ -92,23 +92,82 @@
     <div class="space">.</div>        
     <h1>Rankings</h1>
 
-
+        <p> Die aktuellen Mythic+ Affixe der Woche sind:</p>
         <div id="affixes">
             <div class="affix" id="affixOne"></div><div class="affix" id="affixTwo"></div><div class="affix" id="affixThree"></div>
         </div>
 
+        <div id="memberlist">
+
+
+
+
+
+
+
+        </div>
+
+
     <script>
-    affixe();
+ 
+        progression();
+        affixe();
+
+    function progression(){  /* Raidprogress in der aktuellen Expansion */
+
+        var blizzRequest = new XMLHttpRequest();
+
+        blizzRequest.open('GET', 'https://raider.io/api/v1/guilds/profile?region=eu&realm=Anetheron&name=Order%20and%20Chaos&fields=raid_progression')
+        blizzRequest.onload=function(){
+            var test = JSON.parse(blizzRequest.responseText);
+            console.log(test);
+            console.log(test.faction);
+            console.log(test.raid_progression["the-nighthold"].mythic_bosses_killed);
+        }  
+        blizzRequest.send();
+
+    }
+
+    /* 
+        Für jede Instanz eine array erstellen und die einzelnen Attribute nacheinander appenden!
+        dann am ende 4 Arrays und in HTML einbinden
+    
+    */
+
+
+
 
     function guildMembers(){    /*Erstellen der Memberliste für weitere Funktionen */
-
         var guildRequest = new XMLHttpRequest();
-
+        var members = [];
+        var server = [];
+        var rank = [];
         guildRequest.open('GET', 'https://eu.api.battle.net/wow/guild/Anetheron/Order%20and%20Chaos?fields=members&locale=en_GB&apikey=2z8d96ypab8zbed7nrbz29a3uqxskz5u')
         guildRequest.onload=function(){
             var test = JSON.parse(guildRequest.responseText);
-            console.log(guildRequest.responseText);
             console.log(test);
+            var member = test.name;
+
+
+
+            for (i=0; i<test.members.lenght; i++){
+                var member = test.members[i].character.rank;
+                console.log(member);
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
         }  
         guildRequest.send();
     }
@@ -120,10 +179,10 @@
         for (i=0; i<chars.length; i++){
             var name = chars[i];
             var realm = server[i];
-
             score(name, realm);
         };
     }
+
 
     function score(name, realm,i){
         var char = name;
@@ -138,6 +197,7 @@
         blizzRequest.send();
     }
 
+
     function affixe(){                  /* Affixe der aktuellen Woche */
     var blizzRequest = new XMLHttpRequest();
     var affixes = [];
@@ -145,6 +205,7 @@
         blizzRequest.open('GET', 'https://raider.io/api/v1/mythic-plus/affixes?region=EU&locale=de')
         blizzRequest.onload=function(){
             var test = JSON.parse(blizzRequest.responseText);
+            console.log(test);
             for(i=0; i<test.affix_details.length; i++){
                 var affix = test.affix_details[i].name;
                 var detail = test.affix_details[i].description;
