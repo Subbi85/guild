@@ -241,11 +241,36 @@ li:hover{
 
 }
 
-.panelProgress p:before{
+#nightmare p:before{
+    content: url(img/thumbnails/nightmare.jpg);
+    float:left;
+    margin-right: 10px;
+}
+
+#trials p:before{
+    content: url(img/thumbnails/trials.jpg);
+    float:left;
+    margin-right: 10px;
+}
+
+#nighthold p:before{
+    content: url(img/thumbnails/nighthold.jpg);
+    float:left;
+    margin-right: 10px;
+}
+
+#tomb p:before{
+    content: url(img/thumbnails/tomb.jpg);
+    float:left;
+    margin-right: 10px;
+}
+
+#antorus p:before{
     content: url(img/thumbnails/antorus.jpg);
     float:left;
     margin-right: 10px;
 }
+
 
 
 /* Rankings */
