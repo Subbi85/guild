@@ -44,7 +44,7 @@
             der nächsten Instanz und somit "in Time". <br>
             Aber auch Mythisch+ Instanzen, Questen und Erfolge. ;) <br> <br>
             
-        </p>
+        </p>    
 
     <div id="accordion">
   
@@ -86,6 +86,30 @@
     <div class="space">.</div>
         <h1>Progress</h1>
     
+        <div id="accordionProgress">
+  
+        <button class="accordionProgress">Smaragdbrüner Alptraum</button>
+        <div class="panelProgress">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <br><br><a href="">Hier</a> geht es zum Battle.net.</p>
+        </div>
+        <button class="accordionProgress">Prüfung der Tapferkeit</button>
+        <div class="panelProgress">
+            <p>Ein Teil unseres "Gute Seele der Gilde"-Kompetenzteams. Knusper </p>
+        </div>
+        <button class="accordionProgress">Nachtfestung</button>
+        <div class="panelProgress">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="accordionProgress"> Grabmal von Sageras</button>
+        <div class="panelProgress">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <button class="accordionProgress">Antorus, der brennende Thron</button>
+        <div class="panelProgress">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    
     </section>
 
     <section id="rankings">
@@ -106,26 +130,49 @@
 
 
         </div>
-
+        </section>
 
     <script>
- 
-        progression();
         affixe();
+        progression();
 
-    function progression(){  /* Raidprogress in der aktuellen Expansion */
-
+    function progression(){
+    /* Arrays für die entsprechenden Raids */
+        var data = [];
         var blizzRequest = new XMLHttpRequest();
 
         blizzRequest.open('GET', 'https://raider.io/api/v1/guilds/profile?region=eu&realm=Anetheron&name=Order%20and%20Chaos&fields=raid_progression')
         blizzRequest.onload=function(){
             var test = JSON.parse(blizzRequest.responseText);
-            console.log(test);
-            console.log(test.faction);
-            console.log(test.raid_progression["the-nighthold"].mythic_bosses_killed);
-        }  
-        blizzRequest.send();
 
+            for(var i=0; i<=4; i++){
+
+                switch (i){
+                    case 0:
+                    var raid = "antorus-the-burning-throne";
+                    break;
+                    case 1:
+                    var raid = "the-emerald-nightmare";
+                    break;
+                    case 2:
+                    var raid = "the-nighthold";
+                    break;
+                    case 3:
+                    var raid = "tomb-of-sargeras";
+                    break;
+                    case 4:
+                    var raid = "trial-of-valor";
+                    break;
+                } 
+    
+            data.push(test.raid_progression[raid].total_bosses);
+            data.push(test.raid_progression[raid].normal_bosses_killed);
+            data.push(test.raid_progression[raid].heroic_bosses_killed);
+            data.push(test.raid_progression[raid].mythic_bosses_killed); 
+            console.log(data);
+            }
+        }
+        blizzRequest.send();
     }
 
     /* 
@@ -134,10 +181,7 @@
     
     */
 
-
-
-
-    function guildMembers(){    /*Erstellen der Memberliste für weitere Funktionen */
+    function guildMembers(){                	/*Erstellen der Memberliste für weitere Funktionen */
         var guildRequest = new XMLHttpRequest();
         var members = [];
         var server = [];
@@ -148,57 +192,42 @@
             console.log(test);
             var member = test.name;
 
-
-
             for (i=0; i<test.members.lenght; i++){
                 var member = test.members[i].character.rank;
                 console.log(member);
-
-
-
             }
-
-
-
-
-
-
-
-
-
-
-
         }  
         guildRequest.send();
     }
 
-    function array(){       	 /* Aufbau der Memberliste der Gilde */
-        var chars = ["Kreischi", "Hauie", "Hexenseele"];
-        var server = ["Nathrezim", "Anetheron", "Thrall"];
+    function array(){       	               /* Aufbau der Memberliste der Gilde */
+        var chars = ["Kreischi", "Hauie", "Hexenseele", "Subbì"];
+        var server = ["Nathrezim", "Anetheron", "Thrall", "Anetheron"];
             
         for (i=0; i<chars.length; i++){
             var name = chars[i];
             var realm = server[i];
-            score(name, realm);
+            getScore(name, realm);
         };
     }
 
-
-    function score(name, realm,i){
+    function getScore(name, realm,i){           /* M+ Scores der Member */
         var char = name;
         var realm = realm;
         var blizzRequest = new XMLHttpRequest();
 
         blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=EU&realm='+realm+'&name='+char+'&fields=mythic_plus_scores%2C%20mythic_plus_best_runs%2C%20mythic_plus_recent_runs')
         blizzRequest.onload=function(){
-            var test = JSON.parse(blizzRequest.responseText);
-            console.log(blizzRequest.responseText);
+            var score = JSON.parse(blizzRequest.responseText);
+            var current = score.mythic_plus_scores.all;
+            console.log(score);
+            console.log(current);
         }  
         blizzRequest.send();
     }
 
 
-    function affixe(){                  /* Affixe der aktuellen Woche */
+    function affixe(){                          /* Affixe der aktuellen Woche */
     var blizzRequest = new XMLHttpRequest();
     var affixes = [];
     var descriptions = [];
@@ -217,17 +246,11 @@
             document.getElementById("affixOne").innerHTML=affixes[0];
             document.getElementById("affixTwo").innerHTML=affixes[1];
             document.getElementById("affixThree").innerHTML=affixes[2];
-            
-            if(!affixes[3]){
-                document.getElementById("affixFour").innerHTML= "kommt mit BFA";
-            }else{
-            document.getElementById("affixFour").innerHTML=affixes[3];
-            }
         }  
     blizzRequest.send();
     }
 
-    // Menu Script
+    // Menu Script -> Ansprechpartner
     var acc = document.getElementsByClassName("accordion");
     var i;
     for (i = 0; i < acc.length; i++) {
@@ -239,14 +262,29 @@
             panel.style.maxHeight = null;
         } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
+        } 
+        });
+    }
+
+    // Menu Script -> Progress
+    var acc = document.getElementsByClassName("accordionProgress");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
         
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight){
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
         } 
         });
     }
 
     </script>
     
-    </section>
+
 
 
     <section id="contact">
