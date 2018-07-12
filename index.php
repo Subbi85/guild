@@ -308,7 +308,7 @@
             <input type="text" name="name" value="Name *"> </input>
             <input type="text" name="email" value="E-Mail *"> </input><br><br><br>
             <textarea rows="4" cols="50">Gib hier bitte deine Nachricht ein... *</textarea>
-            <div class="button">Abschicken</div>
+            <div class="button">Abschicken</div>  <a href="https://discord.gg/vVdUayB" target="_blank"><img src= "css/img/discord.png"></a>
         </div>
     </section>
 

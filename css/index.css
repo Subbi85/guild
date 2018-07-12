@@ -19,11 +19,12 @@ h1 { color:#5e2b2c ; font-size:36px}
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    /* display: inline-block; */
     font-size: 24px;
     margin-left: 20px;
     margin-top: 50px;
     cursor: pointer;
+    float: left;
 }
 
 .button:hover{
