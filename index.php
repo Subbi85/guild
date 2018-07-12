@@ -92,9 +92,9 @@
         <div class="panelProgress" id="nightmare">
             <p>Der erste Raid der Expansion hat uns nicht so lang aufgehalten. Als Einstiegsraid durchaus angenehm. <br>
                Die einzigen beiden harten Brocken waren Cenarius und Xavius im hc. Aber auch die konnten  </p>
-               <div id="bosses">Bosse :7</div><div id="normal"></div><br>
-               <div id="bosses">Bosse: 7</div><div id="heroic"></div>
- 
+               <div id="bosses">Bosse :7</div>
+               <div id="normal"></div><br>
+               <div id="heroic"></div>
         </div>
 
         <button class="accordionProgress">Prüfung der Tapferkeit</button>
@@ -103,7 +103,7 @@
                 heroischen Content vor keine unüberwindbaren Herausforderungen. Einzig Helya war zwischendurch ein wenig zickig und wollte sich nicht legen lassen.
         </p>
             <div id="bosses">Bosse :3</div><div id="normal"></div><br>
-            <div id="bosses">Bosse: 3</div><div id="heroic"></div>
+            <div id="heroic"></div>
         </div>
 
         <button class="accordionProgress">Nachtfestung</button>
@@ -112,7 +112,7 @@
             Neben Kuchenessen bei Trillax (bei dem einige Gildenmember instant auf Teilzeitdiät umschalteten wurden) oder dem Brückentanz bei Krosus oder Sternegucken bei Etraeus, hatte die Instanz einiges zu bieten. Nach einigen Schwierigkeiten, wurde die Instanz auch geklärt und Guld verhauen. 
             </p>
             <div id="bosses">Bosse :7</div><div id="normal"></div><br>
-            <div id="bosses">Bosse: 7</div><div id="heroic"></div>
+            <div id="heroic"></div>
         </div>
 
         <button class="accordionProgress"> Grabmal von Sageras</button>
@@ -122,7 +122,7 @@
                 Allerdings musste er uns am Ende aber auch klein beigeben.
         </p>
             <div id="bosses">Bosse :7</div><div id="normal"></div><br>
-            <div id="bosses">Bosse: 7</div><div id="heroic"></div>
+            <div id="heroic"></div>
         </div>
         <button class="accordionProgress">Antorus, der brennende Thron</button>
         <div class="panelProgress" id="antorus">
@@ -130,7 +130,7 @@
                 Agrammar, der uns mit seinen Adds und seiner Spezialtechnik zusetzte,stellte uns nur Argus vor eine Herausforderung. Am Ende wurde aber auch dieser überwunden, Azeroth gerettet und das Schwert "bewundert" .
         </p>
             <div id="bosses">Bosse :7</div><div id="normal"></div><br>
-            <div id="bosses">Bosse: 7</div><div id="heroic"></div>
+            <div id="heroic"></div>
         </div>
     
     </section>
@@ -181,8 +181,7 @@
                     case 4:
                     var raid = "trial-of-valor";
                     break;
-                } 
-    
+                }
             data.push(test.raid_progression[raid].total_bosses);
             data.push(test.raid_progression[raid].normal_bosses_killed);
             data.push(test.raid_progression[raid].heroic_bosses_killed);
@@ -260,7 +259,6 @@
 
                 affixes.push(affix);
                 descriptions.push(detail);
-
             }
             document.getElementById("affixOne").innerHTML=affixes[0];
             document.getElementById("affixTwo").innerHTML=affixes[1];
@@ -303,16 +301,13 @@
 
     </script>
     
-
-
-
     <section id="contact">
            <div class="space">.</div>
         <h1>Du hast Interesse?</h1>
         <div id="container">
             <input type="text" name="name" value="Name *"> </input>
             <input type="text" name="email" value="E-Mail *"> </input><br><br><br>
-            <textarea rows="4" cols="55">Gib hier bitte deine Nachricht ein... *</textarea>
+            <textarea rows="4" cols="50">Gib hier bitte deine Nachricht ein... *</textarea>
             <div class="button">Abschicken</div>
         </div>
     </section>
