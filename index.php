@@ -91,31 +91,46 @@
         <button class="accordionProgress">Smaragdbrüner Alptraum</button>
         <div class="panelProgress" id="nightmare">
             <p>Der erste Raid der Expansion hat uns nicht so lang aufgehalten. Als Einstiegsraid durchaus angenehm. <br>
-               Die einzigen beiden harten Brocken waren Cenarius und Xavius im hc. Aber auch die konnten uns nicht lang standhalten</p>
+               Die einzigen beiden harten Brocken waren Cenarius und Xavius im hc. Aber auch die konnten  </p>
+               <div id="bosses">Bosse :7</div><div id="normal"></div><br>
+               <div id="bosses">Bosse: 7</div><div id="heroic"></div>
+ 
         </div>
+
         <button class="accordionProgress">Prüfung der Tapferkeit</button>
         <div class="panelProgress" id="trials">
             <p>Konnte nur als "Zwischenraid" bzw. "Übergangsraid" angesehen werden. Die Bosse stellten uns sowohl im normalen als auch <br>
                 heroischen Content vor keine unüberwindbaren Herausforderungen. Einzig Helya war zwischendurch ein wenig zickig und wollte sich nicht legen lassen.
         </p>
+            <div id="bosses">Bosse :3</div><div id="normal"></div><br>
+            <div id="bosses">Bosse: 3</div><div id="heroic"></div>
         </div>
+
         <button class="accordionProgress">Nachtfestung</button>
         <div class="panelProgress" id="nighthold">
             <p>Nach schier endlosen Stunden des Questens und Ruffarmens in einem der schönsten Gebiete der Expansion, konnten wir uns endlich der Nachtfestung widmen. <br>
-            Neben Kuchenessen bei Trillax (bei dem einige Gildenmember instant auf Teilzeitdiät umschalteten wurden) oder dem Brückentanz bei Krosus oder Sternegucken bei Etraeus, hatte die Instanz einiges zu bieten. Nach einigen Schwierigkeiten, wurde die Instanz auch geklärt und Guld verhauen. </p>
+            Neben Kuchenessen bei Trillax (bei dem einige Gildenmember instant auf Teilzeitdiät umschalteten wurden) oder dem Brückentanz bei Krosus oder Sternegucken bei Etraeus, hatte die Instanz einiges zu bieten. Nach einigen Schwierigkeiten, wurde die Instanz auch geklärt und Guld verhauen. 
+            </p>
+            <div id="bosses">Bosse :7</div><div id="normal"></div><br>
+            <div id="bosses">Bosse: 7</div><div id="heroic"></div>
         </div>
+
         <button class="accordionProgress"> Grabmal von Sageras</button>
         <div class="panelProgress" id="tomb">
             <p>Jetzt wo Gul'dan aufgehalten und Illidan befreit wurde, fokusierten wir uns auf die Zentrale der Legion auf Azeroth. Es ging ins Grabmal. Auch hier hatten wir ein paar Bosse die uns etwas aufgehalten haben. <br>
                 So entdeckten einige von uns bei der Maid ihre Farbenblindheit und bei Harjatan und Herrin Sassz'ine ihre Liebe zu Morlucs und Fischgetier. Als letzte große Herausforderung (besonders im HC) sollte sich Kil'jaeden erweisen. <br>
                 Allerdings musste er uns am Ende aber auch klein beigeben.
         </p>
+            <div id="bosses">Bosse :7</div><div id="normal"></div><br>
+            <div id="bosses">Bosse: 7</div><div id="heroic"></div>
         </div>
         <button class="accordionProgress">Antorus, der brennende Thron</button>
         <div class="panelProgress" id="antorus">
             <p>Im letzten Raid widmeten wir uns auf Argus dem guten Sageras selbst. Eigentlich lief die Instanz ziemlich gut für uns. Bis auf kleinere Problme bei Kin'garoth, der mit seinem Laserstrahl so gern fangen spielte, dem Zirkel der Shivarra und <br>
                 Agrammar, der uns mit seinen Adds und seiner Spezialtechnik zusetzte,stellte uns nur Argus vor eine Herausforderung. Am Ende wurde aber auch dieser überwunden, Azeroth gerettet und das Schwert "bewundert" .
         </p>
+            <div id="bosses">Bosse :7</div><div id="normal"></div><br>
+            <div id="bosses">Bosse: 7</div><div id="heroic"></div>
         </div>
     
     </section>
@@ -130,11 +145,6 @@
         </div>
 
         <div id="memberlist">
-
-
-
-
-
 
 
         </div>
@@ -176,9 +186,10 @@
             data.push(test.raid_progression[raid].total_bosses);
             data.push(test.raid_progression[raid].normal_bosses_killed);
             data.push(test.raid_progression[raid].heroic_bosses_killed);
-            data.push(test.raid_progression[raid].mythic_bosses_killed); 
-            console.log(data);
+//            data.push(test.raid_progression[raid].mythic_bosses_killed);    <- vllt in Zukunft ;)
+            document.getElementById("")
             }
+            console.log(data)
         }
         blizzRequest.send();
     }
