@@ -1,6 +1,12 @@
 /* Index.html style*/
 /* Überschriften und Allgemeines */
 
+#test{
+    width: 50px;
+    height: 50px;
+    background-color: #4CAF50;
+}
+
 body{background-color: #5e2b2c }
 h1 { color:#5e2b2c ; font-size:36px}
 
@@ -272,31 +278,34 @@ li:hover{
 }
 
 /* Anzahl der Bosse der jeweiligen Instanz */
-#bosses{
+.progress{
     width: 50%;
     height: 15px;
-    background-color: #777;
+    background-color: #5e2b2c;
     float: right;
     margin-right:20px; 
+    margin-bottom: 5px;
+}
+
+.bars{
+    width:50%;
+    height: 20%;
+    float: right;
+    background-color: #ddd;
+}
+#bosses{
+    width: 100%;
+    height: 15px;
+    background-color: #777;
     color: #fff;
     font-size: 12px;
     margin-bottom: 5px;
 }
 
-#normal{
+#enm_normal, #enm_heroic,#trials_normal, #trials_heroic, #hold_normal, #hold_heroic,#tomb_normal, #tomb_heroic,#ant_normal, #ant_heroic{
     width: 50%;
-    height: 15px;
+    height: 10px;
     background-color: #5e2b2c;
-    float: right;
-    margin-right:20px; 
-    margin-bottom: 5px;
-}
-
-#heroic{
-    width: 50%;
-    height: 15px;
-    background-color: #5e2b2c;
-    float: right;
     margin-right:20px; 
     margin-bottom: 5px;
 }
@@ -406,3 +415,8 @@ input, textarea{
         font-size: 80px;
     }
 }
+
+
+
+
+
