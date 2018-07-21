@@ -29,7 +29,7 @@
 
     <section id="aboutUs">
     <div class="space">.</div>
-    
+
     <div id="textAboutUs">
         <h1>Das sind wir</h1>
         <p>
