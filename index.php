@@ -152,23 +152,23 @@
     <section id="rankings">
     <div class="space">.</div>    
 
-    <div class="tooltip">Hover over me
-        <span class="tooltiptext">Tooltip text</span>
-    </div>
+
+    <h3>Atkuelle Affixe</h3>
+    <div class="tooltip"> <div id="one"></div>
+        <span class="tooltiptext" id="t_one"></span>
+        </div><br>
+
+    <div class="tooltip"> <div id="two"></div>
+        <span class="tooltiptext" id="t_two"></span>
+        </div><br>
+
+    <div class="tooltip"> <div id="three"></div>
+        <span class="tooltiptext" id="t_three"></span>
+        </div><br>
 
     <h1>Rankings</h1>
 
-        <p> Die aktuellen Mythic+ Affixe der Woche sind:</p>
-        <div id="affixes">
-
-
-        <div class="affix" id="affixTwo"></div><div class="affix" id="affixThree"></div>
-        </div>
-
-        <div id="memberlist">
-
-        </div>
-    <div id="test">test</div>
+    <div id="memberlist"></div>
 
     </section>
   
@@ -209,7 +209,7 @@
     });
     }
 
-// Menu Script -> Progress
+    // Menu Script -> Progress
     var acc = document.getElementsByClassName("accordionProgress");
     var i;
     for (i = 0; i < acc.length; i++) {

@@ -57,13 +57,14 @@ blizzRequest.onload=function(){
         affixes.push(affix);
         affixes.push(detail);
     }
-    document.getElementById("affixOne").innerHTML=affixes[0];
-    console.log(affixes[1]);
-    document.getElementById("affixTwo").innerHTML=affixes[2];
-    console.log(affixes[3]);
-    document.getElementById("affixThree").innerHTML=affixes[4];
-    console.log(affixes[5]);
-    console.log(test);
+    console.log(affixes);
+    document.getElementById("one").innerHTML=affixes[0];
+    document.getElementById("t_one").innerHTML=affixes[1];
+    document.getElementById("two").innerHTML=affixes[2];
+    document.getElementById("t_two").innerHTML=affixes[3];
+    document.getElementById("three").innerHTML=affixes[4];
+    document.getElementById("t_three").innerHTML=affixes[5];
+
 }  
 blizzRequest.send();
 }                                           // AFFIXE ENDE //
