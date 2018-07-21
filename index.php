@@ -22,7 +22,7 @@
         </nav>
     <section id="header"><!-- Grid im Header -->
         <div id="banner"></div>
-        <div id="guildname1">Order</div>wfwf
+        <div id="guildname1">Order</div>
         <div id="guildname2">and</div>
         <div id="guildname3">Chaos</div>
     </section>
