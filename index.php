@@ -29,6 +29,8 @@
 
     <section id="aboutUs">
     <div class="space">.</div>
+    
+    <div id="textAboutUs">
         <h1>Das sind wir</h1>
         <p>
             Wir sind "Order and Chaos" vom Server Anetheron. <br>
@@ -45,6 +47,8 @@
             der nächsten Instanz und somit "in Time". <br>
             Aber auch Mythisch+ Instanzen, Questen und Erfolge. ;) <br> <br>
         </p>    
+    </div>
+
 
     <div id="accordion">
   
@@ -152,21 +156,28 @@
     <section id="rankings">
     <div class="space">.</div>    
 
-
-    <h3>Atkuelle Affixe</h3>
-    <div class="tooltip"> <div id="one"></div>
-        <span class="tooltiptext" id="t_one"></span>
-        </div><br>
-
-    <div class="tooltip"> <div id="two"></div>
-        <span class="tooltiptext" id="t_two"></span>
-        </div><br>
-
-    <div class="tooltip"> <div id="three"></div>
-        <span class="tooltiptext" id="t_three"></span>
-        </div><br>
-
     <h1>Rankings</h1>
+    <h3>Atkuelle Affixe der Woche:</h3>
+
+    <ul style="text-decoration: none">
+        <li>
+            <div class="tooltip"> <div id="one"></div>
+                <span class="tooltiptext" id="t_one"></span>
+            </div><br>
+        </li>
+        <li>
+        <div class="tooltip"> <div id="two"></div>
+            <span class="tooltiptext" id="t_two"></span>
+            </div><br>
+        </li>
+        <li>
+        <div class="tooltip"> <div id="three"></div>
+            <span class="tooltiptext" id="t_three"></span>
+            </div><br>
+        </li>
+    </ul>
+
+
 
     <div id="memberlist"></div>
 

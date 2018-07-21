@@ -136,6 +136,9 @@ li:hover{
     padding: 30px;
 }
 
+textAboutUs{
+
+}
 /* Accordion Menu */
 #accordion{
     width: 50%;
@@ -317,12 +320,6 @@ li:hover{
     background-color: #fff;
 }
 
-#rankings h1{
-    padding:0;
-    text-align: right;
-    padding-right: 50px;
-}
-
 /* Affixes der Woche */
 .tooltip {
     position: relative;
@@ -353,19 +350,15 @@ li:hover{
 
 #one{
     color: green;
-    size: 250px;
 }
 
 #two{
     color: red;
-    size: 250px;
 }
 
 #three{
     color:blue;
-    size: 400px;
 }
-
 
 #memberlist{
     margin: auto;
