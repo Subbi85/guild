@@ -1,3 +1,17 @@
+<?php
+$server = "localhost";
+$user ="root";
+$password = "";
+$dbname ="gilde";
+
+$conn = new mysqli($server, $user, $password, $dbname);
+$conn->set_charset("utf8");
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    } 
+?> <!-- SQL Verbindung, Bisherige Statements im textfile -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +25,11 @@
 
 <body>
     <div id="wrapper">
-        <nav> <!-- Nav Bar -->
+
+    <section id="header"><!-- Grid im Header -->
+
+    </section>
+    <nav> <!-- Nav Bar -->
             <ul>
                 <li><div class="logo"></div> Home</li>
                 <a href="#aboutUs"><li><div class="logo"></div>Über uns</li></a>
@@ -20,19 +38,11 @@
                 <a href="#contact"><li><div class="logo"></div>Kontakt</li></a>
             </ul>
         </nav>
-    <section id="header"><!-- Grid im Header -->
-        <div id="banner"></div>
-        <div id="guildname1">Order</div>
-        <div id="guildname2">and</div>
-        <div id="guildname3">Chaos</div>
-    </section>
-
     <section id="aboutUs">
     <div class="space">.</div>
 
+    <h1>Das sind wir</h1>
     <div id="textAboutUs">
-        <h1>Das sind wir</h1>
-        <p>
             Wir sind "Order and Chaos" vom Server Anetheron. <br>
             Wie unschwer zu erkennen, sind wir eine waschechte Hordegilde. <br>
             <br>
@@ -46,7 +56,6 @@
             Dazu gehört zu allererst, dass wir den aktuellen HC Raid Content vor Öffnung <br>
             der nächsten Instanz und somit "in Time". <br>
             Aber auch Mythisch+ Instanzen, Questen und Erfolge. ;) <br> <br>
-        </p>    
     </div>
 
 
@@ -83,7 +92,6 @@
         </div>
 
     </div>
-
     </section>
 
     <section id="progress">
@@ -151,11 +159,14 @@
                </div>
         </div>
     
+        <div id="raidkader">
+        Unser Raidkader sieht aktuell wie folgt aus: <br>
+        </div>
+
     </section>
 
     <section id="rankings">
     <div class="space">.</div>    
-
     <h1>Rankings</h1>
     <h3>Atkuelle Affixe der Woche:</h3>
 
@@ -177,21 +188,86 @@
         </li>
     </ul>
 
+    <h3>Unsere aktuelle Top 10:</h3>
+    <?php
+        $i = 1;
+        $sql = "SELECT member.name as name, member.realm as realm, member.score as score, classes.name as class, classes.color as color
+                FROM member
+                JOIN classes ON member.class=classes.id
+                ORDER BY score DESC
+                " ;                      // Funktioniert
 
+        $result = $conn->query($sql);
+        if($result->num_rows > 0){
 
-    <div id="memberlist"></div>
+            echo "<table>";
+            echo "<tr><th>#</th><th>Name</th><th>Realm</th><th>Klasse</th><th>Score</th><br>";
 
+           // while($row = $result->fetch_assoc()) {
+            for($i=0; $i<10; $i++){
+                ($row = $result->fetch_assoc());
+                $y = $i+1;
+                echo "  <tr>  
+                            <td>".$y."</td>
+                            <td>". $row["name"] ."</td>
+                            <td>".$row["realm"]."</td>
+                            <td style='width: 150px; color:".$row["color"]."'>";
+                        //echo "<div id='icon' style='background-image:url('Hexenmeister.png'></div>";
+                echo"       <span id='classname'>".$row["class"]."
+                                    </span>
+                            </td>
+                            <td>".$row["score"]."</td>
+                        </tr>";
+                }
+
+                            // background-image:url("img/Hexenmeister.png"); 
+            }else{
+                echo "0 results";
+            }
+ 
+            echo "</table>";
+    ?>
+
+    <!-- "<tr style='color:".$row["color"]."'>" -->
+    <!-- Aufbau der Memberliste mit den entsprechenden Angaben-->
     </section>
   
     <section id="contact">
-           <div class="space">.</div>
+        <div class="space">.</div>
         <h1>Du hast Interesse?</h1>
-        <div id="container">
-            <input type="text" name="name" value="Name *"> </input>
-            <input type="text" name="email" value="E-Mail *"> </input><br><br><br>
-            <textarea rows="4" cols="50">Gib hier bitte deine Nachricht ein... *</textarea>
-            <div class="button">Abschicken</div>  <a href="https://discord.gg/vVdUayB" target="_blank"><img src= "css/img/discord.png"></a>
+
+        <form action="hallo.php" method="post">
+            Name: <input type="text" name="name"><br>
+            E-mail: <input type="text" name="email"><br>
+            <textarea rows="5" cols="25" name="mess"></textarea>
+
+            <input type="submit">
+        </form>
+        
+
+        <div id="messages">
+        
+        <?php
+        $sql = "SELECT id, charname as name, email, message
+                FROM notes
+                ORDER BY id DESC
+                " ;    
+        $result = $conn->query($sql);
+        
+        
+    
+        for($i=0; $i<3; $i++){
+            ($row = $result->fetch_assoc());
+            echo   
+                "<div class='text'>#:".$i."-"
+                    .$row["name"]. "<br>".$row["email"]."<br>
+                    <span id='message'>".$row["message"]."</span><br>
+                </div>";
+        }
+        ?>
+           
         </div>
+
     </section>
 
     <div id="footer">

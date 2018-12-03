@@ -1,3 +1,4 @@
+guildMembers();
 affixe();
 progression();
 
@@ -6,41 +7,50 @@ var guildRequest = new XMLHttpRequest();
 guildRequest.open('GET', 'https://eu.api.battle.net/wow/guild/Anetheron/Order%20and%20Chaos?fields=members&locale=en_GB&apikey=2z8d96ypab8zbed7nrbz29a3uqxskz5u')
 guildRequest.onload=function(){
     var test = JSON.parse(guildRequest.responseText);
-    console.log(test);
-    var member = test.name;
-
-    for (i=0; i<test.members.lenght; i++){
-        var member = test.members[i].character.rank;
-        console.log(member);
+       console.log(test); 
+    var member= [];
+    for (i=0; i<test.members.length; i++){
+        var rank = test.members[i].rank;
+        if(rank==1 || rank==3 || rank== 5){  //Eventuell Ränge nochmal anpassen!!!!! 
+            member.push(test.members[i].character["name"]);
+            member.push(test.members[i].character["realm"]);
+            member.push(test.members[i].character["class"]);
+        }
     }
-}  
-guildRequest.send();
+    console.log(member);
+    console.log(test);
+    for(i=0; i<member.length; i=i+3){
+        var name = member[i];
+        var realm = member[i+1];
+        var classes = member[i+2]
+        var final = [];
+        final.push(getScore(name, realm, classes));
+        }
+    }
+    guildRequest.send();
 }
+// Ränge: 1,2-> offitwinks ,3,5                SO GUT WIE FERTIG!!!!!
 
-function array(){       	               /* Aufbau der Memberliste der Gilde */
-var chars = ["Kreischi", "Hauie", "Hexenseele", "Subbì"];
-var server = ["Nathrezim", "Anetheron", "Thrall", "Anetheron"];
-    
-for (i=0; i<chars.length; i++){
-    var name = chars[i];
-    var realm = server[i];
-    getScore(name, realm);
-};
-}
+function getScore(name, realm, classes){           /* M+ Scores der Member */
 
-function getScore(name, realm,i){           /* M+ Scores der Member */
-var char = name;
-var realm = realm;
-var blizzRequest = new XMLHttpRequest();
+    // name = Tbow;
+    // realm = Terenas;
+    var scores = [];
+    var blizzRequest = new XMLHttpRequest();
+    blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+realm+'&name='+name+'&fields=mythic_plus_scores')
+    blizzRequest.onload=function(){
 
-blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=EU&realm='+realm+'&name='+char+'&fields=mythic_plus_scores%2C%20mythic_plus_best_runs%2C%20mythic_plus_recent_runs')
-blizzRequest.onload=function(){
     var score = JSON.parse(blizzRequest.responseText);
     var current = score.mythic_plus_scores.all;
-    console.log(score);
-    console.log(current);
-}  
-blizzRequest.send();
+    
+    scores.push(name);
+    scores.push(realm);
+    scores.push(current);
+    scores.push(classes);
+    
+    console.log(scores);
+    }
+    blizzRequest.send(scores);
 }
 
 function affixe(){                          /* Affixe der aktuellen Woche */
@@ -64,11 +74,9 @@ blizzRequest.onload=function(){
     document.getElementById("t_two").innerHTML=affixes[3];
     document.getElementById("three").innerHTML=affixes[4];
     document.getElementById("t_three").innerHTML=affixes[5];
-
 }  
 blizzRequest.send();
 }                                           // AFFIXE ENDE //
-
 
 function progression(){
 /* Arrays für die entsprechenden Raids */
@@ -103,12 +111,10 @@ blizzRequest.onload=function(){
 
     var x = document.getElementById("bosses").offsetWidth;
     }
-
    // document.getElementById("enm_normal").style.width = 500+"px";
    fillIn(data, x);
 }
 blizzRequest.send();
-
 }
  
 function fillIn(data, x){
@@ -126,7 +132,4 @@ function fillIn(data, x){
 
         document.getElementById("trials_normal").style.width = (x/data[12])*data[13]+"px";
         document.getElementById("trials_heroic").style.width = (x/data[12])*data[14]+"px";
-
 }
-
-
