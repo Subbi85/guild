@@ -36,6 +36,7 @@ function getScore(name, realm, classes){           /* M+ Scores der Member */
     // name = Tbow;
     // realm = Terenas;
     var scores = [];
+    var final = [];
     var blizzRequest = new XMLHttpRequest();
     blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+realm+'&name='+name+'&fields=mythic_plus_scores')
     blizzRequest.onload=function(){
@@ -69,11 +70,14 @@ blizzRequest.onload=function(){
     }
     console.log(affixes);
     document.getElementById("one").innerHTML=affixes[0];
-    document.getElementById("t_one").innerHTML=affixes[1];
+    document.getElementById("t_one").innerHTML=affixes[1]; //Beschreibung
     document.getElementById("two").innerHTML=affixes[2];
-    document.getElementById("t_two").innerHTML=affixes[3];
+    document.getElementById("t_two").innerHTML=affixes[3]; // Beschreibung 2
     document.getElementById("three").innerHTML=affixes[4];
-    document.getElementById("t_three").innerHTML=affixes[5];
+    document.getElementById("t_three").innerHTML=affixes[5]; // Beschreibung 3
+    document.getElementById("four").innerHTML=affixes[6];
+    document.getElementById("t_four").innerHTML=affixes[7]; // Beschreibung 3
+
 }  
 blizzRequest.send();
 }                                           // AFFIXE ENDE //
@@ -85,6 +89,7 @@ var data = [];
 var blizzRequest = new XMLHttpRequest();
 
 blizzRequest.open('GET', 'https://raider.io/api/v1/guilds/profile?region=eu&realm=Anetheron&name=Order%20and%20Chaos&fields=raid_progression')
+// https://raider.io/api/v1/guilds/profile?region=EU&realm=Anetheron&name=Order%20and%20Chaos&fields=raid_progression%2C%20raid_rankings
 blizzRequest.onload=function(){
     var test = JSON.parse(blizzRequest.responseText);
     for(var i=0; i<=4; i++){
@@ -104,12 +109,15 @@ blizzRequest.onload=function(){
             case 4:
             var raid = "trial-of-valor";
             break;
+            case 5:
+            var raid ="uldir";
+            break;
         }
     data.push(test.raid_progression[raid].total_bosses);
     data.push(test.raid_progression[raid].normal_bosses_killed);
     data.push(test.raid_progression[raid].heroic_bosses_killed);
 
-    var x = document.getElementById("bosses").offsetWidth;
+    //var x = document.getElementById("bosses").offsetWidth;
     }
    // document.getElementById("enm_normal").style.width = 500+"px";
    fillIn(data, x);

@@ -1,492 +1,284 @@
-/* Index.html style*/
-/* Überschriften und Allgemeines */
-
-#test{
-    width: 50px;
-    height: 50px;
-    background-color: #4CAF50;
+body{
+    background-color: #5B2829;
 }
-
-body{background-color: #5e2b2c }
-h1 { color:#5e2b2c ; font-size:36px}
-
-/* Divs */
 #wrapper{
-    width: 90%;
-    height:100vh;
-    margin: auto auto;
-    background-color: #fff;
-}
-
-.button{
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    /* display: inline-block; */
-    font-size: 24px;
-    margin-left: 20px;
-    margin-top: 50px;
-    cursor: pointer;
-    float: left;
-}
-
-.button:hover{
-    background-color: #ff6600;
-    transition: 1000ms;
-}
-
-/* Header mit Grid */
-#header{
-    width: 100%;
-    height: 95%;
-    background-image: url("img/background/og.jpg");
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
-}
-
-#guildname1{
-    font-size: 200px;
-    color: #ddd;
-    margin-left: 50px;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 1;
-
-}
-
-#guildname2{
-    font-size: 200px;
-    color: #ddd;
-    margin-left: 50px;
-    grid-column-start: 2;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 2;
-    margin: auto auto;
-}
-
-#guildname3{
-    font-size: 200px;
-    color: #ddd;
-    margin-left: 50px;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    margin: auto auto;
-}
-
-#banner{
-    width: 440px;
-    height: 440px;
-    background-image: url(img/wappen.png);
-    margin-left: 20px;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-/* Nav */
-nav ul li, #footer ul li{
-    display: inline-block;
-    padding: 5px;
-    color:#5e2b2c;
-    text-decoration: none;
-    font-size: 30px;
-    cursor: pointer;
+    width:90%;
     margin:auto auto;
 }
+.section{
+    width:100%;
+    height:30%;
+    background-color: #5B2829;
+}
 
-.logo{
-    width: 30px;
-    height:30px;
+/* Header inlkusive Color-Overlay */
+.container h1{
+    font-family: arial;
+    font-size: 50px;
+    z-index: 1;
+    color: #fff;
+}
+
+.container{
+    background: black url('https://images.mein-mmo.de/magazin/medien/2018/09/WoW_Battle_for_Azeroth_Nazmir_03.jpg') no-repeat;
+    color:#fff;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.color-overlay{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+/* Header inlkusive Color-Overlay ENDE*/
+/* NAV BAR */
+nav{
+    width:100%;
     background-color: #fff;
-    float:left;
-    border-radius: 50%;
 }
 
-li:hover .logo{
-    display: inline;
-    background-image: url(img/wappen_small.png);
+nav ul{
+    width:80%;
+    margin: 0 auto;
 }
 
-li:hover{
-    text-decoration: underline;
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 24px;
 }
 
+nav ul li:hover{
+    cursor: pointer;
+    background-color: #ceb0b0;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+.toggle{                   
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #001f44;
+    color: #fff;
+    text-align: right;
+    box-sizing: border-box;
+    font-size: 20px;
+    display:none;
+}
+
+.toggle:hover{
+    cursor: pointer;
+}
+/* NAV BAR ENDE*/
 /* About Us */
 #aboutUs{
     width: 100%;
-    height: 100vh;
+    height: 640px;
+    color: #5B2829;
     background-color: #fff;
 }
 
-#aboutUs h1{
-    padding:0;
-}
-
-#textAboutUs{
-    width: 45%;
-    height: 50%;
-    background-color: #ff6600;
-    float:left;
-    margin-left: 30px;
-    font-size: 20px;
-}
-/* Accordion Menu */
-#accordion{
-    width: 50%;
-    height: 42%;
-    margin: auto auto;
-    margin-top:20px;
-    margin-right: 30px;
-}
-
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 13px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
+#aboutUs p{
     font-size: 15px;
-    transition: 0.4s;
 }
 
-.active, .accordion:hover {
-    background-color: #ccc;
+#desc{
+    display:flex;
+    flex-direction: row;
 }
 
-.accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: "\2212";
-}
-
-.panel {
-    padding: 0 0;
-    background-color: #fff;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-.panel p{
-    color: green;
-}
-
-.panel p:before{
-    content: url(img/icon.png);
-    float:left;
-}
-
-/* Progress */                                  /* Bilder in 128*128 */
-#progress{
-    width: 100%;
+#desc div{ 
+    width:80%;
     height: 100%;
-    background-color: #fff;
 }
 
-#accordionProgress{
-    width: 50%;
-    height: 42%;
-    margin-left: 40px;
-    float: left;
-    margin-right: 30px;
+#box-1{
+    flex:2;
 }
 
-.accordionProgress {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 13px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
+#box-2{
+    flex:1;
 }
 
-.active, .accordionProgress:hover {
-    background-color: #ccc;
-}
-
-.accordionProgress:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-}
-
-.active:after {
-    content: "\2212";
-}
-
-.panelProgress {
-    padding: 0 5px;
-    background-color: #fff;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-
-.panelProgress p{
-    color: green;
-}
-
-#nightmare p:before{
-    content: url(img/thumbnails/nightmare.jpg);
-    float:left;
-    margin-right: 10px;
-}
-
-#trials p:before{
-    content: url(img/thumbnails/trials.jpg);
-    float:left;
-    margin-right: 10px;
-}
-
-#nighthold p:before{
-    content: url(img/thumbnails/nighthold.jpg);
-    float:left;
-    margin-right: 10px;
-}
-
-#tomb p:before{
-    content: url(img/thumbnails/tomb.jpg);
-    float:left;
-    margin-right: 10px;
-}
-
-#antorus p:before{
-    content: url(img/thumbnails/antorus.jpg);
-    float:left;
-    margin-right: 10px;
-}
-
-/* Anzahl der Bosse der jeweiligen Instanz */
-.progress{
-    width: 50%;
-    height: 15px;
-    background-color: #5e2b2c;
-    float: right;
-    margin-right:20px; 
-    margin-bottom: 5px;
-}
-
-.bars{
-    width:50%;
-    height: 20%;
-    float: right;
-    background-color: #ddd;
-}
-#bosses{
-    width: 100%;
-    height: 15px;
-    background-color: #777;
-    color: #fff;
-    font-size: 12px;
-    margin-bottom: 5px;
-}
-
-#enm_normal, #enm_heroic,#trials_normal, #trials_heroic, #hold_normal, #hold_heroic,#tomb_normal, #tomb_heroic,#ant_normal, #ant_heroic{
-    width: 50%;
-    height: 10px;
-    background-color: #5e2b2c;
-    margin-right:20px; 
-    margin-bottom: 5px;
-}
-
-/* Rankings */
-#rankings{
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-}
-
-/* Affixes der Woche */
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;
-    font-size: 20px;
-}
-
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: 240px;
-    background-color: black;
-    color: #fff;
+#box-2 h3{
     text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
+}
+
+#box-2 p{
+    font-size: 20px;
+    padding: 5px;
+}
+/* About Us ENDE */
+
+
+/* Raids */
+#raids{
+    width: 100%;
+    height: 700px;
+    background-color: #ff6600;
+}
+
+/* Slider */
+.slider{
+    display: block;
+    width: 700px;
+    height: 500px;
+    background: #1f1f1f;
+    overflow: hidden;
     position: absolute;
-    z-index: 1;
-    bottom: 150%;
-    left: 50%;
-    margin-left: -60px;
-    font-size: 14px;
+    margin-left:10px;
 }
 
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-
-#one, #two, #three{
-    color: #5e2b2c;
-    cursor: pointer;
-}
-
-#memberlist{
-    margin: auto;
-    margin-top: 30px;
-    width: 50%;
-    height: 40%;
-    background-color: #aaa;
-}
-
-/*
-#affixFour{
-    background-color: #ff6600;
-    float:left;
-}
-*/
-
-table{
-    width: 30%;
-    font-size: 20px;
-}
-
-th{
-    color: #5e2b2c;
-    border-bottom: 2px solid #111;
-}
-
-tr{
-    text-align: center;
-    height: 40px;
-}
-
-table tr:nth-child(odd){
-    background-color: #ccc;
-}
-
-table tr:nth-child(even){
-    background-color: #ff6600;
-}
-
-tr:hover{
-    background-color:#5e2b2c;
-    text-decoration: underline;
-    border : 1 px solid black;
-}
-
-#icon{
-    height: 30px;
-    width: 30px;
-    float:left;
-    margin-left: 5px;
-   /* background-image:url("img/Hexenmeister.png"); */
-
-}
-
-/* Contact */
-#contact{
+.slider >*{
+    position: absolute;
+    display: block;
     width: 100%;
-    height: 70%;
-    background-color: #fff;
-}
-
-#footer{
-    width: 100%;
-    height: 200px;
-    background-color: #fff;
-    text-decoration: none;
-}
-
-/* Form */
-#container{
-    padding: 24px;
-    width: 800px;
-    height: 400px;
-    background-color: #5e2b2c;
-    margin-left: 50px;
-}
-
-input, textarea{
-    border: none;
-    border-bottom: 2px solid #5e2b2c;
-    font-size: 25px;
-    text-align: center;
-    margin-left: 20px;
-    margin-top: 30px;
-    padding: 10px;
-}
-
-form{
-    float: left;
-    width: 40%;
-}
-#messages{
-    width: 45%;
-    height: 60%;
-    float: right;
-    background-color: #5e2b2c;
-    margin-right: 10px;    
-}
-
-.text{
-    width: 90%;
-    height: 30%;
-    background-color: #777;
-    margin: auto auto;
-    margin-top: 10px;
+    height:100%;
+    background:#1f1f1f;
+    animation: slide 12s infinite;
     overflow: hidden;
 }
 
-#message{
+.slide:nth-child(1){
+    left: 0;
+    animation-delay: -1s;
+    background-image: url(img/header_briefkasten.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(2){
+    animation-delay: 2s;
+    background-image: url(img/discord.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(3){
+    animation-delay: 5s;
+    background-image: url(img/wappen_middle.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(4){
+    animation-delay: 8s;
+    background-image: url(img/wappen.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.slide p {
+    font-size: 70px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 250px;
+    color: #fff;
+    transform: rotate(-25deg);
+}
+
+@keyframes slide {
+    0% { left:100%; width: 100%;}
+    5% { left: 0%;}
+    25%{ left:0%}
+    30% {left:-100%; width: 100%;}
+    30.0001% {left:-100%; width: 0%;}
+    100% {left:-100%;  width: 100%;}
+}
+/* Slider ENDE*/
+/* Raids ENDE*/
+/* Mythic+ */
+#mythic{
+    width: 100%;
+    height: 800px;
+    background: #fff;
+    color: #000;
+}
+
+.affix{
     font-size: 20px;
 }
 
-/* _______________ MEDIA QUERIES ______________ */
-@media screen and (max-width:1200px){
-    #banner{
-        width: 200px;
-        height: 200px;
-        background-image: url(img/wappen_middle.png) ;
+.affix:hover{
+    cursor: pointer;
+    color: #ff6600;
+}
+
+
+/* Mythic+ ENDE*/
+/* Kontakt */
+
+/* Kontakt ENDE*/
+
+/* MEDIA QUERIES */
+@media (max-width: 1600px){
+    #aboutUs p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:900px){
+    .toggle{
+        display: block;
+    }
+
+    nav ul{
+        width:100%;
+        display: none;
+    }
+
+    nav ul li{
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li:hover{
+        width:90;
+        display: block;
+    }
+    
+    .active{
+        display: block;
+        color: white;
+        background-color: #00316b;
+    }
+
+    .active a{ 
+        color: white;
     }
 
     #aboutUs{
-        height: 150%;
+        height: 700px;
     }
 
-    #guildname1,#guildname2,#guildname3{
-        font-size: 80px;
+    #aboutUs p{
+        font-size: 12px;
     }
 
-    #textAboutUs, #accordion {
-        width: 80%;
-        position: center;
+    #desc{
+        display:flex;
+        flex-direction: column;
     }
-
-    #textAboutUs{
-        height: 30%;
-    }
-
 }
+
+@media (max-width:700px){
+    #aboutUs{
+        height:700px;
+    }
+
+    #aboutUs p{
+        height: 480px;
+        font-size: 14px;
+    }
+}
+/* Media Queries ENDE*/
