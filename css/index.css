@@ -129,7 +129,7 @@ nav ul li a{
 /* Raids */
 #raids{
     width: 100%;
-    height: 900px;
+    height: 850px;
     background-color: #fff;
 }
 
@@ -429,9 +429,26 @@ footer ul li{
     }
 }
 
+@media (max-width:700px){
 
+    footer ul li{
+        font-size: 14px;
+    }
+    
+    #mythic{
+        height:900px;
+    }
+    
+    
+    }
 
+@media (max-width:600px){
 
+    footer ul li{
+        font-size: 10px;
+    }
+
+}
 
 
 
