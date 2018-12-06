@@ -281,8 +281,24 @@ nav ul li a{
     #member-4{
         flex:1;
     }
-
 /* Raidkader ENDE*/
+
+#infos{
+    font-size: 16px;
+}
+
+#offilist{
+    list-style: none;
+
+}
+
+#offilist ul li{
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
 /* Raids ENDE*/
 /* Mythic+ */
 #mythic{

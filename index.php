@@ -58,10 +58,10 @@
     <div id="wrapper">
         <h3>Raids:</h3>
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'bfa')" >BfA</button>
+            <button class="tablinks" onclick="openCity(event, 'bfa')"  id="defaultOpen">BfA</button>
             <button class="tablinks" onclick="openCity(event, 'legion')" >Legion</button>
             <button class="tablinks" onclick="openCity(event, 'member')" >Raidkader</button>
-            <button class="tablinks" onclick="openCity(event, 'infos')" id="defaultOpen">Allgemeine Infos</button>
+            <button class="tablinks" onclick="openCity(event, 'infos')">Allgemeine Infos</button>
         </div>
 
         <div id="bfa" class="tabcontent">
@@ -187,11 +187,11 @@
                         <tr>
                             <th>Name</th><th>Klasse</th>
                         </tr>
-                            <tr><td>Kreischi</td><td>Schamane</td></tr>
-                            <tr><td>Reinerpunk</td><td>Priester</td></tr>
-                            <tr><td>Sinopa</td><td>Paladin</td></tr>
-                            <tr><td>Syrthania</td><td>Schamane</td></tr>
-                            <tr><td>Swarloz</td><td>Druide</td></tr>
+                        <tr><td>Kreischi</td><td>Schamane</td></tr>
+                        <tr><td>Reinerpunk</td><td>Priester</td></tr>
+                        <tr><td>Sinopa</td><td>Paladin</td></tr>
+                        <tr><td>Syrthania</td><td>Schamane</td></tr>
+                        <tr><td>Swarloz</td><td>Druide</td></tr>
                     </table>
                 </div>
             </div><!-- ENDE MEMBER FLEX -->
@@ -212,7 +212,6 @@
                         <tr><td>Blackbear</td><td>Mönch</td></tr>
                         <tr><td>Veily</td><td>Todesritter</td></tr>
                         <tr><td>Menardinus</td><td>Schurke</td></tr>
-
                     </table>
                 </div>
 
@@ -240,10 +239,37 @@
 
         <div id="infos" class="tabcontent">
             <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-            <h3>Raidinformationen</h3>
-            <p>Allgemeine Informationen zu unseren Raids</p>
-            <a href="https://raider.io/guilds/eu/anetheron/Order%20and%20Chaos" target="_blank">Raider.io</a> 
-            <a href="https://www.warcraftlogs.com/guild/calendar/304372/" target="_blank"> WarcraftLogs </a>
+            <p>
+            Wow, du hast dir bisher alles auf dieser Seite angeschaut und bist immernoch nicht weggerannt? Respekt! <br>
+            Was? Du hast sogar ernsthaftes Interesse mit uns raiden zu gehen? Cool, hier gibt's noch weitere Informationen für dich: <br>
+
+            Unsere aktuellen <b>Raidzeiten</b> sind:
+                    <ul>
+                        <li>Montag, 20:30-22.00</li>
+                        <li>Mittwoch, 20:30-22.00</li>
+                    </ul>
+            Aktuell legen wir montags immer die Bosse, die vom Mittwoch "übrig geblieben sind". Es soll sich ja auch niemand vernachlässigt fühlen. <br>
+            Sollten wir in einer Woche schon am Mittwoch mit allem fertig sein, überlegen wir uns in der Regel etwas als Alternativplan. Was das dann ist? <br>
+            Wieder eine sehr gute Frage. Also der Alternativplan kann sein, dass man einen Twinkrun macht, ggf. Timewalks geht oder eben M+. Wichtig ist uns, dass <br>
+            wir trotzdem was <b>gemeinsam</b> machen. <br> <br>
+            Ach fast hätten wir noch was wichtiges vergessen: Unsere Links zu Raider.io und natürlich unsere Logs, die du dir gern mal anschauen kannst, um dir ein Bild zu machen. <br>
+            Die Links findest du hier:
+            </p>
+            <ul>
+                <li><a href="https://raider.io/guilds/eu/anetheron/Order%20and%20Chaos" target="_blank">Raider.io</a> </li>
+                <li><a href="https://www.warcraftlogs.com/guild/calendar/304372/" target="_blank"> WarcraftLogs </a></li>
+            </ul>
+            Soooo... jetzt weißt du aber wirklich so gut wie alles. <br>
+            Also wenn du uns jetzt immernoch kennenlernen willst, dann zögere nicht und schreibe einen unserer Offiziere inGame an:
+            <ul id="offilist">
+                <li>Kreischi</li>
+                <li>Reinerpunk</li>
+                <li>Gefearfach</li>
+                <li>Hauie</li>
+                <li>Tack</li>
+                <li>Subbi</li>
+            </ul>
+            
         </div>
     </div>
     </div> <!-- Raids ENDE -->

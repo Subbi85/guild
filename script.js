@@ -82,7 +82,6 @@ blizzRequest.onload=function(){
     document.getElementById("t_three").innerHTML=affixes[5]; // Beschreibung 3
     document.getElementById("four").innerHTML=affixes[6];
     document.getElementById("t_four").innerHTML=affixes[7]; // Beschreibung 4
-
 }  
 blizzRequest.send();
 }                                           
