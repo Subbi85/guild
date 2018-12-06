@@ -260,6 +260,28 @@ nav ul li a{
     100% {left:-100%;  width: 100%;}
 }
 /* Slider ENDE*/
+/* Raidkader */
+    #memberflex{
+        display: flex;
+    }
+
+    #member-1{
+        flex:1;
+    }
+
+    #member-2{
+        flex:1;
+    }
+
+    #member-3{
+        flex:1;
+    }
+
+    #member-4{
+        flex:1;
+    }
+
+/* Raidkader ENDE*/
 /* Raids ENDE*/
 /* Mythic+ */
 #mythic{
@@ -285,7 +307,6 @@ nav ul li a{
 /* Rangliste */
 table{
     font-size: 20px;
-    margin: auto auto;
 }
 
 th{
@@ -316,9 +337,6 @@ th, td{
 /* Kontakt */
 
 /* Kontakt ENDE*/
-
-
-
 footer{
     width:100%;
     height: 100px;

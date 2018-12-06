@@ -58,9 +58,9 @@
     <div id="wrapper">
         <h3>Raids:</h3>
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'bfa')" id="defaultOpen" >BfA</button>
+            <button class="tablinks" onclick="openCity(event, 'bfa')" >BfA</button>
             <button class="tablinks" onclick="openCity(event, 'legion')" >Legion</button>
-            <button class="tablinks" onclick="openCity(event, 'member')">Raidkader</button>
+            <button class="tablinks" onclick="openCity(event, 'member')" id="defaultOpen">Raidkader</button>
             <button class="tablinks" onclick="openCity(event, 'infos')">Allgemeine Infos</button>
         </div>
 
@@ -79,14 +79,14 @@
                 schlussendlich auch G'huun selbst den Gar aus zu machen und die "Curve" für uns einzustreichen.
             </p>
                 <div class="skillbar clearfix " data-percent="100%">
-                    <div class="skillbar-title" style="background: #3498db;"><span>Uldir (nhc)</span></div>
-                    <div class="skillbar-bar" style="background: #3498db;"></div>
+                    <div class="skillbar-title" style="background: #a09797;"><span>Uldir (nhc)</span></div>
+                    <div class="skillbar-bar" style="background: #C5534F;"></div>
                     <div class="skill-bar-percent">8/8</div>
                 </div> <!-- End Skill Bar -->
 
                 <div class="skillbar clearfix " data-percent="100%">
-                    <div class="skillbar-title" style="background: #3498db;"><span>Uldir (hc)</span></div>
-                    <div class="skillbar-bar" style="background: #3498db;"></div>
+                    <div class="skillbar-title" style="background: #a09797;"><span>Uldir (hc)</span></div>
+                    <div class="skillbar-bar" style="background: #964946;"></div>
                     <div class="skill-bar-percent">8/8</div>
                 </div> <!-- End Skill Bar -->
             </div> <!-- Raid-1 Box ENDE -->
@@ -108,64 +108,52 @@
             <div id="raid-1"><!-- Raid-1 Box -->
             
                 <div class="skillbar clearfix " data-percent="100%">
-                    <div class="skillbar-title" style="background: #3498db;"><span>Nighthold (nhc)</span></div>
-                    <div class="skillbar-bar" style="background: #3498db;"></div>
-                    <div class="skill-bar-percent">8/8</div>
+                    <div class="skillbar-title" style="background: #a09797;"><span>Nighthold (nhc)</span></div>
+                    <div class="skillbar-bar" style="background: #87a9e9;"></div>
+                    <div class="skill-bar-percent">10/10</div>
                 </div> <!-- End Skill Bar -->
 
                 <div class="skillbar clearfix " data-percent="100%">
-                    <div class="skillbar-title" style="background: #3498db;"><span>Nighthold (hc)</span></div>
-                    <div class="skillbar-bar" style="background: #3498db;"></div>
-                    <div class="skill-bar-percent">8/8</div>
-                </div>  <br><!-- End Skill Bar -->
+                    <div class="skillbar-title" style="background: #a09797;"><span>Nighthold (hc)</span></div>
+                    <div class="skillbar-bar" style="background: #6485c4;"></div>
+                    <div class="skill-bar-percent">10/10</div>
+                </div> <br> <br><!-- End Skill Bar -->
 
                 <div class="skillbar clearfix " data-percent="100%">
-                    <div class="skillbar-title" style="background: #3498db;"><span>Trials of Valor (nhc)</span></div>
-                    <div class="skillbar-bar" style="background: #3498db;"></div>
+                    <div class="skillbar-title" style="background: #a09797;"><span>Trials of Valor (nhc)</span></div>
+                    <div class="skillbar-bar" style="background: #ed684e;"></div>
                     <div class="skill-bar-percent">3/3</div>
                 </div> <!-- End Skill Bar -->
 
                 <div class="skillbar clearfix " data-percent="100%">
-                    <div class="skillbar-title" style="background: #3498db;"><span>Trials of Valor (hc)</span></div>
-                    <div class="skillbar-bar" style="background: #3498db;"></div>
+                    <div class="skillbar-title" style="background: #a09797;"><span>Trials of Valor (hc)</span></div>
+                    <div class="skillbar-bar" style="background: #c6462b;"></div>
                     <div class="skill-bar-percent">3/3</div>
-                </div> <br><!-- End Skill Bar -->
+                </div> <br><br><!-- End Skill Bar -->
 
                 <div class="skillbar clearfix " data-percent="100%">
-                    <div class="skillbar-title" style="background: #3498db;"><span>Nighthold (nhc)</span></div>
-                    <div class="skillbar-bar" style="background: #3498db;"></div>
-                    <div class="skill-bar-percent">8/8</div>
+                    <div class="skillbar-title" style="background: #a09797;"><span>ToS (nhc)</span></div>
+                    <div class="skillbar-bar" style="background: #9bef4c;"></div>
+                    <div class="skill-bar-percent">9/9</div>
                 </div> <!-- End Skill Bar -->
 
                 <div class="skillbar clearfix " data-percent="100%">
-                    <div class="skillbar-title" style="background: #3498db;"><span>Nighthold (hc)</span></div>
-                    <div class="skillbar-bar" style="background: #3498db;"></div>
+                    <div class="skillbar-title" style="background: #a09797;"><span>ToS (hc)</span></div>
+                    <div class="skillbar-bar" style="background: #97c172;"></div>
                     <div class="skill-bar-percent">8/8</div>
-                </div> <br> <!-- End Skill Bar -->
+                </div> <br><br><!-- End Skill Bar -->
 
                 <div class="skillbar clearfix " data-percent="100%">
-                    <div class="skillbar-title" style="background: #3498db;"><span>ToS (nhc)</span></div>
-                    <div class="skillbar-bar" style="background: #3498db;"></div>
-                    <div class="skill-bar-percent">8/8</div>
+                    <div class="skillbar-title" style="background: #a09797;"><span>Antorus (nhc)</span></div>
+                    <div class="skillbar-bar" style="background: #23aa11;"></div>
+                    <div class="skill-bar-percent">11/11</div>
                 </div> <!-- End Skill Bar -->
 
                 <div class="skillbar clearfix " data-percent="100%">
-                    <div class="skillbar-title" style="background: #3498db;"><span>ToS (hc)</span></div>
-                    <div class="skillbar-bar" style="background: #3498db;"></div>
-                    <div class="skill-bar-percent">8/8</div>
-                </div> <br><!-- End Skill Bar -->
-
-                <div class="skillbar clearfix " data-percent="100%">
-                    <div class="skillbar-title" style="background: #3498db;"><span>Antorus (nhc)</span></div>
-                    <div class="skillbar-bar" style="background: #3498db;"></div>
-                    <div class="skill-bar-percent">8/8</div>
-                </div> <!-- End Skill Bar -->
-
-                <div class="skillbar clearfix " data-percent="100%">
-                    <div class="skillbar-title" style="background: #3498db;"><span>Antorus (hc)</span></div>
-                    <div class="skillbar-bar" style="background: #3498db;"></div>
-                    <div class="skill-bar-percent">8/8</div>
-                </div> <br><!-- End Skill Bar -->
+                    <div class="skillbar-title" style="background: #a09797;"><span>Antorus (hc)</span></div>
+                    <div class="skillbar-bar" style="background: #1a8a0d;"></div>
+                    <div class="skill-bar-percent">11/11</div>
+                </div> <br><br><!-- End Skill Bar -->
             </div> <!-- Raid-1 Box ENDE -->
         <div id="raid-2"> <!-- Raid-2 Box-->
             <div class="slider">
@@ -180,14 +168,89 @@
     </div>
         <div id="member" class="tabcontent">
             <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-            <h3>Raidkader</h3>
-            <p>Informationen zum Raidkader</p>
-
-            <div class="wrapp">
-                <div class="try">
-                    <div class="arrow"></div>
+            
+            <div id="memberflex">
+                <div id="member-1">
+                    <h3>Tanks</h3> <br>
+                    <table>
+                        <tr>
+                            <th>Name</th><th>Klasse</th>
+                        </tr>
+                        <tr><td>Amaterasu</td><td>Krieger</td></tr>
+                        <tr><td>Sinner</td><td>Dämonenjäger</td></tr>
+                    </table>
                 </div>
+
+                <div id="member-2">
+                    <h3>Heiler</h3> <br>
+                    <table>
+                        <tr>
+                            <th>Name</th><th>Klasse</th>
+                        </tr>
+                            <tr><td>Kreischi</td><td>Schamane</td></tr>
+                            <tr><td>Reinerpunk</td><td>Priester</td></tr>
+                            <tr><td>Sinopa</td><td>Paladin</td></tr>
+                            <tr><td>Syrthania</td><td>Schamane</td></tr>
+                            <tr><td>Swarloz</td><td>Druide</td></tr>
+                    </table>
+                </div>
+            </div><!-- ENDE MEMBER FLEX -->
+            <div id="memberflex">
+                <div id="member-3">
+                    <h3>Melee DDs</h3> <br>
+                    <table>
+                        <tr>
+                            <th>Name</th><th>Klasse</th>
+                        </tr>
+                        <tr><td>Trollkalar</td><td>Krieger</td></tr>
+                        <tr><td>Tack</td><td>Dämonenjäger</td></tr>
+                        <tr><td>Gozer</td><td>Dämonenjäger</td></tr>
+                        <tr><td>Lucifer</td><td>Dämonenjäger</td></tr>
+                        <tr><td>Teufelsbesen</td><td>Dämonenjäger</td></tr>
+                        <tr><td>Darkeddie</td><td>Schamane</td></tr>
+                        <tr><td>Sasquatsch</td><td>Druide</td></tr>
+                        <tr><td>Blackbear</td><td>Mönch</td></tr>
+                        <tr><td>Veily</td><td>Todesritter</td></tr>
+                        <tr><td>Menardinus</td><td>Schurke</td></tr>
+
+                    </table>
+                </div>
+
+                <div id="member-4">
+                    <h3>Ranged DDs</h3> <br>
+                    <table>
+                        <tr>
+                            <th>Name</th><th>Klasse</th>
+                        </tr>
+                        <tr><td>Damari</td><td>Hexenmeister</td></tr>
+                        <tr><td>Pitfall</td><td>Magier</td></tr>
+                        <tr><td>Gefearfach</td><td>Hexenmeister</td></tr>
+                        <tr><td>Hauie</td><td>Jäger</td></tr>
+                        <tr><td>Subbi</td><td>Priester</td></tr>
+                        <tr><td>Assurar</td><td>Dämonenjäger</td></tr>
+                        <tr><td>Vinkly</td><td>Hexenmeister</td></tr>
+                        <tr><td>Beljag</td><td>Jäger</td></tr>
+                        <tr><td>Baraighn</td><td>Hexenmeister</td></tr>
+                        <tr><td>Machtgeil</td><td>Magier</td></tr>
+                        <tr><td>Akanix</td><td>Magier</td></tr>
+                    </table>
+                </div>
+
             </div>
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+
+
+
+
         </div>
 
         <div id="infos" class="tabcontent">
