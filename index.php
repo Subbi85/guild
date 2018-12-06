@@ -54,7 +54,7 @@
             </div>
         </div> 
     </div>
-    <div id="raids"><!-- Raids -->
+    <div id="raids"><!-- Raids -->.
     <div id="wrapper">
         <h3>Raids:</h3>
         <div class="tab">
@@ -192,13 +192,15 @@
 
         <div id="infos" class="tabcontent">
             <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-            <h3>Raidkader</h3>
+            <h3>Raidinformationen</h3>
             <p>Allgemeine Informationen zu unseren Raids</p>
+            <a href="https://raider.io/guilds/eu/anetheron/Order%20and%20Chaos" target="_blank">Raider.io</a> 
+            <a href="https://www.warcraftlogs.com/guild/calendar/304372/" target="_blank"> WarcraftLogs </a>
         </div>
     </div>
     </div> <!-- Raids ENDE -->
 
-    <div id="mythic"> <!-- Mythic Plus -->
+    <div id="mythic"> <!-- Mythic Plus -->.
 
     <h3>Mythic+ Instanzen </h3>
     <div class="affix" id="one"></div>
@@ -234,19 +236,23 @@
         </table> 
     </div> <!-- Mythic Plus ENDE -->
 
-    <div id="sandbox">
-    <h3>Rund um unsere Raids</h3>
-        <p> Hier zeigen wir dir unseren Raidprogress der vergangenen Raidinstanzen. Aktiv gemeinsam raiden gehen wir <br>
-            wie gesagt seit Nachtfestung in Legion.
-        </p>
-        <p>
-            Hier unsere Daten: <br>
-            <a href="https://raider.io/guilds/eu/anetheron/Order%20and%20Chaos" target="_blank">Raider.io</a> 
-            <a href="https://www.warcraftlogs.com/guild/calendar/304372/" target="_blank"> WarcraftLogs </a>
-        </p>
-    </div>
-    </div> <!-- Ende Wrapper -->
+    <footer>
+        <div id="wrapper">
+            <div id="list">
+            <ul>
+                <li>Impressum</li><span id="bolt">|</span>
+                <li>Datenschutz</li><span id="bolt">|</span>
+                <li>created by: Lars Schleyer aka Subbi</li>
+            </ul>
+            </div>
+                
 
+            <div id="pic">
+                <img src="css/img/subbi.png" alt="css/img/subbi.png">
+            </div>
+        </div>
+    </footer>
+    </div> <!-- Ende Wrapper -->
     <script>
         // Nav-Bar jQuery
     $(document).ready(function(){
