@@ -44,8 +44,6 @@ function getScore(name, realm, classes){           /* M+ Scores der Member */
         scores.push(current);
         scores.push(classes);
         console.log(scores);
-        document.getElementById("one").innerHTML=scores[0]+scores[2];
-        document.getElementById("t_one").innerHTML=scores[3];
     }
     blizzRequest.send(scores);
 }

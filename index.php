@@ -60,8 +60,8 @@
         <div class="tab">
             <button class="tablinks" onclick="openCity(event, 'bfa')" >BfA</button>
             <button class="tablinks" onclick="openCity(event, 'legion')" >Legion</button>
-            <button class="tablinks" onclick="openCity(event, 'member')" id="defaultOpen">Raidkader</button>
-            <button class="tablinks" onclick="openCity(event, 'infos')">Allgemeine Infos</button>
+            <button class="tablinks" onclick="openCity(event, 'member')" >Raidkader</button>
+            <button class="tablinks" onclick="openCity(event, 'infos')" id="defaultOpen">Allgemeine Infos</button>
         </div>
 
         <div id="bfa" class="tabcontent">
@@ -235,22 +235,7 @@
                         <tr><td>Arkanix</td><td>Magier</td></tr>
                     </table>
                 </div>
-
             </div>
-            
-            
-            
-            
-            
-            
-            
-            
-
-
-
-
-
-
         </div>
 
         <div id="infos" class="tabcontent">
