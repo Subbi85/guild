@@ -131,7 +131,7 @@
                     <div class="skill-bar-percent">3/3</div>
                 </div> <br><!-- End Skill Bar -->
 
-                        <div class="skillbar clearfix " data-percent="100%">
+                <div class="skillbar clearfix " data-percent="100%">
                     <div class="skillbar-title" style="background: #3498db;"><span>Nighthold (nhc)</span></div>
                     <div class="skillbar-bar" style="background: #3498db;"></div>
                     <div class="skill-bar-percent">8/8</div>
@@ -181,7 +181,13 @@
         <div id="member" class="tabcontent">
             <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
             <h3>Raidkader</h3>
-            <p>Tokyo is the capital of Japan.</p>
+            <p>Informationen zum Raidkader</p>
+
+            <div class="wrapp">
+                <div class="try">
+                    <div class="arrow"></div>
+                </div>
+            </div>
         </div>
 
         <div id="infos" class="tabcontent">
@@ -219,8 +225,9 @@
         </tr>
         <?php
         for ($i=0; $i<10; $i++){
-        echo "<tr>
-            <td>1</td><td>Kreischi</td><td>Schamane</td><td>1030</td>
+            $y=$i+1;
+        echo "<tr id='row-".$y."'>
+            <td>".$y."</td><td>Kreischi</td><td>Schamane</td><td>1030</td>
             </tr>";
             }
         ?>        

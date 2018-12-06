@@ -258,7 +258,6 @@ nav ul li a{
     30.0001% {left:-100%; width: 0%;}
     100% {left:-100%;  width: 100%;}
 }
-
 /* Slider ENDE*/
 /* Raids ENDE*/
 /* Mythic+ */
@@ -283,21 +282,34 @@ nav ul li a{
 }
 
 /* Rangliste */
-    table{
-        font-size: 20px;
-        margin: auto auto;
-    }
+table{
+    font-size: 20px;
+    margin: auto auto;
+}
 
-    th{
-        border-bottom: 2px solid #5B2829;
-    }
+th{
+    border-bottom: 2px solid #5B2829;
+}
 
-    th, td{
-        width: 100px;
-        text-align: center;
-    }
+th, td{
+    width: 100px;
+    text-align: center;
+}
 
+#row-1{
+    font-size: 50px;
+    color: goldenrod;
+}
 
+#row-2{
+    font-size: 45px;
+    color: silver;
+}
+
+#row-3{
+    font-size: 35px;
+    color: #cd7f32;
+}
 /* Rangliste ENDE */
 /* Mythic+ ENDE*/
 /* Kontakt */
@@ -369,4 +381,33 @@ nav ul li a{
     .slider{
         display: none;
     }
+}
+
+.wrapp{
+    height:50px;
+    width: 300px;
+    background-color: red;
+    transform: rotate(180deg);
+}
+
+.try
+{
+    height: 50px;
+    width: 150px;
+    border-radius: 0px 5px 0px 0px;
+    background-color: #111;
+    position: relative;
+}
+
+.arrow
+{
+  border-color: transparent transparent #111 #111;
+  border-style: solid;
+  border-width: 23px 23px 23px 23px;
+  height:0;
+  width:0;
+  position:absolute;
+  bottom:0px;
+  right:-45px;
+  transform: rotate(90deg);
 }
