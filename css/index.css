@@ -267,6 +267,7 @@ nav ul li a{
 
     #member-1{
         flex:1;
+
     }
 
     #member-2{
@@ -306,7 +307,7 @@ nav ul li a{
 
 /* Rangliste */
 table{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 th{

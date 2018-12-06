@@ -232,7 +232,7 @@
                         <tr><td>Beljag</td><td>Jäger</td></tr>
                         <tr><td>Baraighn</td><td>Hexenmeister</td></tr>
                         <tr><td>Machtgeil</td><td>Magier</td></tr>
-                        <tr><td>Akanix</td><td>Magier</td></tr>
+                        <tr><td>Arkanix</td><td>Magier</td></tr>
                     </table>
                 </div>
 
