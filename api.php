@@ -1,4 +1,5 @@
 <?php
+// Funktionen für den Datenbankaufbau!
 $server = "localhost";
 $user ="root";
 $password = "";
@@ -12,8 +13,9 @@ $conn->set_charset("utf8");
     } 
 //########################################################################
 //##############################createMemberList##########################
-//########################################################################
-    function createMemberList($conn){
+//######################################################################## 
+
+function createMemberList($conn){
     $url ='https://eu.api.battle.net/wow/guild/Anetheron/Order%20and%20Chaos?fields=members&locale=en_GB&apikey=2z8d96ypab8zbed7nrbz29a3uqxskz5u';
     $member_json = file_get_contents($url);
     $member_array = json_decode($member_json, true);
@@ -21,6 +23,7 @@ $conn->set_charset("utf8");
     $rows=count($member_array["members"]);
 
     for ($i=0; $i<$rows; $i++){
+
         $memberArray[$i][0] = $member_array['members'][$i]['character']['name'];
         $realm = $member_array['members'][$i]['character']['realm'];
 
@@ -30,7 +33,6 @@ $conn->set_charset("utf8");
         if($realm =="Kil'jaeden"){
             $realm="Kiljaeden";
         }
-
         $memberArray[$i][1] = $realm;
         $memberArray[$i][2] = $member_array['members'][$i]['character']['class'];
         $memberArray[$i][3] = $member_array['members'][$i]['rank'];
@@ -114,7 +116,6 @@ $conn->set_charset("utf8");
         for ($i=1; $i<$count; $i++){
 
         $name = $scores[$i]["name"];
-        $score = 765.88;
         /*$name = "Hauie";
         
         $rank = 1; */

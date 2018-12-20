@@ -1,15 +1,7 @@
-body{
-    background-color: #5B2829;
-}
-#wrapper{
-    width:90%;
-    margin:auto auto;
-}
-.section{
-    width:100%;
-    height:30%;
-    background-color: #5B2829;
-}
+html { scroll-behavior: smooth; }
+body{ background-color: #5B2829;}
+#wrapper{ width:90%; margin:auto auto;}
+.section{ width:100%; height:30%; background-color: #5B2829;}
 
 /* Header inlkusive Color-Overlay */
 .container h1{
@@ -44,16 +36,8 @@ body{
 }
 /* Header inlkusive Color-Overlay ENDE*/
 /* NAV BAR */
-nav{
-    width:100%;
-    background-color: #fff;
-}
-
-nav ul{
-    width:80%;
-    margin: 0 auto;
-}
-
+nav{ width:100%; background-color: #fff;}
+nav ul{ width:80%; margin: 0 auto;}
 nav ul li{
     list-style: none;
     display: inline-block;
@@ -62,15 +46,8 @@ nav ul li{
     font-size: 24px;
 }
 
-nav ul li:hover{
-    cursor: pointer;
-    background-color: #ceb0b0;
-}
-
-nav ul li a{
-    text-decoration: none;
-}
-
+nav ul li:hover{cursor: pointer; background-color: #ceb0b0;}
+nav ul li a{text-decoration: none;}
 .toggle{                   
     width: 100%;
     padding: 10px 20px;
@@ -82,9 +59,7 @@ nav ul li a{
     display:none;
 }
 
-.toggle:hover{
-    cursor: pointer;
-}
+.toggle:hover{cursor: pointer;}
 /* NAV BAR ENDE*/
 /* About Us */
 #aboutUs{
@@ -94,36 +69,13 @@ nav ul li a{
     background-color: #fff;
 }
 
-#aboutUs p{
-    font-size: 15px;
-}
-
-#desc{
-    display:flex;
-    flex-direction: row;
-}
-
-#desc div{ 
-    width:80%;
-    height: 100%;
-}
-
-#box-1{
-    flex:2;
-}
-
-#box-2{
-    flex:1;
-}
-
-#box-2 h3{
-    text-align: center;
-}
-
-#box-2 p{
-    font-size: 20px;
-    padding: 5px;
-}
+#aboutUs p{ font-size: 15px;}
+#desc{display:flex;flex-direction: row;}
+#desc div{width:80%; height: 100%;}
+#box-1{ flex:2;}
+#box-2{ flex:1;}
+#box-2 h3{text-align: center;}
+#box-2 p{font-size: 20px;padding: 5px;}
 /* About Us ENDE */
 
 /* Raids */
@@ -151,15 +103,8 @@ nav ul li a{
     font-size:20px;
 }
 
-.tab button:hover{
-    background-color: #00316b;
-    color: white;
-}
-
-.tab_active{
-    background-color:#00316b;
-}
-
+.tab button:hover{ background-color: #00316b; color: white;}
+.tab_active{ background-color:#00316b;}
 .content{
     display: none;
     padding: 6px 12px;
@@ -173,10 +118,7 @@ nav ul li a{
     font-size: 20px;
 }
 
-.topright:hover{
-    color: red;
-}
-
+.topright:hover{ color: red;}
 /* Legion und BfA Flexbox */
 #tab_wrapper{
     width: 100%;
@@ -185,13 +127,8 @@ nav ul li a{
     justify-content: space-evenly;
 }
 
-#raid-1, #raid-2{
-    flex:1;
-    padding: 10px;
-}
-
+#raid-1, #raid-2{ flex:1;padding: 10px;}
 /* Tabed Content ENDE */
-
 /* Slider */
 .slider{
     display: block;
@@ -261,43 +198,26 @@ nav ul li a{
 }
 /* Slider ENDE*/
 /* Raidkader */
-    #memberflex{
-        display: flex;
-    }
+#memberflex{
+    display: flex;
+}
 
-    #member-1{
-        flex:1;
+#member-1{flex:1;}
+#member-2{flex:1;}
+#member-3{flex:1;}
+#member-4{flex:1;}
 
-    }
-
-    #member-2{
-        flex:1;
-    }
-
-    #member-3{
-        flex:1;
-    }
-
-    #member-4{
-        flex:1;
-    }
+.class{
+    width: 25px;
+    height:25px;
+    background: red;
+    border-radius: 50%;
+}
 /* Raidkader ENDE*/
 
-#infos{
-    font-size: 16px;
-}
-
-#offilist{
-    list-style: none;
-
-}
-
-#offilist ul li{
-    text-decoration: none;
-    display: inline-block;
-}
-
-
+#infos{ font-size: 16px;}
+#offilist{ list-style: none;}
+#offilist ul li{text-decoration: none; display: inline-block;}
 
 /* Raids ENDE*/
 /* Mythic+ */
@@ -308,47 +228,37 @@ nav ul li a{
     color: #000;
 }
 
-#affixe{
-    background: red;
+#affix_container{
+    width: 500px;
+    height: 50px;
+    margin: auto auto;
 }
 
 .affix{
     font-size: 20px;
-}
-
-.affix:hover{
-    cursor: pointer;
-    color: #ff6600;
-}
-
-/* Rangliste */
-table{
-    font-size: 18px;
-}
-
-th{
-    border-bottom: 2px solid #5B2829;
-}
-
-th, td{
-    width: 100px;
+    width: 105px;
+    height: 30px;
+    float: left;
+    margin: 10px;
     text-align: center;
+    
 }
 
-#row-1{
-    font-size: 50px;
-    color: goldenrod;
-}
+.affix:hover{   cursor: pointer;
+                color: #ff6600; 
+                box-shadow: 0px 5px 8px 0px #888888;}
 
-#row-2{
-    font-size: 45px;
-    color: silver;
-}
 
-#row-3{
-    font-size: 35px;
-    color: #cd7f32;
+.affix:hover #affix{
+    display: inline;
 }
+/* Rangliste */
+table{ font-size: 18px;}
+th{ border-bottom: 2px solid #5B2829;}
+th, td{ width: 100px; text-align: center;}
+#row-1{font-size: 40px; color: goldenrod;}
+#row-2{font-size: 36px; color: silver;}
+#row-3{ font-size: 30px;color: #cd7f32;}
 /* Rangliste ENDE */
 /* Mythic+ ENDE*/
 /* Kontakt */
@@ -363,11 +273,7 @@ footer{
 
 }
 
-footer ul{
-    list-style:none;
-    font-size: 10px;
-}
-
+footer ul{ list-style:none; font-size: 10px;}
 footer ul li{
     list-style: none;
     display: inline-block;
@@ -399,128 +305,40 @@ footer ul li{
 
 /* MEDIA QUERIES */
 @media (max-width: 1600px){
-    #aboutUs p{
-        font-size: 15px;
-    }
+    #aboutUs p{font-size: 15px;}
 }
 
 @media (max-width:900px){
-    .toggle{
-        display: block;
-    }
 
-    nav ul{
-        width:100%;
-        display: none;
-    }
-
-    nav ul li{
-        display: block;
-        text-align: center;
-    }
-
-    nav ul li:hover{
-        width:90;
-        display: block;
-    }
-    
+    .toggle{ display: block;}
+    nav ul{ width:100%; display: none; }
+    nav ul li{ display: block; text-align: center;}
+    nav ul li:hover{ width:90; display: block;}
     .active{
         display: block;
         color: white;
         background-color: #00316b;
     }
 
-    .active a{ 
-        color: white;
-    }
-
-    #aboutUs{
-        height: 700px;
-    }
-
-    #aboutUs p{
-        font-size: 18px;
-    }
-
+    .active a{ color: white;}
+    #aboutUs{ height: 700px; }
+    #aboutUs p{font-size: 18px;}
     #desc{
         display:flex;
         flex-direction: column;
     }
 
-    #box-1{
-        display: none;
-    }
-
-    .raid-2{
-        display: none;
-    }
-
-    .raidcontainer{
-        display: none;
-    }
-
-    .slider{
-        display: none;
-    }
+    #box-1{ display: none; }
+    .raid-2{ display: none; }
+    .raidcontainer{ display: none; }
+    .slider{ display: none; }
 }
 
 @media (max-width:700px){
-
-    footer ul li{
-        font-size: 14px;
-    }
-    
-    #mythic{
-        height:900px;
-    }
-    
-    
-    }
+    footer ul li{font-size: 14px;}
+    #mythic{height:900px;}
+}
 
 @media (max-width:600px){
-
-    footer ul li{
-        font-size: 10px;
-    }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.wrapp{
-    height:50px;
-    width: 300px;
-    background-color: red;
-    transform: rotate(180deg);
-}
-
-.try
-{
-    height: 50px;
-    width: 150px;
-    border-radius: 0px 5px 0px 0px;
-    background-color: #111;
-    position: relative;
-}
-
-.arrow
-{
-  border-color: transparent transparent #111 #111;
-  border-style: solid;
-  border-width: 23px 23px 23px 23px;
-  height:0;
-  width:0;
-  position:absolute;
-  bottom:0px;
-  right:-45px;
-  transform: rotate(90deg);
+    footer ul li{ font-size: 10px; }
 }

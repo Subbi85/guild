@@ -1,3 +1,17 @@
+<?php
+$server = "localhost";
+$user ="root";
+$password = "";
+$dbname ="gilde";
+
+$conn = new mysqli($server, $user, $password, $dbname);
+$conn->set_charset("utf8");
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -34,7 +48,7 @@
     <div id="aboutUs">
         <div id="desc"> <!--  CONTAINER -->
             <div id="box-1">
-                <img src="css/img/test.jpg" alt="css/img/test.jpg" width="100%" height="600px" margin-left="10px">
+                <img src="css/img/test.jpg" alt="css/img/test.jpg" width="100%" height="620px" margin-left="10px">
             </div>
             <div id="box-2">
                 <h3>Lok'thar Ogar, Freund!</h3>    
@@ -58,10 +72,10 @@
     <div id="wrapper">
         <h3>Raids:</h3>
         <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'bfa')"  id="defaultOpen">BfA</button>
-            <button class="tablinks" onclick="openCity(event, 'legion')" >Legion</button>
-            <button class="tablinks" onclick="openCity(event, 'member')" >Raidkader</button>
-            <button class="tablinks" onclick="openCity(event, 'infos')">Allgemeine Infos</button>
+            <button class="tablinks" onclick="openTab(event, 'bfa')"  id="defaultOpen">BfA</button>
+            <button class="tablinks" onclick="openTab(event, 'legion')" >Legion</button>
+            <button class="tablinks" onclick="openTab(event, 'member')" >Raidkader</button>
+            <button class="tablinks" onclick="openTab(event, 'infos')">Allgemeine Infos</button>
         </div>
 
         <div id="bfa" class="tabcontent">
@@ -170,68 +184,105 @@
             <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
             
             <div id="memberflex">
-                <div id="member-1">
-                    <h3>Tanks</h3> <br>
+                <div id="member-1"> <!-- Tanks -->
                     <table>
                         <tr>
-                            <th>Name</th><th>Klasse</th>
+                            <th>Name</th><th>Klasse</th><th>icon</th>
                         </tr>
-                        <tr><td>Amaterasu</td><td>Krieger</td></tr>
-                        <tr><td>Sinner</td><td>Dämonenjäger</td></tr>
+                        <?php
+                        $tanks = "  SELECT member.name, classes.name as klasse
+                                    FROM member
+                                    INNER JOIN classes ON class = classes.id
+                                    WHERE role =1
+                                    ";
+                        $result_tanks= $conn->query($tanks);
+                        if($result_tanks->num_rows>0){
+                            while($row = $result_tanks->fetch_assoc()) {
+                                echo "<tr>
+                                        <td>".$row['name']."</td><td>".$row['klasse']."<td>
+                                    </tr>";;
+                            } 
+                        }                     
+                        ?>
+                    <!--    <tr><td>Pitfall</td><td>Magier</td><td><div class="class"></div></td></tr>
+                        <tr><td>Gefearfach</td><td>Hexenmeister</td><td><div class="class"></div></td></tr> -->
                     </table>
                 </div>
 
-                <div id="member-2">
-                    <h3>Heiler</h3> <br>
+                <div id="member-2"><!-- Heals -->
                     <table>
                         <tr>
                             <th>Name</th><th>Klasse</th>
                         </tr>
-                        <tr><td>Kreischi</td><td>Schamane</td></tr>
-                        <tr><td>Reinerpunk</td><td>Priester</td></tr>
-                        <tr><td>Sinopa</td><td>Paladin</td></tr>
-                        <tr><td>Syrthania</td><td>Schamane</td></tr>
-                        <tr><td>Swarloz</td><td>Druide</td></tr>
-                    </table>
+                        <?php   
+                        $heals ="    SELECT member.name, classes.name as klasse
+                                     FROM member
+                                     INNER JOIN classes ON class = classes.id
+                                     WHERE role =2
+                                    ";
+
+                        $result_tanks= $conn->query($heals);
+                        if($result_tanks->num_rows>0){
+                            while($row = $result_tanks->fetch_assoc()) {
+                                echo "<tr>
+                                        <td>".$row['name']."</td><td>".$row['klasse']."<td>
+                                </tr>";;
+                            } 
+                        }
+                    ?>    
+                    </table> <br>
                 </div>
             </div><!-- ENDE MEMBER FLEX -->
             <div id="memberflex">
-                <div id="member-3">
-                    <h3>Melee DDs</h3> <br>
+                <div id="member-3"><!-- Ranges -->
                     <table>
                         <tr>
                             <th>Name</th><th>Klasse</th>
                         </tr>
-                        <tr><td>Trollkalar</td><td>Krieger</td></tr>
-                        <tr><td>Tack</td><td>Dämonenjäger</td></tr>
-                        <tr><td>Gozer</td><td>Dämonenjäger</td></tr>
-                        <tr><td>Lucifer</td><td>Dämonenjäger</td></tr>
-                        <tr><td>Teufelsbesen</td><td>Dämonenjäger</td></tr>
-                        <tr><td>Darkeddie</td><td>Schamane</td></tr>
-                        <tr><td>Sasquatsch</td><td>Druide</td></tr>
-                        <tr><td>Blackbear</td><td>Mönch</td></tr>
-                        <tr><td>Veily</td><td>Todesritter</td></tr>
-                        <tr><td>Menardinus</td><td>Schurke</td></tr>
+                        <?php   
+                        $ranges ="  SELECT member.name, classes.name as klasse, member.rank, member.role
+                                    FROM member
+                                    INNER JOIN classes ON class = classes.id
+                                    WHERE (role =3 AND rank =1)
+                                    OR (role =3 AND rank =3)
+                                    OR (role =3 AND rank =5)
+                                    ";
+
+                        $result_tanks= $conn->query($ranges);
+                        if($result_tanks->num_rows>0){
+                            while($row = $result_tanks->fetch_assoc()) {
+                                echo "<tr>
+                                        <td>".$row['name']."</td><td>".$row['klasse']."<td>
+                                </tr>";;
+                            } 
+                        }
+                    ?>   
                     </table>
                 </div>
 
-                <div id="member-4">
-                    <h3>Ranged DDs</h3> <br>
+                <div id="member-4"><!-- Melees -->
                     <table>
                         <tr>
                             <th>Name</th><th>Klasse</th>
                         </tr>
-                        <tr><td>Damari</td><td>Hexenmeister</td></tr>
-                        <tr><td>Pitfall</td><td>Magier</td></tr>
-                        <tr><td>Gefearfach</td><td>Hexenmeister</td></tr>
-                        <tr><td>Hauie</td><td>Jäger</td></tr>
-                        <tr><td>Subbi</td><td>Priester</td></tr>
-                        <tr><td>Assurar</td><td>Dämonenjäger</td></tr>
-                        <tr><td>Vinkly</td><td>Hexenmeister</td></tr>
-                        <tr><td>Beljag</td><td>Jäger</td></tr>
-                        <tr><td>Baraighn</td><td>Hexenmeister</td></tr>
-                        <tr><td>Machtgeil</td><td>Magier</td></tr>
-                        <tr><td>Arkanix</td><td>Magier</td></tr>
+                        <?php   
+                        $melees ="  SELECT member.name, classes.name as klasse, member.rank, member.role
+                                    FROM member
+                                    INNER JOIN classes ON class = classes.id
+                                    WHERE (role =4 AND rank =1)
+                                    OR (role =4 AND rank =3)
+                                    OR (role =4 AND rank =5)
+                                    ";
+
+                        $result_tanks= $conn->query($melees);
+                        if($result_tanks->num_rows>0){
+                            while($row = $result_tanks->fetch_assoc()) {
+                                echo "<tr>
+                                        <td>".$row['name']."</td><td>".$row['klasse']."<td>
+                                </tr>";;
+                            } 
+                        }
+                    ?>   
                     </table>
                 </div>
             </div>
@@ -277,14 +328,19 @@
     <div id="mythic"> <!-- Mythic Plus -->.
 
     <h3>Mythic+ Instanzen </h3>
-    <div class="affix" id="one"></div>
-    <div id="t_one"></div>
-    <div class="affix" id="two"></div>
+    <div id="affix_container">
+        <div class="affix" id="one">
+            <div id="t_one"></div> 
+        </div>
+        <div class="affix" id="two"></div>
+        <div class="affix" id="three"></div>
+        <div class="affix" id="four"></div>
+    </div>
+
+ 
     <div id="t_two"></div>
-    <div class="affix" id="three"></div>
     <div id="t_three"></div>
-    <div class="affix" id="four"></div>
-    <div id="t_four"></div>
+    <div id="t_four"></div>    
 
     <div class="tooltip" id="one">Hover over me
         <span class="tooltiptext" id="t_one">Tooltip text</span>
@@ -300,12 +356,38 @@
             <th>Platz</th><th>Name</th><th>Klasse</th><th>Score</th>
         </tr>
         <?php
-        for ($i=0; $i<10; $i++){
-            $y=$i+1;
-        echo "<tr id='row-".$y."'>
-            <td>".$y."</td><td>Kreischi</td><td>Schamane</td><td>1030</td>
-            </tr>";
+
+        $toplist = " SELECT member.name AS charname , member.score AS score, classes.name AS klasse, classes.color
+                    FROM member
+                    INNER JOIN classes
+                    ON class = classes.id
+                    ORDER BY score DESC
+                    ";
+        $result_toplist= $conn->query($toplist);
+        if($result_toplist->num_rows>0){
+            for ($i=0; $i<10; $i++){
+                $row = $result_toplist->fetch_assoc();
+                $y = $i+1;
+
+                if ($i ==0){
+                echo "<tr id='row-1'>
+                    <td>".$y."</td><td>".$row['charname']."</td><td>".$row['klasse']."</td><td>".$row['score']."<td>
+                </tr>";
+                }else if ($i ==1){
+                    echo "<tr id='row-2'>
+                        <td>".$y."</td><td>".$row['charname']."</td><td>".$row['klasse']."</td><td>".$row['score']."<td>
+                    </tr>";
+                }else if ($i ==2){
+                    echo "<tr id='row-3'>
+                        <td>".$y."</td><td>".$row['charname']."</td><td>".$row['klasse']."</td><td>".$row['score']."<td>
+                    </tr>";
+                }else{
+                    echo "<tr>
+                        <td>".$y."</td><td>".$row['charname']."</td><td>".$row['klasse']."</td><td>".$row['score']."<td>
+                    </tr>";
+                } 
             }
+        }
         ?>        
         </table> 
     </div> <!-- Mythic Plus ENDE -->
@@ -320,22 +402,21 @@
             </ul>
             </div>
                 
-
             <div id="pic">
                 <img src="css/img/subbi.png" alt="css/img/subbi.png">
             </div>
         </div>
     </footer>
-    </div> <!-- Ende Wrapper -->
-    <script>
-        // Nav-Bar jQuery
+</div> <!-- Ende Wrapper -->
+<script>
+    // Nav-Bar jQuery
     $(document).ready(function(){
         $('.menu').click(function(){
-            $('ul').toggleClass('active');
+            $('nav ul').toggleClass('active');
         });
     });
 
-        // Skillbar Animations
+    // Skillbar Animations
     $(document).ready(function(){
         $('.skillbar').each(function(){
             $(this).find('.skillbar-bar').animate({
@@ -344,7 +425,7 @@
         });
     });
 
-function openCity(evt, cityName) {
+function openTab(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -365,3 +446,69 @@ document.getElementById("defaultOpen").click();
 
 </body>
 </html>
+
+<!--
+
+CREATE TABLE member
+(
+id serial,
+name varchar(20),
+realm varchar(20),
+score decimal(6,2),
+class integer,
+rank integer,
+role integer,
+PRIMARY KEY (id),
+FOREIGN KEY (class) REFERENCES classes(id)
+);
+
+
+
+klassencodes für    tanks(1):amaterau, sinner
+                    heals(2):reínerpunk, kreischi, swarloz, 
+                    ranges(3): hexer:9 mage:8, hunter:3, schamane:7,priester:5, druide:11
+                    melees(4): schurke: 4, krieger:1, mönch:10, todesritter:6, paladin:2, dämonenjäger:12
+
+                    Sonderfälle: druide, paladin
+
+INSERT INTO member (name, realm, class, role)
+VALUES
+("Sinopa","Anetheron","2","2"),
+("Syrthania","Anetheron","7","2"),
+("Arkanix","Frostwolf","8","3")
+
+RANGES
+UPDATE member
+SET role = 3
+WHERE class = 9
+OR class=8
+OR class= 7
+OR class= 5
+OR class= 11
+OR class= 3
+
+MELEES
+UPDATE member
+SET role = 4
+WHERE class = 4
+OR class = 1
+OR class = 10
+OR class = 6
+OR class = 2
+OR class = 12
+
+TANKS
+UPDATE member
+SET role= 1
+WHERE name = "Sinnerella"
+OR name ="Amaterasû"
+
+HEALS
+UPDATE member
+SET role = 2
+WHERE name = "kreischi"
+OR name = "Swarloz"
+OR name = "Reinerpunk"
+OR name = "Syrthania "
+OR name = "Sinopa "
+-->
