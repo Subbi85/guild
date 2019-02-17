@@ -1,17 +1,3 @@
-<?php
-$server = "localhost";
-$user ="root";
-$password = "";
-$dbname ="gilde";
-
-$conn = new mysqli($server, $user, $password, $dbname);
-$conn->set_charset("utf8");
-
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -189,21 +175,7 @@ $conn->set_charset("utf8");
                         <tr>
                             <th>Name</th><th>Klasse</th><th>icon</th>
                         </tr>
-                        <?php
-                        $tanks = "  SELECT member.name, classes.name as klasse
-                                    FROM member
-                                    INNER JOIN classes ON class = classes.id
-                                    WHERE role =1
-                                    ";
-                        $result_tanks= $conn->query($tanks);
-                        if($result_tanks->num_rows>0){
-                            while($row = $result_tanks->fetch_assoc()) {
-                                echo "<tr>
-                                        <td>".$row['name']."</td><td>".$row['klasse']."<td>
-                                    </tr>";;
-                            } 
-                        }                     
-                        ?>
+
                     <!--    <tr><td>Pitfall</td><td>Magier</td><td><div class="class"></div></td></tr>
                         <tr><td>Gefearfach</td><td>Hexenmeister</td><td><div class="class"></div></td></tr> -->
                     </table>
@@ -214,22 +186,7 @@ $conn->set_charset("utf8");
                         <tr>
                             <th>Name</th><th>Klasse</th>
                         </tr>
-                        <?php   
-                        $heals ="    SELECT member.name, classes.name as klasse
-                                     FROM member
-                                     INNER JOIN classes ON class = classes.id
-                                     WHERE role =2
-                                    ";
-
-                        $result_tanks= $conn->query($heals);
-                        if($result_tanks->num_rows>0){
-                            while($row = $result_tanks->fetch_assoc()) {
-                                echo "<tr>
-                                        <td>".$row['name']."</td><td>".$row['klasse']."<td>
-                                </tr>";;
-                            } 
-                        }
-                    ?>    
+ 
                     </table> <br>
                 </div>
             </div><!-- ENDE MEMBER FLEX -->
@@ -239,24 +196,6 @@ $conn->set_charset("utf8");
                         <tr>
                             <th>Name</th><th>Klasse</th>
                         </tr>
-                        <?php   
-                        $ranges ="  SELECT member.name, classes.name as klasse, member.rank, member.role
-                                    FROM member
-                                    INNER JOIN classes ON class = classes.id
-                                    WHERE (role =3 AND rank =1)
-                                    OR (role =3 AND rank =3)
-                                    OR (role =3 AND rank =5)
-                                    ";
-
-                        $result_tanks= $conn->query($ranges);
-                        if($result_tanks->num_rows>0){
-                            while($row = $result_tanks->fetch_assoc()) {
-                                echo "<tr>
-                                        <td>".$row['name']."</td><td>".$row['klasse']."<td>
-                                </tr>";;
-                            } 
-                        }
-                    ?>   
                     </table>
                 </div>
 
@@ -264,25 +203,7 @@ $conn->set_charset("utf8");
                     <table>
                         <tr>
                             <th>Name</th><th>Klasse</th>
-                        </tr>
-                        <?php   
-                        $melees ="  SELECT member.name, classes.name as klasse, member.rank, member.role
-                                    FROM member
-                                    INNER JOIN classes ON class = classes.id
-                                    WHERE (role =4 AND rank =1)
-                                    OR (role =4 AND rank =3)
-                                    OR (role =4 AND rank =5)
-                                    ";
-
-                        $result_tanks= $conn->query($melees);
-                        if($result_tanks->num_rows>0){
-                            while($row = $result_tanks->fetch_assoc()) {
-                                echo "<tr>
-                                        <td>".$row['name']."</td><td>".$row['klasse']."<td>
-                                </tr>";;
-                            } 
-                        }
-                    ?>   
+                        </tr> 
                     </table>
                 </div>
             </div>
@@ -337,7 +258,6 @@ $conn->set_charset("utf8");
         <div class="affix" id="four"></div>
     </div>
 
- 
     <div id="t_two"></div>
     <div id="t_three"></div>
     <div id="t_four"></div>    
@@ -354,42 +274,8 @@ $conn->set_charset("utf8");
     <table>
         <tr>
             <th>Platz</th><th>Name</th><th>Klasse</th><th>Score</th>
-        </tr>
-        <?php
-
-        $toplist = " SELECT member.name AS charname , member.score AS score, classes.name AS klasse, classes.color
-                    FROM member
-                    INNER JOIN classes
-                    ON class = classes.id
-                    ORDER BY score DESC
-                    ";
-        $result_toplist= $conn->query($toplist);
-        if($result_toplist->num_rows>0){
-            for ($i=0; $i<10; $i++){
-                $row = $result_toplist->fetch_assoc();
-                $y = $i+1;
-
-                if ($i ==0){
-                echo "<tr id='row-1'>
-                    <td>".$y."</td><td>".$row['charname']."</td><td>".$row['klasse']."</td><td>".$row['score']."<td>
-                </tr>";
-                }else if ($i ==1){
-                    echo "<tr id='row-2'>
-                        <td>".$y."</td><td>".$row['charname']."</td><td>".$row['klasse']."</td><td>".$row['score']."<td>
-                    </tr>";
-                }else if ($i ==2){
-                    echo "<tr id='row-3'>
-                        <td>".$y."</td><td>".$row['charname']."</td><td>".$row['klasse']."</td><td>".$row['score']."<td>
-                    </tr>";
-                }else{
-                    echo "<tr>
-                        <td>".$y."</td><td>".$row['charname']."</td><td>".$row['klasse']."</td><td>".$row['score']."<td>
-                    </tr>";
-                } 
-            }
-        }
-        ?>        
-        </table> 
+        </tr>     
+    </table> 
     </div> <!-- Mythic Plus ENDE -->
 
     <footer>

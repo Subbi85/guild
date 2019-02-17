@@ -1,8 +1,6 @@
 guildMembers();
 affixe();
 
-
-
 function guildMembers(){                	/*Erstellen der Memberliste für weitere Funktionen */
 var guildRequest = new XMLHttpRequest();
 
@@ -50,7 +48,10 @@ function getScore(name, realm, classes){           /* M+ Scores der Member */
 
 
 
+const getMembers=()=>{
 
+
+}
 
 
 

@@ -2,6 +2,8 @@ html { scroll-behavior: smooth; }
 body{ background-color: #5B2829;}
 #wrapper{ width:90%; margin:auto auto;}
 .section{ width:100%; height:30%; background-color: #5B2829;}
+a, a:visited{ color: #5B2829}
+
 
 /* Header inlkusive Color-Overlay */
 .container h1{
