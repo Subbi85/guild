@@ -1,5 +1,6 @@
 #wrapper{
     width:90%;
+    max-width:1900px;
     height: 100%;
     margin: auto auto;
 }
@@ -46,11 +47,10 @@ nav ul li:hover{ cursor: pointer;background-color: blue; color: white;}
 #aboutUs{
     width: 100%;
     height: 640px;
-    color: #5B2829;
     background-color: #fff;
 }
 
-#aboutUs p{ font-size: 12px;}
+#aboutUs p, p{ font-size: 18px;color: #5B2829; }
 #desc{display:flex;flex-direction: row;}
 #desc div{width:80%; height: 100%;}
 #box-2{ flex:1;padding: 20px;}
@@ -61,7 +61,7 @@ nav ul li:hover{ cursor: pointer;background-color: blue; color: white;}
 
 /*Media Queries*/
 @media (max-width: 1150px){
-#box-1 p{font-size: 16px;padding: 5px;}
+#box-1 p, p{font-size: 16px;padding: 5px;}
 }
 
 @media (max-width: 850px){
@@ -70,12 +70,11 @@ nav ul li:hover{ cursor: pointer;background-color: blue; color: white;}
 }
 
 @media (max-width: 490px){
-#box-1 p{font-size: 12px;}
+#box-1 p,p{font-size: 12px;}
 
 }
 /*Über uns ENDE*/
 
-/*Raids*/
 /* Raids */
 #raids{
     width: 100%;
@@ -117,18 +116,11 @@ nav ul li:hover{ cursor: pointer;background-color: blue; color: white;}
 }
 
 .topright:hover{ color: red;}
-/* Legion und BfA Flexbox */
-#tab_wrapper{
-    width: 100%;
-    height: 600px;
-    display: flex;
-    justify-content: space-evenly;
-}
 
-#raid-1, #raid-2{ flex:1;padding: 10px;}
+
 
 @media (max-width: 1150px){
-#box-1 p{font-size: 16px;padding: 5px;}
+#box-1 p, p{font-size: 16px;padding: 5px;}
 }
 
 @media (max-width: 850px){
@@ -137,6 +129,6 @@ nav ul li:hover{ cursor: pointer;background-color: blue; color: white;}
 }
 
 @media (max-width: 490px){
-#box-1 p{font-size: 12px;}
+#box-1 p, p{font-size: 12px;}
 }
 /*Raids ENDE */
