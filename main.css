@@ -41,3 +41,36 @@ nav ul{ list-style: none; height:100%;}
 nav ul li{float:left; height: 70%; padding:10px;}
 nav ul li:hover{ cursor: pointer;background-color: blue; color: white;}
 /* Nav Bar ENDE*/
+
+/*Über uns*/
+#aboutUs{
+    width: 100%;
+    height: 640px;
+    color: #5B2829;
+    background-color: #fff;
+}
+
+#aboutUs p{ font-size: 12px;}
+#desc{display:flex;flex-direction: row;}
+#desc div{width:80%; height: 100%;}
+#box-2{ flex:1;padding: 20px;}
+#box-1{ flex:1; padding: 20px;}
+#box-1 h3{text-align: center;}
+#box-1 p{font-size: 18px;padding: 5px;}
+
+@media (max-width: 1150px){
+#box-1 p{font-size: 16px;padding: 5px;}
+}
+
+@media (max-width: 850px){
+    #desc{display:block;}
+    #title{ display: none;}
+
+}
+
+@media (max-width: 490px){
+#box-1 p{font-size: 12px;}
+
+}
+
+/*Über uns ENDE*/
