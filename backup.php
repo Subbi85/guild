@@ -65,7 +65,7 @@
         </div>
 
         <div id="bfa" class="tabcontent">
-        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
         <h3>Battle for Azeroth</h3>
         <div id="tab_wrapper"><!-- Tab Wrapper  -->
             <div id="raid-1"><!-- Raid-1 Box -->
@@ -99,6 +99,8 @@
             </div><!-- Raid-2 Box- ENDE-->
         </div> <!-- Tab Wrapper ENDE -->
         </div>
+
+        
 
         <div id="legion" class="tabcontent">
             <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
