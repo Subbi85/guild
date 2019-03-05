@@ -155,7 +155,7 @@ nav ul li:hover{ cursor: pointer;background-color: blue; color: white;}
 }
 
 @media (max-width: 490px){
-#box-1 p, p{font-size: 14px;}
+#box-1 p, p{font-size: 13px;}
 }
 /*Raids ENDE */
 
