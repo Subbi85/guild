@@ -144,6 +144,7 @@ nav ul li:hover{ cursor: pointer;background-color: blue; color: white;}
 
 .topright:hover{ color: red;}
 
+/* Media Queries */
 @media (max-width: 1150px){
 #box-1 p, p{font-size: 16px;padding: 5px;}
 }
@@ -154,7 +155,7 @@ nav ul li:hover{ cursor: pointer;background-color: blue; color: white;}
 }
 
 @media (max-width: 490px){
-#box-1 p, p{font-size: 12px;}
+#box-1 p, p{font-size: 14px;}
 }
 /*Raids ENDE */
 
@@ -206,41 +207,28 @@ text-align: center;
 border-radius: 6px;
 padding: 5px 0;
 }
-
+/* Media Queries */
 @media (max-width: 1240px){
     .affixContent{font-size: 14px; width:300px;height:120px;}
-    #affix_container{
-        width:660px;
-    }
+    #affix_container{width:660px;}
 }
 
 @media (max-width: 740px){
     .affixContent{font-size: 12px; width:260px;height:100px;border: 1px solid black}
-
-    #affix_container{
-        width:700px;
-        height: 250px;
-    }
+    #affix_container{width:700px;height: 250px;}
     .affix{width: 70px;font-size:14px;}
 }
 
 @media (max-width: 660px){
     .affixContent{font-size: 12px; width:300px;height:90px;border: 1px solid black}
-
-    #affix_container{
-        width:380px;
-        height: 250px;
-    }
+    #affix_container{width:380px;height: 250px;}
     .affix{width: 70px;font-size:14px;}
 }
 
 @media (max-width: 390px){
-    .affixContent{font-size: 12px; width:250px;height:100px;border: 1px solid black}
-
-    #affix_container{
-        width:380px;
-        height: 460px;
-    }
+    #wrapper{width: 100%;}    
+    .affixContent{font-size: 12px; width:320px;height:90px;border: 1px solid black}
+    #affix_container{width:380px;height: 460px;}
     .affix{width: 70px;font-size:14px;}
 }
 /* Tooltips ENDE */
