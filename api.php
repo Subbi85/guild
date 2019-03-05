@@ -14,6 +14,11 @@ $conn->set_charset("utf8");
 //########################################################################
 //##############################createMemberList##########################
 //######################################################################## 
+function deleteTable($conn){
+
+}
+
+
 
 function createMemberList($conn){
     $url ='https://eu.api.battle.net/wow/guild/Anetheron/Order%20and%20Chaos?fields=members&locale=en_GB&apikey=2z8d96ypab8zbed7nrbz29a3uqxskz5u';

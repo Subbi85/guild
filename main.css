@@ -58,6 +58,33 @@ nav ul li:hover{ cursor: pointer;background-color: blue; color: white;}
 #box-1 h3{text-align: center;}
 #box-1 p{font-size: 18px;padding: 5px;}
 
+/* Mythic+ */
+#mythic{
+    width: 100%;
+    height: 800px;
+    background: #fff;
+    color: #000;
+}
+
+#affix_container{
+    width: 500px;
+    height: 50px;
+}
+
+.affix{
+    font-size: 20px;
+    width: 105px;
+    height: 30px;
+    float: left;
+    margin: 10px;
+    text-align: center;
+}
+
+.affix:hover{   cursor: pointer;color: #ff6600;box-shadow: 0px 5px 8px 0px #888888;}
+
+.affix:hover #affix{
+    display: inline;
+}
 
 /*Media Queries*/
 @media (max-width: 1150px){
@@ -117,8 +144,6 @@ nav ul li:hover{ cursor: pointer;background-color: blue; color: white;}
 
 .topright:hover{ color: red;}
 
-
-
 @media (max-width: 1150px){
 #box-1 p, p{font-size: 16px;padding: 5px;}
 }
@@ -132,3 +157,82 @@ nav ul li:hover{ cursor: pointer;background-color: blue; color: white;}
 #box-1 p, p{font-size: 12px;}
 }
 /*Raids ENDE */
+
+/* Mythic+ */
+#mythic{
+    width: 100%;
+    height: 800px;
+    background: #fff;
+    color: #000;
+}
+
+#affix_container{
+    width: 1080px;
+    height: 300px;
+    max-height: 900px;
+    background-color: yellow;
+    margin:auto auto;
+}
+
+.affix{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;    
+    font-size: 20px;
+    width: 105px;
+    height: 30px;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    
+}
+
+.affix:hover{   cursor: pointer;
+                color: #ff6600; 
+                box-shadow: 0px 5px 8px 0px #888888;}
+
+
+
+/* Tooltips */
+
+.affixContent{
+    width: 500px;
+    height: 100px;
+    border: 1px solid #111;
+    margin: 10px;
+    float: left;
+    padding: 2px;
+}
+.affix .affixText {
+width: 120px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+}
+
+@media (max-width: 1240px){
+    .affixContent{font-size: 14px; width:300px;height:120px;}
+    #affix_container{
+        width:660px;
+    }
+}
+
+@media (max-width: 780px){
+    .affixContent{font-size: 12px; width:250px;height:100px;}
+
+    #affix_container{
+        width:280px;
+    }
+}
+
+/* Tooltips ENDE */
+/* Mythic+ ENDE*/
+
+/* footer*/
+#footer{
+    height: 100px;
+    width:100%;
+}
+/* footer ENDE*/

@@ -248,7 +248,8 @@ nav ul li a{text-decoration: none;}
 
 .affix:hover{   cursor: pointer;
                 color: #ff6600; 
-                box-shadow: 0px 5px 8px 0px #888888;}
+                box-shadow: 0px 5px 8px 0px #888888;
+            }
 
 
 .affix:hover #affix{
