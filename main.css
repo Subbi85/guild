@@ -214,13 +214,34 @@ padding: 5px 0;
     }
 }
 
-@media (max-width: 780px){
-    .affixContent{font-size: 12px; width:250px;height:100px;}
+@media (max-width: 740px){
+    .affixContent{font-size: 12px; width:260px;height:100px;border: 1px solid black}
 
     #affix_container{
-        width:280px;
-        height: 500px;
+        width:700px;
+        height: 250px;
     }
+    .affix{width: 70px;font-size:14px;}
+}
+
+@media (max-width: 660px){
+    .affixContent{font-size: 12px; width:300px;height:90px;border: 1px solid black}
+
+    #affix_container{
+        width:380px;
+        height: 250px;
+    }
+    .affix{width: 70px;font-size:14px;}
+}
+
+@media (max-width: 390px){
+    .affixContent{font-size: 12px; width:250px;height:90px;border: 1px solid black}
+
+    #affix_container{
+        width:380px;
+        height: 460px;
+    }
+    .affix{width: 70px;font-size:14px;}
 }
 /* Tooltips ENDE */
 /* Mythic+ ENDE*/
