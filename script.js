@@ -1,13 +1,12 @@
 //Globals
 
-guildMembers();
+
 affixe();
 
 function guildMembers(){                	/*Erstellen der Memberliste für weitere Funktionen */
     console.log("Ja hallo");
 var guildRequest = new XMLHttpRequest();
-guildRequest.open('GET', 'https://eu.api.battle.net/wow/guild/Anetheron/Order%20and%20Chaos?fields=members&locale=en_GB&apikey=2z8d96ypab8zbed7nrbz29a3uqxskz5u')
-//guildRequest.open('GET', 'https://eu.api.battle.net/wow/guild/Anetheron/Order%20and%20Chaos?fields=members&locale=en_GB&apikey=2z8d96ypab8zbed7nrbz29a3uqxskz5u')
+guildRequest.open('GET', 'https://eu.api.blizzard.com/wow/guild/Anetheron/Order%20and%20Chaos?fields=members&locale=en_US&access_token=US40yiXoUpTd1QPa5lC4ewfDEpjONjtrZ0')
 guildRequest.onload=function(){
     var test = JSON.parse(guildRequest.responseText);
     var member= ["test"];   

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,7 +16,7 @@
 <div id="wrapper"><!--Wrapper Anfang-->
     <div class="section" id="header">
     <div class="container">
-            <img src="css/img/wappen_middle.png" alt="css/img/wappen_small.png">
+            <img src="css/img/wappen_middle.png" alt="css/img/wappen_small.png" id="titlepic">
             <h1>Order and Chaos</h1>
             <div class="color-overlay"></div>
         </div>
@@ -53,7 +54,7 @@
             <div id="box-2">
                 <img src="css/img/test.jpg" alt="css/img/test.jpg" width="90%" height="400px" margin-left="10px" id="title">
             </div>
-        </div> 
+        </div>  <!--  CONTAINER ENDE-->
     </div> <!-- Ende aboutUs-->
 
     
@@ -67,9 +68,11 @@
     <div id="bfa" class="tabcontent">
         <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
         <h3>Battle for Azeroth</h3>
+        <!-- Flexbox 1-->
+
         <div id="slider">
             Hier werden bilder hinkommen!
- 
+
 
         </div>
         <div id="raid-1"><!-- Raid-1 Box -->
@@ -109,6 +112,8 @@
                 <div class="skill-bar-percent">7/7</div>
             </div> <!-- End Skill Bar -->
         </div> <!-- Raid-1 Box ENDE -->
+
+
     </div>
 
     <div id="legion" class="tabcontent">
@@ -296,7 +301,11 @@
     </table>
     </div> <!-- Ende Mythic-->
     <div class="section" id="footer">
-        <h3>Footer</h3>
+        <ul id="footerUl">
+            <li>Impressum ||</li>
+            <li>Datenschutz ||</li>
+            <li>Battle.net Link</li>
+        </ul>
     </div> <!-- Ende Footer-->
 </div><!--Wrapper Ende-->
 
@@ -329,7 +338,6 @@
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
 
-</script>
 </script>
 </body>
 </html>
