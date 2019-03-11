@@ -1,4 +1,17 @@
+<?php
+//Verbindungsdaten der SQL-Datenbank
+$server = "localhost";
+$user ="root";
+$password = "";
+$dbname ="gilde";
 
+$conn = new mysqli($server, $user, $password, $dbname);
+$conn->set_charset("utf8");
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,9 +73,9 @@
     
 <div class="section" id="raids">
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'bfa')"  id="defaultOpen">BfA</button>
+        <button class="tablinks" onclick="openTab(event, 'bfa')"  >BfA</button>
         <button class="tablinks" onclick="openTab(event, 'legion')" >Legion</button>
-        <button class="tablinks" onclick="openTab(event, 'member')" >Raidkader</button>
+        <button class="tablinks" onclick="openTab(event, 'member')" id="defaultOpen" >Raidkader</button>
         <button class="tablinks" onclick="openTab(event, 'infos')"> Infos</button>
     </div>
     <div id="bfa" class="tabcontent">
@@ -85,10 +98,10 @@
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
-            <div class="skillbar clearfix " data-percent="85%">
+            <div class="skillbar clearfix " data-percent="90%">
                 <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor (hc)</span></div>
                 <div class="skillbar-bar" style="background: #964946;"></div>
-                <div class="skill-bar-percent">7/9</div>
+                <div class="skill-bar-percent">8/9</div>
             </div> <!-- End Skill Bar -->                
             
             <div class="skillbar clearfix " data-percent="15%">
@@ -112,9 +125,7 @@
                 <div class="skill-bar-percent">7/7</div>
             </div> <!-- End Skill Bar -->
         </div> <!-- Raid-1 Box ENDE -->
-
-
-    </div>
+    </div><!-- ENDE BfA -->
 
     <div id="legion" class="tabcontent">
         <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
@@ -135,7 +146,7 @@
         
         <!--###################################################################################-->
         <p>
-            Alptraum
+            Prüfung der Tapferkeit
         </p>
         <div class="skillbar clearfix " data-percent="100%">
             <div class="skillbar-title" style="background: #a09797;"><span>ToV</span></div>
@@ -199,6 +210,81 @@
     <div id="member" class="tabcontent">
         <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
         <h3>Unsere Member</h3>
+
+    <?php
+        //Tank Statement
+        $sql_tank=" SELECT * FROM member as m
+                    INNER JOIN classes as c ON m.class = c.id
+                    WHERE  role='tank'";
+
+        $result_tank= mysqli_query($conn, $sql_tank);
+        echo '<table>';
+        while ($zeile = mysqli_fetch_assoc($result_tank))
+        {
+        echo "<tr>";
+        echo "<td>". $zeile['charname'] . "</td>";
+        echo "<td>". $zeile['realm'] . "</td>";
+        echo "<td>". $zeile['name'] . "</td>";
+        echo "</tr>";
+        }
+        echo "</table> <br>";
+        //##########################################################################
+
+        //Heal Statement
+        $sql_heal=" SELECT * FROM member as m
+                    INNER JOIN classes as c ON m.class = c.id
+                    WHERE  role='heal'";
+
+        $result_heal= mysqli_query($conn, $sql_heal);
+        echo '<table>';
+        while ($zeile = mysqli_fetch_assoc($result_heal))
+        {
+        echo "<tr>";
+        echo "<td>". $zeile['charname'] . "</td>";
+        echo "<td>". $zeile['realm'] . "</td>";
+        echo "<td>". $zeile['name'] . "</td>";
+        echo "</tr>";
+        }
+        echo "</table> <br>";
+        //##########################################################################
+
+        //Melee Statement
+        $sql_melee=" SELECT * FROM member as m
+                    INNER JOIN classes as c ON m.class = c.id
+                    WHERE  role='melee'";
+
+        $result_melee= mysqli_query($conn, $sql_melee);
+        echo '<table>';
+        while ($zeile = mysqli_fetch_assoc($result_melee))
+        {
+        echo "<tr>";
+        echo "<td>". $zeile['charname'] . "</td>";
+        echo "<td>". $zeile['realm'] . "</td>";
+        echo "<td>". $zeile['name'] . "</td>";
+        echo "</tr>";
+        }
+        echo "</table> <br>";
+        //##########################################################################
+
+        //Ranged Statement
+        $sql_ranged=" SELECT * FROM member as m
+        INNER JOIN classes as c ON m.class = c.id
+        WHERE  role='ranged'";
+
+        $result_ranged= mysqli_query($conn, $sql_ranged);
+        echo '<table>';
+        while ($zeile = mysqli_fetch_assoc($result_ranged))
+        {
+        echo "<tr>";
+        echo "<td>". $zeile['charname'] . "</td>";
+        echo "<td>". $zeile['realm'] . "</td>";
+        echo "<td>". $zeile['name'] . "</td>";
+        echo "</tr>";
+        }
+        echo "</table> <br>";
+        //##########################################################################
+
+    ?>
     </div>
 
     <div id="infos" class="tabcontent">
@@ -265,6 +351,10 @@
     <!-- Tabelle zur Ausgabe der M+ Scores-->
     <!-- Muss noch dynamisch in JS function ausgelagert werden-->
     <table>
+
+
+
+
         <tr>
             <th>Name</th> <th>Realm</th> <th>Score</th>
         </tr>

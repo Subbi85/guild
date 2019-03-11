@@ -2,7 +2,7 @@
 CREATE TABLE member
 (
 id serial,
-name varchar(20),
+charname varchar(20),
 realm varchar(20),
 class integer,
 role varchar(20),
@@ -11,7 +11,7 @@ FOREIGN KEY (class) REFERENCES classes(id)
 );
 
 --- Member laut Discordliste 
-INSERT INTO member(name, realm, class, role)
+INSERT INTO member(charname, realm, class, role)
 VALUES
 ("Amaterasû","Anetheron",1,"tank"),
 ("Sinnerella","Guldan",6,"tank"),
