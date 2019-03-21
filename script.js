@@ -1,6 +1,4 @@
 //Globals
-
-
 affixe();
 
 function guildMembers(){                	/*Erstellen der Memberliste für weitere Funktionen */
@@ -21,7 +19,7 @@ guildRequest.send()
 function progression(){
     var data = [];
     var blizzRequest = new XMLHttpRequest();
-    blizzRequest.open('GET', 'https://raider.io/api/v1/guilds/profile?region=eu&realm=Anetheron&name=Order%20and%20Chaos&fields=raid_progression')
+    blizzRequest.open('GET', 'https://raider.io/api/v1/guilds/profile?region=EU&realm=Anetheron&name=Order%20and%20Chaos&fields=raid_rankings%2C%20raid_progression');
     blizzRequest.onload=function(){
         var test = JSON.parse(blizzRequest.responseText);
         //Verarbeitung der Daten und Anpassen der Progressbars
@@ -37,7 +35,7 @@ progression();
 
 
 // FERTIGE FUNKTIONEN:
-//################# GET SCORES #######################################################
+//###################### GET SCORES #######################################################
 let resultObj;
 let array=[];
 function getScore(name, realm, classes){           /* M+ Scores der Member */

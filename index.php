@@ -1,6 +1,7 @@
 <?php
 //Verbindungsdaten der SQL-Datenbank
-/*$server = "localhost";
+
+$server = "localhost";
 $user ="root";
 $password = "";
 $dbname ="gilde";
@@ -10,7 +11,7 @@ $conn->set_charset("utf8");
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-}*/
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -28,7 +29,7 @@ if ($conn->connect_error) {
 <body>
 <div id="wrapper"><!--Wrapper Anfang-->
     <div class="section" id="header">
-    <div class="container">
+        <div class="container">
             <img src="css/img/wappen_middle.png" alt="css/img/wappen_small.png" id="titlepic">
             <h1>Order and Chaos</h1>
             <div class="color-overlay"></div>
@@ -135,15 +136,14 @@ if ($conn->connect_error) {
         <div class="skillbar clearfix " data-percent="100%">
             <div class="skillbar-title" style="background: #a09797;"><span>Alptraum</span></div>
             <div class="skillbar-bar" style="background: #C5534F;"></div>
-            <div class="skill-bar-percent">8/8</div>
+            <div class="skill-bar-percent">7/7</div>
         </div> <!-- End Skill Bar -->
 
         <div class="skillbar clearfix " data-percent="100%">
             <div class="skillbar-title" style="background: #a09797;"><span>Alptraum (hc)</span></div>
             <div class="skillbar-bar" style="background: #964946;"></div>
-            <div class="skill-bar-percent">8/8</div>
-        </div> <!-- End Skill Bar -->                
-        
+            <div class="skill-bar-percent">7/7</div>
+        </div> <!-- End Skill Bar -->                        
         <!--###################################################################################-->
         <p>
             Prüfung der Tapferkeit
@@ -151,13 +151,13 @@ if ($conn->connect_error) {
         <div class="skillbar clearfix " data-percent="100%">
             <div class="skillbar-title" style="background: #a09797;"><span>ToV</span></div>
             <div class="skillbar-bar" style="background: #C5534F;"></div>
-            <div class="skill-bar-percent">8/8</div>
+            <div class="skill-bar-percent">2/2</div>
         </div> <!-- End Skill Bar -->
 
         <div class="skillbar clearfix " data-percent="100%">
             <div class="skillbar-title" style="background: #a09797;"><span>ToV (hc)</span></div>
             <div class="skillbar-bar" style="background: #964946;"></div>
-            <div class="skill-bar-percent">8/8</div>
+            <div class="skill-bar-percent">2/2</div>
         </div> <!-- End Skill Bar -->                
         <!--###################################################################################-->
         <p>
@@ -166,13 +166,13 @@ if ($conn->connect_error) {
         <div class="skillbar clearfix " data-percent="100%">
             <div class="skillbar-title" style="background: #a09797;"><span>Nachtfestung</span></div>
             <div class="skillbar-bar" style="background: #C5534F;"></div>
-            <div class="skill-bar-percent">8/8</div>
+            <div class="skill-bar-percent">10/10</div>
         </div> <!-- End Skill Bar -->
 
         <div class="skillbar clearfix " data-percent="100%">
             <div class="skillbar-title" style="background: #a09797;"><span>Nachtfest. (hc)</span></div>
             <div class="skillbar-bar" style="background: #964946;"></div>
-            <div class="skill-bar-percent">8/8</div>
+            <div class="skill-bar-percent">10/10</div>
         </div> <!-- End Skill Bar -->                
         <!--###################################################################################-->
         <p>
@@ -181,13 +181,13 @@ if ($conn->connect_error) {
         <div class="skillbar clearfix " data-percent="100%">
             <div class="skillbar-title" style="background: #a09797;"><span>ToS</span></div>
             <div class="skillbar-bar" style="background: #C5534F;"></div>
-            <div class="skill-bar-percent">8/8</div>
+            <div class="skill-bar-percent">9/9</div>
         </div> <!-- End Skill Bar -->
 
         <div class="skillbar clearfix " data-percent="100%">
             <div class="skillbar-title" style="background: #a09797;"><span>ToS (hc)</span></div>
             <div class="skillbar-bar" style="background: #964946;"></div>
-            <div class="skill-bar-percent">8/8</div>
+            <div class="skill-bar-percent">9/9</div>
         </div> <!-- End Skill Bar -->                
         <!--###################################################################################-->
         <p>
@@ -196,13 +196,13 @@ if ($conn->connect_error) {
         <div class="skillbar clearfix " data-percent="100%">
             <div class="skillbar-title" style="background: #a09797;"><span>Antorus</span></div>
             <div class="skillbar-bar" style="background: #C5534F;"></div>
-            <div class="skill-bar-percent">8/8</div>
+            <div class="skill-bar-percent">11/11</div>
         </div> <!-- End Skill Bar -->
 
         <div class="skillbar clearfix " data-percent="100%">
             <div class="skillbar-title" style="background: #a09797;"><span>Antorus (hc)</span></div>
             <div class="skillbar-bar" style="background: #964946;"></div>
-            <div class="skill-bar-percent">8/8</div>
+            <div class="skill-bar-percent">11/11</div>
         </div> <!-- End Skill Bar -->                
         <!--###################################################################################-->
     </div>
@@ -212,21 +212,19 @@ if ($conn->connect_error) {
         <h3>Unsere Member</h3>
 
     <?php
-    /*
         //Tank Statement
         $sql_tank=" SELECT * FROM member as m
                     INNER JOIN classes as c ON m.class = c.id
                     WHERE  role='tank'";
 
         $result_tank= mysqli_query($conn, $sql_tank);
-        echo '<table>';
-        while ($zeile = mysqli_fetch_assoc($result_tank))
-        {
-        echo "<tr>";
-        echo "<td>". $zeile['charname'] . "</td>";
-        echo "<td>". $zeile['realm'] . "</td>";
-        echo "<td>". $zeile['name'] . "</td>";
-        echo "</tr>";
+        echo '<table class="table">';
+        while ($zeile = mysqli_fetch_assoc($result_tank)){
+            echo "<tr>";
+            echo "<td>". $zeile['charname'] . "</td>";
+            echo "<td>". $zeile['realm'] . "</td>";
+            echo "<td>". $zeile['name'] . "</td>";
+            echo "</tr>";
         }
         echo "</table> <br>";
         //##########################################################################
@@ -237,14 +235,13 @@ if ($conn->connect_error) {
                     WHERE  role='heal'";
 
         $result_heal= mysqli_query($conn, $sql_heal);
-        echo '<table>';
-        while ($zeile = mysqli_fetch_assoc($result_heal))
-        {
-        echo "<tr>";
-        echo "<td>". $zeile['charname'] . "</td>";
-        echo "<td>". $zeile['realm'] . "</td>";
-        echo "<td>". $zeile['name'] . "</td>";
-        echo "</tr>";
+        echo '<table class="table">';
+        while ($zeile = mysqli_fetch_assoc($result_heal)){
+            echo "<tr>";
+            echo "<td>". $zeile['charname'] . "</td>";
+            echo "<td>". $zeile['realm'] . "</td>";
+            echo "<td>". $zeile['name'] . "</td>";
+            echo "</tr>";
         }
         echo "</table> <br>";
         //##########################################################################
@@ -255,14 +252,13 @@ if ($conn->connect_error) {
                     WHERE  role='melee'";
 
         $result_melee= mysqli_query($conn, $sql_melee);
-        echo '<table>';
-        while ($zeile = mysqli_fetch_assoc($result_melee))
-        {
-        echo "<tr>";
-        echo "<td>". $zeile['charname'] . "</td>";
-        echo "<td>". $zeile['realm'] . "</td>";
-        echo "<td>". $zeile['name'] . "</td>";
-        echo "</tr>";
+        echo '<table class="table">';
+        while ($zeile = mysqli_fetch_assoc($result_melee)){
+            echo "<tr>";
+            echo "<td>". $zeile['charname'] . "</td>";
+            echo "<td>". $zeile['realm'] . "</td>";
+            echo "<td>". $zeile['name'] . "</td>";
+            echo "</tr>";
         }
         echo "</table> <br>";
         //##########################################################################
@@ -271,20 +267,18 @@ if ($conn->connect_error) {
         $sql_ranged=" SELECT * FROM member as m
         INNER JOIN classes as c ON m.class = c.id
         WHERE  role='ranged'";
-
         $result_ranged= mysqli_query($conn, $sql_ranged);
-        echo '<table>';
-        while ($zeile = mysqli_fetch_assoc($result_ranged))
-        {
-        echo "<tr>";
-        echo "<td>". $zeile['charname'] . "</td>";
-        echo "<td>". $zeile['realm'] . "</td>";
-        echo "<td>". $zeile['name'] . "</td>";
-        echo "</tr>";
+        echo '<table class="table">';
+        while ($zeile = mysqli_fetch_assoc($result_ranged)){
+            echo "<tr>";
+            echo "<td>". $zeile['charname'] . "</td>";
+            echo "<td>". $zeile['realm'] . "</td>";
+            echo "<td>". $zeile['name'] . "</td>";
+            echo "</tr>";
         }
         echo "</table> <br>";
         //##########################################################################
-        */
+
     ?>
     </div>
 
@@ -295,8 +289,8 @@ if ($conn->connect_error) {
             Was? Du hast sogar ernsthaftes Interesse mit uns raiden zu gehen? Cool, hier gibt's noch weitere Informationen für dich: <br>
             Unsere aktuellen <b>Raidzeiten</b> sind:
             <br><br>
-                Montag, 20:30-22.00 <br>
-                Mittwoch, 20:30-22.00
+                Montag, 20:30-23.00 <br>
+                Mittwoch, 20:30-23.00
 
         </p>
         <p>
@@ -352,10 +346,6 @@ if ($conn->connect_error) {
     <!-- Tabelle zur Ausgabe der M+ Scores-->
     <!-- Muss noch dynamisch in JS function ausgelagert werden-->
     <table>
-
-
-
-
         <tr>
             <th>Name</th> <th>Realm</th> <th>Score</th>
         </tr>

@@ -1,5 +1,6 @@
+html { scroll-behavior: smooth; }
 body{
-    background-color:#5B2829;
+    background-color:#ddd;
 }
 #wrapper{
     width:90%;
@@ -40,10 +41,11 @@ a, a:visited, a:hover{
 /* Header ENDE*/
 
 /* Nav Bar */
-nav{width:100%;height:60px; background-color: green;}
-nav ul{ list-style: none; height:100%;}
-nav ul li{float:left; height: 70%; padding:10px;}
-nav ul li:hover{ cursor: pointer;background-color: blue; color: white;}
+nav{width:100%; background-color: #5B2829;}
+nav ul{ width:80%; margin: 0 auto;}
+nav ul li{ list-style: none; display: inline-block; padding: 20px;}
+nav ul li:hover{background-color:#539bf3; cursor: pointer;color: white;}
+nav ul li a{ text-decoration: none;}
 /* Nav Bar ENDE*/
 
 /*Über uns*/
@@ -151,6 +153,16 @@ nav ul li:hover{ cursor: pointer;background-color: blue; color: white;}
 }
 
 .topright:hover{ color: red;}
+
+.table{
+    width: 50%;
+    font-size: 16px;
+    float:left;
+    margin-top: 10px;
+    color:#5B2829;
+}
+
+
 
 /* Media Queries */
 @media (max-width: 1150px){
