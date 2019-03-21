@@ -1,6 +1,6 @@
 <?php
 //Verbindungsdaten der SQL-Datenbank
-
+/*
 $server = "localhost";
 $user ="root";
 $password = "";
@@ -12,6 +12,7 @@ $conn->set_charset("utf8");
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+*/
 ?>
 <!DOCTYPE html>
 <html>
@@ -212,6 +213,7 @@ if ($conn->connect_error) {
         <h3>Unsere Member</h3>
 
     <?php
+    /*
         //Tank Statement
         $sql_tank=" SELECT * FROM member as m
                     INNER JOIN classes as c ON m.class = c.id
@@ -278,7 +280,7 @@ if ($conn->connect_error) {
         }
         echo "</table> <br>";
         //##########################################################################
-
+*/
     ?>
     </div>
 
