@@ -14,4 +14,15 @@ $connectionInfo = array("UID" => "Subbi@oac-db", "pwd" => "{Kalender85}", "Datab
 $serverName = "tcp:oac-db.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 
+
+
+
+
+$sql_create ="  INSERT INTO dbo.member (id,name, realm )
+                VALUES
+                (2, 'Subbi', 'Anetheron')
+                "
+
+$result = mysqli_query($conn, $sql_create);
+
 ?>
