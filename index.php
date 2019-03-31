@@ -28,7 +28,7 @@ $statement = "  SELECT *
 $result = sqlsrv_query($conn, $sql);
 
 
-echo $result;
+
 
 //Wenn Result leer ist
 if ($result == FALSE){
@@ -37,8 +37,9 @@ if ($result == FALSE){
     echo"resultate gefunden";
 }
 
+
 //Ausgabe
-while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) {
+while ($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
     echo ($row['ProductName'] . " " . $row['crmProdid'] . PHP_EOL);
    }
 
