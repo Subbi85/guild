@@ -16,5 +16,12 @@ $serverName = "tcp:oac-db.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 
 
+$statement = "  Select *
+                FROM  dbo.crmProducts";
 
+$result = mysqli_query($conn, $sql);
+if (!$db_erg )
+{
+  die('Ungültige Abfrage: '.mysqli_error());
+}
 ?>
