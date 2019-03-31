@@ -31,6 +31,8 @@ $result = sqlsrv_query($conn, $sql);
 //Wenn Result leer ist
 if ($result == FALSE){
     echo (sqlsrv_errors());
+}else{
+    echo"resultate gefunden";
 }
 
 //Ausgabe
