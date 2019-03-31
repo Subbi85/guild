@@ -5,6 +5,7 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "die Verbindung steht";
 }
+//Verbindungsprüfung
 catch (PDOException $e) {
     print("Error connecting to SQL Server.");
     die(print_r($e));
@@ -26,17 +27,16 @@ $statement = "  SELECT *
 
 $result = sqlsrv_query($conn, $sql);
 
+
+//Wenn Result leer ist
 if ($result == FALSE){
     echo (sqlsrv_errors());
-}else{
-    echo "läuft... endlich";
 }
 
-while ($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
-    echo ("Test");
-}
+//Ausgabe
+while ($row = sqlsrv_fetch_array($getResults, SQLSRV_FETCH_ASSOC)) {
+    echo ($row['ProductName'] . " " . $row['crmProdid'] . PHP_EOL);
+   }
 
 sqlsrv_free_stmt($result);
-
-
 ?>
