@@ -28,6 +28,8 @@ $statement = "  SELECT *
 $result = sqlsrv_query($conn, $sql);
 
 
+echo $result;
+
 //Wenn Result leer ist
 if ($result == FALSE){
     echo (sqlsrv_errors());
