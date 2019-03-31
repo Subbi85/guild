@@ -11,17 +11,25 @@ catch (PDOException $e) {
 }
 
 // SQL Server Extension Sample Code:
-$connectionInfo = array("UID" => "Subbi@oac-db", "pwd" => "{Kalender85}", "Database" => "guild", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+$connectionInfo = array(
+                    "UID" => "Subbi@oac-db", 
+                    "pwd" => "{Kalender85}", 
+                    "Database" => "guild",
+                    "LoginTimeout" => 30, "Encrypt" => 1, 
+                    "TrustServerCertificate" => 0);
+
+
 $serverName = "tcp:oac-db.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 
-
-$statement = "  Select *
+$statement = "  SELECT *
                 FROM  dbo.crmProducts";
 
-$result = mysqli_query($conn, $sql);
-if (!$db_erg )
-{
-  die('Ungültige Abfrage: '.mysqli_error());
+$result = sqlsrv_query($conn, $sql);
+
+if ($getResults == FALSE){
+    echo (sqlsrv_errors());
+}else{
+    echo "schaut gut aus";
 }
 ?>
