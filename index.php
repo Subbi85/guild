@@ -18,7 +18,7 @@ $connectionInfo = array(
                     "LoginTimeout" => 30, "Encrypt" => 1, 
                     "TrustServerCertificate" => 0);
 
-$serverName = "tcp:oac-.database.windows.net,1433";
+$serverName = "tcp:oac-db.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 
 $statement = "  SELECT *
