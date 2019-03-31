@@ -27,9 +27,13 @@ $statement = "  SELECT *
 
 $result = sqlsrv_query($conn, $sql);
 
-if ($getResults == FALSE){
+if ($result == FALSE){
     echo (sqlsrv_errors());
 }else{
-    echo "schaut gut aus";
+    echo "läuft... endlich";
 }
+
+
+
+
 ?>
