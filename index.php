@@ -23,7 +23,7 @@ $serverName = "tcp:oac-db.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 
 $statement = "  SELECT *
-                FROM  dbo.member";
+                FROM  dbo.crmProducts";
 
 $result = sqlsrv_query($conn, $sql);
 
