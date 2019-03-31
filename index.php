@@ -1,9 +1,9 @@
 <?php
 // PHP Data Objects(PDO) Sample Code:
-
 try {
     $conn = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database = guild", "Subbi", "{Kalender85}");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "works";
 }
 catch (PDOException $e) {
     print("Error connecting to SQL Server.");
@@ -15,20 +15,6 @@ $connectionInfo = array("UID" => "Subbi@oac-db", "pwd" => "{Kalender85}", "Datab
 $serverName = "tcp:oac-db.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 
-
-
-
-// Funktionen für den Datenbankaufbau!
-
-
-
-
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}else{
-  echo "klappt <br>";
-}
 
 
 ?>
