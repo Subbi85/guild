@@ -33,7 +33,10 @@ if ($result == FALSE){
     echo "läuft... endlich";
 }
 
-
+while ($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
+    echo ($row['Pid'] . " " . $row['crmProdid'] . PHP_EOL);
+   }
+   sqlsrv_free_stmt($result);
 
 
 ?>
