@@ -1,7 +1,7 @@
 <?php
 // PHP Data Objects(PDO) Sample Code:
 try {
-    $conn = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database = guild", "Subbi", "{Kalender85}");
+    $conn = new PDO("sqlsrv:server = tcp:ac-db.database.windows.net,1433; Database = guild", "Subbi", "{Kalender85}");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "die Verbindung steht";
 }
