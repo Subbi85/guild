@@ -34,7 +34,7 @@ if ($result == FALSE){
 }
 
 while ($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
-    echo ($row['Pid'] . " " . $row['crmProdid'] . PHP_EOL);
+    echo ($row['njfwjo'] . " " . $row['crmProdid'] . PHP_EOL);
    }
    sqlsrv_free_stmt($result);
 
