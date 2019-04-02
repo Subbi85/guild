@@ -202,10 +202,9 @@ $pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database =
         <h3>Unsere Member</h3>
 
     <?php
-    /*
+    
         //Tank Statement
         $sql_tank=" SELECT * FROM member as m
-                    INNER JOIN classes as c ON m.class = c.id
                     WHERE  role='tank'";
 
         $result_tank= mysqli_query($conn, $sql_tank);
@@ -222,7 +221,6 @@ $pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database =
 
         //Heal Statement
         $sql_heal=" SELECT * FROM member as m
-                    INNER JOIN classes as c ON m.class = c.id
                     WHERE  role='heal'";
 
         $result_heal= mysqli_query($conn, $sql_heal);
@@ -239,7 +237,6 @@ $pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database =
 
         //Melee Statement
         $sql_melee=" SELECT * FROM member as m
-                    INNER JOIN classes as c ON m.class = c.id
                     WHERE  role='melee'";
 
         $result_melee= mysqli_query($conn, $sql_melee);
@@ -256,7 +253,6 @@ $pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database =
 
         //Ranged Statement
         $sql_ranged=" SELECT * FROM member as m
-        INNER JOIN classes as c ON m.class = c.id
         WHERE  role='ranged'";
         $result_ranged= mysqli_query($conn, $sql_ranged);
         echo '<table class="table">';
@@ -269,7 +265,6 @@ $pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database =
         }
         echo "</table> <br>";
         //##########################################################################
-*/
     ?>
     </div>
 
