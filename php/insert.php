@@ -12,7 +12,7 @@ $insert= $conn->prepare("   INSERT INTO crmProducts (crmProdid, ProductName, Pro
                             VALUES
                             (:crmProdid, :ProductName, :ProductNumber)
                             ");
-$result = $insert->execute(array('crmProdid' => $crmProdid, 'ProductName'=> $ProductName, 'ProductNumber'=> $ProductNumber));
+//$result = $insert->execute(array('crmProdid' => $crmProdid, 'ProductName'=> $ProductName, 'ProductNumber'=> $ProductNumber));
 
 echo "Termin angelegt";
 ?>
