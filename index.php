@@ -17,9 +17,9 @@ $conn = sqlsrv_connect($serverName, $connectionInfo);
 echo "test";
 
 //Insert Statement
-$crmProdid=12234;
+$crmProdid="12234";
 $productName ="kekse";
-$productNumber="Vanillekipferl";
+$productNumber=12335541;
 
 
 $insert = $conn->prepare("  INSERT INTO crmProducts (crmProdid, ProductName, ProductNumber)
