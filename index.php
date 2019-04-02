@@ -17,14 +17,6 @@ $conn = sqlsrv_connect($serverName, $connectionInfo);
 echo "test";
 
 //Insert Statement
-$crmProdid=12234;
-$productName ="kekse";
-$productNumber="Schokokekse"
-
-$insert = $conn->prepare("  INSERT INTO crmProducts (crmProdid, ProductName, ProductNumber)
-                            VALUES
-                            (:crmProdid,:ProductName, :ProductNumber)");
-$result = $statement->execute(array('crmProdid' => $crmProdid, 'ProductName' => $productName, 'ProductNumber'=> $productNumber));
 
 //ENDE Insert
 
