@@ -18,8 +18,6 @@ echo "test";
 
 //Insert Statement
 
-$insert =("  INSERT INTO crmProducts (crmProdid, ProductName, ProductNumber) VALUES ('12223', 'kekse', 'schokokekse')";
-$insertReview = sqlsrv_query($conn, $insert);
 
 //ENDE Insert
 
