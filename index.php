@@ -1,36 +1,8 @@
 <?php
-//DB Connection
-//$conn = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database = guild", "Subbi", "{Kalender85}");
-
-//Variablen beschaffen
-/*
-$crmProdid = 122352;
-$ProductName = "kekse";
-$ProductNumber ="Vanillekekse";
-
-//Statement
-$insert= $conn->prepare("   INSERT INTO crmProducts (crmProdid, ProductName, ProductNumber)
-                            VALUES
-                            (:crmProdid, :ProductName, :ProductNumber)
-                            ");
-$result = $insert->execute(array('crmProdid' => $crmProdid, 'ProductName'=> $ProductName, 'ProductNumber'=> $ProductNumber));
-*/
-
-$pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database = guild", "Subbi", "{Kalender85}");
 
 
-$sql = "SELECT * FROM member";
-foreach ($pdo->query($sql) as $row) {
-   echo $row['charname']." ".$row['id']."<br />";
-}
-
-
-
-
-
-
-
-
+echo "  Lets create something new.... <br>
+        Soon....";
 
 
 ?>
