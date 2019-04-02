@@ -204,11 +204,9 @@ jkpwjkpwfkjfpkpfj
     <?php
     
         //Tank Statement
-        $sql_tank=" SELECT * FROM member as m
-                    WHERE  role='tank'";
-
+        $sql = "SELECT * FROM member";
         foreach ($pdo->query($sql) as $row) {
-            echo $row['charname']." ".$row['realm']." ".$row['class']."<br />";
+           echo $row['charname']." ".$row['realm']." ".$row['class']."<br />";
         }
         //##########################################################################
 
