@@ -9,7 +9,7 @@ $ProductName = $_POST["terminbeschreibung"];
 $ProductNumber =$_POST["datum"];
 
 //Statement
-$insert= $pdo->prepare("    INSERT INTO crmProducts (crmProdid, ProductName, ProductNumber)
+$insert= $conn->prepare("    INSERT INTO crmProducts (crmProdid, ProductName, ProductNumber)
                             VALUES
                             (:crmProducts, :ProductName, :ProductNumber)
                             ");
