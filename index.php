@@ -29,5 +29,4 @@ $productNumber="Schokokekse";
 //ENDE Insert
 
 
-sqlsrv_free_stmt($result);
 ?>
