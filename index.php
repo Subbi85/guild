@@ -207,16 +207,9 @@ jkpwjkpwfkjfpkpfj
         $sql_tank=" SELECT * FROM member as m
                     WHERE  role='tank'";
 
-        $result_tank= mysqli_query($conn, $sql_tank);
-        echo '<table class="table">';
-        while ($zeile = mysqli_fetch_assoc($result_tank)){
-            echo "<tr>";
-            echo "<td>". $zeile['charname'] . "</td>";
-            echo "<td>". $zeile['realm'] . "</td>";
-            echo "<td>". $zeile['name'] . "</td>";
-            echo "</tr>";
+        foreach ($pdo->query($sql) as $row) {
+            echo $row['charname']." ".$row['realm']." ".$row['class']."<br />";
         }
-        echo "</table> <br>";
         //##########################################################################
 
         //Heal Statement
