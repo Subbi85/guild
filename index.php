@@ -25,16 +25,13 @@ $conn = sqlsrv_connect($serverName, $connectionInfo);
 //Insert Statement
 $crmProdid=12234;
 $productName ="kekse";
-$productNumber="Schokokekse"
+$productNumber="Vanillekekse"
 
 $insert = $conn->prepare("  INSERT INTO crmProducts (crmProdid, ProductName, ProductNumber)
                             VALUES
                             (:crmProdid,:ProductName, :ProductNumber)");
 $result = $statement->execute(array('crmProdid' => $email, 'ProductName' => $productName, 'ProductNumber'=> $productNumber));
 
-//ENDE Insert
-
-
-
+//ENDE Inser
 sqlsrv_free_stmt($result);
 ?>
