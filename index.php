@@ -17,6 +17,14 @@ $conn = sqlsrv_connect($serverName, $connectionInfo);
 echo "test";
 
 //Insert Statement
+$crmProdid=12234;
+$productName ="kekse";
+$productNumber="Schokokekse"
+
+
+
+
+
 
 //ENDE Insert
 
