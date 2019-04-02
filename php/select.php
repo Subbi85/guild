@@ -4,6 +4,6 @@ $pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database =
 
 $sql = "SELECT * FROM member";
 foreach ($pdo->query($sql) as $row) {
-   echo $row['charname']." ".$row['id']."<br />";
+   echo $row['charname']." ".$row['realm']." ".$row['class']."<br />";
 }
 ?>
