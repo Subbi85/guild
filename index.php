@@ -16,7 +16,7 @@ $result = $insert->execute(array('crmProdid' => $crmProdid, 'ProductName'=> $Pro
 */
 
 $select = $conn->("SELECT * FROM crmProduct");
-$result = $select->execute();s
+$result = $select->execute();
 
 $result = mysqli_query( $conn, $sql);
 if (!$result )
