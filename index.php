@@ -27,6 +27,9 @@ $insert = $conn->prepare("  INSERT INTO crmProducts (crmProdid, ProductName, Pro
                             ('12223', 'kekse', 'schokokekse')";
 $insertReview = sqlsrv_query($conn, $insert);
 
+if($insertReview == FALSE)
+    die(FormatErrors( sqlsrv_errors()));
+
 
 sqlsrv_free_stmt($insertReview);
 //ENDE Insert
