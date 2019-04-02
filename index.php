@@ -24,7 +24,7 @@ $productNumber=12335541;
 
 $insert = $conn->prepare("  INSERT INTO crmProducts (crmProdid, ProductName, ProductNumber)
                             VALUES
-                            (".$crmProdid.",".$ProductName.", ".$ProductNumber.")");
+                            ('12223', 'kekse', 'schokokekse');
 
 $result = $statement->execute();
 
