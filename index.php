@@ -22,13 +22,14 @@ $connectionInfo = array(
 $serverName = "tcp:oac-db.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 
-$insert="   INSERT INTO dbo.crmProducts(crmProdid, ProductName, ProductNumber )
-            VALUES
-            (123456666489 ,'NewerColor' ,1121565 )
-        ";
+//Insert Statement
+$insert= $conn ->prepare("  INSERT INTO dbo.crmProducts(crmProdid, ProductName, ProductNumber )
+                            VALUES
+                            (123456666489 ,'NewerColor' ,1121565 )
+                        ");
 
 
-$result = sqlsrv_query($conn, $insert);
+$result =  $insert  ->execute();
 
 
 $statement = "  SELECT *
