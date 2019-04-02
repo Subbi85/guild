@@ -24,9 +24,9 @@ $productNumber=12335541;
 
 $insert = $conn->prepare("  INSERT INTO crmProducts (crmProdid, ProductName, ProductNumber)
                             VALUES
-                            (:crmProdid,:ProductName, :ProductNumber)");
+                            (".$crmProdid.",".$ProductName.", ".$ProductNumber.")");
 
-$result = $statement->execute(array('crmProdid' => $crmProdid, 'ProductName' => $productName, 'ProductNumber'=> $productNumber));
+$result = $statement->execute();
 
 
 //ENDE Insert
