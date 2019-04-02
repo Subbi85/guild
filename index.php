@@ -219,7 +219,7 @@ $pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database =
         //##########################################################################
 
         //Melee Statement
-        echo "<h4>RMelees</h4>";
+        echo "<h4>Melees</h4>";
         $melee = "SELECT * FROM member WHERE role='melee'";
         foreach ($pdo->query($melee) as $row) {
            echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
