@@ -23,8 +23,14 @@ $serverName = "tcp:oac-db.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 
 //Insert Statement
+$crmProdid=12234;
+$productName ="kekse";
+$productNumber="Vanillekekse."
 
-
+$insert = $conn->prepare("  INSERT INTO crmProducts (crmProdid, ProductName, ProductNumber)
+                            VALUES
+                            (:crmProdid,:ProductName, :ProductNumber)");
+$result = $statement->execute(array('crmProdid' => $crmProdid, 'ProductName' => $productName, 'ProductNumber'=> $productNumber));
 //ENDE Inser
 //sqlsrv_free_stmt($result);
 ?>
