@@ -14,6 +14,7 @@ $connectionInfo = array("UID" => "Subbi@oac-db", "pwd" => "{Kalender85}", "Datab
 $serverName = "tcp:oac-db.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 
+echo "test";
 
 //Insert Statement
 $crmProdid=12234;
@@ -27,24 +28,6 @@ $result = $statement->execute(array('crmProdid' => $crmProdid, 'ProductName' => 
 
 //ENDE Insert
 
-
-$statement = "  SELECT *
-                FROM  dbo.crmProducts";
-
-$result = sqlsrv_query($conn, $sql);
-
-//Wenn Result leer ist
-if ($result == FALSE){
-    echo (sqlsrv_errors());
-}else{
-    echo"resultate gefunden";
-}
-
-
-//Ausgabe
-while ($row = sqlsrv_fetch_array($result, SQLSRV_FETCH_ASSOC)) {
-    echo ($row['ProductName'] . " " . $row['crmProdid'] . PHP_EOL);
-   }
 
 sqlsrv_free_stmt($result);
 ?>
