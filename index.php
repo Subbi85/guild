@@ -16,24 +16,13 @@ $insert= $conn->prepare("   INSERT INTO crmProducts (crmProdid, ProductName, Pro
 $result = $insert->execute(array('crmProdid' => $crmProdid, 'ProductName'=> $ProductName, 'ProductNumber'=> $ProductNumber));
 */
 
+$pdo = new PDO('mysql:host=localhost;dbname=test', 'Subbi', 'Kalender85');
 
 
-// Funktionen für den Datenbankaufbau!
-$server = "sqlsrv:server = tcp:oac-db.database.windows.net,1433";
-$user ="Subbi";
-$password = "Kalender85";
-$dbname ="guild";
-
-$conn = new mysqli($server, $user, $password, $dbname);
-$conn->set_charset("utf8");
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}else{
-  echo "klappt <br>";
+$sql = "SELECT * FROM member";
+foreach ($pdo->query($sql) as $row) {
+   echo $row['charname']." ".$row['id']."<br />";
 }
-
-
 
 
 
