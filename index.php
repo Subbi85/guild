@@ -89,10 +89,10 @@ $pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database =
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
-            <div class="skillbar clearfix " data-percent="90%">
+            <div class="skillbar clearfix " data-percent="100%">
                 <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor (hc)</span></div>
                 <div class="skillbar-bar" style="background: #964946;"></div>
-                <div class="skill-bar-percent">8/9</div>
+                <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->                
             
             <div class="skillbar clearfix " data-percent="15%">

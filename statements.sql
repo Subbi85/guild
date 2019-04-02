@@ -52,6 +52,7 @@ PRIMARY KEY(id)
 --- Inserts Klassen
 INSERT INTO classes (id,name, color)
 VALUES
+(
 ('1','Krieger','#C79C6E'),
 ('2','Paladin','#F58CBA'),
 ('3','Jäger','#ABD473'),
@@ -64,7 +65,7 @@ VALUES
 ('10','Mönch','#00FF96'),
 ('11','Druide','#FF7D0A'),
 ('12','Dämonenjäger','#A330C9'),
-PRIMARY KEY(id)
+PRIMARY KEY(id));
 
 --- Rollentabelle
 CREATE TABLE roles
