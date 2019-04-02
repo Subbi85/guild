@@ -21,10 +21,7 @@ $crmProdid='12234';
 $productName='kekse';
 $productNumber=12335541;
 
-
-$insert = $conn->prepare("  INSERT INTO crmProducts (crmProdid, ProductName, ProductNumber)
-                            VALUES
-                            ('12223', 'kekse', 'schokokekse')";
+$insert =("  INSERT INTO crmProducts (crmProdid, ProductName, ProductNumber) VALUES ('12223', 'kekse', 'schokokekse')";
 $insertReview = sqlsrv_query($conn, $insert);
 
 if($insertReview == FALSE)
