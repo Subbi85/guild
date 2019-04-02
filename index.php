@@ -200,13 +200,12 @@ $pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database =
     <div id="member" class="tabcontent">
         <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
         <h3>Unsere Member</h3>
-jkpwjkpwfkjfpkpfj
     <?php
     
         //Tank Statement
-        $sql = "SELECT * FROM member";
+        $sql = "SELECT * FROM member WHERE role='tank'";
         foreach ($pdo->query($sql) as $row) {
-           echo $row['charname']." ".$row['realm']." ".$row['class']."<br />";
+           echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
         }
         //##########################################################################
 
