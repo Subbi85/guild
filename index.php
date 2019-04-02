@@ -16,7 +16,7 @@ $insert= $conn->prepare("   INSERT INTO crmProducts (crmProdid, ProductName, Pro
 $result = $insert->execute(array('crmProdid' => $crmProdid, 'ProductName'=> $ProductName, 'ProductNumber'=> $ProductNumber));
 */
 
-$pdo = new PDO('mysql:host=localhost;dbname=test', 'Subbi', 'Kalender85');
+$pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database = guild", "Subbi", "{Kalender85}");
 
 
 $sql = "SELECT * FROM member";
