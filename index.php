@@ -22,6 +22,9 @@ $productName ="kekse";
 $productNumber="Schokokekse";
 
 
+$insert = $conn->prepare("  INSERT INTO crmProducts (crmProdid, ProductName, ProductNumber)
+                            VALUES
+                            (:crmProdid,:ProductName, :ProductNumber)");
 
 
 
