@@ -203,57 +203,35 @@ $pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database =
     <?php
     
         //Tank Statement
-        $sql = "SELECT * FROM member WHERE role='tank'";
-        foreach ($pdo->query($sql) as $row) {
+        echo "<h4>Tanks</h4>";
+        $tank = "SELECT * FROM member WHERE role='tank'";
+        foreach ($pdo->query($tank) as $row) {
            echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
         }
         //##########################################################################
 
         //Heal Statement
-        $sql_heal=" SELECT * FROM member as m
-                    WHERE  role='heal'";
-
-        $result_heal= mysqli_query($conn, $sql_heal);
-        echo '<table class="table">';
-        while ($zeile = mysqli_fetch_assoc($result_heal)){
-            echo "<tr>";
-            echo "<td>". $zeile['charname'] . "</td>";
-            echo "<td>". $zeile['realm'] . "</td>";
-            echo "<td>". $zeile['name'] . "</td>";
-            echo "</tr>";
+        echo "<h4>Heals</h4>";
+        $heal = "SELECT * FROM member WHERE role='heal'";
+        foreach ($pdo->query($heal) as $row) {
+           echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
         }
-        echo "</table> <br>";
         //##########################################################################
 
         //Melee Statement
-        $sql_melee=" SELECT * FROM member as m
-                    WHERE  role='melee'";
-
-        $result_melee= mysqli_query($conn, $sql_melee);
-        echo '<table class="table">';
-        while ($zeile = mysqli_fetch_assoc($result_melee)){
-            echo "<tr>";
-            echo "<td>". $zeile['charname'] . "</td>";
-            echo "<td>". $zeile['realm'] . "</td>";
-            echo "<td>". $zeile['name'] . "</td>";
-            echo "</tr>";
+        echo "<h4>RMelees</h4>";
+        $melee = "SELECT * FROM member WHERE role='melee'";
+        foreach ($pdo->query($melee) as $row) {
+           echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
         }
-        echo "</table> <br>";
         //##########################################################################
 
         //Ranged Statement
-        $sql_ranged=" SELECT * FROM member as m
-        WHERE  role='ranged'";
-        $result_ranged= mysqli_query($conn, $sql_ranged);
-        echo '<table class="table">';
-        while ($zeile = mysqli_fetch_assoc($result_ranged)){
-            echo "<tr>";
-            echo "<td>". $zeile['charname'] . "</td>";
-            echo "<td>". $zeile['realm'] . "</td>";
-            echo "<td>". $zeile['name'] . "</td>";
-            echo "</tr>";
+        echo "<h4>Ranges</h4>";
+        $ranged = "SELECT * FROM member WHERE role='ranged'";
+        foreach ($pdo->query($ranged) as $row) {
+           echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
         }
-        echo "</table> <br>";
         //##########################################################################
     ?>
     </div>
