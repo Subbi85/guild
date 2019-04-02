@@ -19,7 +19,7 @@ echo "test";
 //Insert Statement
 $crmProdid=12234;
 $productName ="kekse";
-$productNumber="Schokokekse";
+$productNumber="Vanillekipferl";
 
 
 $insert = $conn->prepare("  INSERT INTO crmProducts (crmProdid, ProductName, ProductNumber)
