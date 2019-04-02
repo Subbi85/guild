@@ -11,9 +11,9 @@ $ProductNumber ="Vanillekekse";
 //Statement
 $insert= $conn->prepare("    INSERT INTO crmProducts (crmProdid, ProductName, ProductNumber)
                             VALUES
-                            (:crmProducts, :ProductName, :ProductNumber)
+                            (:crmProdid, :ProductName, :ProductNumber)
                             ");
-$result = $insert->execute(array('crmProducts' => $crmProducts, 'ProductName'=> $ProductName, 'ProductNumber'=> $ProductNumber));
+$result = $insert->execute(array('crmProdid' => $crmProdid, 'ProductName'=> $ProductName, 'ProductNumber'=> $ProductNumber));
 
 echo "Termin angelegt";
 ?>
