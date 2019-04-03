@@ -59,6 +59,22 @@ getScore("Kreischi", "Nathrezim", "Schaman");
 getScore("Subbì", "Anetheron", "Priest");
 getScore("Gefearfach", "Anetheron", "Warlock");
 getScore("Ginflut", "Anetheron", "Monk");
+getScore("Kreischi", "Nathrezim", "Schaman");
+getScore("Subbì", "Anetheron", "Priest");
+getScore("Gefearfach", "Anetheron", "Warlock");
+getScore("Ginflut", "Anetheron", "Monk");
+getScore("Kreischi", "Nathrezim", "Schaman");
+getScore("Subbì", "Anetheron", "Priest");
+getScore("Gefearfach", "Anetheron", "Warlock");
+getScore("Ginflut", "Anetheron", "Monk");
+getScore("Kreischi", "Nathrezim", "Schaman");
+getScore("Subbì", "Anetheron", "Priest");
+getScore("Gefearfach", "Anetheron", "Warlock");
+getScore("Ginflut", "Anetheron", "Monk");
+getScore("Kreischi", "Nathrezim", "Schaman");
+getScore("Subbì", "Anetheron", "Priest");
+getScore("Gefearfach", "Anetheron", "Warlock");
+getScore("Ginflut", "Anetheron", "Monk");
 console.log(array[1]);
 console.log({array});
 
@@ -89,4 +105,3 @@ blizzRequest.onload=function(){
 blizzRequest.send();
 }                                           
 //################# AFFIXE DER WOCHE ENDE #######################################################
-
