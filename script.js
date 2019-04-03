@@ -79,7 +79,10 @@ let firstPart=()=>{
     getScore('Hauie','Anetheron','ranged');
     getScore('Machtgeil','Rajaxx','ranged');
     getScore('Lorelin','Anetheron','ranged');
-
+    getScore('Sêppêl','Guldan','ranged');
+    getScore('Vinkly','Anetheron','ranged');
+    getScore('Nanir','Anetheron','ranged');
+    getScore('Swarloz','Anetheron','ranged');
 
     console.log({array});
 }

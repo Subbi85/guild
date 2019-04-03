@@ -33,10 +33,10 @@ VALUES
 ('Damari','Rajaxx',9,'ranged'),
 ('Pitfall','Anetheron',8,'ranged'),
 ('Gefearfach','Anetheron',9,'ranged'),
-
 ('Hauie','Anetheron',3,'ranged'),
 ('Machtgeil','Rajaxx',8,'ranged'),
 ('Lorelin','Anetheron',8,'ranged'),
+
 ('Sêppêl','Guldan',3,'ranged'),
 ('Vinkly','Anetheron',9,'ranged'),
 ('Nanir','Anetheron',9,'ranged'),
