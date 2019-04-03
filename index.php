@@ -197,44 +197,49 @@ $pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database =
         <!--###################################################################################-->
     </div>
         
-    <div id="member" class="tabcontent">
-        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-        <h3>Unsere Member</h3>
-    <?php
-    
-        //Tank Statement
+        <div id="member" class="tabcontent">
+            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+            <h3>Unsere Member</h3>
+        <div class="member" id="tanks">
+        <?php
+            //Tank Statement
             echo "<h4>Tanks</h4>";
             $tank = "SELECT * FROM member WHERE role='tank'";
             foreach ($pdo->query($tank) as $row) {
             echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
             }
-        //##########################################################################
-
-        //Heal Statement
+        ?>
+        </div>
+        <div class="member" id="heals">
+        <?php
+            //Heal Statement
             echo "<h4>Heals</h4>";
             $heal = "SELECT * FROM member WHERE role='heal'";
             foreach ($pdo->query($heal) as $row) {
             echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
             }
-        //##########################################################################
-
-        //Melee Statement
-
+        ?>
+        </div>
+        <div class="member" id="melees">
+        <?php
+            //Melee Statement
             echo "<h4>Melees</h4>";
             $melee = "SELECT * FROM member WHERE role='melee'";
             foreach ($pdo->query($melee) as $row) {
             echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
             }
-        //##########################################################################
-
-        //Ranged Statement
+        ?>
+        </div>
+        <div class="member" id="ranges">
+        <?php
+            //Ranged Statement
             echo "<h4>Ranges</h4>";
             $ranged = "SELECT * FROM member WHERE role='ranged'";
             foreach ($pdo->query($ranged) as $row) {
             echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
             }
-        //##########################################################################
-    ?>
+        ?>
+        </div>
     </div>
 
     <div id="infos" class="tabcontent">
