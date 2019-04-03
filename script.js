@@ -62,7 +62,6 @@ let firstPart=()=>{
     getScore('Sinnerella',"Gul'dan",'tank');
     getScore('Parulor','Anetheron','melee');
     getScore('Tack',"Gul'dan",'melee');
-    getScore('Corruption','Thrall','melee');
     getScore('Darkeddie','Rajaxx','melee');
     getScore('Sinopa','Anetheron','melee');
     getScore('Aywi','Rajaxx','melee');
