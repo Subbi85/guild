@@ -54,8 +54,6 @@ function getScore(name, realm, classes){           /* M+ Scores der Member */
     blizzRequest.send();
 }
 //################# GET SCORES ENDE  ##################################################
-
-
 let firstPart=()=>{
     getScore('Amaterasû','Anetheron','tank');
     getScore('Sinnerella',"Gul'dan",'tank');
@@ -84,8 +82,6 @@ let firstPart=()=>{
     getScore('Swarloz','Anetheron','ranged');
     console.log({array});
 }
-
-
 
 firstPart();
 //################# AFFIXE DER WOCHE #######################################################
