@@ -73,7 +73,9 @@ let firstPart=()=>{
     getScore('Kreischi', 'Nathrezim', 'heal');
     getScore('Büffelhüfte','Thrall',7,'heal');
     getScore('Ginflut','Anetheron','heal');
-
+    getScore('Damari','Anetheron','ranged');
+    getScore('Pitfall','Anetheron','ranged');
+    getScore('Gefearfach','Anetheron','ranged');
     console.log({array});
 }
 

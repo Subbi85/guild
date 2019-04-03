@@ -29,8 +29,10 @@ VALUES
 ('Nyalarthotep','Anetheron',4,'melee'),
 ('Kreischi','Nathrezim',7,'heal'),
 ('Büffelhüfte','Thrall',7,'heal'),
-
 ('Ginflut','Anetheron',10,'heal'),
+
+
+
 ('Damari','Anetheron',9,'ranged'),
 ('Pitfall','Anetheron',8,'ranged'),
 ('Gefearfach','Anetheron',9,'ranged'),
