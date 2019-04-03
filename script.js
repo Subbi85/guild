@@ -59,9 +59,9 @@ function getScore(name, realm, classes){           /* M+ Scores der Member */
 let firstPart=()=>{
     getScore('Kreischi', 'Nathrezim', 'Schaman');
     getScore('Amaterasû','Anetheron','tank');
-    getScore('Sinnerella','Guldan','tank');
+    getScore('Sinnerella',"Gul'dan",'tank');
     getScore('Parulor','Anetheron','melee');
-    getScore('Tack','Guldan','melee');
+    getScore('Tack',"Gul'dan",'melee');
     getScore('Corruption','Thrall','melee');
     getScore('Darkeddie','Rajaxx','melee');
     getScore('Sinopa','Anetheron','melee');
@@ -70,17 +70,10 @@ let firstPart=()=>{
     console.log({array});
 }
 
-let secondPart=()=>{
-    getScore('Valafar',"Gul'dan",'melee');
-    getScore('Menardius',"Gul'dan",'melee');
-    getScore('Lýnxx','Anetheron','melee');
-    getScore('Nyalarthotep','Anetheron','melee');
-
-    console.log({array});
-}
 
 
-secondPart();
+
+firstPart();
 //################# AFFIXE DER WOCHE #######################################################
 function affixe(){                          /* Affixe der aktuellen Woche */
 let blizzRequest = new XMLHttpRequest();
