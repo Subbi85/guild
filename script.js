@@ -58,29 +58,29 @@ function getScore(name, realm, classes){           /* M+ Scores der Member */
 
 let firstPart=()=>{
     getScore('Kreischi', 'Nathrezim', 'Schaman');
-    getScore('Amaterasû','Anetheron',1,'tank');
-    getScore('Sinnerella','Guldan',6,'tank');
-    getScore('Parulor','Anetheron',11,'melee');
-    getScore('Tack','Guldan',12,'melee');
-    getScore('Corruption','Thrall',2,'melee');
-    getScore('Darkeddie','Rajaxx',7,'melee');
-    getScore('Sinopa','Anetheron',2,'melee');
-    getScore('Aywi','Rajaxx',4,'melee');
-    getScore('Tievy','Anetheron',7,'melee');
+    getScore('Amaterasû','Anetheron','tank');
+    getScore('Sinnerella','Guldan','tank');
+    getScore('Parulor','Anetheron','melee');
+    getScore('Tack','Guldan','melee');
+    getScore('Corruption','Thrall','melee');
+    getScore('Darkeddie','Rajaxx','melee');
+    getScore('Sinopa','Anetheron','melee');
+    getScore('Aywi','Rajaxx','melee');
+    getScore('Tievy','Anetheron','melee');
     console.log({array});
 }
 
 let secondPart=()=>{
-    getScore('Valafar','Guldan',12,'melee');
-    getScore('Menardius','Guldan',4,'melee');
-    getScore('Lýnxx','Anetheron',8,'melee');
-    getScore('Nyalarthotep','Anetheron',4,'melee');
-    getScore('Subbì','Anetheron',5,'heal');
-    getScore('Kreischi','Nathrezim',7,'heal');
-    getScore('Büffelhüfte','Thrall',7,'heal');
-    getScore('Ginflut','Anetheron',10,'heal');
-    getScore('Damari','Anetheron',9,'ranged');
-    getScore('Pitfall','Anetheron',8,'ranged');
+    getScore('Valafar','Guldan','melee');
+    getScore('Menardius','Guldan','melee');
+    getScore('Lýnxx','Anetheron','melee');
+    getScore('Nyalarthotep','Anetheron','melee');
+    getScore('Subbì','Anetheron','heal');
+    getScore('Kreischi','Nathrezim','heal');
+    getScore('Büffelhüfte','Thrall','heal');
+    getScore('Ginflut','Anetheron','heal');
+    getScore('Damari','Anetheron','ranged');
+    getScore('Pitfall','Anetheron','ranged');
     console.log({array});
 }
 
