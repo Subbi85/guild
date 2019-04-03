@@ -57,7 +57,7 @@ function getScore(name, realm, classes){           /* M+ Scores der Member */
 
 
 let firstPart=()=>{
-    getScore('Kreischi', 'Nathrezim', 'Schaman');
+    getScore('Kreischi', 'Nathrezim', 'heal');
     getScore('Amaterasû','Anetheron','tank');
     getScore('Sinnerella',"Gul'dan",'tank');
     getScore('Parulor','Anetheron','melee');
@@ -66,6 +66,7 @@ let firstPart=()=>{
     getScore('Sinopa','Anetheron','melee');
     getScore('Aywi','Rajaxx','melee');
     getScore('Tievy','Anetheron','melee');
+    getScore('Corruptìon','Thrall','melee');
     console.log({array});
 }
 
