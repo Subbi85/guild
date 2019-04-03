@@ -61,7 +61,12 @@ let firstPart=()=>{
     getScore('Amaterasû','Anetheron','tank');
     getScore('Sinnerella','Guldan','tank');
     getScore('Parulor','Anetheron','melee');
-
+    getScore('Tack','Guldan','melee');
+    getScore('Corruption','Thrall','melee');
+    getScore('Darkeddie','Rajaxx','melee');
+    getScore('Sinopa','Anetheron','melee');
+    getScore('Aywi','Rajaxx','melee');
+    getScore('Tievy','Anetheron','melee');
     console.log({array});
 }
 
@@ -70,12 +75,7 @@ let secondPart=()=>{
     getScore('Menardius','Guldan','melee');
     getScore('Lýnxx','Anetheron','melee');
     getScore('Nyalarthotep','Anetheron','melee');
-    getScore('Subbì','Anetheron','heal');
-    getScore('Kreischi','Nathrezim','heal');
-    getScore('Büffelhüfte','Thrall','heal');
-    getScore('Ginflut','Anetheron','heal');
-    getScore('Damari','Anetheron','ranged');
-    getScore('Pitfall','Anetheron','ranged');
+
     console.log({array});
 }
 
