@@ -85,11 +85,6 @@ let firstPart=()=>{
     console.log({array});
 }
 
-const scoreSortiert = array.sort(function(a,b){
-    return a[2]-b[2];
-})
-
-console.log(scoreSortiert);
 
 
 firstPart();
