@@ -57,7 +57,6 @@ function getScore(name, realm, classes){           /* M+ Scores der Member */
 
 
 let firstPart=()=>{
-
     getScore('Amaterasû','Anetheron','tank');
     getScore('Sinnerella',"Gul'dan",'tank');
     getScore('Parulor','Anetheron','melee');
@@ -83,11 +82,14 @@ let firstPart=()=>{
     getScore('Vinkly','Anetheron','ranged');
     getScore('Nanir','Anetheron','ranged');
     getScore('Swarloz','Anetheron','ranged');
-
     console.log({array});
 }
 
+const scoreSortiert = array.sort(function(a,b){
+    return a[2]-b[2];
+})
 
+console.log(scoreSortiert);
 
 
 firstPart();
