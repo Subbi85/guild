@@ -67,15 +67,20 @@ let firstPart=()=>{
     getScore('Aywi','Rajaxx','melee');
     getScore('Tievy','Anetheron','melee');
     getScore('Corruptìon','Thrall','melee');
-    getScore('Valafar','Anetheron','melee'),
+    getScore('Valafar','Anetheron','melee');
     getScore('Lýnxx','Anetheron','melee');
     getScore('Nyalarthotep','Anetheron','melee');
     getScore('Kreischi', 'Nathrezim', 'heal');
-    getScore('Büffelhüfte','Thrall',7,'heal');
+    getScore('Büffelhüfte','Thrall','heal');
     getScore('Ginflut','Anetheron','heal');
-    getScore('Damari','Anetheron','ranged');
+    getScore('Damari','Rajaxx','ranged');
     getScore('Pitfall','Anetheron','ranged');
     getScore('Gefearfach','Anetheron','ranged');
+    getScore('Hauie','Anetheron','ranged');
+    getScore('Machtgeil','Rajaxx','ranged');
+    getScore('Lorelin','Anetheron','ranged');
+
+
     console.log({array});
 }
 
