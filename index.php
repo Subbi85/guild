@@ -219,7 +219,7 @@ $pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database =
             foreach ($pdo->query($heal) as $row) {
             echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
             }
-        echo "</div>"
+        echo "</div>";
         //##########################################################################
 
         //Melee Statement
