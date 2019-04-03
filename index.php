@@ -203,44 +203,36 @@ $pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database =
     <?php
     
         //Tank Statement
-        echo "<div class='member' id='tanks'>";
             echo "<h4>Tanks</h4>";
             $tank = "SELECT * FROM member WHERE role='tank'";
             foreach ($pdo->query($tank) as $row) {
             echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
             }
-        echo"</div>";
         //##########################################################################
 
         //Heal Statement
-        echo "<div class='member' id='heal'>";
             echo "<h4>Heals</h4>";
             $heal = "SELECT * FROM member WHERE role='heal'";
             foreach ($pdo->query($heal) as $row) {
             echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
             }
-        echo "</div>";
         //##########################################################################
 
         //Melee Statement
 
-        echo "<div class='member' id='melee'>";
             echo "<h4>Melees</h4>";
             $melee = "SELECT * FROM member WHERE role='melee'";
             foreach ($pdo->query($melee) as $row) {
             echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
             }
-        echo "</div>"
         //##########################################################################
 
         //Ranged Statement
-        echo "<div class='member' id='tanks'>";
             echo "<h4>Ranges</h4>";
             $ranged = "SELECT * FROM member WHERE role='ranged'";
             foreach ($pdo->query($ranged) as $row) {
             echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
             }
-        echo "</div>";
         //##########################################################################
     ?>
     </div>
