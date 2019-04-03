@@ -55,29 +55,37 @@ function getScore(name, realm, classes){           /* M+ Scores der Member */
 }
 //################# GET SCORES ENDE  ##################################################
 
-getScore('Kreischi', 'Nathrezim', 'Schaman');
-getScore('Amaterasû','Anetheron',1,'tank'),
-getScore('Sinnerella','Guldan',6,'tank'),
-getScore('Parulor','Anetheron',11,'melee'),
-getScore('Tack','Guldan',12,'melee'),
-getScore('Corruption','Thrall',2,'melee'),
-getScore('Darkeddie','Rajaxx',7,'melee'),
-getScore('Sinopa','Anetheron',2,'melee'),
-getScore('Aywi','Rajaxx',4,'melee'),
-getScore('Tievy','Anetheron',7,'melee'),
-getScore('Valafar','Guldan',12,'melee'),
-getScore('Menardius','Guldan',4,'melee'),
-getScore('Lýnxx','Anetheron',8,'melee'),
-getScore('Nyalarthotep','Anetheron',4,'melee'),
-getScore('Subbì','Anetheron',5,'heal'),
-getScore('Kreischi','Nathrezim',7,'heal'),
-getScore('Büffelhüfte','Thrall',7,'heal'),
-getScore('Ginflut','Anetheron',10,'heal'),
-getScore('Damari','Anetheron',9,'ranged'),
-getScore('Pitfall','Anetheron',8,'ranged');
-console.log({array});
+
+let firstPart=()=>{
+    getScore('Kreischi', 'Nathrezim', 'Schaman');
+    getScore('Amaterasû','Anetheron',1,'tank');
+    getScore('Sinnerella','Guldan',6,'tank');
+    getScore('Parulor','Anetheron',11,'melee');
+    getScore('Tack','Guldan',12,'melee');
+    getScore('Corruption','Thrall',2,'melee');
+    getScore('Darkeddie','Rajaxx',7,'melee');
+    getScore('Sinopa','Anetheron',2,'melee');
+    getScore('Aywi','Rajaxx',4,'melee');
+    getScore('Tievy','Anetheron',7,'melee');
+    console.log({array});
+}
+
+let secondPart=()=>{
+    getScore('Valafar','Guldan',12,'melee');
+    getScore('Menardius','Guldan',4,'melee');
+    getScore('Lýnxx','Anetheron',8,'melee');
+    getScore('Nyalarthotep','Anetheron',4,'melee');
+    getScore('Subbì','Anetheron',5,'heal');
+    getScore('Kreischi','Nathrezim',7,'heal');
+    getScore('Büffelhüfte','Thrall',7,'heal');
+    getScore('Ginflut','Anetheron',10,'heal');
+    getScore('Damari','Anetheron',9,'ranged');
+    getScore('Pitfall','Anetheron',8,'ranged');
+    console.log({array});
+}
 
 
+secondPart();
 //################# AFFIXE DER WOCHE #######################################################
 function affixe(){                          /* Affixe der aktuellen Woche */
 let blizzRequest = new XMLHttpRequest();
