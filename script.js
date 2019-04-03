@@ -59,7 +59,7 @@ getScore("Kreischi", "Nathrezim", "Schaman");
 getScore("Subbì", "Anetheron", "Priest");
 getScore("Gefearfach", "Anetheron", "Warlock");
 getScore("Ginflut", "Anetheron", "Monk");
-getScore("Kreischi", "Nathrezim", "Schaman");
+getScore("Tack", "Festung der Stürme", "Rogue");
 getScore("Subbì", "Anetheron", "Priest");
 getScore("Gefearfach", "Anetheron", "Warlock");
 getScore("Ginflut", "Anetheron", "Monk");
