@@ -61,12 +61,7 @@ let firstPart=()=>{
     getScore('Amaterasû','Anetheron','tank');
     getScore('Sinnerella','Guldan','tank');
     getScore('Parulor','Anetheron','melee');
-    getScore('Tack','Guldan','melee');
-    getScore('Corruption','Thrall','melee');
-    getScore('Darkeddie','Rajaxx','melee');
-    getScore('Sinopa','Anetheron','melee');
-    getScore('Aywi','Rajaxx','melee');
-    getScore('Tievy','Anetheron','melee');
+
     console.log({array});
 }
 
