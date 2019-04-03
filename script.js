@@ -71,8 +71,8 @@ let firstPart=()=>{
 }
 
 let secondPart=()=>{
-    getScore('Valafar','Guldan','melee');
-    getScore('Menardius','Guldan','melee');
+    getScore('Valafar',"Gul'dan",'melee');
+    getScore('Menardius',"Gul'dan",'melee');
     getScore('Lýnxx','Anetheron','melee');
     getScore('Nyalarthotep','Anetheron','melee');
 
