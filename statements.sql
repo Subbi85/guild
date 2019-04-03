@@ -22,11 +22,12 @@ VALUES
 ('Sinopa','Anetheron',2,'melee'),
 ('Aywi','Rajaxx',4,'melee'),
 ('Tievy','Anetheron',7,'melee'),
+('Subbì','Anetheron',5,'heal'),
+
 ('Valafar','Guldan',12,'melee'),
 ('Menardius','Guldan',4,'melee'),
 ('Lýnxx','Anetheron',8,'melee'),
 ('Nyalarthotep','Anetheron',4,'melee'),
-('Subbì','Anetheron',5,'heal'),
 ('Kreischi','Nathrezim',7,'heal'),
 ('Büffelhüfte','Thrall',7,'heal'),
 ('Ginflut','Anetheron',10,'heal'),

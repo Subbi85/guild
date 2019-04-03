@@ -67,6 +67,13 @@ let firstPart=()=>{
     getScore('Aywi','Rajaxx','melee');
     getScore('Tievy','Anetheron','melee');
     getScore('Corruptìon','Thrall','melee');
+    getScore('Valafar',"Guld'an",'melee'),
+    getScore('Menardius',"Guld'an",'melee'),
+
+
+
+
+
     console.log({array});
 }
 
