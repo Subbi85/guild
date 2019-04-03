@@ -55,27 +55,34 @@ function getScore(name, realm, classes){           /* M+ Scores der Member */
 }
 //################# GET SCORES ENDE  ##################################################
 
-getScore("Kreischi", "Nathrezim", "Schaman");
-getScore("Subbì", "Anetheron", "Priest");
-getScore("Gefearfach", "Anetheron", "Warlock");
-getScore("Ginflut", "Anetheron", "Monk");
-getScore("Tack", "Festung der Stürme", "Rogue");
-getScore("Subbì", "Anetheron", "Priest");
-getScore("Gefearfach", "Anetheron", "Warlock");
-getScore("Ginflut", "Anetheron", "Monk");
-getScore("Kreischi", "Nathrezim", "Schaman");
-getScore("Subbì", "Anetheron", "Priest");
-getScore("Gefearfach", "Anetheron", "Warlock");
-getScore("Ginflut", "Anetheron", "Monk");
-getScore("Kreischi", "Nathrezim", "Schaman");
-getScore("Subbì", "Anetheron", "Priest");
-getScore("Gefearfach", "Anetheron", "Warlock");
-getScore("Ginflut", "Anetheron", "Monk");
-getScore("Kreischi", "Nathrezim", "Schaman");
-getScore("Subbì", "Anetheron", "Priest");
-getScore("Gefearfach", "Anetheron", "Warlock");
-getScore("Ginflut", "Anetheron", "Monk");
-console.log(array[1]);
+getScore('Kreischi', 'Nathrezim', 'Schaman');
+getScore('Amaterasû','Anetheron',1,'tank'),
+getScore('Sinnerella','Guldan',6,'tank'),
+getScore('Parulor','Anetheron',11,'melee'),
+getScore('Tack','Guldan',12,'melee'),
+getScore('Corruption','Thrall',2,'melee'),
+getScore('Darkeddie','Rajaxx',7,'melee'),
+getScore('Sinopa','Anetheron',2,'melee'),
+getScore('Aywi','Rajaxx',4,'melee'),
+getScore('Tievy','Anetheron',7,'melee'),
+getScore('Valafar','Guldan',12,'melee'),
+getScore('Menardius','Guldan',4,'melee'),
+getScore('Lýnxx','Anetheron',8,'melee'),
+getScore('Nyalarthotep','Anetheron',4,'melee'),
+getScore('Subbì','Anetheron',5,'heal'),
+getScore('Kreischi','Nathrezim',7,'heal'),
+getScore('Büffelhüfte','Thrall',7,'heal'),
+getScore('Ginflut','Anetheron',10,'heal'),
+getScore('Damari','Anetheron',9,'ranged'),
+getScore('Pitfall','Anetheron',8,'ranged'),
+getScore('Gefearfach','Anetheron',9,'ranged'),
+getScore('Hauie','Anetheron',3,'ranged'),
+getScore('Machtgeil','Rajaxx',8,'ranged'),
+getScore('Lorelin','Anetheron',8,'ranged'),
+getScore('Sêppêl','Guldan',3,'ranged'),
+getScore('Vinkly','Anetheron',9,'ranged'),
+getScore('Nanir','Anetheron',9,'ranged'),
+getScore('Swarloz','Anetheron',11,'ranged')
 console.log({array});
 
 
