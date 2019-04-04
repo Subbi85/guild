@@ -85,7 +85,7 @@ let firstPart=()=>{
 }
 firstPart();
 console.log(array);
-let test= JSON.parse(array);
+let test= JSON.stringify(array);
 console.log(test);
 
 //################# AFFIXE DER WOCHE #######################################################
