@@ -84,11 +84,6 @@ let firstPart=()=>{
 
 }
 firstPart();
-let brray=[1,2,3,4,5];
-let json= JSON.parse(brray);
-console.log(json);
-
-
 
 //################# AFFIXE DER WOCHE #######################################################
 function affixe(){                          /* Affixe der aktuellen Woche */
