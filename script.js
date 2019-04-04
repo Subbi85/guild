@@ -80,11 +80,11 @@ let firstPart=()=>{
     getScore('Vinkly','Anetheron','ranged');
     getScore('Nanir','Anetheron','ranged');
     getScore('Swarloz','Anetheron','ranged');
-    console.log({array});
+
 
 }
 firstPart();
-
+console.log({array});
 //################# AFFIXE DER WOCHE #######################################################
 function affixe(){                          /* Affixe der aktuellen Woche */
 let blizzRequest = new XMLHttpRequest();
