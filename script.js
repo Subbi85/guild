@@ -83,10 +83,13 @@ let firstPart=()=>{
     console.log({array});
 
 }
-
 firstPart();
-let json= JSON.parse(array);
+let brray=[1,2,3,4,5];
+let json= JSON.parse(brray);
 console.log(json);
+
+
+
 //################# AFFIXE DER WOCHE #######################################################
 function affixe(){                          /* Affixe der aktuellen Woche */
 let blizzRequest = new XMLHttpRequest();
