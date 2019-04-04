@@ -84,7 +84,8 @@ let firstPart=()=>{
 
 }
 firstPart();
-console.log({array});
+console.log(array);
+
 //################# AFFIXE DER WOCHE #######################################################
 function affixe(){                          /* Affixe der aktuellen Woche */
 let blizzRequest = new XMLHttpRequest();
