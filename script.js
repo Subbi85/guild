@@ -81,6 +81,8 @@ let firstPart=()=>{
     getScore('Nanir','Anetheron','ranged');
     getScore('Swarloz','Anetheron','ranged');
     console.log({array});
+    let json= JSON.parse(array);
+    console.log(json);
 }
 
 firstPart();
