@@ -85,6 +85,8 @@ let firstPart=()=>{
 }
 firstPart();
 console.log(array);
+let test= JSON.parse(array);
+console.log(test);
 
 //################# AFFIXE DER WOCHE #######################################################
 function affixe(){                          /* Affixe der aktuellen Woche */
