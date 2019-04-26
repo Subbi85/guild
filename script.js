@@ -1,8 +1,12 @@
 //Globals
+let resultObj;
+let array=[];
+
+
+
 affixe();
 
 function guildMembers(){                	/*Erstellen der Memberliste für weitere Funktionen */
-    console.log("Ja hallo");
 var guildRequest = new XMLHttpRequest();
 guildRequest.open('GET', 'https://eu.api.blizzard.com/wow/guild/Anetheron/Order%20and%20Chaos?fields=members&locale=en_US&access_token=US40yiXoUpTd1QPa5lC4ewfDEpjONjtrZ0')
 guildRequest.onload=function(){
@@ -17,7 +21,7 @@ guildRequest.send()
 
 //####################### RAID PROGRESS #######################################################
 function progression(){
-    var data = [];
+
     var blizzRequest = new XMLHttpRequest();
     blizzRequest.open('GET', 'https://raider.io/api/v1/guilds/profile?region=EU&realm=Anetheron&name=Order%20and%20Chaos&fields=raid_rankings%2C%20raid_progression');
     blizzRequest.onload=function(){
@@ -36,8 +40,7 @@ progression();
 
 // FERTIGE FUNKTIONEN:
 //###################### GET SCORES #######################################################
-let resultObj;
-let array=[];
+
 function getScore(name, realm, classes){           /* M+ Scores der Member */
     var scores = [];
     var blizzRequest = new XMLHttpRequest();
@@ -49,6 +52,7 @@ function getScore(name, realm, classes){           /* M+ Scores der Member */
             scores.push(realm);
             scores.push(current);
             scores.push(classes);
+            console.log(scores[2]);
             array.push(scores);
     }
     blizzRequest.send();
@@ -80,13 +84,39 @@ let firstPart=()=>{
     getScore('Vinkly','Anetheron','ranged');
     getScore('Nanir','Anetheron','ranged');
     getScore('Swarloz','Anetheron','ranged');
-
-
 }
 firstPart();
-console.log(array);
-let test= JSON.parse({array});
-console.log(test);
+
+function Score (name, realm,score){
+    this.name= name,
+    this.realm=realm,
+    this.getScore= function(){
+        var blizzRequest = new XMLHttpRequest();
+        blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+realm+'&name='+name+'&fields=mythic_plus_scores')
+        blizzRequest.onload=function(){
+        var score = JSON.parse(blizzRequest.responseText);
+        var current = score.mythic_plus_scores.all;
+
+        this.score=current;
+    }
+    blizzRequest.send();
+    }
+}
+
+let score_1 = new Score('Subbi', 'Anetheron');
+console.log(score_1);
+
+
+let tabelleAufbauen=()=>{
+    console.log(array);
+
+    for(let i=0; i<10; i++){
+        console.log(array);
+        
+    }
+
+}
+tabelleAufbauen();
 
 //################# AFFIXE DER WOCHE #######################################################
 function affixe(){                          /* Affixe der aktuellen Woche */

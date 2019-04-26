@@ -162,6 +162,13 @@ nav ul li a{ text-decoration: none;}
     color:#5B2829;
 }
 
+/* Raidkader */
+#flex_1, #flex_2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 /* Media Queries */

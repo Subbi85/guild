@@ -1,8 +1,3 @@
-<?php
-//DB Verbindung
-$pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database = guild", "Subbi", "{Kalender85}");
-
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +8,6 @@ $pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database =
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/tabs.css" />
-    <script src="main.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -95,10 +89,10 @@ $pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database =
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->                
             
-            <div class="skillbar clearfix " data-percent="30%">
+            <div class="skillbar clearfix " data-percent="15%">
                 <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor (m)</span></div>
                 <div class="skillbar-bar" style="background: #964946;"></div>
-                <div class="skill-bar-percent">2/9</div>
+                <div class="skill-bar-percent">1/9</div>
             </div> <!-- End Skill Bar -->  
         <!-- ###############################################################################################################-->
             <p>
@@ -197,50 +191,24 @@ $pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database =
         <!--###################################################################################-->
     </div>
         
-        <div id="member" class="tabcontent">
-            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-            <h3>Unsere Member</h3>
-        <div class="member" id="tanks">
-        <?php
-            //Tank Statement
-            echo "<h4>Tanks</h4>";
-            $tank = "SELECT * FROM member WHERE role='tank'";
-            foreach ($pdo->query($tank) as $row) {
-            echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
-            }
-        ?>
+    <div id="member" class="tabcontent">
+        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+        <h3>Unsere Member</h3>
+
+        <!-- Flexboxen-->
+        <div id="flex_1">
+            <div class="box" id="box_1">
+                Klasse 1
+            </div>
+            <div class="box" id="box_2">
+                Klasse 2
+            </div>
         </div>
-        <div class="member" id="heals">
-        <?php
-            //Heal Statement
-            echo "<h4>Heals</h4>";
-            $heal = "SELECT * FROM member WHERE role='heal'";
-            foreach ($pdo->query($heal) as $row) {
-            echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
-            }
-        ?>
-        </div>
-        <div class="member" id="melees">
-        <?php
-            //Melee Statement
-            echo "<h4>Melees</h4>";
-            $melee = "SELECT * FROM member WHERE role='melee'";
-            foreach ($pdo->query($melee) as $row) {
-            echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
-            }
-        ?>
-        </div>
-        <div class="member" id="ranges">
-        <?php
-            //Ranged Statement
-            echo "<h4>Ranges</h4>";
-            $ranged = "SELECT * FROM member WHERE role='ranged'";
-            foreach ($pdo->query($ranged) as $row) {
-            echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
-            }
-        ?>
+        <div id="flex_2">
+
         </div>
     </div>
+
 
     <div id="infos" class="tabcontent">
         <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
@@ -251,7 +219,6 @@ $pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database =
             <br><br>
                 Montag, 20:30-23.00 <br>
                 Mittwoch, 20:30-23.00
-
         </p>
         <p>
             Aktuell legen wir montags immer die Bosse, die vom Mittwoch "übrig geblieben sind". Es soll sich ja auch niemand vernachlässigt fühlen. <br>
