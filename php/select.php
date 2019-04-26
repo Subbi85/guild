@@ -9,7 +9,11 @@ $sql = " SELECT m.charname, m.realm, c.name
          INNER JOIN classes as c
          ON m.classId = c.id";
 
+$data=array();
+
 foreach ($pdo->query($sql) as $row) {
-   echo $row['charname']." ".$row['realm']." ".$row['class']."<br />";
+   $data[]=$row;
 }
+
+echo json_encode($data);
 ?>
