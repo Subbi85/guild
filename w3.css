@@ -95,5 +95,7 @@
     text-align: left;
     }
 
-.tab, .tabcontent{ width:100%;}
+.tab, .tabcontent{ width:340px;
+    padding:0;
+    }
 }
