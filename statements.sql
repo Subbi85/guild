@@ -9,7 +9,7 @@ PRIMARY KEY (id)
 );
 
 --- Member laut Discordliste 
-INSERT INTO members(charname, realm, classId, roleId)
+INSERT INTO member(charname, realm, classId, roleId)
 VALUES
 ('Amaterasû','Anetheron',1,1),
 ('Sinnerella','Guldan',6,1),

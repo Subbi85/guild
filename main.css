@@ -1,288 +1,128 @@
-html { scroll-behavior: smooth; }
-body{
-    background-color:#ddd;
-}
-#wrapper{
-    width:90%;
-    max-width:1900px;
-    height: 100%;
-    margin: auto auto;
-}
-
-.section{
-    width:100%;
-    height:500px;
-    border: 1px solid #111;
-    background-color: red;
-}
-
-a, a:visited, a:hover{
-    color: #fff;
-    text-decoration: none;
-}
-
-/* Header*/
-#header{ height: 400px;}
-.container{
-    background: black url('https://images.mein-mmo.de/magazin/medien/2018/09/WoW_Battle_for_Azeroth_Nazmir_03.jpg') no-repeat;
-    color:#fff;
-    height: 400px;
-    width: 100%;
+/* Allgemeines CSS */
+html{scroll-behavior: smooth}
+body{margin:0; padding:0;}
+.button{ padding:5px; outline: 1px solid #fff;}
+.button:hover{cursor: pointer;}
+.section{max-width: 1980px;}
+/* Landing */
+#landing{
+    width:100vw;
+    height:100vh;
+    background:black url('css/img/title.png');
     display: flex;
+}
+
+.landing_container{
+    color:#fff;
+    height: 100%;
+    width: 100%;
     justify-content: center;
     align-items: center;
+    font-size: calc(8px + 2vmin);
     position: relative;
-}
-.color-overlay{
-    width: 50%;
-    height: 50%;
-    position: absolute;
-}
-/* Header ENDE*/
-
-/* Nav Bar */
-nav{width:100%; background-color: #5B2829;}
-nav ul{ width:80%; margin: 0 auto;}
-nav ul li{ list-style: none; display: inline-block; padding: 20px;}
-nav ul li:hover{background-color:#539bf3; cursor: pointer;color: white;}
-nav ul li a{ text-decoration: none;}
-/* Nav Bar ENDE*/
-
-/*Über uns*/
-#aboutUs{
-    width: 100%;
-    height: 640px;
-    background-color: #fff;
-}
-
-#aboutUs p, p{ font-size: 18px;color: #5B2829; }
-#desc{display:flex;flex-direction: row;}
-#desc div{width:80%; height: 100%;}
-#box-2{ flex:1;padding: 20px;}
-#box-1{ flex:1; padding: 20px;}
-#box-1 h3{text-align: center;}
-#box-1 p{font-size: 18px;padding: 5px;}
-
-/* Mythic+ */
-#mythic{
-    width: 100%;
-    height: 800px;
-    background: #fff;
-    color: #000;
-}
-
-#affix_container{
-    width: 500px;
-    height: 50px;
-}
-
-.affix{
-    font-size: 20px;
-    width: 105px;
-    height: 30px;
-    float: left;
-    margin: 10px;
-    text-align: center;
-}
-
-.affix:hover{   cursor: pointer;color: #ff6600;box-shadow: 0px 5px 8px 0px #888888;}
-
-.affix:hover #affix{
-    display: inline;
-}
-
-/*Media Queries*/
-@media (max-width: 1150px){
-#box-1 p, p{font-size: 16px;padding: 5px;}
-}
-
-@media (max-width: 850px){
-    #desc{display:block;}
-    #title{ display: none;}
-}
-
-@media (max-width: 490px){
-#box-1 p,p{font-size: 12px;}
-
-}
-/*Über uns ENDE*/
-
-/* Raids */
-#slider{
-    width:700px;
-    height: 300px;
-    border: 1px solid black;
-}
-#raids{
-    width: 100%;
-    height: 850px;
-    background-color: #fff;
-}
-
-/* Tabed Content */
-.tab{
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-
-.tab button{
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 1s;
-    font-size:20px;
-}
-
-.tab button:hover{ background-color: #00316b; color: white;}
-.tab_active{ background-color:#00316b;}
-.content{
-    display: none;
-    padding: 6px 12px;
-    border: 1px solid #fff;
-    border-top: none;
-}
-
-.topright{
-    float:right;
-    cursor: pointer;
-    font-size: 20px;
-}
-
-.topright:hover{ color: red;}
-
-.table{
-    width: 50%;
-    font-size: 16px;
-    float:left;
-    margin-top: 10px;
-    color:#5B2829;
-}
-
-/* Raidkader */
-#flex_1, #flex_2{
-    width: 100%;
-    display: flex;
+    display:flex;
     flex-direction: column;
 }
 
-
-
-/* Media Queries */
-@media (max-width: 1150px){
-#box-1 p, p{font-size: 16px;padding: 5px;}
+/* Über uns */
+#about{
+    height:100%;
+    margin: 0 auto;
+    display:flex;
 }
 
-@media (max-width: 850px){
-    #desc{display:block;}
-    #title{ display: none;}
-    #slider{width: 500px;}
+#text{
+    font-size: calc(10px + 1.5vmin);
+    margin:5px;
+    flex:2;
 }
 
-@media (max-width: 490px){
-#box-1 p, p{font-size: 13px;}
-#slider{width: 300px}
-
-}
-/*Raids ENDE */
-
-/* Mythic+ */
-#mythic{
-    width: 100%;
-    height: 800px;
-    background: #fff;
-    color: #000;
+#pic{
+    flex:1;
 }
 
-#affix_container{
-    width: 1080px;
-    height: 300px;
-    max-height: 900px;
-    margin:auto auto;
-}
-
-.affix{
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black;    
-    font-size: 20px;
-    width: 105px;
-    height: 30px;
-    margin: 10px;
-    text-align: center;
-    
-}
-
-.affix:hover{   cursor: pointer;
-                color: #ff6600; 
-                box-shadow: 0px 5px 8px 0px #888888;}
-
-/* Tooltips */
-
-.affixContent{
-    width: 500px;
-    height: 100px;
-    margin: 10px;
-    float: left;
-    padding: 2px;
-}
-.affix .affixText {
-width: 120px;
-background-color: black;
-color: #fff;
-text-align: center;
-border-radius: 6px;
-padding: 5px 0;
-}
-/* Media Queries */
-@media (max-width: 1240px){
-    .affixContent{font-size: 14px; width:300px;height:120px;}
-    #affix_container{width:660px;}
-}
-
-@media (max-width: 740px){
-    .affixContent{font-size: 12px; width:260px;height:100px;}
-    #affix_container{width:700px;height: 250px;}
-    .affix{width: 70px;font-size:14px;}
-}
-
-@media (max-width: 660px){
-    #slider{width: 500px;}
-    .affixContent{font-size: 12px; width:300px;height:90px;}
-    #affix_container{width:380px;height: 250px;}
-    .affix{width: 70px;font-size:14px;}
-}
-
-@media (max-width: 390px){
-    #wrapper{width: 100%;}    
-    #slider{width: 300px;}
-    .affixContent{font-size: 12px; width:300px;height:90px;}
-    #affix_container{width:380px;height: 460px;}
-    .affix{width: 90px;font-size:14px;}
-    #footerUl{ font-size:10px;}
-}
-/* Tooltips ENDE */
-/* Mythic+ ENDE*/
-
-/* footer*/
-#footer{
-    height: 80px;
+/* Progress Bars */
+/* Bars */
+.skillbar {
+    position:relative;
+    display:block;
+    margin-bottom:15px;
     width:100%;
+    background:#eee;
+    height:35px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    -webkit-transition:0.4s linear;
+    -moz-transition:0.4s linear;
+    -ms-transition:0.4s linear;
+    -o-transition:0.4s linear;
+    transition:0.4s linear;
+    -webkit-transition-property:width, background-color;
+    -moz-transition-property:width, background-color;
+    -ms-transition-property:width, background-color;
+    -o-transition-property:width, background-color;
+    transition-property:width, background-color;
+  }
+  
+  .skillbar-title {
+    position:absolute;
+    top:0;
+    left:0;
+    width:130px;
+    font-weight:bold;
+    font-size:13px;
+    color:#ffffff;
+    background:#6adcfa;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:4px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+  }
+  
+  .skillbar-title span {
+    display:block;
+    background:rgba(0, 0, 0, 0.1);
+    padding:0 20px;
+    height:35px;
+    line-height:35px;
+    -webkit-border-top-left-radius:3px;
+    -webkit-border-bottom-left-radius:3px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-bottomleft:3px;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+  }
+  
+  .skillbar-bar {
+    height:35px;
+    width:0px;
+    background:#6adcfa;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+  }
+  
+  .skill-bar-percent {
+    position:absolute;
+    right:10px;
+    top:0;
+    font-size:11px;
+    height:35px;
+    line-height:35px;
+    color:#ffffff;
+  }
+
+
+
+/* */
+#raidtext{
+    font-size: calc(8px + 1.5vmin);
 }
 
-#footerUl{
-    list-style: none;
-    margin: auto auto;
-    padding:20px;
-        font-size: 13px;
-}
-
-#footerUl li{
-    float:left;
-    padding: 10px;
+@media screen and (max-width: 900px) {
+    #pic{display: none;}
 
 }
-/* footer ENDE*/

@@ -1,358 +1,229 @@
-<?php
-//DB Verbindung
-$pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database = guild", "Subbi", "{Kalender85}");
-
-?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Order and Chaos  - Landing</title>
+    <title>Order and Chaos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/tabs.css" />
-    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="w3.css" />
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>    
     <script src="script.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
-<div id="wrapper"><!--Wrapper Anfang-->
-    <div class="section" id="header">
-        <div class="container">
-            <img src="css/img/wappen_middle.png" alt="css/img/wappen_small.png" id="titlepic">
-            <h1>Order and Chaos</h1>
-            <div class="color-overlay"></div>
+    <!-- Landing -->
+    <div class="section" id="landing">
+        <div class="landing_container">
+            <img src="css/img/logo.png" alt="css/img/logo.png" id="titlepic">
+            <h1>Order and Chaos</h1> <br>
+            <h3>Anetheron - EU</h3>
+            <div class="button">Start</div>
         </div>
-    </div> <!-- Ende Header-->
-    <nav>
-        <ul>
-            <li><a href="#home"> Home</a></li>
-            <li><a href="#aboutUs"> Über Uns</a></li>
-            <li><a href="#raids"> Raids</a></li>
-            <li><a href="#mythic"> Mythic</a></li>
-        </ul>
-    </nav><!-- Ende Navbars-->
-    <div class="section" id="home">
-        <h3>Home</h3>
-        
-    </div> <!-- Ende Home-->
-    <div class="section" id="aboutUs">
-        <div id="desc"> <!--  CONTAINER -->
-            <div id="box-1">
-                <h3>Lok'thar Ogar, Freund!</h3>    
-                <p> Wir sind die Gilde "Order and Chaos" vom Server Anetheron und sind allesamt treue und kampferprobte
-                    Streiter der Horde. <br><br>
-                    Unseren kleinen, verrückten und familiären Haufen von lieben Menschen gibt es seit Legion, genauer gesagt war <br>
-                    Gul'dan, der sich zu der Zeit in der Nachtfestung aufhielt, der erste Bösewicht, dem wir gemeinsam das Handwerk gelegt haben. <br>
-                    Und seitdem?<br><br>
-                    Gut,dass du fragst! Seitdem waren wir ziemlich erfolgreich. Wir haben die letzten Raids immer geschafft unser Gildenziel
-                    die Curve, also den Endboss in heroischer Schwierigkeit legen bevor der neue Raid rauskommt, zu erspielen. <br><br>
-                    Will heißen: In unserer gemeinsamen Zeit haben alle Raids gelegen und auch der G'huun "Gott" musste sich uns geschlagen geben. <br>
-                    Und was macht ihr sonst noch? <br> <br>
-                    Noch eine super Frage: Wir gehen gern M+ Instanzen und versuchen uns da immer weiter zu steigern. Und ansonsten halt alles was ansteht... <br>
-                    Weltquests, Inselexpeditionen, alte Raids und und und... <br><br>
-                    Alles im Namen der Horde
-                </p>
-            </div>
-            <div id="box-2">
-                <img src="css/img/test.jpg" alt="css/img/test.jpg" width="90%" height="400px" margin-left="10px" id="title">
-            </div>
-        </div>  <!--  CONTAINER ENDE-->
-    </div> <!-- Ende aboutUs-->
-
-    
-<div class="section" id="raids">
-    <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'bfa')"  >BfA</button>
-        <button class="tablinks" onclick="openTab(event, 'legion')" >Legion</button>
-        <button class="tablinks" onclick="openTab(event, 'member')" id="defaultOpen" >Raidkader</button>
-        <button class="tablinks" onclick="openTab(event, 'infos')"> Infos</button>
     </div>
-    <div id="bfa" class="tabcontent">
-        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-        <h3>Battle for Azeroth</h3>
-        <!-- Flexbox 1-->
-
-        <div id="slider">
-            Hier werden bilder hinkommen!
-
-
-        </div>
-        <div id="raid-1"><!-- Raid-1 Box -->
-            <p>
-                Schlacht um Dazar'Alor
+    <!-- Landing ENDE-->
+    <!-- Navigation -->
+    <div class="topnav" id="myTopnav">
+        <a href="#landing">Home</a>
+        <a href="#about">Über Uns</a>
+        <a href="#raids">Raids</a>
+        <a href="#about">Mythic+</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars">|||</i>      
+        </a>
+    </div>
+    <!-- Navigation ENDE -->
+    <!-- Über Uns -->
+    <div class="section" id="about">.
+        <div class="about_box" id="text">
+                <h3>Lok'thar Ogar, Freund!</h3>            
+            <p id="about_text">
+                Wir sind die Gilde "Order and Chaos" vom Server Anetheron und sind allesamt treue und kampferprobte Streiter der Horde. <br><br>
+                Unseren kleinen, verrückten und familiären Haufen von lieben Menschen gibt es seit Legion, genauer gesagt war 
+                Gul'dan, der sich zu der Zeit in der Nachtfestung aufhielt, der erste Bösewicht, dem wir gemeinsam das Handwerk gelegt haben. 
+                Und seitdem? <br><br>
+                Gut,dass du fragst! Seitdem waren wir ziemlich erfolgreich. Wir haben die letzten Raids immer geschafft unser Gildenziel die Curve, also den Endboss in heroischer Schwierigkeit legen bevor der neue Raid rauskommt, zu erspielen. <br><br>
+                Will heißen: In unserer gemeinsamen Zeit haben alle Raids gelegen und auch der G'huun "Gott" musste sich uns geschlagen geben. 
+                Und was macht ihr sonst noch? <br><br>
+                Noch eine super Frage: Wir gehen gern M+ Instanzen und versuchen uns da immer weiter zu steigern. Und ansonsten halt alles was ansteht... 
+                Weltquests, Inselexpeditionen, alte Raids und und und... <br><br>
+                Alles im Namen der Horde
             </p>
-            <div class="skillbar clearfix " id="bla" data-percent="100%">
-                <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
-                <div class="skill-bar-percent">9/9</div>
-            </div> <!-- End Skill Bar -->
-
-            <div class="skillbar clearfix " data-percent="100%">
-                <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor (hc)</span></div>
-                <div class="skillbar-bar" style="background: #964946;"></div>
-                <div class="skill-bar-percent">9/9</div>
-            </div> <!-- End Skill Bar -->                
-            
-            <div class="skillbar clearfix " data-percent="30%">
-                <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor (m)</span></div>
-                <div class="skillbar-bar" style="background: #964946;"></div>
-                <div class="skill-bar-percent">2/9</div>
-            </div> <!-- End Skill Bar -->  
-        <!-- ###############################################################################################################-->
-            <p>
-                Uldir
-            </p>                   
-            <div class="skillbar clearfix " data-percent="100%">
-                <div class="skillbar-title" style="background: #a09797;"><span>Uldir (nhc)</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
-                <div class="skill-bar-percent">7/7</div>
-            </div> <!-- End Skill Bar -->
-
-            <div class="skillbar clearfix " data-percent="100%">
-                <div class="skillbar-title" style="background: #a09797;"><span>Uldir (hc)</span></div>
-                <div class="skillbar-bar" style="background: #964946;"></div>
-                <div class="skill-bar-percent">7/7</div>
-            </div> <!-- End Skill Bar -->
-        </div> <!-- Raid-1 Box ENDE -->
-    </div><!-- ENDE BfA -->
-
-    <div id="legion" class="tabcontent">
-        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-        <p>
-            Alptraum
-        </p>
-        <div class="skillbar clearfix " data-percent="100%">
-            <div class="skillbar-title" style="background: #a09797;"><span>Alptraum</span></div>
-            <div class="skillbar-bar" style="background: #C5534F;"></div>
-            <div class="skill-bar-percent">7/7</div>
-        </div> <!-- End Skill Bar -->
-
-        <div class="skillbar clearfix " data-percent="100%">
-            <div class="skillbar-title" style="background: #a09797;"><span>Alptraum (hc)</span></div>
-            <div class="skillbar-bar" style="background: #964946;"></div>
-            <div class="skill-bar-percent">7/7</div>
-        </div> <!-- End Skill Bar -->                        
-        <!--###################################################################################-->
-        <p>
-            Prüfung der Tapferkeit
-        </p>
-        <div class="skillbar clearfix " data-percent="100%">
-            <div class="skillbar-title" style="background: #a09797;"><span>ToV</span></div>
-            <div class="skillbar-bar" style="background: #C5534F;"></div>
-            <div class="skill-bar-percent">2/2</div>
-        </div> <!-- End Skill Bar -->
-
-        <div class="skillbar clearfix " data-percent="100%">
-            <div class="skillbar-title" style="background: #a09797;"><span>ToV (hc)</span></div>
-            <div class="skillbar-bar" style="background: #964946;"></div>
-            <div class="skill-bar-percent">2/2</div>
-        </div> <!-- End Skill Bar -->                
-        <!--###################################################################################-->
-        <p>
-            Nachtfestung
-        </p>
-        <div class="skillbar clearfix " data-percent="100%">
-            <div class="skillbar-title" style="background: #a09797;"><span>Nachtfestung</span></div>
-            <div class="skillbar-bar" style="background: #C5534F;"></div>
-            <div class="skill-bar-percent">10/10</div>
-        </div> <!-- End Skill Bar -->
-
-        <div class="skillbar clearfix " data-percent="100%">
-            <div class="skillbar-title" style="background: #a09797;"><span>Nachtfest. (hc)</span></div>
-            <div class="skillbar-bar" style="background: #964946;"></div>
-            <div class="skill-bar-percent">10/10</div>
-        </div> <!-- End Skill Bar -->                
-        <!--###################################################################################-->
-        <p>
-            Tomb of Sageras
-        </p>
-        <div class="skillbar clearfix " data-percent="100%">
-            <div class="skillbar-title" style="background: #a09797;"><span>ToS</span></div>
-            <div class="skillbar-bar" style="background: #C5534F;"></div>
-            <div class="skill-bar-percent">9/9</div>
-        </div> <!-- End Skill Bar -->
-
-        <div class="skillbar clearfix " data-percent="100%">
-            <div class="skillbar-title" style="background: #a09797;"><span>ToS (hc)</span></div>
-            <div class="skillbar-bar" style="background: #964946;"></div>
-            <div class="skill-bar-percent">9/9</div>
-        </div> <!-- End Skill Bar -->                
-        <!--###################################################################################-->
-        <p>
-            Antorus, der brennende Thron
-        </p>
-        <div class="skillbar clearfix " data-percent="100%">
-            <div class="skillbar-title" style="background: #a09797;"><span>Antorus</span></div>
-            <div class="skillbar-bar" style="background: #C5534F;"></div>
-            <div class="skill-bar-percent">11/11</div>
-        </div> <!-- End Skill Bar -->
-
-        <div class="skillbar clearfix " data-percent="100%">
-            <div class="skillbar-title" style="background: #a09797;"><span>Antorus (hc)</span></div>
-            <div class="skillbar-bar" style="background: #964946;"></div>
-            <div class="skill-bar-percent">11/11</div>
-        </div> <!-- End Skill Bar -->                
-        <!--###################################################################################-->
+        </div>
+        <div class="about_box" id="pic">
+        </div>
     </div>
+
+    <!-- Über Uns ENDE -->
+    <!-- Raids -->
+    <div class="section" id="raids">
+
+        <div class="tab">
+            <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'BfA')">BfA</button>
+            <button class="tablinks" onclick="openTab(event, 'Legion')">Legion</button>
+            <button class="tablinks" onclick="openTab(event, 'Tokyo')">Kader</button>
+            <button class="tablinks" onclick="openTab(event, 'Infos')">Infos</button>
+        </div>
+
+        <div id="BfA" class="tabcontent">
+            <h3>Tiegel der Stürme</h3>
+             <div class="skillbar clearfix " data-percent="50%">
+                <div class="skillbar-title" style="background: #a09797;"><span>Tiegel hc</span></div>
+                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skill-bar-percent">1/2</div>
+            </div> <!-- End Skill Bar -->
         
-        <div id="member" class="tabcontent">
-            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-            <h3>Unsere Member</h3>
-        <div class="member" id="tanks">
-        <?php
-            //Tank Statement
-            echo "<h4>Tanks</h4>";
-            $tank = "SELECT * FROM member WHERE role='tank'";
-            foreach ($pdo->query($tank) as $row) {
-            echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
-            }
-        ?>
-        </div>
-        <div class="member" id="heals">
-        <?php
-            //Heal Statement
-            echo "<h4>Heals</h4>";
-            $heal = "SELECT * FROM member WHERE role='heal'";
-            foreach ($pdo->query($heal) as $row) {
-            echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
-            }
-        ?>
-        </div>
-        <div class="member" id="melees">
-        <?php
-            //Melee Statement
-            echo "<h4>Melees</h4>";
-            $melee = "SELECT * FROM member WHERE role='melee'";
-            foreach ($pdo->query($melee) as $row) {
-            echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
-            }
-        ?>
-        </div>
-        <div class="member" id="ranges">
-        <?php
-            //Ranged Statement
-            echo "<h4>Ranges</h4>";
-            $ranged = "SELECT * FROM member WHERE role='ranged'";
-            foreach ($pdo->query($ranged) as $row) {
-            echo $row['charname']." ".$row['realm']." ".$row['class']." ".$row['role']."<br/>";
-            }
-        ?>
-        </div>
-    </div>
+            <div class="skillbar clearfix " data-percent="100%">
+                <div class="skillbar-title" style="background: #a09797;"><span>Tiegel nhc</span></div>
+                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skill-bar-percent">2/2</div>
+            </div> <!-- End Skill Bar -->
 
-    <div id="infos" class="tabcontent">
-        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
-        <p>
-            Wow, du hast dir bisher alles auf dieser Seite angeschaut und bist immernoch nicht weggerannt? Respekt! <br>
-            Was? Du hast sogar ernsthaftes Interesse mit uns raiden zu gehen? Cool, hier gibt's noch weitere Informationen für dich: <br>
-            Unsere aktuellen <b>Raidzeiten</b> sind:
-            <br><br>
-                Montag, 20:30-23.00 <br>
-                Mittwoch, 20:30-23.00
+            <!-- Dazar -->
+            <h3>Belagerung von Dazar'Alor</h3>
+            <div class="skillbar clearfix " data-percent="20%">
+                <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor mythic</span></div>
+                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skill-bar-percent">2/9</div>
+            </div> <!-- End Skill Bar -->
+        
+            <div class="skillbar clearfix " data-percent="100%">
+                <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor hc</span></div>
+                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skill-bar-percent">9/9</div>
+            </div> <!-- End Skill Bar -->
 
-        </p>
-        <p>
-            Aktuell legen wir montags immer die Bosse, die vom Mittwoch "übrig geblieben sind". Es soll sich ja auch niemand vernachlässigt fühlen. <br>
-            Sollten wir in einer Woche schon am Mittwoch mit allem fertig sein, überlegen wir uns in der Regel etwas als Alternativplan. Was das dann ist? <br>
-            Wieder eine sehr gute Frage. Also der Alternativplan kann sein, dass man einen Twinkrun macht, ggf. Timewalks geht oder eben M+. Wichtig ist uns, dass <br>
-            wir trotzdem was <b>gemeinsam</b> machen. <br> <br>
-            Ach fast hätten wir noch was wichtiges vergessen: Unsere Links zu Raider.io und natürlich unsere Logs, die du dir gern mal anschauen kannst, um dir ein Bild zu machen. <br>
-            Die Links findest du hier:
-        </p>
-            <ul>
-                <li><a href="https://raider.io/guilds/eu/anetheron/Order%20and%20Chaos" target="_blank">Raider.io</a> </li>
-                <li><a href="https://www.warcraftlogs.com/guild/calendar/304372/" target="_blank"> WarcraftLogs </a></li>
-            </ul>
-        <p>
+            <div class="skillbar clearfix " data-percent="100%">
+                <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor hc</span></div>
+                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skill-bar-percent">9/9</div>
+            </div> <!-- End Skill Bar -->
+
+            <!-- Uldir -->
+            <h3>Uldir</h3>
+            <div class="skillbar clearfix " data-percent="100%">
+                <div class="skillbar-title" style="background: #a09797;"><span>Uldir hc</span></div>
+                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skill-bar-percent">8/8</div>
+            </div> <!-- End Skill Bar -->
+
+            <div class="skillbar clearfix " data-percent="100%">
+                <div class="skillbar-title" style="background: #a09797;"><span>Uldir nhc</span></div>
+                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skill-bar-percent">8/8</div>
+            </div> <!-- End Skill Bar -->
+        </div>
+
+        <div id="Legion" class="tabcontent">
+            <h3>Antorus, der brennende Thron</h3>
+            <div class="skillbar clearfix " data-percent="100%">
+                <div class="skillbar-title" style="background: #a09797;"><span>Antorus hc</span></div>
+                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skill-bar-percent">9/9</div>
+            </div> <!-- End Skill Bar -->
+
+            <div class="skillbar clearfix " data-percent="100%">
+                <div class="skillbar-title" style="background: #a09797;"><span>Antorus nhc</span></div>
+                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skill-bar-percent">9/9</div>
+            </div> <!-- End Skill Bar -->
+
+            <h3>Grabmal des Sageras</h3>
+            <div class="skillbar clearfix " data-percent="100%">
+                <div class="skillbar-title" style="background: #a09797;"><span>Grabmal hc</span></div>
+                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skill-bar-percent">9/9</div>
+            </div> <!-- End Skill Bar -->
+
+            <div class="skillbar clearfix " data-percent="100%">
+                <div class="skillbar-title" style="background: #a09797;"><span>Grabmal nhc</span></div>
+                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skill-bar-percent">9/9</div>
+            </div> <!-- End Skill Bar -->
+
+            <h3>Nachtfestung</h3>
+            <div class="skillbar clearfix " data-percent="100%">
+                <div class="skillbar-title" style="background: #a09797;"><span>Nachtfestung hc</span></div>
+                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skill-bar-percent">9/9</div>
+            </div> <!-- End Skill Bar -->
+
+            <div class="skillbar clearfix " data-percent="100%">
+                <div class="skillbar-title" style="background: #a09797;"><span>Nachtfestung nhc</span></div>
+                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skill-bar-percent">9/9</div>
+            </div> <!-- End Skill Bar -->
+
+            <h3>Prüfung der Tapferkeit</h3>
+            <div class="skillbar clearfix " data-percent="100%">
+                <div class="skillbar-title" style="background: #a09797;"><span>Trials hc</span></div>
+                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skill-bar-percent">9/9</div>
+            </div> <!-- End Skill Bar -->
+
+            <div class="skillbar clearfix " data-percent="100%">
+                <div class="skillbar-title" style="background: #a09797;"><span>Trials nhc</span></div>
+                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skill-bar-percent">9/9</div>
+            </div> <!-- End Skill Bar -->
+
+            <h3>Smaragdgrüner Alptraum</h3>
+            <div class="skillbar clearfix " data-percent="100%">
+                <div class="skillbar-title" style="background: #a09797;"><span>Alptraum hc</span></div>
+                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skill-bar-percent">9/9</div>
+            </div> <!-- End Skill Bar -->
+
+            <div class="skillbar clearfix " data-percent="100%">
+                <div class="skillbar-title" style="background: #a09797;"><span>Alptraum nhc</span></div>
+                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skill-bar-percent">9/9</div>
+            </div> <!-- End Skill Bar -->
+
+        </div>
+
+        <div id="Tokyo" class="tabcontent">
+            <h3>Raidkader</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+
+        <div id="Infos" class="tabcontent">
+            <h3>Informationen</h3>
+            <p id="raidtext">
+            Wow, du hast dir bisher alles auf dieser Seite angeschaut und bist immernoch nicht weggerannt? Respekt! 
+            Was? Du hast sogar ernsthaftes Interesse mit uns raiden zu gehen? Cool, hier gibt's noch weitere Informationen für dich: 
+            Unsere aktuellen Raidzeiten sind: <br> <br>
+
+            Montag, 20:30-23.00 <br>
+            Mittwoch, 20:30-23.00 <br> <br>
+
+            Aktuell legen wir montags immer die Bosse, die vom Mittwoch "übrig geblieben sind". Es soll sich ja auch niemand vernachlässigt fühlen. 
+            Sollten wir in einer Woche schon am Mittwoch mit allem fertig sein, überlegen wir uns in der Regel etwas als Alternativplan. Was das dann ist? 
+            Wieder eine sehr gute Frage. Also der Alternativplan kann sein, dass man einen Twinkrun macht, ggf. Timewalks geht oder eben M+. Wichtig ist uns, dass 
+            wir trotzdem was gemeinsam machen. <br><br>
+
+            Ach fast hätten wir noch was wichtiges vergessen: Unsere Links zu Raider.io und natürlich unsere Logs, die du dir gern mal anschauen kannst, um dir ein Bild zu machen. 
+            Die Links findest du hier: <br>	<br>
+
+            Raider.io <br>
+            WarcraftLogs <br>
             Soooo... jetzt weißt du aber wirklich so gut wie alles. <br>
-            Also wenn du uns jetzt immernoch kennenlernen willst, dann zögere nicht und schreibe einen unserer Offiziere inGame an:
-            <ul>
-                <li>Kreischi - Nathrezim</li>
-                <li>Ginflut - Anetheron</li>
-                <li>Gefearfach - Anetheron</li>
-                <li>Hauie - Anetheron</li>
-                <li>Tack - Gul'dan</li>
-                <li>Subbi - Anetheron</li>
-            </ul>
-        </p>
-        </div><!-- Ende TabContent-->
-    </div> <!-- Ende Raids-->
-    <div class="section" id="mythic">
-    <div id="affix_container">
-        <!--Erstes Affix-->
-        <div class="affixContent">
-            <div class="affix" id="affixOne"></div> <br> <br> <br>
-            <span class="affixText" id="affixOneText"></span>
-        </div>
-        <!--Zweites Affix-->
-        <div class="affixContent">
-            <div class="affix" id="affixTwo"></div> <br> <br> <br>
-            <span class="affixText" id="affixTwoText"></span>
-        </div>
-        <!--Drittes Affix-->
-        <div class="affixContent">
-            <div class="affix" id="affixThree"></div> <br> <br><br>
-            <span class="affixText" id="affixThreeText"></span>
-        </div>
-        <!--Viertes Affix-->
-        <div class="affixContent">
-            <div class="affix" id="affixFour"></div> <br> <br> <br>
-            <span class="affixText" id="affixFourText"></span>
-        </div>
+            Also wenn du uns jetzt immernoch kennenlernen willst, dann zögere nicht und schreibe einen unserer Offiziere inGame an: <br>
+            </p>
+        </div>        
     </div>
-
-    <!-- Tabelle zur Ausgabe der M+ Scores-->
-    <!-- Muss noch dynamisch in JS function ausgelagert werden-->
-    <table>
-        <tr>
-            <th>Name</th> <th>Realm</th> <th>Score</th>
-        </tr>
-        <tr>
-            <td>Kreischi</td> <td>Nathrezim</td> <td>1100</td>
-        </tr>
-        <tr>
-            <td>Kreischi</td> <td>Nathrezim</td> <td>1000</td>
-        </tr>        
-        <tr>
-            <td>Kreischi</td> <td>Nathrezim</td> <td>900</td>
-        </tr>
-        <tr>
-            <td>Kreischi</td> <td>Nathrezim</td> <td>800</td>
-        </tr>
-        <tr>
-        <td>Kreischi</td> <td>Nathrezim</td> <td>1100</td>
-        </tr>
-        <tr>
-            <td>Kreischi</td> <td>Nathrezim</td> <td>1000</td>
-        </tr>        
-        <tr>
-            <td>Kreischi</td> <td>Nathrezim</td> <td>900</td>
-        </tr>
-        <tr>
-            <td>Kreischi</td> <td>Nathrezim</td> <td>800</td>
-        </tr>
-        <tr>
-        <td>Kreischi</td> <td>Nathrezim</td> <td>1100</td>
-        </tr>
-        <tr>
-            <td>Kreischi</td> <td>Nathrezim</td> <td>1000</td>
-        </tr>        
-    </table>
-    </div> <!-- Ende Mythic-->
-    <div class="section" id="footer">
-        <ul id="footerUl">
-            <li>Impressum ||</li>
-            <li>Datenschutz ||</li>
-            <li>Battle.net Link</li>
-        </ul>
-    </div> <!-- Ende Footer-->
-</div><!--Wrapper Ende-->
+    <!-- Raids Ende -->
+kjdpfjopjwfwpfkwpjo
 
 <script>
-"use strict";
-    // Skillbar Animations
+     $(document).ready(function() {
+      $('.progress .progress-bar').css("width",
+                function() {
+                    return $(this).attr("aria-valuenow") + "%";
+                }
+        )
+    });
+
     $(document).ready(function(){
         $('.skillbar').each(function(){
             $(this).find('.skillbar-bar').animate({
@@ -361,24 +232,38 @@ $pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database =
         });
     });
 
-    //TabContent Switch
-    let openTab=(evt, cityName)=>{
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
+
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
     }
 
-    // Get the element with id="defaultOpen" and click on it
+    
     document.getElementById("defaultOpen").click();
+    function openTab(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
 
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
 </script>
 </body>
 </html>

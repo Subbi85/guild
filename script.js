@@ -3,9 +3,6 @@ let resultObj;
 let array=[];
 
 
-
-affixe();
-
 function guildMembers(){                	/*Erstellen der Memberliste für weitere Funktionen */
 var guildRequest = new XMLHttpRequest();
 guildRequest.open('GET', 'https://eu.api.blizzard.com/wow/guild/Anetheron/Order%20and%20Chaos?fields=members&locale=en_US&access_token=US40yiXoUpTd1QPa5lC4ewfDEpjONjtrZ0')
@@ -21,15 +18,11 @@ guildRequest.send()
 
 //####################### RAID PROGRESS #######################################################
 function progression(){
-
     var blizzRequest = new XMLHttpRequest();
-    blizzRequest.open('GET', 'https://raider.io/api/v1/guilds/profile?region=EU&realm=Anetheron&name=Order%20and%20Chaos&fields=raid_rankings%2C%20raid_progression');
+    blizzRequest.open('GET', 'https://raider.io/api/v1/guilds/profile?region=EU&realm=Anetheron&name=Order%20and%20Chaos&fields=raid_progression%2C%20raid_rankings');
     blizzRequest.onload=function(){
         var test = JSON.parse(blizzRequest.responseText);
         //Verarbeitung der Daten und Anpassen der Progressbars
-
-        let tess= document.querySelector("#bla");
-        tess.percent="50%";
         console.log(test);
     }
     blizzRequest.send();
@@ -58,35 +51,6 @@ function getScore(name, realm, classes){           /* M+ Scores der Member */
     blizzRequest.send();
 }
 //################# GET SCORES ENDE  ##################################################
-let firstPart=()=>{
-    getScore('Amaterasû','Anetheron','tank');
-    getScore('Sinnerella',"Gul'dan",'tank');
-    getScore('Parulor','Anetheron','melee');
-    getScore('Tack',"Gul'dan",'melee');
-    getScore('Darkeddie','Rajaxx','melee');
-    getScore('Sinopa','Anetheron','melee');
-    getScore('Aywi','Rajaxx','melee');
-    getScore('Tievy','Anetheron','melee');
-    getScore('Corruptìon','Thrall','melee');
-    getScore('Valafar','Anetheron','melee');
-    getScore('Lýnxx','Anetheron','melee');
-    getScore('Nyalarthotep','Anetheron','melee');
-    getScore('Kreischi', 'Nathrezim', 'heal');
-    getScore('Büffelhüfte','Thrall','heal');
-    getScore('Ginflut','Anetheron','heal');
-    getScore('Damari','Rajaxx','ranged');
-    getScore('Pitfall','Anetheron','ranged');
-    getScore('Gefearfach','Anetheron','ranged');
-    getScore('Hauie','Anetheron','ranged');
-    getScore('Machtgeil','Rajaxx','ranged');
-    getScore('Lorelin','Anetheron','ranged');
-    getScore('Sêppêl','Guldan','ranged');
-    getScore('Vinkly','Anetheron','ranged');
-    getScore('Nanir','Anetheron','ranged');
-    getScore('Swarloz','Anetheron','ranged');
-}
-firstPart();
-
 function Score (name, realm,score){
     this.name= name,
     this.realm=realm,
@@ -102,6 +66,7 @@ function Score (name, realm,score){
     blizzRequest.send();
     }
 }
+
 
 let score_1 = new Score('Subbi', 'Anetheron');
 console.log(score_1);
