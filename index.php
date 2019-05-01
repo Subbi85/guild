@@ -1,3 +1,6 @@
+<?php
+//$pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database = guild", "Subbi", "{Kalender85}");
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,7 +21,7 @@
             <img src="css/img/logo.png" alt="css/img/logo.png" id="titlepic">
             <h1>Order and Chaos</h1> <br>
             <h3>Anetheron - EU</h3>
-            <div class="button">Start</div>
+            <a href="#about"><div class="button">Start</div></a>
         </div>
     </div>
     <!-- Landing ENDE-->
