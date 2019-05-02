@@ -262,8 +262,7 @@ input:checked ~ .content{
         height:150px;
     }
     .card{
-        margin-top:10px;
-        margin-left: 10px;
+        margin:10px 0 0 10px;
     }
     .content{
         padding: 0px;
