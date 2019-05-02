@@ -12,7 +12,7 @@ let tabellenBauen=(data)=>{
         console.log(element.role);
 
         let neueTr = document.createElement("tr");
-        neueTr.setAttribute("style", "background-color:"+element.color);
+        neueTr.setAttribute("style", "color:"+element.color);
         //Charname
         let neueTd = document.createElement("td");
         let neuerText = document.createTextNode(element.charname);

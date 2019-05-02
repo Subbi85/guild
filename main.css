@@ -1,6 +1,6 @@
 /* Allgemeines CSS */
 html{scroll-behavior: smooth}
-body{margin:0; padding:0;}
+body{margin:0; padding:0;max-width:1980}
 .button{ padding:5px; outline: 1px solid #fff;}
 .button:hover{cursor: pointer;}
 .section{max-width: 1980px;}
@@ -125,11 +125,13 @@ a, a:visited{color:#fff;text-decoration: none;}
     width: 100%;
     display: flex;
     flex-direction:row;
+    background: #fff;
 }
 
 .kader{
     flex:1;
     margin: 0 auto;
+    background: #bbb;
 }
 
 
