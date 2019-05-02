@@ -308,6 +308,7 @@
     </div>
     <!-- Mythic Plus ENDE-->
     <div class="parallax" id="para_kontakt">
+        <h3>Kontakt</h3>
     </div>
     <!-- Kontakt -->
     <div class="section" id="kontakt">
