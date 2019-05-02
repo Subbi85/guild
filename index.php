@@ -186,7 +186,6 @@
         </div>
 
         <div id="kader" class="tabcontent">
-            <h3>Raidkader</h3>
             <div id="kader_container">
                 <div class="kader" id="tanks">
                     <h4>Tanks</h4>                    
