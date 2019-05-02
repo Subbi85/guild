@@ -195,6 +195,7 @@
                         if (this.readyState == 4 && this.status == 200) {
                             let data = JSON.parse(this.responseText);
                             console.log(data);
+                            console.log(data[2].classname);
                         }
                 }
                 member.open("GET", "php/select.php", true);
