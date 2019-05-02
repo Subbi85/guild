@@ -11,7 +11,6 @@ let tabellenBauen=(data)=>{
         console.log(element.charname);
         console.log(element.role);
 
-
         let neueTr = document.createElement("tr");
         //Charname
         let neueTd = document.createElement("td");

@@ -204,19 +204,53 @@
             <div id="kader_container">
                 <div class="kader" id="tanks">
                     <h4>Tanks</h4>                    
-                    <table id="table_tanks"></table>
+                    <table id="table_tanks">
+                        <tr>
+                            <td>ojwdfopwmd</td>
+                            <td>wempfkjpwekmfp,f</td>
+                        </tr>
+                        <tr>
+                            <td>ojwdfopwmd</td>
+                            <td>wempfkjpwekmfp,f</td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="kader" id="heals">
                     <h4>Heals</h4>
-                    <table id="table_heals"></table>
+                    <table id="table_heals">
+                    <tr>
+                            <td>ojwdfopwmd</td>
+                            <td>wempfkjpwekmfp,f</td>
+                        </tr>
+                        <tr>
+                            <td>ojwdfopwmd</td>
+                            <td>wempfkjpwekmfp,f</td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="kader" id="ranges">
                     <h4>Ranges</h4>
-                    <table id="table_ranges"></table>
+                    <table id="table_ranges">
+                    <td>ojwdfopwmd</td>
+                            <td>wempfkjpwekmfp,f</td>
+                        </tr>
+                        <tr>
+                            <td>ojwdfopwmd</td>
+                            <td>wempfkjpwekmfp,f</td>
+                        </tr>                        
+                    </table>
                 </div>
                 <div class="kader" id="melees">
                     <h4>Melees</h4>
-                    <table id="table_melees"></table>
+                    <table id="table_melees">
+                    <td>ojwdfopwmd</td>
+                            <td>wempfkjpwekmfp,f</td>
+                        </tr>
+                        <tr>
+                            <td>ojwdfopwmd</td>
+                            <td>wempfkjpwekmfp,f</td>
+                        </tr>                        
+                    </table>
                 </div>
             </div>
         </div>
