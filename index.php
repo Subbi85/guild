@@ -31,6 +31,7 @@
         <a href="#about">Über Uns</a>
         <a href="#raids">Raids</a>
         <a href="#mythic">Mythic+</a>
+        <a href="#kontakt">Kontakt</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars">|||</i>      
         </a>
@@ -247,17 +248,73 @@
         </div>        
     </div>
     <!-- Raids Ende -->
-    <div class="section" id="mythic">
-        <h3>Mythic+</h3>
+    <div class="parallax" id="para_mythic">
+        <h3>Mythic Plus Paralax</h3>
+    </div>
 
-        <div id="affix_container">
-            <div class="affix" id="affix1"></div>
-            <div class="affix" id="affix2"></div>
-            <div class="affix" id="affix3"></div>
-            <div class="affix" id="affix4"></div>
+
+    <!-- Mythic Plus-->
+    <div class="section" id="mythic">
+        <div class="card_container">
+        <div class="card">
+            <input type="checkbox" name="">
+            <div class="toggle">+</div>
+            <div class="imgBox">
+                <img src="css/img/logo.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Tyrannisch</h3>
+                <p>wjlowodholnfoadhaldnalkdbajdwjwal <br>
+                 ndbizvhdwaidhb</p>
+            </div>
         </div>
+        <div class="card">
+            <input type="checkbox" name="">
+            <div class="toggle">+</div>
+            <div class="imgBox">
+                <img src="css/img/logo.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Tyrannisch</h3>
+                <p>wjlowodholnfoadhaldnalkdbajdwjwal <br>
+                 ndbizvhdwaidhb</p>
+            </div>
+        </div>
+        <div class="card">
+            <input type="checkbox" name="">
+            <div class="toggle">+</div>
+            <div class="imgBox">
+                <img src="css/img/logo.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Tyrannisch</h3>
+                <p>wjlowodholnfoadhaldnalkdbajdwjwal <br>
+                 ndbizvhdwaidhb</p>
+            </div>
+        </div>
+        <div class="card">
+            <input type="checkbox" name="">
+            <div class="toggle">+</div>
+            <div class="imgBox">
+                <img src="css/img/logo.png" alt="">
+            </div>
+            <div class="content">
+                <h3>Tyrannisch</h3>
+                <p>wjlowodholnfoadhaldnalkdbajdwjwal <br>
+                 ndbizvhdwaidhb</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Mythic Plus ENDE-->
+    <div class="parallax" id="para_kontakt">
+    </div>
+    <!-- Kontakt -->
+    <div class="section" id="kontakt">
+        <h3>Kontakt</h3>
 
     </div>
+    <!--Footer -->
 
 <script>
      $(document).ready(function() {
