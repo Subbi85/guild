@@ -191,14 +191,14 @@
                 "use strict"
                 //Abrufen der Daten per AJAX
                 let member = new XMLHttpRequest();
-                    fragen.onreadystatechange = function() {
+                    member.onreadystatechange = function() {
                         if (this.readyState == 4 && this.status == 200) {
                             let data = JSON.parse(this.responseText);
                             console.log(data);
                         }
                 }
-                fragen.open("GET", "php/select.php", true);
-                fragen.send();
+                member.open("GET", "php/select.php", true);
+                member.send();
 
             </script>
             <div id="kader_container">
