@@ -12,18 +12,18 @@ let tabellenBauen=(data)=>{
         console.log(element.role);
 
 
-        let neuesTr = document.createElement("tr");
+        let neueTr = document.createElement("tr");
         //Charname
         let neueTd = document.createElement("td");
         let neuerText = document.createTextNode(element.charname);
         neueTd.appendChild(neuerText);
-        neuesTr.appendChild(neueTd);
+        neueTr.appendChild(neueTd);
 
         //Realmname
         neueTd = document.createElement("td");
         neuerText = document.createTextNode(element.realm);
         neueTd.appendChild(neuerText);
-        neuesTr.appendChild(neueTd);
+        neueTr.appendChild(neueTd);
 
         //Wo soll angehängt werden?
         switch (element.role){
