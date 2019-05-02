@@ -195,7 +195,6 @@
                         if (this.readyState == 4 && this.status == 200) {
                             let data = JSON.parse(this.responseText);
                             console.log(data);
-                            console.log(data[2].classname);
                         }
                 }
                 member.open("GET", "php/select.php", true);
@@ -258,14 +257,12 @@
 
 <script>
      $(document).ready(function() {
-      $('.progress .progress-bar').css("width",
-                function() {
-                    return $(this).attr("aria-valuenow") + "%";
-                }
+        $('.progress .progress-bar').css("width",
+            function() {
+                return $(this).attr("aria-valuenow") + "%";
+            }
         )
-    });
 
-    $(document).ready(function(){
         $('.skillbar').each(function(){
             $(this).find('.skillbar-bar').animate({
                 width:$(this).attr('data-percent')
