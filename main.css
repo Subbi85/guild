@@ -261,19 +261,20 @@ input:checked ~ .content{
         width: 150px;
         height:150px;
     }
-
     .card{
         margin-top:10px;
+        margin-left: 10px;
     }
     .content{
         padding: 0px;
+        padding: 0px;     
+        font-size: 12px;   
     }
 
     input, .toggle{
         width:20px;
         height:20px;
         line-height:20px;
-        font-size:20px; 
-        padding: 0px;
+        font-size: 16px;
     }
 }
