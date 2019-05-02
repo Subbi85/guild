@@ -261,7 +261,7 @@ input:checked ~ .content{
 
 @media screen and (max-width: 500px) {
     .card, .imgBox, .content{
-        width: 150px;
+        width: 155px;
         height:150px;
     }
     .card{
