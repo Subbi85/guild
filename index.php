@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="w3.css" />
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>    
     <script src="script.js"></script>
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <!-- Landing -->
@@ -62,124 +62,124 @@
     <div class="section" id="raids">
 
         <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'BfA')">BfA</button>
+            <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'BfA')">BfA</button>
             <button class="tablinks" onclick="openTab(event, 'Legion')">Legion</button>
-            <button class="tablinks"  id="defaultOpen" onclick="openTab(event, 'kader')">Kader</button>
+            <button class="tablinks" onclick="openTab(event, 'kader')">Kader</button>
             <button class="tablinks" onclick="openTab(event, 'Infos')">Infos</button>
         </div>
 
         <div id="BfA" class="tabcontent">
             <h3>Tiegel der Stürme</h3>
-             <div class="skillbar clearfix " data-percent="50%">
+             <div class="skillbar clearfix " data-percent="50%" onmouseenter="hintergrundWechseln('tiegel')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Tiegel hc</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skillbar-bar" style="background: #ee202b;"></div>
                 <div class="skill-bar-percent">1/2</div>
             </div> <!-- End Skill Bar -->
         
-            <div class="skillbar clearfix " data-percent="100%">
+            <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('tiegel')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Tiegel nhc</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skillbar-bar" style="background: #ee202b;"></div>
                 <div class="skill-bar-percent">2/2</div>
             </div> <!-- End Skill Bar -->
 
             <!-- Dazar -->
             <h3>Belagerung von Dazar'Alor</h3>
-            <div class="skillbar clearfix" data-percent="20%">
-                <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor mythic</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
+            <div class="skillbar clearfix" data-percent="20%" onmouseenter="hintergrundWechseln('dazar')">
+                <div class="skillbar-title" style="background: #a09797;"><span>Dazar mythic</span></div>
+                <div class="skillbar-bar" style="background: gold;"></div>
                 <div class="skill-bar-percent">2/9</div>
             </div> <!-- End Skill Bar -->
         
-            <div class="skillbar clearfix" data-percent="100%">
+            <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('dazar')"> 
                 <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor hc</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skillbar-bar" style="background: gold;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
-            <div class="skillbar clearfix" data-percent="100%">
+            <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('dazar')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor hc</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skillbar-bar" style="background: gold;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <!-- Uldir -->
             <h3>Uldir</h3>
-            <div class="skillbar clearfix" data-percent="100%">
+            <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('uldir')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Uldir hc</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skillbar-bar" style="background: ##67b264;"></div>
                 <div class="skill-bar-percent">8/8</div>
             </div> <!-- End Skill Bar -->
 
-            <div class="skillbar clearfix" data-percent="100%">
+            <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('uldir')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Uldir nhc</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skillbar-bar" style="background: ##60b55c;"></div>
                 <div class="skill-bar-percent">8/8</div>
             </div> <!-- End Skill Bar -->
         </div>
 
         <div id="Legion" class="tabcontent">
             <h3>Antorus, der brennende Thron</h3>
-            <div class="skillbar clearfix" data-percent="100%">
+            <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('antorus')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Antorus hc</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skillbar-bar" style="background: #179c4a;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
-            <div class="skillbar clearfix " data-percent="100%">
+            <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('antorus')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Antorus nhc</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skillbar-bar" style="background: #179c4a;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <h3>Grabmal des Sageras</h3>
-            <div class="skillbar clearfix " data-percent="100%">
+            <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('grab')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Grabmal hc</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skillbar-bar" style="background: #F3FE24;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
-            <div class="skillbar clearfix " data-percent="100%">
+            <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('grab')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Grabmal nhc</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skillbar-bar" style="background: #F3FE24;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <h3>Nachtfestung</h3>
-            <div class="skillbar clearfix " data-percent="100%">
+            <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('nachtfestung')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Nachtfestung hc</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skillbar-bar" style="background: ##6EFFFF;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
-            <div class="skillbar clearfix " data-percent="100%">
-                <div class="skillbar-title" style="background: #a09797;"><span>Nachtfestung nhc</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
+            <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('nachtfestung')">
+                <div class="skillbar-title" style="background: #a09797;"><span>Nachtfest. nhc</span></div>
+                <div class="skillbar-bar" style="background: ##6EFFFF;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <h3>Prüfung der Tapferkeit</h3>
-            <div class="skillbar clearfix " data-percent="100%">
+            <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('trials')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Trials hc</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skillbar-bar" style="background: #f85d03;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
-            <div class="skillbar clearfix " data-percent="100%">
+            <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('trials')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Trials nhc</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skillbar-bar" style="background: #f85d03;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <h3>Smaragdgrüner Alptraum</h3>
-            <div class="skillbar clearfix " data-percent="100%">
+            <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('smaragd')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Alptraum hc</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skillbar-bar" style="background: #561256;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
-            <div class="skillbar clearfix " data-percent="100%">
+            <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('smaragd')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Alptraum nhc</span></div>
-                <div class="skillbar-bar" style="background: #C5534F;"></div>
+                <div class="skillbar-bar" style="background: #561256;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
