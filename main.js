@@ -26,7 +26,20 @@ let tabellenBauen=(data)=>{
         neuesTr.appendChild(neueTd);
 
         //Wo soll angehängt werden?
-
+        switch (element.role){
+            case "tank":
+                tanks.appendChild(neueTr);
+                break;
+            case "heal":
+                heals.appendChild(neueTr);
+                break;
+            case "ranged":
+                ranges.appendChild(neueTr);
+                break
+            case "melee":
+                melees.appendChild(neueTr);
+                break;
+        }
     });
 }
 
