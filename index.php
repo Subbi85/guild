@@ -30,7 +30,7 @@
         <a href="#landing">Home</a>
         <a href="#about">Über Uns</a>
         <a href="#raids">Raids</a>
-        <a href="#about">Mythic+</a>
+        <a href="#mythic">Mythic+</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars">|||</i>      
         </a>
@@ -62,9 +62,9 @@
     <div class="section" id="raids">
 
         <div class="tab">
-            <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'BfA')">BfA</button>
+            <button class="tablinks" onclick="openTab(event, 'BfA')">BfA</button>
             <button class="tablinks" onclick="openTab(event, 'Legion')">Legion</button>
-            <button class="tablinks" onclick="openTab(event, 'Tokyo')">Kader</button>
+            <button class="tablinks"  id="defaultOpen" onclick="openTab(event, 'kader')">Kader</button>
             <button class="tablinks" onclick="openTab(event, 'Infos')">Infos</button>
         </div>
 
@@ -84,19 +84,19 @@
 
             <!-- Dazar -->
             <h3>Belagerung von Dazar'Alor</h3>
-            <div class="skillbar clearfix " data-percent="20%">
+            <div class="skillbar clearfix" data-percent="20%">
                 <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor mythic</span></div>
                 <div class="skillbar-bar" style="background: #C5534F;"></div>
                 <div class="skill-bar-percent">2/9</div>
             </div> <!-- End Skill Bar -->
         
-            <div class="skillbar clearfix " data-percent="100%">
+            <div class="skillbar clearfix" data-percent="100%">
                 <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor hc</span></div>
                 <div class="skillbar-bar" style="background: #C5534F;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
-            <div class="skillbar clearfix " data-percent="100%">
+            <div class="skillbar clearfix" data-percent="100%">
                 <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor hc</span></div>
                 <div class="skillbar-bar" style="background: #C5534F;"></div>
                 <div class="skill-bar-percent">9/9</div>
@@ -104,13 +104,13 @@
 
             <!-- Uldir -->
             <h3>Uldir</h3>
-            <div class="skillbar clearfix " data-percent="100%">
+            <div class="skillbar clearfix" data-percent="100%">
                 <div class="skillbar-title" style="background: #a09797;"><span>Uldir hc</span></div>
                 <div class="skillbar-bar" style="background: #C5534F;"></div>
                 <div class="skill-bar-percent">8/8</div>
             </div> <!-- End Skill Bar -->
 
-            <div class="skillbar clearfix " data-percent="100%">
+            <div class="skillbar clearfix" data-percent="100%">
                 <div class="skillbar-title" style="background: #a09797;"><span>Uldir nhc</span></div>
                 <div class="skillbar-bar" style="background: #C5534F;"></div>
                 <div class="skill-bar-percent">8/8</div>
@@ -119,7 +119,7 @@
 
         <div id="Legion" class="tabcontent">
             <h3>Antorus, der brennende Thron</h3>
-            <div class="skillbar clearfix " data-percent="100%">
+            <div class="skillbar clearfix" data-percent="100%">
                 <div class="skillbar-title" style="background: #a09797;"><span>Antorus hc</span></div>
                 <div class="skillbar-bar" style="background: #C5534F;"></div>
                 <div class="skill-bar-percent">9/9</div>
@@ -185,9 +185,22 @@
 
         </div>
 
-        <div id="Tokyo" class="tabcontent">
+        <div id="kader" class="tabcontent">
             <h3>Raidkader</h3>
-            <p>Tokyo is the capital of Japan.</p>
+            <div id="kader_container">
+                <div class="kader" id="tanks">
+                    <h4>Tanks</h4>                    
+                </div>
+                <div class="kader" id="heals">
+                    <h4>Heals</h4>
+                </div>
+                <div class="kader" id="ranges">
+                    <h4>Ranges</h4>
+                </div>
+                <div class="kader" id="melees">
+                    <h4>Melees</h4>
+                </div>
+            </div>
         </div>
 
         <div id="Infos" class="tabcontent">
@@ -216,7 +229,17 @@
         </div>        
     </div>
     <!-- Raids Ende -->
-kjdpfjopjwfwpfkwpjo
+    <div class="section" id="mythic">
+        <h3>Mythic+</h3>
+
+        <div id="affix_container">
+            <div class="affix" id="affix1"></div>
+            <div class="affix" id="affix2"></div>
+            <div class="affix" id="affix3"></div>
+            <div class="affix" id="affix4"></div>
+        </div>
+
+    </div>
 
 <script>
      $(document).ready(function() {
@@ -247,7 +270,7 @@ kjdpfjopjwfwpfkwpjo
 
     
     document.getElementById("defaultOpen").click();
-    function openTab(evt, cityName) {
+    function openTab(evt, tabName) {
         // Declare all variables
         var i, tabcontent, tablinks;
 
@@ -264,7 +287,7 @@ kjdpfjopjwfwpfkwpjo
         }
 
         // Show the current tab, and add an "active" class to the button that opened the tab
-        document.getElementById(cityName).style.display = "block";
+        document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
     }
 </script>

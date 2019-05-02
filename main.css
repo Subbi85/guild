@@ -119,6 +119,18 @@ a, a:visited{color:#fff;text-decoration: none;}
     line-height:35px;
     color:#ffffff;
   }
+/* Raidkader */
+#kader_container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+}
+
+.kader{
+    flex:1;
+    margin: 10px;
+}
 
 
 
@@ -130,4 +142,18 @@ a, a:visited{color:#fff;text-decoration: none;}
 @media screen and (max-width: 900px) {
     #pic{display: none;}
 
+}
+
+@media screen and (max-width: 750px) {
+    #pic{display: none;}
+    .skill-bar-percent,.skillbar-bar,.skillbar-title span, .skillbar-title, .skillbar{
+        height: 20px;
+        line-height:20px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #kader_container{
+        flex-direction:column;
+    }
 }
