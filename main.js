@@ -9,9 +9,9 @@ let tabellenBauen=(data)=>{
     //Neue DOM-Elemente aufbauen
     data.forEach(element => {
         console.log(element.charname);
-        console.log(elment.role);
+        console.log(element.role);
 
-        
+
         let neuesTr = document.createElement("tr");
         //Charname
         let neueTd = document.createElement("td");
