@@ -204,15 +204,19 @@
             <div id="kader_container">
                 <div class="kader" id="tanks">
                     <h4>Tanks</h4>                    
+                    <table id="table_tanks"></table>
                 </div>
                 <div class="kader" id="heals">
                     <h4>Heals</h4>
+                    <table id="table_heals"></table>
                 </div>
                 <div class="kader" id="ranges">
                     <h4>Ranges</h4>
+                    <table id="table_ranges"></table>
                 </div>
                 <div class="kader" id="melees">
                     <h4>Melees</h4>
+                    <table id="table_melees"></table>
                 </div>
             </div>
         </div>
