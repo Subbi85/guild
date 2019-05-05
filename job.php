@@ -38,6 +38,8 @@ session_start();
         //Raider.io Scores abrufen
         let getScores=(daten)=>{
             console.log(daten.charname, daten.realm);
+            if(daten.realm==="Guldan")
+                daten.realm="Gul'dan";
             var blizzRequest = new XMLHttpRequest();
             blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+daten.realm+'&name='+daten.charname+'&fields=mythic_plus_scores')
             blizzRequest.onload=function(){
