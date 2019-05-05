@@ -31,7 +31,7 @@ progression();
 
 // FERTIGE FUNKTIONEN:
 //###################### GET SCORES #######################################################
-function getScore(name, realm, classes){           /* M+ Scores der Member */
+function getScore(name, realm){           /* M+ Scores der Member */
     var scores = [];
     var blizzRequest = new XMLHttpRequest();
     blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+realm+'&name='+name+'&fields=mythic_plus_scores')
@@ -41,7 +41,6 @@ function getScore(name, realm, classes){           /* M+ Scores der Member */
             scores.push(name);
             scores.push(realm);
             scores.push(current);
-            scores.push(classes);
             console.log(scores[2]);
             array.push(scores);
     }
