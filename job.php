@@ -36,7 +36,7 @@ session_start();
     
     
         let getScore=(daten)=>{
-            console.log(daten.charname);
+            console.log(daten.charname, daten.realm);
         }
 
 
