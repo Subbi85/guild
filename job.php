@@ -26,7 +26,7 @@ session_start();
                     let daten =[];
                     for (let i=0; i<data.length; i++){
                         daten.push(data[i]);
-                        
+                        getScore(daten[i]);
                     }
 
                 }
@@ -35,6 +35,12 @@ session_start();
         member.send();
     
     
+        let getScore=(daten)=>{
+            console.log(daten.charname);
+        }
+
+
+
     </script>
 </body>
 </html>
