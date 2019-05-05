@@ -43,7 +43,7 @@ session_start();
             blizzRequest.onload=function(){
                 let score = JSON.parse(blizzRequest.responseText);
                 let current = score.mythic_plus_scores.all;
-                let score=[];
+                let scores=[];
                 scores.push(name);
                 scores.push(realm);
                 scores.push(current);
