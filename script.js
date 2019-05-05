@@ -1,7 +1,5 @@
 //Globals
-let resultObj;
 let array=[];
-
 
 function guildMembers(){                	/*Erstellen der Memberliste für weitere Funktionen */
 var guildRequest = new XMLHttpRequest();
@@ -33,7 +31,6 @@ progression();
 
 // FERTIGE FUNKTIONEN:
 //###################### GET SCORES #######################################################
-
 function getScore(name, realm, classes){           /* M+ Scores der Member */
     var scores = [];
     var blizzRequest = new XMLHttpRequest();
@@ -69,7 +66,7 @@ function Score (name, realm,score){
 
 
 let score_1 = new Score('Subbi', 'Anetheron');
-console.log(score_1);
+console.log(score_1.getScore());
 
 
 let tabelleAufbauen=()=>{
@@ -90,22 +87,30 @@ let affixes = [];
 blizzRequest.open('GET', 'https://raider.io/api/v1/mythic-plus/affixes?region=EU&locale=de')
 blizzRequest.onload=function(){
     var test = JSON.parse(blizzRequest.responseText);
-    console.log(test);
     for(i=0; i<test.affix_details.length; i++){
         let affix = test.affix_details[i].name;
         let detail = test.affix_details[i].description;
         affixes.push(affix);
         affixes.push(detail);
     }
-    document.getElementById("affixOne").innerHTML=affixes[0];
-    document.querySelector("#affixOneText").innerHTML=affixes[1]; //Beschreibung
-    document.getElementById("affixTwo").innerHTML=affixes[2];
-    document.getElementById("affixTwoText").innerHTML=affixes[3]; // Beschreibung 2
-    document.getElementById("affixThree").innerHTML=affixes[4];
-    document.getElementById("affixThreeText").innerHTML=affixes[5]; // Beschreibung 3
-    document.getElementById("affixFour").innerHTML=affixes[6];
-    document.getElementById("affixFourText").innerHTML=affixes[7]; // Beschreibung 4
+    console.log(affixes);
+    //Display Data
+    //#1
+    document.getElementById("content_head_one").innerHTML = affixes[0];
+    document.getElementById("content_one").innerHTML = affixes[1];
+    //#2
+    document.getElementById("content_head_two").innerHTML = affixes[2];
+    document.getElementById("content_two").innerHTML = affixes[3];
+    //#3
+    document.getElementById("content_head_three").innerHTML = affixes[4];
+    document.getElementById("content_three").innerHTML = affixes[5];
+    //#4
+    document.getElementById("content_head_four").innerHTML = affixes[6];
+    document.getElementById("content_four").innerHTML = affixes[7];
+
 }  
 blizzRequest.send();
 }                                           
 //################# AFFIXE DER WOCHE ENDE #######################################################
+
+affixe();

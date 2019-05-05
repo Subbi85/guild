@@ -158,15 +158,17 @@ a, a:visited{color:#fff;text-decoration: none;}
 
 /*Mythic */
 #mythic{
-    margin-top:10px;
     height:100vh;
     display:flex;
-    justify-content: center;
+    text-align: center;
+    flex-direction: column;
 }
 
 .card_container{
     height:250px;
-    width: 100%;
+    width: 70%;
+    max-width:892px;
+    margin:0 auto;
 }
 
 .card{
@@ -177,6 +179,8 @@ a, a:visited{color:#fff;text-decoration: none;}
     overflow: hidden;
     float:left;
     margin-left: 20px;
+    flex:1;
+    margin:10px;
 }
 
 input, .toggle{
@@ -239,6 +243,17 @@ input:checked ~ .content{
     color: #fff;
 }
 
+.scores{
+    width:70%;
+    max-width:892px;
+    margin:0 auto;
+}
+table{
+    width:100%;
+}
+
+
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1250px) {
     #pic{display: none;}
@@ -253,15 +268,24 @@ input:checked ~ .content{
         height: 20px;
         line-height:20px;
     }
+    .card_container{width:100%;}
 }
 
 @media screen and (max-width: 750px) {
     .parallax{height: 200px;font-size: 24px;}
 }
 
+@media screen and (max-width: 650px) {
+    .card_container{
+        width:100%;
+        margin: 0 auto;
+        height:450px;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .card, .imgBox, .content{
-        width: 155px;
+        width: 159px;
         height:150px;
     }
     .card{
@@ -278,5 +302,9 @@ input:checked ~ .content{
         height:20px;
         line-height:20px;
         font-size: 16px;
+    }
+
+    .card_container{
+        height:350px;
     }
 }

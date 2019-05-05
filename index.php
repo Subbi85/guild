@@ -252,59 +252,74 @@
         <h3>Mythic Plus Paralax</h3>
     </div>
 
-
     <!-- Mythic Plus-->
     <div class="section" id="mythic">
-        <div class="card_container">
-        <div class="card">
-            <input type="checkbox" name="">
-            <div class="toggle">+</div>
-            <div class="imgBox">
-                <img src="css/img/logo.png" alt="">
+        <div class="card_container">      
+            <!-- Erstes Affix -->  
+            <div class="card">
+                <input type="checkbox" name="">
+                <div class="toggle"></div>
+                <div class="imgBox">
+                    <img src="css/img/logo.png" alt="">
+                </div>
+                <div class="content">
+                <h3 id="content_head_one"></h3>
+                    <p id="content_one"></p>
+                </div>
             </div>
-            <div class="content">
-                <h3>Tyrannisch</h3>
-                <p>wjlowodholnfoadhaldnalkdbajdwjwal <br>
-                 ndbizvhdwaidhb</p>
+
+            <!-- Zweites Affix -->
+            <div class="card">
+                <input type="checkbox" name="">
+                <div class="toggle"></div>
+                <div class="imgBox">
+                    <img src="css/img/logo.png" alt="">
+                </div>
+                <div class="content">
+                <h3 id="content_head_two"></h3>
+                    <p id="content_two"></p>
+                </div>
             </div>
-        </div>
-        <div class="card">
-            <input type="checkbox" name="">
-            <div class="toggle">+</div>
-            <div class="imgBox">
-                <img src="css/img/logo.png" alt="">
+
+            <!-- Drittes Affix -->
+            <div class="card">
+                <input type="checkbox" name="">
+                <div class="toggle"></div>
+                <div class="imgBox">
+                    <img src="css/img/logo.png" alt="">
+                </div>
+                <div class="content">
+                <h3 id="content_head_three"></h3>
+                    <p id="content_three"></p>
+                </div>
             </div>
-            <div class="content">
-                <h3>Tyrannisch</h3>
-                <p>wjlowodholnfoadhaldnalkdbajdwjwal <br>
-                 ndbizvhdwaidhb</p>
+
+            <!-- Viertes Affix -->
+            <div class="card">
+                <input type="checkbox" name="">
+                <div class="toggle"></div>
+                <div class="imgBox">
+                    <img src="css/img/logo.png" alt="">
+                </div>
+                <div class="content">
+                <h3 id="content_head_four"></h3>
+                    <p id="content_four"></p>
             </div>
-        </div>
-        <div class="card">
-            <input type="checkbox" name="">
-            <div class="toggle">+</div>
-            <div class="imgBox">
-                <img src="css/img/logo.png" alt="">
-            </div>
-            <div class="content">
-                <h3>Tyrannisch</h3>
-                <p>wjlowodholnfoadhaldnalkdbajdwjwal <br>
-                 ndbizvhdwaidhb</p>
-            </div>
-        </div>
-        <div class="card">
-            <input type="checkbox" name="">
-            <div class="toggle">+</div>
-            <div class="imgBox">
-                <img src="css/img/logo.png" alt="">
-            </div>
-            <div class="content">
-                <h3>Tyrannisch</h3>
-                <p>wjlowodholnfoadhaldnalkdbajdwjwal <br>
-                 ndbizvhdwaidhb</p>
-            </div>
+            <!--###################################### -->
         </div>
     </div>
+        <div class="scores">
+            <table>
+                <th>
+                    <td>Name</td>
+                    <td>Realm</td>
+                    <td>Score</td>
+                </th>
+            </table>
+        </div>
+    </div>
+
+
     </div>
     <!-- Mythic Plus ENDE-->
     <div class="parallax" id="para_kontakt">
