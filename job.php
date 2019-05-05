@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+<?php session_start();?>
 
 <!DOCTYPE html>
 <html>
@@ -46,8 +44,8 @@ session_start();
                 let score = JSON.parse(blizzRequest.responseText);
                 let current = score.mythic_plus_scores.all;
                 let scores=[];
-                scores.push(name);
-                scores.push(realm);
+                scores.push(daten.charname);
+                scores.push(daten.realm);
                 scores.push(current);
                 finalArray.push(scores);
                 }
