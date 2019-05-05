@@ -26,10 +26,8 @@ session_start();
                     let daten =[];
                     for (let i=0; i<data.length; i++){
                         daten.push(data[i]);
+                        
                     }
-                    daten.foreach((element)=>{
-                        console.log(element);
-                    });
 
                 }
         }
