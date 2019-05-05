@@ -22,6 +22,7 @@ session_start();
             member.onreadystatechange = function() {
                 if (this.readyState == 4 && this.status == 200) {
                     let data = JSON.parse(this.responseText);
+                    console.log(data);
                 }
         }
         member.open("GET", "php/select.php", true);
