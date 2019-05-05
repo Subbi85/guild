@@ -27,7 +27,10 @@ session_start();
                     for (let i=0; i<data.length; i++){
                         daten.push(data[i]);
                     }
-                    console.log(daten[10]);
+                    daten.foreach((element)=>{
+                        console.log(element);
+                    }
+
                 }
         }
         member.open("GET", "php/select.php", true);
