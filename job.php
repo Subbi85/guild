@@ -23,6 +23,7 @@
                 let data = JSON.parse(this.responseText);
                 console.log(data);
                 console.log(data.length);
+                console.log(data[10].charname);
                 let daten =[];
                 for (let i=0; i<data.length; i++){
                     daten.push(data[i]);
