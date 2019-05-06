@@ -38,7 +38,7 @@
 
         let write =(data)=>{
             console.log({data});
-
+        }
 /*
                 text+= '{ "Charname":"'+charname+'" , "realm":"'+realm+'"}';
             }
