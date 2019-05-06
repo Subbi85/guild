@@ -34,6 +34,7 @@
         let test=(data)=>{
             for (let y=0; y<data.length; y++){
                 console.log(data[y].charname, data[y].realm);
+                text += '{ "charname":"'+data[y].charname+'" , "realm":"'+data[y].realm+'"}';
             }
         }
 
