@@ -38,6 +38,7 @@
             }
         }
 
+        console.log(text);
 
 
 
