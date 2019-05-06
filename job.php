@@ -54,9 +54,10 @@
             //Anpassen des "Problemrealms"
             console.log(data.realm);
             if(data.realm ==="Guldan")
-                data.realm==="Gul'dan";
+                data.realm="Gul'dan";
             if(data.charname ==="Corruption")
-                data.charname==="Corruptìon";
+                data.charname="Corruptìon";
+            console.log(data.realm, data.charname);
             //AJAX-Syntax
            /* blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+data.realm+'&name='+data.charname+'&fields=mythic_plus_scores')
             blizzRequest.onload=function(){
