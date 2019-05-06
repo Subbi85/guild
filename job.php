@@ -22,6 +22,7 @@
             if (this.readyState == 4 && this.status == 200) {
                 let data = JSON.parse(this.responseText);
                 console.log(data);
+                console.log(data.length);
                 let daten =[];
                 for (let i=0; i<data.length; i++){
                     daten.push(data[i]);
