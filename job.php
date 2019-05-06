@@ -21,7 +21,6 @@
         member.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 let data = JSON.parse(this.responseText);
-                console.log({data});
                 console.log(data.length);
                 console.log(data[10].charname);
                 write(data);
@@ -38,6 +37,10 @@
 
         let write =(data)=>{
             console.log({data});
+            for(let i=0; i<data.length; i++){
+                getScore(data[i]);
+            }
+            
         }
 /*
                 text+= '{ "Charname":"'+charname+'" , "realm":"'+realm+'"}';
@@ -45,11 +48,23 @@
             text +=  ' ]}';            
         }   
   */      
-    
+        let getScore=(data)=>{
+            var scores = [];
+            var blizzRequest = new XMLHttpRequest();
+            //Anpassen des "Problemrealms"
+            if(data.realm ==="Guldan")
+                data.realm==="Gul'dan";
+            //AJAX-Syntax
+            blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+realm+'&name='+name+'&fields=mythic_plus_scores')
+            blizzRequest.onload=function(){
+                var score = JSON.parse(blizzRequest.responseText);
+                var current = score.mythic_plus_scores.all;
+                console.log(current);
+            }
+            blizzRequest.send();
+        }
 
-        console.log({text});
-        //var obj = JSON.parse(text);
-        console.log({obj});
+
 
 
     </script>
