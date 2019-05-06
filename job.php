@@ -48,7 +48,7 @@
       //          blizzRequest.onload=function(){
                     //var score = JSON.parse(blizzRequest.responseText);
                     //var current = score.mythic_plus_scores.all;
-                    console.log(data.realm, data.charname, current);
+                    console.log(data.realm, data.charname);
                     //text += '{ "charname":"'+data.charname+'" , "realm":"'+data.realm+'", "score": "'+current+'"}';
                     text += '{ "charname":"'+data.charname+'" , "realm":"'+data.realm+'"}';
                     //Komma anhängen bis zur letzten Zeile
