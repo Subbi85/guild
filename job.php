@@ -64,8 +64,9 @@
                 var score = JSON.parse(blizzRequest.responseText);
                 var current = score.mythic_plus_scores.all;
                 console.log(current);
+            }                
             */
-            }
+
             blizzRequest.send();
         }
 
