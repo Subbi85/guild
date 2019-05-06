@@ -39,18 +39,17 @@
             console.log({data});
             //AJAX-Call für jede Zeile
             for(let i=0; i<data.length; i++){
-                var scores = [];
                 var blizzRequest = new XMLHttpRequest();
                 //Anpassen des "Problemrealms"
-                if(data.realm ==="Guldan")
-                    data.realm="Gul'dan";
+                if(data[i].realm ==="Guldan")
+                    data[i].realm="Gul'dan";
                 //AJAX-Syntax
-                blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+data.realm+'&name='+data.charname+'&fields=mythic_plus_scores')
+                blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+data[i].realm+'&name='+data[i].charname+'&fields=mythic_plus_scores')
                 blizzRequest.onload=function(){
                     var score = JSON.parse(blizzRequest.responseText);
                     var current = score.mythic_plus_scores.all;
                     console.log(data.realm, data.charname, current);
-                    text += '{ "charname":"'+data.charname+'" , "realm":"'+data.realm+'", "score": "'+current+'"}';
+                    //text += '{ "charname":"'+data.charname+'" , "realm":"'+data.realm+'", "score": "'+current+'"}';
                     //Komma anhängen bis zur letzten Zeile
                     if(i!=(data.length-1))
                         text +=',';
