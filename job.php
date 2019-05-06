@@ -26,6 +26,7 @@
                 for (let i=0; i<data.length; i++){
                     daten.push(data[i]);
                 }
+                console.log(daten);
             }
         }
         member.open("GET", "php/select.php", true);
