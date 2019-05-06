@@ -36,15 +36,10 @@
 
     
         //Raider.io Scores abrufen
-        let charname ="Subbi";
-        let realm = "Anetheron"
-        let score = 23356.45
-        let string ='{ "Charname":"'+charname+'" , "realm":"'+realm+'" ,"score":'+score+' },' ;
+
 
         var text =  '{ "member" : [' 
-                    + '{ "Charname":"'+charname+'" , "realm":"'+realm+'" ,"score":'+score+' },' 
-                    + string
-                    + '{ "Charname":"'+charname+'" , "realm":"'+realm+'" ,"score":'+score+' },' ;
+
 
 
         let write =(charname, realm, score)=>{
@@ -64,7 +59,7 @@
 
         console.log(text);
         var obj = JSON.parse(text);
-        console.log(obj);
+        console.log({obj});
 
 
     </script>
