@@ -68,8 +68,7 @@
                 blizzRequest.send(); */
             }
         }
-
-        console.log(text);
+        
         /*
                 text+= '{ "Charname":"'+charname+'" , "realm":"'+realm+'"}';
             }
