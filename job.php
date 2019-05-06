@@ -37,8 +37,21 @@
 
         let write =(data)=>{
             console.log({data});
+            //AJAX-Call für jede Zeile
             for(let i=0; i<data.length; i++){
-                getScore(data[i]);
+                var scores = [];
+                var blizzRequest = new XMLHttpRequest();
+                //Anpassen des "Problemrealms"
+                if(data.realm ==="Guldan")
+                    data.realm="Gul'dan";
+                //AJAX-Syntax
+                blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+data.realm+'&name='+data.charname+'&fields=mythic_plus_scores')
+                blizzRequest.onload=function(){
+                    var score = JSON.parse(blizzRequest.responseText);
+                    var current = score.mythic_plus_scores.all;
+                    console.log(data.realm, data.charname, current);
+                }                
+                blizzRequest.send();
             }
             
         }
@@ -48,23 +61,9 @@
             text +=  ' ]}';            
         }   
   */      
-        let getScore=(data)=>{
-            var scores = [];
-            var blizzRequest = new XMLHttpRequest();
-            //Anpassen des "Problemrealms"
-            if(data.realm ==="Guldan")
-                data.realm="Gul'dan";
-            if(data.charname ==="Corruption")
-                data.charname="Corruptìon";
-            //AJAX-Syntax
-            blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+data.realm+'&name='+data.charname+'&fields=mythic_plus_scores')
-            blizzRequest.onload=function(){
-                var score = JSON.parse(blizzRequest.responseText);
-                var current = score.mythic_plus_scores.all;
-                console.log(data.realm, data.charname, current);
-            }                
-            blizzRequest.send();
-        }
+
+
+
 
 
 
