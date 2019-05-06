@@ -67,7 +67,7 @@
             }                
             */
 
-            blizzRequest.send();
+            //blizzRequest.send();
         }
 
 
