@@ -23,16 +23,24 @@
                 let data = JSON.parse(this.responseText);
                 console.log(data.length);
                 console.log(data[10].charname);
-                write(data);
+                test(data);
             }
         }
         member.open("GET", "php/select.php", true);
         member.send();
 
     
+
+        let text=(data)=>{
+            for (let y=0; y<10; <++){
+                console.log(data[y]);
+            }
+        }
+
+
+
+
         //Raider.io Scores abrufen
-
-
         var text =  '{ "member" : [';
 
         let write =(data)=>{
