@@ -30,10 +30,10 @@
         member.send();
 
     
-
+        var text =  '{ "member" : [';
         let test=(data)=>{
-            for (let y=0; y<10; y++){
-                console.log(data[y]);
+            for (let y=0; y<data.length; y++){
+                console.log(data[y].charname, data[y].realm);
             }
         }
 
@@ -41,7 +41,7 @@
 
 
         //Raider.io Scores abrufen
-        var text =  '{ "member" : [';
+
 
         let write =(data)=>{
             console.log({data});
