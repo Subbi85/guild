@@ -15,7 +15,8 @@
     <script>
         //AJAX Select
         "use strict"
-        var finalArray=[];
+        let text =  '{ "member" : [';        
+    
         //Abrufen der Daten per AJAX
         let member = new XMLHttpRequest();
         member.onreadystatechange = function() {
@@ -30,7 +31,7 @@
         member.send();
 
     
-        var text =  '{ "member" : [';
+
         let test=(data)=>{
             for (let y=0; y<data.length; y++){
                 console.log(data[y].charname, data[y].realm);
@@ -68,7 +69,7 @@
                 blizzRequest.send(); */
             }
         }
-        
+
         /*
                 text+= '{ "Charname":"'+charname+'" , "realm":"'+realm+'"}';
             }
