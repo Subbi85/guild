@@ -32,7 +32,7 @@
     
 
         let text=(data)=>{
-            for (let y=0; y<10; <++){
+            for (let y=0; y<10; y<++){
                 console.log(data[y]);
             }
         }
