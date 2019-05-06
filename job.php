@@ -50,12 +50,17 @@
                     var score = JSON.parse(blizzRequest.responseText);
                     var current = score.mythic_plus_scores.all;
                     console.log(data.realm, data.charname, current);
+                    text += '{ "charname":"'+data.charname+'" , "realm":"'+data.realm+'", "score": "'+current+'"}';
+                    //Komma anhängen bis zur letzten Zeile
+                    if(i!=(data.length-1))
+                        text +=',';
                 }                
                 blizzRequest.send();
             }
-            
         }
-/*
+
+        console.log(text);
+        /*
                 text+= '{ "Charname":"'+charname+'" , "realm":"'+realm+'"}';
             }
             text +=  ' ]}';            
