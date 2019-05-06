@@ -8,7 +8,6 @@
     <title>Order and Chaos - Scorejob</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="script.js"></script>
 </head>
 <body>
     <h3>Get Scores</h3>
@@ -19,42 +18,50 @@
         var finalArray=[];
         //Abrufen der Daten per AJAX
         let member = new XMLHttpRequest();
-            member.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    let data = JSON.parse(this.responseText);
-                    console.log(data);
-                    let daten =[];
-                    for (let i=0; i<data.length; i++){
-                        daten.push(data[i]);
-                        getScores(daten[i]);
-                    }
+        member.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                let data = JSON.parse(this.responseText);
+                console.log(data);
+                let daten =[];
+                for (let i=0; i<data.length; i++){
+                    daten.push(data[i]);
                 }
+            }
         }
         member.open("GET", "php/select.php", true);
         member.send();
 
+    
         //Raider.io Scores abrufen
-        let getScores=(daten)=>{
-            console.log(daten.charname, daten.realm);
-            if(daten.realm==="Guldan")
-                daten.realm="Gul'dan";
-            var blizzRequest = new XMLHttpRequest();
-            blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+daten.realm+'&name='+daten.charname+'&fields=mythic_plus_scores')
-            blizzRequest.onload=function(){
-                let score = JSON.parse(blizzRequest.responseText);
-                let current = score.mythic_plus_scores.all;
-                let scores=[];
-                scores.push(daten.charname);
-                scores.push(daten.realm);
-                scores.push(current);
-                finalArray.push(scores);
+        let charname ="Subbi";
+        let realm = "Anetheron"
+        let score = 23356.45
+        let string ='{ "Charname":"'+charname+'" , "realm":"'+realm+'" ,"score":'+score+' },' ;
+
+        var text =  '{ "member" : [' 
+                    + '{ "Charname":"'+charname+'" , "realm":"'+realm+'" ,"score":'+score+' },' 
+                    + string
+                    + '{ "Charname":"'+charname+'" , "realm":"'+realm+'" ,"score":'+score+' },' ;
+
+
+        let write =(charname, realm, score)=>{
+            for (let i=0; i<=10; i++){
+                text+= '{ "Charname":"'+charname+'" , "realm":"'+realm+'" ,"score":'+score+' }' 
+                if(i==10){
+
+                }else{
+                    text+= ',';                    
                 }
-            blizzRequest.send();
-        }
+
+            }
+            text +=  ' ]}';            
+        }   
         
-        for (let i=0; i<finalArray.length; i++){
-            console.log(finalArray[i]);
-        }
+        write("Kreischi", "Nathrezim", 1555);
+
+        console.log(text);
+        var obj = JSON.parse(text);
+        console.log(obj);
 
 
     </script>
