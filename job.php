@@ -12,7 +12,8 @@
         margin: 10px;
         padding:5px;
         outline:1px solid black;
-        width: 50%;
+        width: 80%;
+        margin: 0 auto;
         color: darkblue;
     }
 </style>
