@@ -83,9 +83,9 @@
             for(let i=0; i<obj.member.length; i++){
                 let newDiv = document.createElement("div");
                 newDiv.setAttribute("class", "member");
-                let textNode = document.createTextNode(obj.member[i].charname);
+                let textNode = document.createTextNode(obj.member[i].charname+" -");
                 newDiv.appendChild(textNode);
-                textNode = document.createTextNode(obj.member[i].realm);
+                textNode = document.createTextNode(obj.member[i].realm+" -");
                 newDiv.appendChild(textNode);
                 textNode = document.createTextNode(obj.member[i].score);
                 newDiv.appendChild(textNode);
