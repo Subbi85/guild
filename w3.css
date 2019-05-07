@@ -33,6 +33,56 @@
     transform: rotate(90deg);
 }
 
+
+/* Modal */
+.w3-modal{
+    z-index:3;
+    display:none;
+    padding-top:100px;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgb(0,0,0);
+    background-color:rgba(0,0,0,0.4)
+    }
+
+.w3-modal-content{
+    margin:auto;
+    background-color:#fff;
+    position:relative;
+    padding:0;
+    outline:0;
+    width:600px
+    }
+
+.w3-card-4{
+    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+}
+
+.w3-container{padding:0.01em 16px}
+.w3-responsive{display:block;overflow-x:auto}
+.w3-container:after,.w3-container:before{
+        content:"";
+        display:table;
+        clear:both
+    }
+
+.w3-display-topright, .topright{
+    cursor: pointer;
+    position:absolute;
+    font-size:20px;
+    color: red;
+    font-weight: bold;
+    right:0;
+    top:0;}
+
+.w3-teal,.w3-hover-teal:hover{
+    color:#fff!important;
+    background-color:#222!important
+}
 /* Style the tab */
 .tab {
     overflow: hidden;
@@ -69,6 +119,13 @@
     margin: 0 auto;
   }
 
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+    }
+
+
 @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -84,13 +141,9 @@
         right: 0;
         top: 0;
     }
+}
 
-.topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-    }
-
+@media screen and (max-width: 600px) {
 .tab, .tabcontent{ width:340px;
     padding:0;
     }

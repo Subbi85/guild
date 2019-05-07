@@ -327,12 +327,49 @@
     </div>
     <!-- Kontakt -->
     <div class="section" id="kontakt">
-        <h3>Kontakt</h3>
-
+        <h3>Wir suchen dich...</h3>
+        <p>Du hast gefallen an unsere Gilde gefunden und willst uns kennenlernen? <br>
+            Dann schreibe uns einfach hier eine Nachricht oder besuche uns auf unserem Discord-Server.
+        </p>
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
     </div>
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4">
+            <header class="w3-container w3-teal"> 
+            <span onclick="document.getElementById('id01').style.display='none'" 
+            class="w3-button w3-display-topright">&times;</span>
+            <h2>Log In</h2>
+            </header>
+            <div class="w3-container" id="modal_container">
+            <!-- Log in Form -->
+            <form id="login_form" action="?login=1" method="POST">
+                <!-- Log in Name-->
+                <label for="fname">Name</label>
+                <input type="text" id="name" name="username" placeholder="Dein Name..">
+                <!-- Log in Passwort-->
+                <label for="fname">Name</label>
+                <input type="password" id="password" name="passwort">
+                <input type="submit" value="Submit">
+            </form>
+            </div>
+            <footer class="w3-container w3-teal">
+            <p>Bitte Usernamen und Passwort eingeben</p>
+            </footer>
+        </div>
+    </div>
+
+
     <!--Footer -->
 
 <script>
+
+var modal = document.getElementById('id01');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
      $(document).ready(function() {
         $('.progress .progress-bar').css("width",
             function() {

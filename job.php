@@ -1,5 +1,3 @@
-<?php session_start();?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,8 +21,7 @@
             if (this.readyState == 4 && this.status == 200) {
                 let data = JSON.parse(this.responseText);
                 console.log(data.length);
-                console.log(data[10].charname);
-                test(data);
+                console.log(data);
             }
         }
         member.open("GET", "php/select.php", true);

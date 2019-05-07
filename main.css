@@ -166,7 +166,7 @@ a, a:visited{color:#fff;text-decoration: none;}
 
 .card_container{
     height:250px;
-    width: 70%;
+    width: 100%;
     max-width:892px;
     margin:0 auto;
 }
@@ -190,7 +190,7 @@ input, .toggle{
     bottom:20px;
     right:20px;
     outline: none;
-    z-index:10;
+    z-index:2;
 }
 
 input{
@@ -252,6 +252,21 @@ table{
     width:100%;
 }
 
+/* Kontakt */
+#kontakt{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#kontakt p{
+    font-size:24px;
+    color:red;
+    padding:5px;
+}
 
 
 /* MEDIA QUERIES */
