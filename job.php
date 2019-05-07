@@ -3,83 +3,94 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Order and Chaos - Scorejob</title>
+    <title>OaC local</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
+<style>
+    .member{
+        margin: 10px;
+        padding:5px;
+        outline:1px solid black;
+        width: 50%;
+        color: darkblue;
+    }
+</style>
 <body>
-    <h3>Get Scores</h3>
-    <div id="container"><!--Platz für neue Divs --></div>
+    <div id="display">
+        <h4>Ergebnis</h4>
+    </div>
     <script>
-        //AJAX Select
-        "use strict"
-        let text =  '{ "member" : [';        
-    
-        //Abrufen der Daten per AJAX
+        "use strict";
+        //Globals
+        var text =  '{ "member" : [';  
+        var counter =0;
+        var size=0;
+
+        //AJAX-Abruf der SQL Daten
         let member = new XMLHttpRequest();
         member.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 let data = JSON.parse(this.responseText);
-                console.log(data.length);
-                console.log(data);
+                let last = false;
+                size= data.length;
+                for(let i=0; i<data.length; i++){
+                    if(i==(data.length-1)){
+                        last=true;
+                    }
+                let result = getScores(data[i]);
+                } 
             }
         }
-        member.open("GET", "php/select.php", true);
+        member.open("GET", "php/select.php");
         member.send();
-
     
-
-        let test=(data)=>{
-            for (let y=0; y<data.length; y++){
-                console.log(data[y].charname, data[y].realm);
-                text += '{ "charname":"'+data[y].charname+'" , "realm":"'+data[y].realm+'"}';
+        //Beschaffen der Scores
+        let getScores=(data)=>{
+            if (data.realm ==="Guldan")
+                data.realm="Gul'dan";
+            //AJAX-Syntax
+            var blizzRequest = new XMLHttpRequest();
+            blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+data.realm+'&name='+data.charname+'&fields=mythic_plus_scores')
+            blizzRequest.onload=function(){
+                var score = JSON.parse(blizzRequest.responseText);
+                var current = score.mythic_plus_scores.all;
+                text= createJSON(score, current);
+            }                
+            blizzRequest.send();
+        }
+    
+        //Aufbau JSON
+        let createJSON=(score, current)=>{
+            counter++;
+            text += '{ "charname":"'+score.name+'" , "realm":"'+score.realm+'", "score": "'+current+'"}';
+            if(counter <size){
+                text+=',';
             }
+            if(counter==size){
+                text+= ']}';
+                let obj = JSON.parse(text);
+                createDivs(obj);
+            }
+            return text;
         }
 
-        console.log(text);
-
-
-
-        //Raider.io Scores abrufen
-
-
-        let write =(data)=>{
-            console.log({data});
-            //AJAX-Call für jede Zeile
-            for(let i=0; i<data.length; i++){
-                var blizzRequest = new XMLHttpRequest();
-                //Anpassen des "Problemrealms"
-                if(data[i].realm ==="Guldan")
-                    data[i].realm="Gul'dan";
-                //AJAX-Syntax
-      //          blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+data[i].realm+'&name='+data[i].charname+'&fields=mythic_plus_scores')
-      //          blizzRequest.onload=function(){
-                    //var score = JSON.parse(blizzRequest.responseText);
-                    //var current = score.mythic_plus_scores.all;
-                    console.log(data.realm, data.charname);
-                    //text += '{ "charname":"'+data.charname+'" , "realm":"'+data.realm+'", "score": "'+current+'"}';
-                    text += '{ "charname":"'+data.charname+'" , "realm":"'+data.realm+'"}';
-                    //Komma anhängen bis zur letzten Zeile
-                    if(i!=(data.length-1))
-                        text +=',';
-       /*         }                
-                blizzRequest.send(); */
+        //Ausgabe der Daten im Div
+        let createDivs=(obj)=>{
+            let display = document.getElementById("display");
+            console.log(obj);
+            for(let i=0; i<obj.member.length; i++){
+                let newDiv = document.createElement("div");
+                newDiv.setAttribute("class", "member");
+                let textNode = document.createTextNode(obj.member[i].charname);
+                newDiv.appendChild(textNode);
+                textNode = document.createTextNode(obj.member[i].realm);
+                newDiv.appendChild(textNode);
+                textNode = document.createTextNode(obj.member[i].score);
+                newDiv.appendChild(textNode);
+                display.appendChild(newDiv); 
             }
         }
-
-        /*
-                text+= '{ "Charname":"'+charname+'" , "realm":"'+realm+'"}';
-            }
-            text +=  ' ]}';            
-        }   
-  */      
-
-
-
-
-
-
-
     </script>
 </body>
 </html>
