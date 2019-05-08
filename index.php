@@ -56,6 +56,9 @@
             </p>
         </div>
         <div class="about_box" id="pic">
+            <div class="picture">
+                
+            </div>
         </div>
     </div>
 
@@ -309,14 +312,7 @@
     </div>
         <div class="scores">
             <!-- Scoretabelle -->
-            <div id="tabelle">
-                <th>
-                    <td>Name</td>
-                    <td>Realm</td>
-                    <td>Score</td>
-                </th>
-
-            </div>
+            <div id="tabelle"></div>
         </div>
     </div>
 

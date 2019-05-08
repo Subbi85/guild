@@ -44,9 +44,26 @@ a, a:visited{color:#fff;text-decoration: none;}
 
 #pic{
     flex:1;
+    justify-content: center;
+    align-items: center;
+    display:flex;
 }
 
-/* Progress Bars */
+.picture{
+    width:80%;
+    height:300px;
+    background: #111;
+}
+
+/* Hintergründe festlegen */
+#BfA{
+    background-image: url("css/img/title.png")
+}
+
+#Legion{
+    background-image: url("css/img/title.png")
+}
+
 /* Bars */
 .skillbar {
     position:relative;
@@ -68,9 +85,9 @@ a, a:visited{color:#fff;text-decoration: none;}
     -ms-transition-property:width, background-color;
     -o-transition-property:width, background-color;
     transition-property:width, background-color;
-  }
-  
-  .skillbar-title {
+}
+
+.skillbar-title {
     position:absolute;
     top:0;
     left:0;
@@ -85,9 +102,9 @@ a, a:visited{color:#fff;text-decoration: none;}
     -moz-border-radius-bottomleft:3px;
     border-top-left-radius:3px;
     border-bottom-left-radius:3px;
-  }
-  
-  .skillbar-title span {
+}
+
+.skillbar-title span {
     display:block;
     background:rgba(0, 0, 0, 0.1);
     padding:0 20px;
@@ -99,18 +116,18 @@ a, a:visited{color:#fff;text-decoration: none;}
     -moz-border-radius-bottomleft:3px;
     border-top-left-radius:3px;
     border-bottom-left-radius:3px;
-  }
-  
-  .skillbar-bar {
+}
+
+.skillbar-bar {
     height:35px;
     width:0px;
     background:#6adcfa;
     border-radius:3px;
     -moz-border-radius:3px;
     -webkit-border-radius:3px;
-  }
-  
-  .skill-bar-percent {
+}
+
+.skill-bar-percent {
     position:absolute;
     right:10px;
     top:0;
@@ -118,7 +135,8 @@ a, a:visited{color:#fff;text-decoration: none;}
     height:35px;
     line-height:35px;
     color:#ffffff;
-  }
+}
+
 /* Raidkader */
 #kader_container{
     height: 100%;
