@@ -71,7 +71,7 @@
         </div>
 
         <div id="BfA" class="tabcontent">
-            <h3>Tiegel der Stürme</h3>
+            <h3 id="headline">Tiegel der Stürme</h3>
              <div class="skillbar clearfix " data-percent="50%" onmouseenter="hintergrundWechseln('tiegel')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Tiegel hc</span></div>
                 <div class="skillbar-bar" style="background: #ee202b;"></div>
@@ -85,7 +85,7 @@
             </div> <!-- End Skill Bar -->
 
             <!-- Dazar -->
-            <h3>Belagerung von Dazar'Alor</h3>
+            <h3 id="headline">Belagerung von Dazar'Alor</h3>
             <div class="skillbar clearfix" data-percent="20%" onmouseenter="hintergrundWechseln('dazar')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Dazar mythic</span></div>
                 <div class="skillbar-bar" style="background: gold;"></div>
@@ -105,7 +105,7 @@
             </div> <!-- End Skill Bar -->
 
             <!-- Uldir -->
-            <h3>Uldir</h3>
+            <h3 id="headline">Uldir</h3>
             <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('uldir')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Uldir hc</span></div>
                 <div class="skillbar-bar" style="background: ##67b264;"></div>
@@ -120,7 +120,7 @@
         </div>
 
         <div id="Legion" class="tabcontent">
-            <h3>Antorus, der brennende Thron</h3>
+            <h3 id="headline">Antorus, der brennende Thron</h3>
             <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('antorus')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Antorus hc</span></div>
                 <div class="skillbar-bar" style="background: #179c4a;"></div>
@@ -133,7 +133,7 @@
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
-            <h3>Grabmal des Sageras</h3>
+            <h3 id="headline">Grabmal des Sageras</h3>
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('grab')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Grabmal hc</span></div>
                 <div class="skillbar-bar" style="background: #F3FE24;"></div>
@@ -146,7 +146,7 @@
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
-            <h3>Nachtfestung</h3>
+            <h3 id="headline">Nachtfestung</h3>
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('nachtfestung')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Nachtfestung hc</span></div>
                 <div class="skillbar-bar" style="background: ##6EFFFF;"></div>
@@ -159,7 +159,7 @@
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
-            <h3>Prüfung der Tapferkeit</h3>
+            <h3 id="headline">Prüfung der Tapferkeit</h3>
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('trials')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Trials hc</span></div>
                 <div class="skillbar-bar" style="background: #f85d03;"></div>
@@ -172,7 +172,7 @@
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
-            <h3>Smaragdgrüner Alptraum</h3>
+            <h3 id="headline">Smaragdgrüner Alptraum</h3>
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('smaragd')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Alptraum hc</span></div>
                 <div class="skillbar-bar" style="background: #561256;"></div>
