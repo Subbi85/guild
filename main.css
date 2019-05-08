@@ -252,6 +252,14 @@ table{
     width:100%;
 }
 
+.member{
+    margin: 10px;
+    padding:5px;
+    outline:1px solid black;
+    width: 80%;
+    color: darkblue;
+}
+
 /* Kontakt */
 #kontakt{
     width:100%;

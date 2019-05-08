@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="w3.css" />
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>    
     <script src="script.js"></script>
+    <script src="scores.js"></script>
     <script src="main.js" defer></script>
 </head>
 <body>

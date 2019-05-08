@@ -44,17 +44,13 @@
         member.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
                 let data = JSON.parse(this.responseText);
-                let last = false;
                 size= data.length;
                 for(let i=0; i<data.length; i++){
-                    if(i==(data.length-1)){
-                        last=true;
-                    }
-                let result = getScores(data[i]);
+                    let result = getScores(data[i]);
                 } 
             }
         }
-        member.open("GET", "php/select.php");
+        member.open("GET", "php/select_local.php");
         member.send();
     
         //Beschaffen der Scores
@@ -102,7 +98,7 @@
         }
 
         //Send to PHP
-        let sendPHP=(obj, text)=>{
+        let sendPHP=(obj)=>{
             let jsonstring = JSON.stringify(obj);
             console.log(jsonstring);
             document.getElementById("stringfeld").value = jsonstring;
