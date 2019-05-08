@@ -184,23 +184,21 @@
                 <div class="skillbar-bar" style="background: #561256;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
-
         </div>
-
         <div id="kader" class="tabcontent">
             <script>
             //AJAX Select
                 "use strict"
                 //Abrufen der Daten per AJAX
-                let member = new XMLHttpRequest();
-                    member.onreadystatechange = function() {
+                let membercall = new XMLHttpRequest();
+                    membercall.onreadystatechange = function() {
                         if (this.readyState == 4 && this.status == 200) {
                             let data = JSON.parse(this.responseText);
                             tabellenBauen(data);
                         }
                 }
-                member.open("GET", "php/select.php", true);
-                member.send();
+                membercall.open("GET", "php/select.php", true);
+                membercall.send();
 
             </script>
             <div id="kader_container">
