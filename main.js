@@ -8,9 +8,6 @@ let tabellenBauen=(data)=>{
 
     //Neue DOM-Elemente aufbauen
     data.forEach(element => {
-        console.log(element.charname);
-        console.log(element.role);
-
         let neueTr = document.createElement("tr");
         neueTr.setAttribute("style", "color:"+element.color);
         //Charname

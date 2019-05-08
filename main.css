@@ -125,6 +125,7 @@ a, a:visited{color:#fff;text-decoration: none;}
     width: 100%;
     display: flex;
     flex-direction:row;
+    color:#ddd;
 }
 
 .kader{
