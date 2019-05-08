@@ -1,19 +1,3 @@
-//Globals
-let array=[];
-
-function guildMembers(){                	/*Erstellen der Memberliste für weitere Funktionen */
-var guildRequest = new XMLHttpRequest();
-guildRequest.open('GET', 'https://eu.api.blizzard.com/wow/guild/Anetheron/Order%20and%20Chaos?fields=members&locale=en_US&access_token=US40yiXoUpTd1QPa5lC4ewfDEpjONjtrZ0')
-guildRequest.onload=function(){
-    var test = JSON.parse(guildRequest.responseText);
-    var member= ["test"];   
-
-    console.log(member);
-    console.log(test);
-    }
-guildRequest.send()
-}
-
 //####################### RAID PROGRESS #######################################################
 function progression(){
     var blizzRequest = new XMLHttpRequest();
