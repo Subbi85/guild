@@ -322,7 +322,6 @@
         </div>
     </div>
 
-
     </div>
     <!-- Mythic Plus ENDE-->
     <div class="parallax" id="para_kontakt">

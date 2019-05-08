@@ -48,34 +48,30 @@ let hintergund_bfa = document.getElementById("BfA");
 let hintergrundWechseln=(instanz)=>{
 
 //Hintergundbild anpassen
-switch (instanz){
-    case "smaragd":
-        hintergund.style.backgroundColor="red";
-        break;
-    case "trials":
-        hintergund.style.backgroundColor="blue";
-        break;
-    case "nachtfestung":
-        hintergund.style.backgroundColor="green";
-        break;
-    case "grab":
-        hintergund.style.backgroundColor="orange";
-        break;
-    case "antorus":
-        hintergund.style.backgroundColor="purple";
-        break;
-    case "uldir":
-        hintergund_bfa.style.backgroundColor="orange";
-        break;
-    case "dazar":
-        hintergund_bfa.style.backgroundColor="lightblue";
-        break;
-    case "tiegel":
-        hintergund_bfa.style.backgroundColor="red";
-        break;
-}
-
-
-
-    
+    switch (instanz){
+        case "smaragd":
+            hintergund.style.backgroundImage="url('css/img/title.png')";
+            break;
+        case "trials":
+            hintergund.style.backgroundImage="url('css/img/uldir.png')";
+            break;
+        case "nachtfestung":
+            hintergund.style.backgroundImage="url('css/img/title.png')";
+            break;
+        case "grab":
+            hintergund.style.backgroundImage="url('css/img/uldir.png')";
+            break;
+        case "antorus":
+            hintergund.style.backgroundImage="url('css/img/title.png')";
+            break;
+        case "uldir":
+            hintergund_bfa.style.backgroundImage="url('css/img/uldir.png')";
+            break;
+        case "dazar":
+            hintergund_bfa.style.backgroundImage="url('css/img/title.png')";
+            break;
+        case "tiegel":
+            hintergund_bfa.style.backgroundImage="url('css/img/uldir.png')";
+            break;
+    }
 }

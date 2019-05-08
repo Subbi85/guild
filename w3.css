@@ -117,6 +117,7 @@
     border: 1px solid #ccc;
     border-top: none;
     margin: 0 auto;
+    transition: all 500ms;
   }
 
 .topnav.responsive a {
