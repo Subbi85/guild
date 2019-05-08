@@ -24,7 +24,7 @@
     <script>
         "use strict";
         //Globals
-        var text =  '{ "member" : [';  
+        var text =  '{"member":[';  
         var counter =0;
         var size=0;
 
@@ -61,19 +61,33 @@
             blizzRequest.send();
         }
     
-        //Aufbau JSON
+          //Aufbau JSON
         let createJSON=(score, current)=>{
-            counter++;
-            text += '{ "charname":"'+score.name+'" , "realm":"'+score.realm+'", "score": "'+current+'"}';
-            if(counter <size){
-                text+=',';
-            }
-            if(counter==size){
-                text+= ']}';
-                let obj = JSON.parse(text);
-                createDivs(obj);
-            }
-            return text;
+        counter++;
+        text += '{ "charname":"'+score.name+'" , "realm":"'+score.realm+'", "score": "'+current+'"}';
+        if(counter <size){
+            text+=',';
+        }
+        if(counter==size){
+            text+= ']}';
+            let obj = JSON.parse(text);
+            sortJSON(obj);
+            createDivs(obj);
+            //sendPHP(obj, text);
+        }
+        return text;
+        }
+
+        //Sortiere das JSON
+        let sortJSON=(obj)=>{
+            obj.member.sort(function(a,b){
+                if(Number(a.score) == Number(b.score))
+                    return 0;
+                if(Number(a.score) > Number(b.score))
+                    return -1;
+                if(Number(a.score) < Number(b.score))
+                    return 1;
+            });
         }
 
         //Ausgabe der Daten im Div

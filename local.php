@@ -5,21 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>OaC local</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <style>
     .member{
         margin: 10px;
         padding:5px;
         outline:1px solid black;
-        width: 50%;
+        width: 80%;
         color: darkblue;
+    }
+
+    #form{
+        height:100vh;
     }
 </style>
 <body>
     <div id="display">
-        <h4>Ergebnis</h4>
+        <h4>Results</h4>
     </div>
+
+    <div id="form">
+        <form action="php/test.php" method="POST">
+            <input type="text" id="stringfeld" name="string">
+            <input type="submit" value="Speichern">
+        </form> 
+    </div>
+   
+
     <script>
         "use strict";
         //Globals
@@ -70,16 +82,41 @@
             if(counter==size){
                 text+= ']}';
                 let obj = JSON.parse(text);
+                sortJSON(obj);
                 createDivs(obj);
+                //sendPHP(obj, text);
             }
             return text;
+        }
+
+        //Sortiere das JSON
+        let sortJSON=(obj)=>{
+            obj.member.sort(function(a,b){
+                if(Number(a.score) == Number(b.score))
+                    return 0;
+                if(Number(a.score) > Number(b.score))
+                    return -1;
+                if(Number(a.score) < Number(b.score))
+                    return 1;
+            });
+        }
+
+        //Send to PHP
+        let sendPHP=(obj, text)=>{
+            let jsonstring = JSON.stringify(obj);
+            console.log(jsonstring);
+            document.getElementById("stringfeld").value = jsonstring;
+            //AJAX
+            let xhr = new XMLHttpRequest();
+            xhr.open("POST", "php/receive.php");
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.send(jsonstring);
         }
 
         //Ausgabe der Daten im Div
         let createDivs=(obj)=>{
             let display = document.getElementById("display");
-            console.log(obj);
-            for(let i=0; i<obj.member.length; i++){
+            for(let i=0; i<10; i++){
                 let newDiv = document.createElement("div");
                 newDiv.setAttribute("class", "member");
                 let textNode = document.createTextNode(obj.member[i].charname);

@@ -309,13 +309,15 @@
         </div>
     </div>
         <div class="scores">
-            <table>
+            <!-- Scoretabelle -->
+            <div id="tabelle">
                 <th>
                     <td>Name</td>
                     <td>Realm</td>
                     <td>Score</td>
                 </th>
-            </table>
+
+            </div>
         </div>
     </div>
 
@@ -357,8 +359,6 @@
             </footer>
         </div>
     </div>
-
-
     <!--Footer -->
 
 <script>
