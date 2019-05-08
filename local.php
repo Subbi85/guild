@@ -54,7 +54,7 @@
                 } 
             }
         }
-        member.open("GET", "php/select_local.php");
+        member.open("GET", "php/select.php");
         member.send();
     
         //Beschaffen der Scores
