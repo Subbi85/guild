@@ -79,7 +79,7 @@ let createDivs=(obj)=>{
     let display = document.getElementById("tabelle");
     for(let i=0; i<10; i++){
         let newDiv = document.createElement("div");
-        newDiv.setAttribute("class", "member");
+        newDiv.setAttribute("class", "memberdiv");
         let textNode = document.createTextNode(obj.member[i].charname);
         newDiv.appendChild(textNode);
         textNode = document.createTextNode(obj.member[i].realm);
