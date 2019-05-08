@@ -29,56 +29,6 @@ function progression(){
 progression();
 
 
-// FERTIGE FUNKTIONEN:
-//###################### GET SCORES #######################################################
-function getScore(name, realm){           /* M+ Scores der Member */
-    var scores = [];
-    var blizzRequest = new XMLHttpRequest();
-    blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+realm+'&name='+name+'&fields=mythic_plus_scores')
-    blizzRequest.onload=function(){
-        var score = JSON.parse(blizzRequest.responseText);
-        var current = score.mythic_plus_scores.all;
-            scores.push(name);
-            scores.push(realm);
-            scores.push(current);
-            console.log(scores[2]);
-            array.push(scores);
-    }
-    blizzRequest.send();
-}
-//################# GET SCORES ENDE  ##################################################
-function Score (name, realm,score){
-    this.name= name,
-    this.realm=realm,
-    this.getScore= function(){
-        var blizzRequest = new XMLHttpRequest();
-        blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+realm+'&name='+name+'&fields=mythic_plus_scores')
-        blizzRequest.onload=function(){
-        var score = JSON.parse(blizzRequest.responseText);
-        var current = score.mythic_plus_scores.all;
-
-        this.score=current;
-    }
-    blizzRequest.send();
-    }
-}
-
-
-let score_1 = new Score('Subbi', 'Anetheron');
-console.log(score_1.getScore());
-
-
-let tabelleAufbauen=()=>{
-    console.log(array);
-
-    for(let i=0; i<10; i++){
-        console.log(array);
-        
-    }
-
-}
-tabelleAufbauen();
-
 //################# AFFIXE DER WOCHE #######################################################
 function affixe(){                          /* Affixe der aktuellen Woche */
 let blizzRequest = new XMLHttpRequest();
