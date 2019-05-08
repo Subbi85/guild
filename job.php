@@ -94,7 +94,7 @@
         let createDivs=(obj)=>{
             let display = document.getElementById("display");
             console.log(obj);
-            for(let i=0; i<obj.member.length; i++){
+            for(let i=0; i<10; i++){
                 let newDiv = document.createElement("div");
                 newDiv.setAttribute("class", "member");
                 let textNode = document.createTextNode(obj.member[i].charname+" -");
