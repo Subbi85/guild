@@ -80,10 +80,10 @@ let createDivs=(obj)=>{
     for(let i=0; i<10; i++){
         //Neue Reihe
         let newTr= document.createElement("tr");
+        newTr.setAttribute("id", "Rang"+(i+1));
         //Alle td der Reihe
         //Platz        
         let newTd = document.createElement("td");
-        newTd.setAttribute("id", "Rang"+(i+1));
         let newText= document.createTextNode(i);
         newTd.appendChild(newText);
         newTr.appendChild(newTd);
