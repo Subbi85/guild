@@ -95,7 +95,7 @@ let affixes = [];
 blizzRequest.open('GET', 'https://raider.io/api/v1/mythic-plus/affixes?region=EU&locale=de')
 blizzRequest.onload=function(){
     var test = JSON.parse(blizzRequest.responseText);
-    for(i=0; i<test.affix_details.length; i++){
+    for(let i=0; i<test.affix_details.length; i++){
         let affix = test.affix_details[i].name;
         let detail = test.affix_details[i].description;
         affixes.push(affix);
