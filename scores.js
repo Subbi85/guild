@@ -79,8 +79,9 @@ let createDivs=(obj)=>{
     let display = document.querySelector("tbody");
     for(let i=0; i<10; i++){
         //Neue Reihe
+        y=i+1;
         let newTr= document.createElement("tr");
-        newTr.setAttribute("id", "Rang"+(i+1));
+        newTr.setAttribute("id", "Rang"+y);
         //Alle td der Reihe
         //Platz        
         let newTd = document.createElement("td");

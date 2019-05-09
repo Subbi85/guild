@@ -281,7 +281,9 @@ th{
 td{ font-size: calc(10px + 2vmin);}
 
 /* Erste Ränge des Tabelle*/
-
+#Rang1{color: gold;}
+#Rang2{color: silver;}
+#Rang3{color: #cd7f32;}
 
 .memberdiv{
     margin: 10px;
