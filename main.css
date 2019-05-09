@@ -146,7 +146,7 @@ a, a:visited{color:#fff;text-decoration: none;}
 .kader{
     flex:1;
     margin: 0 auto;
-    font-size:15px;
+    font-size: calc(8px + 2vmin);
 }
 
 #headline{color: #eee;}
