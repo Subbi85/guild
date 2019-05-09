@@ -76,16 +76,33 @@ let sendPHP=(obj)=>{
 
 //Ausgabe der Daten im Div
 let createDivs=(obj)=>{
-    let display = document.getElementById("table");
+    let display = document.getElementById("tbl");
     for(let i=0; i<10; i++){
-        let newDiv = document.createElement("div");
-        newDiv.setAttribute("class", "memberdiv");
-        let textNode = document.createTextNode(obj.member[i].charname);
-        newDiv.appendChild(textNode);
-        textNode = document.createTextNode(obj.member[i].realm);
-        newDiv.appendChild(textNode);
-        textNode = document.createTextNode(obj.member[i].score);
-        newDiv.appendChild(textNode);
-        display.appendChild(newDiv); 
+        //Neue Reihe
+        let newTr= document.createElement("tr");
+        //Alle td der Reihe
+        //Platz        
+        let newTd = document.createElement("td");
+        let newText= document.createTextNode("#"+i);
+        newTd.appendChild(newText);
+        newTr.appendChild(newText);
+        //Charname
+        newTd = document.createElement("td");
+        newText= document.createTextNode(obj.member[i].charname);
+        newTd.appendChild(newText);
+        newTr.appendChild(newText);
+        //Realm
+        newTd = document.createElement("td");
+        newText= document.createTextNode(obj.member[i].realm);
+        newTd.appendChild(newText);
+        newTr.appendChild(newText);
+        //Score
+        newTd = document.createElement("td");
+        newText= document.createTextNode(obj.member[i].score);
+        newTd.appendChild(newText);
+        newTr.appendChild(newText);
+
+        //Anhängen an Tabelle
+        display.appendChild(newTr);
     }
 }

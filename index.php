@@ -312,72 +312,12 @@
         <div class="scores">
             <!-- Scoretabelle -->
             <div id="table">
-                <table>
+                <table id="tbl">
                     <tr>
                         <th>Platz</th>
                         <th>Name</th>
                         <th>Realm</th>
                         <th>Score</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Subbi</td>
-                        <td>Anetheron</td>
-                        <td>1885.5</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Subbi</td>
-                        <td>Anetheron</td>
-                        <td>1885.5</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Subbi</td>
-                        <td>Anetheron</td>
-                        <td>1885.5</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Subbi</td>
-                        <td>Anetheron</td>
-                        <td>1885.5</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Subbi</td>
-                        <td>Anetheron</td>
-                        <td>1885.5</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Subbi</td>
-                        <td>Anetheron</td>
-                        <td>1885.5</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Subbi</td>
-                        <td>Anetheron</td>
-                        <td>1885.5</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Subbi</td>
-                        <td>Anetheron</td>
-                        <td>1885.5</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Subbi</td>
-                        <td>Anetheron</td>
-                        <td>1885.5</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Subbi</td>
-                        <td>Anetheron</td>
-                        <td>1885.5</td>
                     </tr>
                 </table>
             </div>
