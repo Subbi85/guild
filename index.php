@@ -16,6 +16,7 @@
     <script src="main.js" defer></script>
 </head>
 <body>
+<div id="wrapper">
     <!-- Landing -->
     <div class="section" id="landing">
         <div class="landing_container">
@@ -259,7 +260,7 @@
         <div class="card_container">      
             <!-- Erstes Affix -->  
             <div class="card">
-                <input type="checkbox" name="">
+                <input id="input" type="checkbox" name="">
                 <div class="toggle"></div>
                 <div class="imgBox">
                     <img src="css/img/logo.png" alt="">
@@ -272,7 +273,7 @@
 
             <!-- Zweites Affix -->
             <div class="card">
-                <input type="checkbox" name="">
+                <input id="input" type="checkbox" name="">
                 <div class="toggle"></div>
                 <div class="imgBox">
                     <img src="css/img/logo.png" alt="">
@@ -285,7 +286,7 @@
 
             <!-- Drittes Affix -->
             <div class="card">
-                <input type="checkbox" name="">
+                <input id="input" type="checkbox" name="">
                 <div class="toggle"></div>
                 <div class="imgBox">
                     <img src="css/img/logo.png" alt="">
@@ -298,7 +299,7 @@
 
             <!-- Viertes Affix -->
             <div class="card">
-                <input type="checkbox" name="">
+                <input id="input" type="checkbox" name="">
                 <div class="toggle"></div>
                 <div class="imgBox">
                     <img src="css/img/logo.png" alt="">
@@ -327,34 +328,44 @@
         <p>Du hast gefallen an unsere Gilde gefunden und willst uns kennenlernen? <br>
             Dann schreibe uns einfach hier eine Nachricht oder besuche uns auf unserem Discord-Server.
         </p>
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+    <div class="button" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</div>
     </div>
     <div id="id01" class="w3-modal">
         <div class="w3-modal-content w3-card-4">
             <header class="w3-container w3-teal"> 
             <span onclick="document.getElementById('id01').style.display='none'" 
             class="w3-button w3-display-topright">&times;</span>
-            <h2>Log In</h2>
+            <h2>Kontakt</h2>
             </header>
             <div class="w3-container" id="modal_container">
-            <!-- Log in Form -->
-            <form id="login_form" action="?login=1" method="POST">
-                <!-- Log in Name-->
-                <label for="fname">Name</label>
-                <input type="text" id="name" name="username" placeholder="Dein Name..">
-                <!-- Log in Passwort-->
-                <label for="fname">Name</label>
-                <input type="password" id="password" name="passwort">
-                <input type="submit" value="Submit">
-            </form>
+                <!--Nachrichtenform -->
+                <form id="messageform" action="?login=1" method="POST">
+                    <!-- Charinformationen-->
+                    <label for="char">Charname</label>
+                    <input type="text" id="name" name="char" placeholder="Charname"> <br>
+                    <label for="realm">Realm</label>
+                    <input type="text" id="name" name="realm" placeholder="Realm"> <br>
+                    <label for="classe"></label>
+                    <!-- Deine Nachricht-->
+                    <textarea name="message" id="messagetext" cols="30" rows="7" placeholder="Deine Nachricht..."></textarea> <br>
+                    <input type="submit" value="Submit">
+                </form>
+                <div id="kontaktpic"></div>
             </div>
-            <footer class="w3-container w3-teal">
-            <p>Bitte Usernamen und Passwort eingeben</p>
+            <footer class="w3-container w3-teal">Sende uns eine Nachricht
             </footer>
         </div>
     </div>
     <!--Footer -->
+    <div class="section" id="footer">.
+        <ul id="footerlist">
+            <li>Impressum</li>
+            <li>Battle.net</li>
+        </ul>
+    
 
+    </div>
+</div> <!--ENDE WRAPPER -->
 <script>
 
 var modal = document.getElementById('id01');

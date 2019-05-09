@@ -83,6 +83,22 @@
     color:#fff!important;
     background-color:#222!important
 }
+
+#modal_container{
+    display: flex;
+    flex-direction:row;    
+}
+
+#messageform{
+    flex:2;
+    margin:10px;
+}
+
+#kontaktpic{
+    flex:1;
+    background-image: url("css/img/recruit.png");
+}
+
 /* Style the tab */
 .tab {
     overflow: hidden;

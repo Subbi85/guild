@@ -1,6 +1,6 @@
 /* Allgemeines CSS */
 html{scroll-behavior: smooth}
-body{margin:0; padding:0;max-width:1980}
+body{margin:0; padding:0;max-width:1950px}
 .button{ padding:5px; outline: 1px solid #fff;}
 .button:hover{cursor: pointer;}
 .section{max-width: 1980px;}
@@ -207,7 +207,7 @@ a, a:visited{color:#fff;text-decoration: none;}
     margin:10px;
 }
 
-input, .toggle{
+#input, .toggle{
     position: absolute;
     width:40px;
     height:40px;
@@ -217,7 +217,7 @@ input, .toggle{
     z-index:2;
 }
 
-input{
+#input{
     opacity: 0;
 }
 
@@ -231,7 +231,7 @@ input{
     box-shadow: 0 0 0 0px #9c279c;
 }
 
-input:checked ~ .toggle{
+#input:checked ~ .toggle{
     box-shadow: 0 0 0 220px #9c279c;
     transform: rotate(225deg);
 }
@@ -252,7 +252,7 @@ input:checked ~ .toggle{
     opacity: 0;
 }
 
-input:checked ~ .content{
+#input:checked ~ .content{
     opacity: 1;
     transition-delay:0.5s;
 
@@ -267,6 +267,8 @@ input:checked ~ .content{
     color: #fff;
 }
 
+
+/* Scores */
 .scores{
     width:70%;
     max-width:892px;
@@ -287,17 +289,40 @@ table{
 /* Kontakt */
 #kontakt{
     width:100%;
+    max-width:1880px;
     height: 100%;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: grey;
 }
 
 #kontakt p{
     font-size:24px;
-    color:red;
     padding:5px;
+}
+
+#messagetext{
+    margin: 10px;
+}
+
+/* Footer */
+#footer{
+    height: 100px;
+    max-width:1900px;
+    color: #fff;
+    background: #000;
+}
+
+#footerlist{
+    list-style: none;
+}
+
+#footerlist li{
+    float:left;
+    margin: 20px;
 }
 
 
