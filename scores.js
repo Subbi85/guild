@@ -76,7 +76,7 @@ let sendPHP=(obj)=>{
 
 //Ausgabe der Daten im Div
 let createDivs=(obj)=>{
-    let display = document.getElementById("tabelle");
+    let display = document.getElementById("table");
     for(let i=0; i<10; i++){
         let newDiv = document.createElement("div");
         newDiv.setAttribute("class", "memberdiv");

@@ -92,6 +92,7 @@
 #messageform{
     flex:2;
     margin:10px;
+    z-index: 20;
 }
 
 #kontaktpic{
