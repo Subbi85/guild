@@ -283,14 +283,6 @@ td{ font-size: calc(10px + 2vmin);}
 #Rang2{color: silver;}
 #Rang3{color: #cd7f32;}
 
-.memberdiv{
-    margin: 10px;
-    padding:5px;
-    outline:1px solid black;
-    width: 80%;
-    color: darkblue;
-}
-
 /* Kontakt */
 #kontakt{
     width:99vw;
@@ -345,6 +337,7 @@ td{ font-size: calc(10px + 2vmin);}
     .skill-bar-percent,.skillbar-bar,.skillbar-title span, .skillbar-title, .skillbar{
         height: 20px;
         line-height:20px;
+        font-size: 10px;
     }
     .card_container{width:100%;}
 }
