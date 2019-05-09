@@ -337,7 +337,6 @@ td{ font-size: calc(10px + 2vmin);}
     .skill-bar-percent,.skillbar-bar,.skillbar-title span, .skillbar-title, .skillbar{
         height: 20px;
         line-height:20px;
-        font-size: 10px;
     }
     .card_container{width:100%;}
 }
