@@ -66,7 +66,6 @@
     <!-- Über Uns ENDE -->
     <!-- Raids -->
     <div class="section" id="raids">
-
         <div class="tab">
             <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'BfA')">BfA</button>
             <button class="tablinks" onclick="openTab(event, 'Legion')">Legion</button>
@@ -211,7 +210,7 @@
                     <table id="table_tanks"></table>
                 </div>
                 <div class="kader" id="heals">
-                    <h4>Heals</h4>
+                    <h4>Heiler</h4>
                     <table id="table_heals"></table>
                 </div>
                 <div class="kader" id="ranges">
@@ -241,10 +240,9 @@
             wir trotzdem was gemeinsam machen. <br><br>
 
             Ach fast hätten wir noch was wichtiges vergessen: Unsere Links zu Raider.io und natürlich unsere Logs, die du dir gern mal anschauen kannst, um dir ein Bild zu machen. 
-            Die Links findest du hier: <br>	<br>
-
-            Raider.io <br>
-            WarcraftLogs <br>
+            Die Links findest du hier: <br>	
+            <a href="https://raider.io/guilds/eu/anetheron/Order%20and%20Chaos" target="_blank"><span class="links">Raider.io</span></a> <br>
+            <a href="https://www.warcraftlogs.com/guild/calendar/304372/" target="_blank"><span class="links">Warcraftlogs</span></a> <br>
             Soooo... jetzt weißt du aber wirklich so gut wie alles. <br>
             Also wenn du uns jetzt immernoch kennenlernen willst, dann zögere nicht und schreibe einen unserer Offiziere inGame an: <br>
             </p>
@@ -313,7 +311,76 @@
     </div>
         <div class="scores">
             <!-- Scoretabelle -->
-            <div id="tabelle"></div>
+            <div id="table">
+                <table>
+                    <tr>
+                        <th>Platz</th>
+                        <th>Name</th>
+                        <th>Realm</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Subbi</td>
+                        <td>Anetheron</td>
+                        <td>1885.5</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Subbi</td>
+                        <td>Anetheron</td>
+                        <td>1885.5</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Subbi</td>
+                        <td>Anetheron</td>
+                        <td>1885.5</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Subbi</td>
+                        <td>Anetheron</td>
+                        <td>1885.5</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Subbi</td>
+                        <td>Anetheron</td>
+                        <td>1885.5</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Subbi</td>
+                        <td>Anetheron</td>
+                        <td>1885.5</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Subbi</td>
+                        <td>Anetheron</td>
+                        <td>1885.5</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Subbi</td>
+                        <td>Anetheron</td>
+                        <td>1885.5</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Subbi</td>
+                        <td>Anetheron</td>
+                        <td>1885.5</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Subbi</td>
+                        <td>Anetheron</td>
+                        <td>1885.5</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </div>
 
@@ -339,7 +406,7 @@
             </header>
             <div class="w3-container" id="modal_container">
                 <!--Nachrichtenform -->
-                <form id="messageform" action="?login=1" method="POST">
+                <form id="messageform" action="message.php" method="POST">
                     <!-- Charinformationen-->
                     <label for="char">Charname</label>
                     <input type="text" id="name" name="char" placeholder="Charname"> <br>
@@ -362,8 +429,6 @@
             <li>Impressum</li>
             <li>Battle.net</li>
         </ul>
-    
-
     </div>
 </div> <!--ENDE WRAPPER -->
 <script>

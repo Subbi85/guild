@@ -5,6 +5,7 @@ body{margin:0; padding:0;max-width:1950px}
 .button:hover{cursor: pointer;}
 .section{max-width: 1980px;}
 a, a:visited{color:#fff;text-decoration: none;}
+.links{color:#111;}
 /* Landing */
 .section{
     max-width:1920;
@@ -56,13 +57,8 @@ a, a:visited{color:#fff;text-decoration: none;}
 }
 
 /* Hintergründe festlegen */
-#BfA{
-    background-image: url("css/img/title.png")
-}
-
-#Legion{
-    background-image: url("css/img/title.png")
-}
+#BfA{background-image: url("css/img/title.png")}
+#Legion{ background-image: url("css/img/title.png")}
 
 /* Bars */
 .skillbar {
@@ -153,9 +149,7 @@ a, a:visited{color:#fff;text-decoration: none;}
     font-size: calc(8px + 2vmin);
 }
 
-#headline{
-    color: #eee;
-}
+#headline{color: #eee;}
 
 /* Info*/
 #raidtext{
@@ -182,7 +176,7 @@ a, a:visited{color:#fff;text-decoration: none;}
 
 /*Mythic */
 #mythic{
-    height:100vh;
+    height:100%;
     display:flex;
     text-align: center;
     flex-direction: column;
@@ -199,7 +193,7 @@ a, a:visited{color:#fff;text-decoration: none;}
     position: relative;
     width:200px;
     height: 200px;
-    background: #ff6600;
+    background: #56090b;
     overflow: hidden;
     float:left;
     margin-left: 20px;
@@ -209,10 +203,10 @@ a, a:visited{color:#fff;text-decoration: none;}
 
 #input, .toggle{
     position: absolute;
-    width:40px;
-    height:40px;
-    bottom:20px;
-    right:20px;
+    width:30px;
+    height:30px;
+    bottom:10px;
+    right:10px;
     outline: none;
     z-index:2;
 }
@@ -228,11 +222,11 @@ a, a:visited{color:#fff;text-decoration: none;}
     transition: 0.5s;
     line-height:50px;
     font-size:50px; 
-    box-shadow: 0 0 0 0px #9c279c;
+    box-shadow: 0 0 0 0px #000;
 }
 
 #input:checked ~ .toggle{
-    box-shadow: 0 0 0 220px #9c279c;
+    box-shadow: 0 0 0 220px #000;
     transform: rotate(225deg);
 }
 
@@ -244,12 +238,13 @@ a, a:visited{color:#fff;text-decoration: none;}
 }
 
 .content{
-    padding: 10px;
+    padding: 5px;
     box-shadow: border-box;
     z-index:11;
     pointer-events: none;
     transition: 0.5s;
     opacity: 0;
+    font-size: 14px;
 }
 
 #input:checked ~ .content{
@@ -277,6 +272,14 @@ a, a:visited{color:#fff;text-decoration: none;}
 table{
     width:100%;
 }
+
+th{
+    font-size: calc(10px + 2vmin);
+    font-weight: bold;
+}
+
+td{ font-size: calc(10px + 2vmin);}
+
 
 .memberdiv{
     margin: 10px;
@@ -322,7 +325,8 @@ table{
 
 #footerlist li{
     float:left;
-    margin: 20px;
+    margin: 10px;
+    font-size: calc(10px + 2vmin);
 }
 
 
@@ -369,7 +373,7 @@ table{
         font-size: 12px;   
     }
 
-    input, .toggle{
+    #input, .toggle{
         width:20px;
         height:20px;
         line-height:20px;
