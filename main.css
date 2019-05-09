@@ -147,10 +147,6 @@ a, a:visited{color:#fff;text-decoration: none;}
     margin: 0 auto;
 }
 
-#table_tanks,#table_heals,#table_ranges, #table_melees{
-    font-size:10px;
-}
-
 #headline{color: #eee;}
 
 /* Info*/
@@ -297,7 +293,7 @@ td{ font-size: calc(10px + 2vmin);}
 
 /* Kontakt */
 #kontakt{
-    width:100%;
+    width:99vw;
     max-width:1880px;
     height: 100%;
     padding: 10px;
