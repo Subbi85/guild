@@ -83,7 +83,7 @@ let createDivs=(obj)=>{
         //Alle td der Reihe
         //Platz        
         let newTd = document.createElement("td");
-        newTd.setAttribute("id", "Rang"+i);
+        newTd.setAttribute("id", "Rang"+(i+1));
         let newText= document.createTextNode(i);
         newTd.appendChild(newText);
         newTr.appendChild(newTd);
