@@ -85,22 +85,22 @@ let createDivs=(obj)=>{
         let newTd = document.createElement("td");
         let newText= document.createTextNode("#"+i);
         newTd.appendChild(newText);
-        newTr.appendChild(newText);
+        newTr.appendChild(newTd);
         //Charname
         newTd = document.createElement("td");
         newText= document.createTextNode(obj.member[i].charname);
         newTd.appendChild(newText);
-        newTr.appendChild(newText);
+        newTr.appendChild(newTd);
         //Realm
         newTd = document.createElement("td");
         newText= document.createTextNode(obj.member[i].realm);
         newTd.appendChild(newText);
-        newTr.appendChild(newText);
+        newTr.appendChild(newTd);
         //Score
         newTd = document.createElement("td");
         newText= document.createTextNode(obj.member[i].score);
         newTd.appendChild(newText);
-        newTr.appendChild(newText);
+        newTr.appendChild(newTd);
 
         //Anhängen an Tabelle
         display.appendChild(newTr);
