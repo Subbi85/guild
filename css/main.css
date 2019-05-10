@@ -275,7 +275,7 @@ th{
 }
 
 .tr{
-    font-size:14px;
+    font-size: calc(10px + 2vmin);
 }
 
 
