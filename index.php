@@ -65,7 +65,7 @@
                     <img src="css/img/title.png" style="width:100%">
                     <div class="slidertext">
                         <h4>Holt die Angeln raus...</h4>    
-                        Wenn es mal wieder länger dauer    
+                        Wenn es mal wieder länger dauert    
                     </div>
                 </div>
 
@@ -81,7 +81,10 @@
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
                     <img src="css/img/uldir.jpg" style="width:100%">
-                    <div class="slidertext">Caption Three</div>
+                    <div class="slidertext">
+                        <h4>Hier könnte ihre Werbung stehen</h4>
+                        Schickt mir mehr Werbung!
+                    </div>
                 </div>
 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
