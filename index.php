@@ -8,14 +8,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Order and Chaos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="w3.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="slider.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/w3.css" />
     <link rel="icon" type="image/png" href="css/img/favicon.png" sizes="32x32">
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>    
-    <script src="scores.js"></script>
-    <script src="slider.js"defer ></script>
-    <script src="main.js" defer></script>
+    <script src="js/scores.js"></script>
+    <script src="js/slider.js"defer ></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
 <div id="wrapper">

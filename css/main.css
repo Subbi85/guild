@@ -58,8 +58,8 @@ a, a:visited{color:#fff;text-decoration: none;}
 }
 
 /* Hintergründe festlegen */
-#BfA{background-image: url("css/img/title.png")}
-#Legion{ background-image: url("css/img/title.png")}
+#BfA{background-image: url("img/title.png")}
+#Legion{ background-image: url("img/title.png")}
 
 /* Bars */
 .skillbar {
@@ -158,7 +158,7 @@ a, a:visited{color:#fff;text-decoration: none;}
 /* Paralax */
 .parallax {
     margin-top: 20px;
-    background-image: url("css/img/title.png");
+    background-image: url("img/title.png");
     height: 300px; 
     background-attachment: fixed;
     background-position: center;
