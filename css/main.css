@@ -14,7 +14,7 @@ a, a:visited{color:#fff;text-decoration: none;}
 #landing{
     width:99vw;
     height:99vh;
-    background:black url('css/img/title.png');
+    background:black url('img/title.png');
     display: flex;
 }
 
