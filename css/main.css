@@ -380,3 +380,7 @@ td{ font-size: calc(10px + 2vmin);}
         height:350px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .section{min-width:360px;}
+}
