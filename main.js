@@ -1,4 +1,5 @@
 "use strict";
+//Aufbau der Kadertabellen
 let tabellenBauen=(data)=>{
     //DOM Elemente beschaffen
     let tanks = document.getElementById("table_tanks");
@@ -9,6 +10,7 @@ let tabellenBauen=(data)=>{
     //Neue DOM-Elemente aufbauen
     data.forEach(element => {
         let neueTr = document.createElement("tr");
+        neueTr.setAttribute("class", "tr");
         neueTr.setAttribute("style", "color:"+element.color);
         //Charname
         let neueTd = document.createElement("td");
@@ -40,6 +42,7 @@ let tabellenBauen=(data)=>{
     });
 }
 
+//################################################################################
 let hintergund = document.getElementById("Legion");
 let hintergund_bfa = document.getElementById("BfA");
 let hintergrundWechseln=(instanz)=>{
@@ -87,7 +90,6 @@ function progression(){
 //####################### RAID PROGRESS ENDE #######################################################
 progression();
 
-
 //################# AFFIXE DER WOCHE #######################################################
 function affixe(){                          /* Affixe der aktuellen Woche */
 let blizzRequest = new XMLHttpRequest();
@@ -120,5 +122,4 @@ blizzRequest.onload=function(){
 blizzRequest.send();
 }                                           
 //################# AFFIXE DER WOCHE ENDE #######################################################
-
 affixe();
