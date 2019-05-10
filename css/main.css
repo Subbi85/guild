@@ -210,9 +210,7 @@ a, a:visited{color:#fff;text-decoration: none;}
     z-index:2;
 }
 
-#input{
-    opacity: 0;
-}
+#input{opacity: 0;}
 
 .toggle{
     pointer-events: none;
@@ -276,7 +274,11 @@ th{
     font-weight: bold;
 }
 
-td{ font-size: calc(10px + 2vmin);}
+.tr{
+    font-size:10px;
+}
+
+
 
 /* Erste Ränge des Tabelle*/
 #Rang1{color: gold;}
@@ -293,7 +295,6 @@ td{ font-size: calc(10px + 2vmin);}
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: grey;
 }
 
 #kontakt p{

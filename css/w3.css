@@ -1,3 +1,4 @@
+body{background-color:#eee;}
 /* Navigation */
 #nav_ul{
     text-decoration: none;    
@@ -97,7 +98,7 @@
 
 #kontaktpic{
     flex:1;
-    background-image: url("css/img/recruit.png");
+    background-image: url("img/recruit.png");
 }
 
 /* Style the tab */
