@@ -38,9 +38,9 @@ a, a:visited{color:#fff;text-decoration: none;}
 }
 
 #text{
-    font-size: calc(10px + 1.5vmin);
+    font-size: calc(8px + 1vmin);
     margin:5px;
-    flex:2;
+    flex:1;
 }
 
 #pic{
@@ -325,14 +325,16 @@ td{ font-size: calc(10px + 2vmin);}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1250px) {
-    #pic{display: none;}
     #kader_container{
         flex-direction:column;
     }    
 }
 
 @media screen and (max-width: 900px) {
-    #pic{display: none;}
+    #about{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
     .skill-bar-percent,.skillbar-bar,.skillbar-title span, .skillbar-title, .skillbar{
         height: 20px;
         line-height:20px;

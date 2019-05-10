@@ -10,9 +10,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="w3.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="slider.css" />
     <link rel="icon" type="image/png" href="css/img/favicon.png" sizes="32x32">
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>    
     <script src="scores.js"></script>
+    <script src="slider.js"defer ></script>
     <script src="main.js" defer></script>
 </head>
 <body>
@@ -57,8 +59,33 @@
             </p>
         </div>
         <div class="about_box" id="pic">
-            <div class="picture">
-                
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="css/img/title.png" style="width:100%">
+                    <div class="slidertext">
+                        <h4>Holt die Angeln raus...</h4>    
+                        Wenn es mal wieder länger dauer    
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="css/img/bod.jpg" style="width:100%">
+                    <div class="slidertext">
+                        <h4>BoD im Hc clear</h4>    
+                        Und endlich liegt auch Jaina
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="css/img/uldir.jpg" style="width:100%">
+                    <div class="slidertext">Caption Three</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
         </div>
     </div>
