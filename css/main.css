@@ -323,7 +323,7 @@ th{
 }
 
 #kontakt p{
-    font-size:24px;
+    font-size: calc(8px + 1.2vmin);
     padding:5px;
     font-family: morpheus;
 }
