@@ -363,7 +363,7 @@
         <p>Du hast gefallen an unsere Gilde gefunden und willst uns kennenlernen? <br>
             Dann schreibe uns einfach hier eine Nachricht oder besuche uns auf unserem Discord-Server.
         </p>
-    <div class="button" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</div>
+    <div class="button" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Nachricht schreiben</div>
     </div>
     <div id="id01" class="w3-modal">
         <div class="w3-modal-content w3-card-4">

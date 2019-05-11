@@ -305,6 +305,10 @@ th{
     font-size: calc(8px + 1.3vmin);
 }
 
+.score_tr{
+    font-size: calc(8px + 1.8vmin);
+}
+
 /* Erste Ränge des Tabelle*/
 #Rang1{color: gold;}
 #Rang2{color: silver;}

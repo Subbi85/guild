@@ -81,10 +81,11 @@ let createDivs=(obj)=>{
         //Neue Reihe
         let newTr= document.createElement("tr");
         newTr.setAttribute("id", "Rang"+(i+1));
+        newTr.setAttribute("class", "score_tr");
         //Alle td der Reihe
         //Platz        
         let newTd = document.createElement("td");
-        let newText= document.createTextNode(i);
+        let newText= document.createTextNode(i+1);
         newTd.appendChild(newText);
         newTr.appendChild(newTd);
         //Charname
