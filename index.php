@@ -279,7 +279,8 @@
     </div>
     <!-- Raids Ende -->
     <div class="parallax" id="para_mythic">
-        <h3>Mythic Plus</h3>
+        <h2>Mythic Plus</h2>
+        Affixe & Scores
     </div>
 
     <!-- Mythic Plus-->

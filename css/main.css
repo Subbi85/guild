@@ -17,8 +17,8 @@
 /* Allgemeines CSS */
 *{font-family: morpheus}
 html{scroll-behavior: smooth}
-body{margin:0; padding:0;max-width:1920px;background-color:#eee;}
-.button{ padding:5px; outline: 5px solid #fff;}
+body{margin:0; padding:0;max-width:1800px;background-color:rgb(231, 219, 201);color:rgb(44, 7, 7)}
+.button{ padding:5px; outline: 5px solid rgb(235, 230, 224);}
 .button:hover{cursor: pointer;}
 .section{max-width: 1980px;}
 a, a:visited{color:#fff;text-decoration: none;}
@@ -36,7 +36,7 @@ a, a:visited{color:#fff;text-decoration: none;}
 }
 
 .landing_container{
-    color:#fff;
+    color:rgb(235, 230, 224);
     height: 100%;
     width: 100%;
     justify-content: center;
@@ -175,7 +175,6 @@ a, a:visited{color:#fff;text-decoration: none;}
 /* Paralax */
 .parallax {
     margin-top: 20px;
-
     height: 300px; 
     background-attachment: fixed;
     background-position: center;
@@ -184,7 +183,7 @@ a, a:visited{color:#fff;text-decoration: none;}
     z-index: -1;
     text-align: center;
     justify-content:center;
-    color:#fff;
+    color:rgb(235, 230, 224);
     display:flex;
     flex-direction: column;
     font-size: calc(14px + 2vmin);
