@@ -22,7 +22,7 @@ body{margin:0; padding:0;max-width:1920px;background-color:#eee;}
 .button:hover{cursor: pointer;}
 .section{max-width: 1980px;}
 a, a:visited{color:#fff;text-decoration: none;}
-.links{color:#111;}
+.links{color:#59090e;}
 /* Landing */
 .section{
     max-width:1920;
