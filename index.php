@@ -270,8 +270,8 @@
 
             Ach fast hätten wir noch was wichtiges vergessen: Unsere Links zu Raider.io und natürlich unsere Logs, die du dir gern mal anschauen kannst, um dir ein Bild zu machen. 
             Die Links findest du hier: <br>	
-            <a href="https://raider.io/guilds/eu/anetheron/Order%20and%20Chaos" target="_blank"><span class="links">Raider.io</span></a> <br>
-            <a href="https://www.warcraftlogs.com/guild/calendar/304372/" target="_blank"><span class="links">Warcraftlogs</span></a> <br>
+            <a href="https://raider.io/guilds/eu/anetheron/Order%20and%20Chaos" target="_blank"><span class="links"> -> Raider.io  </span></a> <br>
+            <a href="https://www.warcraftlogs.com/guild/calendar/304372/" target="_blank"><span class="links">-> Warcraftlogs </span></a> <br>
             Soooo... jetzt weißt du aber wirklich so gut wie alles. <br>
             Also wenn du uns jetzt immernoch kennenlernen willst, dann zögere nicht und schreibe einen unserer Offiziere inGame an: <br>
             </p>

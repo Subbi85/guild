@@ -18,6 +18,7 @@
 *{font-family: morpheus}
 html{scroll-behavior: smooth}
 body{margin:0; padding:0;max-width:1920px;background-color:#eee;}
+#wrapper{max-width:1920px; margin:0 auto}
 .button{ padding:5px; outline: 1px solid #fff;}
 .button:hover{cursor: pointer;}
 .section{max-width: 1980px;}
@@ -170,7 +171,6 @@ a, a:visited{color:#fff;text-decoration: none;}
 /* Info*/
 #raidtext{
     font-size: calc(8px + 1.3vmin);
-    font-weight: bold;
 }
 
 /* Paralax */
@@ -301,7 +301,7 @@ th{
 }
 
 .tr{
-    font-size: calc(8px + 1.3vmin);
+    font-size: calc(10px + 1.3vmin);
 }
 
 /* Erste Ränge des Tabelle*/
@@ -325,7 +325,6 @@ th{
     font-size:24px;
     padding:5px;
     font-family: morpheus;
-    font-weight: bold;
 }
 
 #messagetext{
