@@ -41,7 +41,7 @@
     </div>
     <!-- Navigation ENDE -->
     <!-- Über Uns -->
-    <div class="section" id="about">.
+    <div class="section" id="about">
         <div class="about_box" id="text">
                 <h3>Lok'thar Ogar, Freund!</h3>            
             <p id="about_text">

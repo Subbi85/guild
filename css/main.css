@@ -176,7 +176,7 @@ a, a:visited{color:#fff;text-decoration: none;}
 /* Paralax */
 .parallax {
     margin-top: 20px;
-    background-image: url("img/title.png");
+
     height: 300px; 
     background-attachment: fixed;
     background-position: center;
@@ -190,6 +190,14 @@ a, a:visited{color:#fff;text-decoration: none;}
     flex-direction: column;
     font-size: calc(14px + 2vmin);
   }
+
+#para_mythic{
+    background-image: url("img/mythic.jpg");
+}
+
+#para_kontakt{
+    background-image: url("img/mythic.jpg");
+}
 
 /*Mythic */
 #mythic{
