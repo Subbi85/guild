@@ -276,7 +276,7 @@
             Also wenn du uns jetzt immernoch kennenlernen willst, dann zögere nicht und schreibe einen unserer Offiziere inGame an: <br>
             </p>
         </div>        
-    </div>
+
     <!-- Raids Ende -->
     <div class="parallax" id="para_mythic">
         <h3>Mythic Plus</h3>
@@ -398,6 +398,7 @@
             <li>Impressum</li>
             <li>Battle.net</li>
         </ul>
+    </div>
     </div>
 </div> <!--ENDE WRAPPER -->
 <script>
