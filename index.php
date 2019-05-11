@@ -337,19 +337,7 @@
             </div>
             <!--###################################### -->
         </div>
-        <div class="scores">
-            <!-- Scoretabelle -->
-            <div id="table">
-                <table id="tbl">
-                    <tr>
-                        <th>Platz</th>
-                        <th>Name</th>
-                        <th>Realm</th>
-                        <th>Score</th>
-                    </tr>
-                </table>
-            </div>
-        </div>
+
     </div>
 
     </div>
