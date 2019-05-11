@@ -1,7 +1,23 @@
+@font-face{
+    src: url(fonts/morpheus.ttf);
+    font-family: morpheus;
+}
+
+@font-face{
+    src: url(fonts/lifecraft.ttf);
+    font-family: lifecraft;
+}
+
+@font-face{
+    src: url(fonts/folkard.ttf);
+    font-family: folkard;
+}
+
 body{background-color:#eee;}
 /* Navigation */
-#nav_ul{
-    text-decoration: none;    
+
+.nav_link{
+    font-family: folkard;
 }
 
 .topnav {

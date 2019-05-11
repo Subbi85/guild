@@ -1,4 +1,21 @@
+/* Font Import*/
+@font-face{
+    src: url(fonts/morpheus.ttf);
+    font-family: morpheus;
+}
+
+@font-face{
+    src: url(fonts/lifecraft.ttf);
+    font-family: lifecraft;
+}
+
+@font-face{
+    src: url(fonts/folkard.ttf);
+    font-family: folkard;
+}
+
 /* Allgemeines CSS */
+*{font-family: morpheus}
 html{scroll-behavior: smooth}
 body{margin:0; padding:0;max-width:1950px}
 .button{ padding:5px; outline: 1px solid #fff;}
@@ -152,7 +169,8 @@ a, a:visited{color:#fff;text-decoration: none;}
 
 /* Info*/
 #raidtext{
-    font-size: calc(8px + 1.5vmin);
+    font-size: calc(8px + 1.3vmin);
+    font-weight: bold;
 }
 
 /* Paralax */
@@ -278,8 +296,6 @@ th{
     font-size: calc(8px + 1.3vmin);
 }
 
-
-
 /* Erste Ränge des Tabelle*/
 #Rang1{color: gold;}
 #Rang2{color: silver;}
@@ -300,6 +316,8 @@ th{
 #kontakt p{
     font-size:24px;
     padding:5px;
+    font-family: morpheus;
+    font-weight: bold;
 }
 
 #messagetext{

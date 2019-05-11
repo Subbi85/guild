@@ -30,11 +30,11 @@
     <!-- Landing ENDE-->
     <!-- Navigation -->
     <div class="topnav" id="myTopnav">
-        <a href="#landing">Home</a>
-        <a href="#about">Über Uns</a>
-        <a href="#raids">Raids</a>
-        <a href="#mythic">Mythic+</a>
-        <a href="#kontakt">Kontakt</a>
+        <a href="#landing" class="nav_link">Home</a>
+        <a href="#about" class="nav_link">Über Uns</a>
+        <a href="#raids" class="nav_link">Raids</a>
+        <a href="#mythic" class="nav_link">Mythic+</a>
+        <a href="#kontakt" class="nav_link">Kontakt</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars">|||</i>      
         </a>
@@ -180,7 +180,7 @@
 
             <h3 id="headline">Nachtfestung</h3>
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('nachtfestung')">
-                <div class="skillbar-title" style="background: #a09797;"><span>Nachtfestung hc</span></div>
+                <div class="skillbar-title" style="background: #a09797;"><span>Nachtfest. hc</span></div>
                 <div class="skillbar-bar" style="background: ##6EFFFF;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
@@ -279,7 +279,7 @@
     </div>
     <!-- Raids Ende -->
     <div class="parallax" id="para_mythic">
-        <h3>Mythic Plus Paralax</h3>
+        <h3>Mythic Plus</h3>
     </div>
 
     <!-- Mythic Plus-->
