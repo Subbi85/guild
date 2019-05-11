@@ -395,7 +395,7 @@
     <div class="section" id="footer">
         <ul id="footerlist">
             <li>Impressum</li>
-            <li>Battle.net</li>
+            <li><a href="https://worldofwarcraft.com/de-de/guild/eu/anetheron/order-and-chaos" target="_blank">Battle.net</a></li>
         </ul>
     </div>
 </div> <!--ENDE WRAPPER -->
