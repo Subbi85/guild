@@ -6,7 +6,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Order and Chaos</title>
+    <title>Order and Chaos - Anetheron EU</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/w3.css" />
@@ -393,7 +393,7 @@
         </div>
     </div>
     <!--Footer -->
-    <div class="section" id="footer">.
+    <div class="section" id="footer">
         <ul id="footerlist">
             <li>Impressum</li>
             <li>Battle.net</li>
