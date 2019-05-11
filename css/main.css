@@ -17,7 +17,7 @@
 /* Allgemeines CSS */
 *{font-family: morpheus}
 html{scroll-behavior: smooth}
-body{margin:0; padding:0;max-width:1800px;background-color:rgb(231, 219, 201);color:rgb(44, 7, 7)}
+body{margin:0; padding:0;max-width:1920px;background-color:rgb(231, 219, 201);color:rgb(44, 7, 7); margin:0 auto; }
 .button{ padding:5px; outline: 5px solid rgb(235, 230, 224);}
 .button:hover{cursor: pointer;}
 .section{max-width: 1980px;}
