@@ -83,7 +83,6 @@ function progression(){
     blizzRequest.onload=function(){
         var test = JSON.parse(blizzRequest.responseText);
         //Verarbeitung der Daten und Anpassen der Progressbars
-        console.log(test);
     }
     blizzRequest.send();
     }
@@ -103,7 +102,6 @@ blizzRequest.onload=function(){
         affixes.push(affix);
         affixes.push(detail);
     }
-    console.log(affixes);
     //Display Data
     //#1
     document.getElementById("content_head_one").innerHTML = affixes[0];

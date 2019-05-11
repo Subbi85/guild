@@ -65,7 +65,6 @@ let sortJSON=(obj)=>{
 //Send to PHP
 let sendPHP=(obj)=>{
     let jsonstring = JSON.stringify(obj);
-    console.log(jsonstring);
     document.getElementById("tabelle").value = jsonstring;
     //AJAX
     let xhr = new XMLHttpRequest();
