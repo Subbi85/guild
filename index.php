@@ -55,6 +55,7 @@
                 Noch eine super Frage: Wir gehen gern M+ Instanzen und versuchen uns da immer weiter zu steigern. Und ansonsten halt alles was ansteht... 
                 Weltquests, Inselexpeditionen, alte Raids und und und... <br><br>
                 Alles im Namen der Horde, <br>
+                <span id="handwirting">Euer OaC- Team</span>
                 
             </p>
         </div>
@@ -62,10 +63,10 @@
             <div class="slideshow-container">
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
-                    <img src="css/img/title.png" style="width:100%">
+                    <img src="css/img/angeln.jpg" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Holt die Angeln raus...</h4>    
-                        Wenn es mal wieder länger dauert    
+                        Wenn es mal wieder länger dauert...
                     </div>
                 </div>
 
@@ -73,17 +74,17 @@
                     <div class="numbertext">2 / 3</div>
                     <img src="css/img/bod.jpg" style="width:100%">
                     <div class="slidertext morpheus">
-                        <h4 class="morpheus">BoD im Hc clear</h4>    
-                        Und endlich liegt auch Jaina
+                        <h4 class="morpheus">BoD Hc clear</h4>    
+                        endlich wurde auch Jaina vertrieben
                     </div>
                 </div>
 
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
-                    <img src="css/img/uldir.jpg" style="width:100%">
+                    <img src="css/img/ghuun.png" style="width:100%">
                     <div class="slidertext morpheus">
-                        <h4 class="morpheus">Hier könnte ihre Werbung stehen</h4>
-                        Schickt mir mehr Werbung!
+                        <h4 class="morpheus">Uldir Hc clear</h4>
+                        G'huun liegt am Boden
                     </div>
                 </div>
 
@@ -375,10 +376,10 @@
             </header>
             <div class="w3-container" id="modal_container">
                 <!--Nachrichtenform -->
-                <form id="messageform" action="message.php" method="POST">
+                <form id="messageform" action="php/message.php" method="POST">
                     <!-- Charinformationen-->
                     <label for="char" class="morpheus">Charname</label>
-                    <input type="text" id="name" name="char" class="morpheus" placeholder="Charname"> <br>
+                    <input type="text" id="name" name="charname" class="morpheus" placeholder="Charname"> <br>
                     <label for="realm" class="morpheus">Realm</label>
                     <input type="text" id="name" name="realm" class="morpheus" placeholder="Realm"> <br>
                     <label for="classe"></label>

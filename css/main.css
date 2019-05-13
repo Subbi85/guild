@@ -10,8 +10,8 @@
 }
 
 @font-face{
-    src: url(fonts/folkard.ttf);
-    font-family: folkard;
+    src: url(fonts/handwriting.ttf);
+    font-family: handwriting;
 }
 
 /* Allgemeines CSS */
@@ -24,6 +24,8 @@ body{margin:0; padding:0;max-width:1920px;background-color:rgb(231, 219, 201);co
 a, a:visited{color:#fff;text-decoration: none;}
 .links{color:#59090e;}
 .morpheus{font-family: morpheus;}
+#handwirting{font-family: handwriting}
+    
 /* Landing */
 .section{
     max-width:1920;
