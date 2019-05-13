@@ -29,11 +29,11 @@
     </div>
     <!-- Landing ENDE-->
     <!-- Navigation -->
-    <div class="topnav morpheus" id="myTopnav">
+    <div class="topnav" id="myTopnav">
         <a href="#landing" class="nav_link">Home</a>
         <a href="#about" class="nav_link">Über Uns</a>
         <a href="#raids" class="nav_link">Raids</a>
-        <a href="#mythic" class="nav_link">Mythic+</a>
+        <a href="#mythic" class="nav_link ">Mythic+</a>
         <a href="#kontakt" class="nav_link">Kontakt</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars">|||</i>      
@@ -105,7 +105,7 @@
         </div>
 
         <div id="BfA" class="tabcontent">
-            <h3 id="headline">Tiegel der Stürme</h3>
+            <h3 id="headline" class="morpheus">Tiegel der Stürme</h3>
              <div class="skillbar clearfix " data-percent="50%" onmouseenter="hintergrundWechseln('tiegel')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Tiegel hc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
@@ -119,7 +119,7 @@
             </div> <!-- End Skill Bar -->
 
             <!-- Dazar -->
-            <h3 id="headline">Belagerung von Dazar'Alor</h3>
+            <h3 id="headline" class="morpheus">Belagerung von Dazar'Alor</h3>
             <div class="skillbar clearfix" data-percent="20%" onmouseenter="hintergrundWechseln('dazar')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Dazar mythic</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
@@ -139,7 +139,7 @@
             </div> <!-- End Skill Bar -->
 
             <!-- Uldir -->
-            <h3 id="headline">Uldir</h3>
+            <h3 id="headline" class="morpheus">Uldir</h3>
             <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('uldir')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Uldir hc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
@@ -154,7 +154,7 @@
         </div>
 
         <div id="Legion" class="tabcontent">
-            <h3 id="headline">Antorus, der brennende Thron</h3>
+            <h3 id="headline" class="morpheus">Antorus, der brennende Thron</h3>
             <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('antorus')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Antorus hc</span></div>
                 <div class="skillbar-bar" style="background: #179c4a;"></div>
@@ -167,7 +167,7 @@
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
-            <h3 id="headline">Grabmal des Sageras</h3>
+            <h3 id="headline" class="morpheus">Grabmal des Sageras</h3>
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('grab')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Grabmal hc</span></div>
                 <div class="skillbar-bar" style="background: #F3FE24;"></div>
@@ -180,7 +180,7 @@
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
-            <h3 id="headline">Nachtfestung</h3>
+            <h3 id="headline" class="morpheus">Nachtfestung</h3>
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('nachtfestung')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Nachtfest. hc</span></div>
                 <div class="skillbar-bar" style="background: ##6EFFFF;"></div>
@@ -193,7 +193,7 @@
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
-            <h3 id="headline">Prüfung der Tapferkeit</h3>
+            <h3 id="headline"  class="morpheus">Prüfung der Tapferkeit</h3>
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('trials')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Trials hc</span></div>
                 <div class="skillbar-bar" style="background: #f85d03;"></div>
@@ -206,7 +206,7 @@
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
-            <h3 id="headline">Smaragdgrüner Alptraum</h3>
+            <h3 id="headline"  class="morpheus">Smaragdgrüner Alptraum</h3>
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('smaragd')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Alptraum hc</span></div>
                 <div class="skillbar-bar" style="background: #561256;"></div>
@@ -295,7 +295,7 @@
                     <img src="css/img/logo.png" alt="">
                 </div>
                 <div class="content">
-                <h3 id="content_head_one"></h3>
+                <h3 id="content_head_one" class="morpheus"></h3>
                     <p id="content_one"></p>
                 </div>
             </div>
@@ -308,7 +308,7 @@
                     <img src="css/img/logo.png" alt="">
                 </div>
                 <div class="content">
-                <h3 id="content_head_two"></h3>
+                <h3 id="content_head_two" class="morpheus"></h3>
                     <p id="content_two"></p>
                 </div>
             </div>
@@ -321,7 +321,7 @@
                     <img src="css/img/logo.png" alt="">
                 </div>
                 <div class="content">
-                <h3 id="content_head_three"></h3>
+                <h3 id="content_head_three" class="morpheus"></h3>
                     <p id="content_three"></p>
                 </div>
             </div>
@@ -334,7 +334,7 @@
                     <img src="css/img/logo.png" alt="">
                 </div>
                 <div class="content">
-                <h3 id="content_head_four"></h3>
+                <h3 id="content_head_four" class="morpheus"></h3>
                     <p id="content_four"></p>
             </div>
             <!--###################################### -->
@@ -395,7 +395,7 @@
     <!--Footer -->
     <div class="section" id="footer">
         <ul id="footerlist">
-            <li  class="morpheus">Impressum</li>
+            <li  class="morpheus"><a href="impressum.html" target="_blank" class="morpheus">Impressum</a> </li>
             <li><a href="https://worldofwarcraft.com/de-de/guild/eu/anetheron/order-and-chaos" target="_blank" class="morpheus">Battle.net</a></li>
         </ul>
     </div>

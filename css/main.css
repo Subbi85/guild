@@ -71,7 +71,7 @@ a, a:visited{color:#fff;text-decoration: none;}
     padding:10px;
 }
 
-.picture{
+.picture{ 
     width:80%;
     height:300px;
     background: #111;
@@ -186,7 +186,7 @@ a, a:visited{color:#fff;text-decoration: none;}
     z-index: -1;
     text-align: center;
     justify-content:center;
-    color:rgb(235, 230, 224);
+    color:rgb(199, 199, 199);
     display:flex;
     flex-direction: column;
     font-size: calc(14px + 2vmin);
@@ -270,6 +270,7 @@ a, a:visited{color:#fff;text-decoration: none;}
     transition: 0.5s;
     opacity: 0;
     font-size: 14px;
+    color:rgb(235, 230, 224);
 }
 
 #input:checked ~ .content{
@@ -350,7 +351,7 @@ th{
 
 /* Footer */
 #footer{
-    height: 100px;
+    height: 60px;
     max-width:1900px;
     color: #fff;
     background: #000;

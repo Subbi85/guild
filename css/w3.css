@@ -1,6 +1,9 @@
+@font-face{
+  src: url(fonts/morpheus.ttf);
+  font-family: morpheus;
+}
 
 /* Navigation */
-
 .nav_link{
     font-family: folkard;
 }
@@ -8,6 +11,7 @@
 .topnav {
     overflow: hidden;
     background-color: #000;
+
   }
   
   .topnav a {
@@ -18,6 +22,7 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    font-family: morpheus;
   }
   
   .topnav a:hover {
