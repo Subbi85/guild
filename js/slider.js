@@ -12,9 +12,12 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
+  //Obere Grenze
   if (n > slides.length)
     {slideIndex = 1}    
+  //Untere Grenze
   if (n < 1) {slideIndex = slides.length}
+  //Bilder aus- / einblenden
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";  
   }

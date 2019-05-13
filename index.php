@@ -22,14 +22,14 @@
     <div class="section" id="landing">
         <div class="landing_container">
             <img src="css/img/logo.png" alt="css/img/logo.png" id="titlepic">
-            <h1>Order and Chaos</h1> <br>
-            <h3>Anetheron - EU</h3>
-            <a href="#about"><div class="button">Start</div></a>
+            <h1 class="morpheus">Order and Chaos</h1> <br>
+            <h3 class="morpheus">Anetheron - EU</h3>
+            <a href="#about"><div class="button morpheus">Start</div></a>
         </div>
     </div>
     <!-- Landing ENDE-->
     <!-- Navigation -->
-    <div class="topnav" id="myTopnav">
+    <div class="topnav morpheus" id="myTopnav">
         <a href="#landing" class="nav_link">Home</a>
         <a href="#about" class="nav_link">Über Uns</a>
         <a href="#raids" class="nav_link">Raids</a>
@@ -43,7 +43,7 @@
     <!-- Über Uns -->
     <div class="section" id="about">
         <div class="about_box" id="text">
-                <h3>Lok'thar Ogar, Freund!</h3>            
+                <h3 class="morpheus">Lok'thar Ogar, Freund!</h3>            
             <p id="about_text">
                 Wir sind die Gilde "Order and Chaos" vom Server Anetheron und sind allesamt treue und kampferprobte Streiter der Horde. <br><br>
                 Unseren kleinen, verrückten und familiären Haufen von lieben Menschen gibt es seit Legion, genauer gesagt war 
@@ -54,7 +54,8 @@
                 Und was macht ihr sonst noch? <br><br>
                 Noch eine super Frage: Wir gehen gern M+ Instanzen und versuchen uns da immer weiter zu steigern. Und ansonsten halt alles was ansteht... 
                 Weltquests, Inselexpeditionen, alte Raids und und und... <br><br>
-                Alles im Namen der Horde
+                Alles im Namen der Horde, <br>
+                
             </p>
         </div>
         <div class="about_box" id="pic">
@@ -62,8 +63,8 @@
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
                     <img src="css/img/title.png" style="width:100%">
-                    <div class="slidertext">
-                        <h4>Holt die Angeln raus...</h4>    
+                    <div class="slidertext morpheus">
+                        <h4 class="morpheus">Holt die Angeln raus...</h4>    
                         Wenn es mal wieder länger dauert    
                     </div>
                 </div>
@@ -71,8 +72,8 @@
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 3</div>
                     <img src="css/img/bod.jpg" style="width:100%">
-                    <div class="slidertext">
-                        <h4>BoD im Hc clear</h4>    
+                    <div class="slidertext morpheus">
+                        <h4 class="morpheus">BoD im Hc clear</h4>    
                         Und endlich liegt auch Jaina
                     </div>
                 </div>
@@ -80,8 +81,8 @@
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
                     <img src="css/img/uldir.jpg" style="width:100%">
-                    <div class="slidertext">
-                        <h4>Hier könnte ihre Werbung stehen</h4>
+                    <div class="slidertext morpheus">
+                        <h4 class="morpheus">Hier könnte ihre Werbung stehen</h4>
                         Schickt mir mehr Werbung!
                     </div>
                 </div>
@@ -96,23 +97,23 @@
     <!-- Raids -->
     <div class="section" id="raids">
         <div class="tab">
-            <button class="tablinks" id="defaultOpen" onclick="openTab(event, 'BfA')">BfA</button>
-            <button class="tablinks" onclick="openTab(event, 'Legion')">Legion</button>
-            <button class="tablinks" onclick="openTab(event, 'kader')">Kader</button>
-            <button class="tablinks" onclick="openTab(event, 'Infos')">Infos</button>
+            <button class="tablinks morpheus" id="defaultOpen" onclick="openTab(event, 'BfA')">BfA</button>
+            <button class="tablinks morpheus" onclick="openTab(event, 'Legion')">Legion</button>
+            <button class="tablinks morpheus" onclick="openTab(event, 'kader')">Kader</button>
+            <button class="tablinks morpheus" onclick="openTab(event, 'Infos')">Infos</button>
         </div>
 
         <div id="BfA" class="tabcontent">
             <h3 id="headline">Tiegel der Stürme</h3>
              <div class="skillbar clearfix " data-percent="50%" onmouseenter="hintergrundWechseln('tiegel')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Tiegel hc</span></div>
-                <div class="skillbar-bar" style="background: #ee202b;"></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent">1/2</div>
             </div> <!-- End Skill Bar -->
         
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('tiegel')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Tiegel nhc</span></div>
-                <div class="skillbar-bar" style="background: #ee202b;"></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent">2/2</div>
             </div> <!-- End Skill Bar -->
 
@@ -120,19 +121,19 @@
             <h3 id="headline">Belagerung von Dazar'Alor</h3>
             <div class="skillbar clearfix" data-percent="20%" onmouseenter="hintergrundWechseln('dazar')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Dazar mythic</span></div>
-                <div class="skillbar-bar" style="background: gold;"></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent">2/9</div>
             </div> <!-- End Skill Bar -->
         
             <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('dazar')"> 
                 <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor hc</span></div>
-                <div class="skillbar-bar" style="background: gold;"></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('dazar')">
-                <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor hc</span></div>
-                <div class="skillbar-bar" style="background: gold;"></div>
+                <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor nhc</span></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
@@ -140,13 +141,13 @@
             <h3 id="headline">Uldir</h3>
             <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('uldir')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Uldir hc</span></div>
-                <div class="skillbar-bar" style="background: ##67b264;"></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent">8/8</div>
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('uldir')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Uldir nhc</span></div>
-                <div class="skillbar-bar" style="background: ##60b55c;"></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent">8/8</div>
             </div> <!-- End Skill Bar -->
         </div>
@@ -187,7 +188,7 @@
 
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('nachtfestung')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Nachtfest. nhc</span></div>
-                <div class="skillbar-bar" style="background: ##6EFFFF;"></div>
+                <div class="skillbar-bar" style="background: #6EFFFF;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
@@ -273,13 +274,12 @@
             <a href="https://raider.io/guilds/eu/anetheron/Order%20and%20Chaos" target="_blank"><span class="links"> Raider.io  </span></a> <br>
             <a href="https://www.warcraftlogs.com/guild/calendar/304372/" target="_blank"><span class="links">Warcraftlogs</span></a> <br>
             Soooo... jetzt weißt du aber wirklich so gut wie alles. <br>
-            Also wenn du uns jetzt immernoch kennenlernen willst, dann zögere nicht und schreibe einen unserer Offiziere inGame an: <br>
             </p>
         </div>        
     </div>
     <!-- Raids Ende -->
-    <div class="parallax" id="para_mythic">
-        <h2>Mythic Plus</h2>
+    <div class="parallax morpheus" id="para_mythic">
+        <h2 class="morpheus">Mythic Plus</h2>
         Affixe & Scores
     </div>
 
@@ -355,12 +355,12 @@
 
     </div>
     <!-- Mythic Plus ENDE-->
-    <div class="parallax" id="para_kontakt">
-        <h3>Kontakt</h3>
+    <div class="parallax morpheus" id="para_kontakt">
+        <h3 class="morpheus">Kontakt</h3>
     </div>
     <!-- Kontakt -->
     <div class="section" id="kontakt">
-        <h3>Wir suchen dich...</h3>
+        <h3 class="morpheus">Wir suchen Verstärkung...</h3>
         <p>Du hast gefallen an unsere Gilde gefunden und willst uns kennenlernen? <br>
             Dann schreibe uns einfach hier eine Nachricht oder besuche uns auf unserem Discord-Server.
         </p>
@@ -371,32 +371,31 @@
             <header class="w3-container w3-teal"> 
             <span onclick="document.getElementById('id01').style.display='none'" 
             class="w3-button w3-display-topright">&times;</span>
-            <h2>Kontakt</h2>
+            <h2 class="morpheus">Kontakt</h2>
             </header>
             <div class="w3-container" id="modal_container">
                 <!--Nachrichtenform -->
                 <form id="messageform" action="message.php" method="POST">
                     <!-- Charinformationen-->
-                    <label for="char">Charname</label>
-                    <input type="text" id="name" name="char" placeholder="Charname"> <br>
-                    <label for="realm">Realm</label>
-                    <input type="text" id="name" name="realm" placeholder="Realm"> <br>
+                    <label for="char" class="morpheus">Charname</label>
+                    <input type="text" id="name" name="char" class="morpheus" placeholder="Charname"> <br>
+                    <label for="realm" class="morpheus">Realm</label>
+                    <input type="text" id="name" name="realm" class="morpheus" placeholder="Realm"> <br>
                     <label for="classe"></label>
                     <!-- Deine Nachricht-->
-                    <textarea name="message" id="messagetext" cols="30" rows="7" placeholder="Deine Nachricht..."></textarea> <br>
-                    <input type="submit" value="Submit">
+                    <textarea name="message" class="morpheus" id="messagetext" cols="30" rows="7" placeholder="Deine Nachricht..."></textarea> <br>
+                    <input type="submit" value="Absenden" class="morpheus">
                 </form>
                 <div id="kontaktpic"></div>
             </div>
-            <footer class="w3-container w3-teal">Sende uns eine Nachricht
-            </footer>
+            <footer class="w3-container w3-teal">Sende uns eine Nachricht</footer>
         </div>
     </div>
     <!--Footer -->
     <div class="section" id="footer">
         <ul id="footerlist">
-            <li>Impressum</li>
-            <li><a href="https://worldofwarcraft.com/de-de/guild/eu/anetheron/order-and-chaos" target="_blank">Battle.net</a></li>
+            <li  class="morpheus">Impressum</li>
+            <li><a href="https://worldofwarcraft.com/de-de/guild/eu/anetheron/order-and-chaos" target="_blank" class="morpheus">Battle.net</a></li>
         </ul>
     </div>
 </div> <!--ENDE WRAPPER -->
