@@ -55,7 +55,7 @@
                 Noch eine super Frage: Wir gehen gern M+ Instanzen und versuchen uns da immer weiter zu steigern. Und ansonsten halt alles was ansteht... 
                 Weltquests, Inselexpeditionen, alte Raids und und und... <br><br>
                 Alles im Namen der Horde, <br>
-                <span id="handwirting">Euer OaC- Team</span>
+                <span id="handwirting">Das OaC- Team</span>
                 
             </p>
         </div>
