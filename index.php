@@ -348,6 +348,7 @@
                         <th class="morpheus">Name</th>
                         <th class="morpheus">Realm</th>
                         <th class="morpheus">Score</th>
+                        <th class="morpheus">Raider.io</th>
                     </tr>
                 </table>
             </div>

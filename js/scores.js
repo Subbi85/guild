@@ -102,6 +102,12 @@ let createDivs=(obj)=>{
         newText= document.createTextNode(obj.member[i].score);
         newTd.appendChild(newText);
         newTr.appendChild(newTd);
+        //Raider.io Link
+        newTd = document.createElement("td");
+        newText = document.createTextNode("hier");
+        newTd.appendChild(newText);
+        newTr.appendChild(newTd);
+
 
         //Anhängen an Tabelle
         display.appendChild(newTr);
