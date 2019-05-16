@@ -256,7 +256,7 @@
         </div>
 
         <div id="Infos" class="tabcontent">
-            <h3>Informationen</h3>
+            <h3 class="morpheus">Informationen</h3>
             <p id="raidtext">
             Wow, du hast dir bisher alles auf dieser Seite angeschaut und bist immernoch nicht weggerannt? Respekt! 
             Was? Du hast sogar ernsthaftes Interesse mit uns raiden zu gehen? Cool, hier gibt's noch weitere Informationen für dich: 
@@ -344,10 +344,10 @@
             <div id="table">
                 <table id="tbl">
                     <tr>
-                        <th>Platz</th>
-                        <th>Name</th>
-                        <th>Realm</th>
-                        <th>Score</th>
+                        <th class="morpheus">Platz</th>
+                        <th class="morpheus">Name</th>
+                        <th class="morpheus">Realm</th>
+                        <th class="morpheus">Score</th>
                     </tr>
                 </table>
             </div>
