@@ -105,15 +105,13 @@ let createDivs=(obj)=>{
         //Raider.io Link
         newTd = document.createElement("td");
         let newLink = document.createElement("a");
-        newLink.setAttribute("href","#landing");
+        newLink.setAttribute("href",'https://raider.io/characters/eu/'+obj.member[i].realm+'/'+obj.member[i].charname);
         newLink.setAttribute("class", "lifecraft");
         newText = document.createTextNode("[");
         newLink.appendChild(newText);
         newTd.appendChild(newLink);
         //An die neue Reihe
         newTr.appendChild(newTd);
-
-
         //Anhängen an Tabelle
         display.appendChild(newTr);
     }
