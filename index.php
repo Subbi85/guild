@@ -351,12 +351,11 @@
                         <th class="morpheus"></th>
                     </tr>
                 </table>
-            </div>
-        </div>
+            </div> <!-- Ende Table -->
+        </div><!-- Ende Scores -->
     </div>
 
-    </div>
-    <!-- Mythic Plus ENDE-->
+    </div><!-- Mythic Plus ENDE-->
     <div class="parallax morpheus" id="para_kontakt">
         <h3 class="morpheus">Kontakt</h3>
     </div>

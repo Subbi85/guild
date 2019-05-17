@@ -104,8 +104,12 @@ let createDivs=(obj)=>{
         newTr.appendChild(newTd);
         //Raider.io Link
         newTd = document.createElement("td");
+        let newLink = document.createElement("a");
+        newLink.setAttribute("href"="#home");
         newText = document.createTextNode("hier");
-        newTd.appendChild(newText);
+        newLink.appendChild(newText);
+        newTd.appendChild(newLink);
+        //An die neue Reihe
         newTr.appendChild(newTd);
 
 
