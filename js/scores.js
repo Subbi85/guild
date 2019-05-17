@@ -105,7 +105,7 @@ let createDivs=(obj)=>{
         //Raider.io Link
         newTd = document.createElement("td");
         let newLink = document.createElement("a");
-        newLink.setAttribute("href"="#home");
+        newLink.setAttribute("href","#home");
         newText = document.createTextNode("hier");
         newLink.appendChild(newText);
         newTd.appendChild(newLink);
