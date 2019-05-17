@@ -108,7 +108,6 @@ let createDivs=(obj)=>{
         newLink.setAttribute("href","#home");
         newLink.setAttribute("class", "lifecraft");
         newText = document.createTextNode("[");
-        newText.setAttribute("class", "lifecraft");
         newLink.appendChild(newText);
         newTd.appendChild(newLink);
         //An die neue Reihe
