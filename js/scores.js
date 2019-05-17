@@ -106,6 +106,7 @@ let createDivs=(obj)=>{
         newTd = document.createElement("td");
         let newLink = document.createElement("a");
         newLink.setAttribute("href",'https://raider.io/characters/eu/'+obj.member[i].realm+'/'+obj.member[i].charname);
+        newLink.setAttribute("target", "_blank");
         newLink.setAttribute("class", "lifecraft");
         newText = document.createTextNode("[");
         newLink.appendChild(newText);
