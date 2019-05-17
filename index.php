@@ -157,65 +157,65 @@
             <h3 id="headline" class="morpheus">Antorus, der brennende Thron</h3>
             <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('antorus')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Antorus hc</span></div>
-                <div class="skillbar-bar" style="background: #179c4a;"></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('antorus')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Antorus nhc</span></div>
-                <div class="skillbar-bar" style="background: #179c4a;"></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <h3 id="headline" class="morpheus">Grabmal des Sageras</h3>
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('grab')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Grabmal hc</span></div>
-                <div class="skillbar-bar" style="background: #F3FE24;"></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('grab')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Grabmal nhc</span></div>
-                <div class="skillbar-bar" style="background: #F3FE24;"></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <h3 id="headline" class="morpheus">Nachtfestung</h3>
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('nachtfestung')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Nachtfest. hc</span></div>
-                <div class="skillbar-bar" style="background: ##6EFFFF;"></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('nachtfestung')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Nachtfest. nhc</span></div>
-                <div class="skillbar-bar" style="background: #6EFFFF;"></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <h3 id="headline"  class="morpheus">Prüfung der Tapferkeit</h3>
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('trials')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Trials hc</span></div>
-                <div class="skillbar-bar" style="background: #f85d03;"></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('trials')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Trials nhc</span></div>
-                <div class="skillbar-bar" style="background: #f85d03;"></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <h3 id="headline"  class="morpheus">Smaragdgrüner Alptraum</h3>
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('smaragd')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Alptraum hc</span></div>
-                <div class="skillbar-bar" style="background: #561256;"></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('smaragd')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Alptraum nhc</span></div>
-                <div class="skillbar-bar" style="background: #561256;"></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent">9/9</div>
             </div> <!-- End Skill Bar -->
         </div>
