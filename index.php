@@ -398,6 +398,7 @@
         <ul id="footerlist">
             <li  class="morpheus"><a href="impressum.html" target="_blank" class="morpheus">Impressum</a> </li>
             <li><a href="https://worldofwarcraft.com/de-de/guild/eu/anetheron/order-and-chaos" target="_blank" class="morpheus">Battle.net</a></li>
+            <li> <a href="https://lars.schleyer-sw.de/" target="_blank"><img src="css/img/subbi.png" width="32px"> </a> </li>
         </ul>
     </div>
 </div> <!--ENDE WRAPPER -->
