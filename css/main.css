@@ -162,7 +162,9 @@ a, a:visited{color:#fff;text-decoration: none;}
     width: 100%;
     display: flex;
     flex-direction:row;
-    background-color:#f1f1f1;
+    background:black url('img/title.png');
+    color: #fff;
+    
 }
 
 .kader{
@@ -297,6 +299,7 @@ a, a:visited{color:#fff;text-decoration: none;}
     margin:0 auto;
     flex:1;
 }
+
 table{
     width:100%;
 }
