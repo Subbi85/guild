@@ -35,6 +35,7 @@
         <a href="#raids" class="nav_link">Raids</a>
         <a href="#mythic" class="nav_link ">Mythic+</a>
         <a href="#kontakt" class="nav_link">Kontakt</a>
+        <a href="vids.html" target="_blank" class="nav_link" style="float:right">Videos</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars">|||</i>      
         </a>

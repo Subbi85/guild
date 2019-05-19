@@ -23,10 +23,11 @@ body{margin:0; padding:0;max-width:1920px;background-color:rgb(231, 219, 201);co
 .section{max-width: 1980px;}
 a, a:visited{color:#fff;text-decoration: none;}
 .links{color:#59090e;}
+#header{margin:0 auto; width: 80%; max-width: 1540px; font-size:calc(10px + 1.5vmin); }
 .morpheus{font-family: morpheus;}
 .lifecraft {font-family: lifecraft; color:#59090e}
-#handwirting{font-family: handwriting}
-    
+#handwirting{font-family: handwriting}    
+
 /* Landing */
 .section{
     max-width:1920;
@@ -428,4 +429,17 @@ th{
 
 @media screen and (max-width: 400px) {
     .section{min-width:360px;}
+}
+
+#videobereich {
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+}	
+.videoextern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
