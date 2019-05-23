@@ -34,6 +34,7 @@
         <a href="#about" class="nav_link">Über Uns</a>
         <a href="#raids" class="nav_link">Raids</a>
         <a href="#mythic" class="nav_link ">Mythic+</a>
+        
         <a href="#kontakt" class="nav_link">Kontakt</a>
         <a href="vids.html" target="_blank" class="nav_link">Videos</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -62,6 +63,17 @@
         </div>
         <div class="about_box" id="pic">
             <div class="slideshow-container">
+                <!-- Tiegel -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="css/img/tiegelhc.jpg" style="width:100%">
+                    <div class="slidertext morpheus">
+                        <h4 class="morpheus">Tiegel des Sturms Hc clear</h4>    
+                        Der Tiegel ist nun auch bereinigt!
+                    </div>
+                </div>
+
+                <!-- Tiegel -->
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 3</div>
                     <img src="css/img/angeln.jpg" style="width:100%">
@@ -71,6 +83,7 @@
                     </div>
                 </div>
 
+                <!-- BoD -->
                 <div class="mySlides fade">
                     <div class="numbertext">2 / 3</div>
                     <img src="css/img/bod.jpg" style="width:100%">
@@ -80,6 +93,7 @@
                     </div>
                 </div>
 
+                <!-- Uldir -->
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 3</div>
                     <img src="css/img/ghuun.png" style="width:100%">
@@ -107,10 +121,10 @@
 
         <div id="BfA" class="tabcontent">
             <h3 id="headline" class="morpheus">Tiegel der Stürme</h3>
-             <div class="skillbar clearfix " data-percent="50%" onmouseenter="hintergrundWechseln('tiegel')">
+             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('tiegel')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Tiegel hc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">1/2</div>
+                <div class="skill-bar-percent">2/2</div>
             </div> <!-- End Skill Bar -->
         
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('tiegel')">
