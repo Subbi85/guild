@@ -66,7 +66,7 @@
             <div class="slideshow-container">
                 <!-- Tiegel -->
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
+                    <div class="numbertext">1 / 4</div>
                     <img src="css/img/tiegelhc.jpg" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Tiegel des Sturms Hc clear</h4>    
@@ -76,7 +76,7 @@
 
                 <!-- Tiegel -->
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 3</div>
+                    <div class="numbertext">2 / 4</div>
                     <img src="css/img/angeln.jpg" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Holt die Angeln raus...</h4>    
@@ -86,7 +86,7 @@
 
                 <!-- BoD -->
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 3</div>
+                    <div class="numbertext">3 / 4</div>
                     <img src="css/img/bod.jpg" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">BoD Hc clear</h4>    
@@ -96,7 +96,7 @@
 
                 <!-- Uldir -->
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 3</div>
+                    <div class="numbertext">4 / 4</div>
                     <img src="css/img/ghuun.png" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Uldir Hc clear</h4>
