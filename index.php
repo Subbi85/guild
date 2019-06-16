@@ -52,7 +52,8 @@
                 Gul'dan, der sich zu der Zeit in der Nachtfestung aufhielt, der erste Bösewicht, dem wir gemeinsam das Handwerk gelegt haben. 
                 Und seitdem? <br><br>
                 Gut,dass du fragst! Seitdem waren wir ziemlich erfolgreich. Wir haben die letzten Raids immer geschafft unser Gildenziel die Curve, also den Endboss in heroischer Schwierigkeit legen bevor der neue Raid rauskommt, zu erspielen. <br><br>
-                Will heißen: In unserer gemeinsamen Zeit haben alle Raids gelegen und auch der G'huun "Gott" musste sich uns geschlagen geben. 
+                Will heißen: In unserer gemeinsamen Zeit haben alle Raids gelegen und auch der G'huun "Gott" musste sich uns geschlagen geben. Doch damit nicht genug. Auch Jaina haben wir erfolgreich aus Daza'Alor vertrieben. <br>
+                Und nach langem Kampf konnten wir auch Uu'nat, den Vorboten der Leere, besiegen und triumphieren...
                 Und was macht ihr sonst noch? <br><br>
                 Noch eine super Frage: Wir gehen gern M+ Instanzen und versuchen uns da immer weiter zu steigern. Und ansonsten halt alles was ansteht... 
                 Weltquests, Inselexpeditionen, alte Raids und und und... <br><br>

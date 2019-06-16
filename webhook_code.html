@@ -1,0 +1,41 @@
+!<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>discord_webhook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+</head>
+<body>
+  <h3>Discord Webhook try out</h3>
+
+  <script>
+ var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://discordapp.com/api/webhooks/578832472196907010/8VpWXkpnxTOGL7hxGM4tnrfUtj_BABKVxPsujOAmT7UM4PwM2aT7XtJnvfOlgtpu5ip-",
+  "method": "POST",
+  "headers": {
+    "Content-Type": "application/json",
+    "Cache-Control": "no-cache",
+    "Postman-Token": "e21a4491-60a5-494c-b62a-6336fcdda1f9,e79470b8-89df-41e0-a92c-1974fea96127",
+    "Host": "discordapp.com",
+    "cookie": "__cfduid=d3492c3946257c405992b00fd11c83b241558389085",
+    "accept-encoding": "gzip, deflate",
+    "content-length": "1969",
+    "Connection": "keep-alive",
+    "cache-control": "no-cache"
+  },
+  "processData": false,
+  "data": "{\r\n  \"content\": \"this `supports` __a__ **subset** *of* ~~markdown~~ 😃 ```js\\nfunction foo(bar) {\\n  console.log(bar);\\n}\\n\\nfoo(1);```\\nWhen sending webhooks, you can have [masked links](https://discordapp.com) in here!\",\r\n  \"embeds\": [\r\n    {\r\n      \"title\": \"title ~~(did you know you can have markdown here too?)~~\",\r\n      \"description\": \"this supports [named links](https://discordapp.com) on top of the previously shown subset of markdown. ```\\nyes, even code blocks```\",\r\n      \"url\": \"https://discordapp.com\",\r\n      \"color\": 13698047,\r\n      \"timestamp\": \"2019-05-21T19:19:02.937Z\",\r\n      \"footer\": {\r\n        \"icon_url\": \"https://cdn.discordapp.com/embed/avatars/0.png\",\r\n        \"text\": \"footer text\"\r\n      },\r\n      \"thumbnail\": {\r\n        \"url\": \"https://cdn.discordapp.com/embed/avatars/0.png\"\r\n      },\r\n      \"image\": {\r\n        \"url\": \"https://cdn.discordapp.com/embed/avatars/0.png\"\r\n      },\r\n      \"author\": {\r\n        \"name\": \"author name\",\r\n        \"url\": \"https://discordapp.com\",\r\n        \"icon_url\": \"https://cdn.discordapp.com/embed/avatars/0.png\"\r\n      },\r\n      \"fields\": [\r\n        {\r\n          \"name\": \"🤔\",\r\n          \"value\": \"some of these properties have certain limits...\"\r\n        },\r\n        {\r\n          \"name\": \"😱\",\r\n          \"value\": \"try exceeding some of them!\"\r\n        },\r\n        {\r\n          \"name\": \"🙄\",\r\n          \"value\": \"an informative error should show up, and this view will remain as-is until all issues are fixed\"\r\n        },\r\n        {\r\n          \"name\": \"<:thonkang:219069250692841473>\",\r\n          \"value\": \"these last two\",\r\n          \"inline\": true\r\n        },\r\n        {\r\n          \"name\": \"<:thonkang:219069250692841473>\",\r\n          \"value\": \"are inline fields\",\r\n          \"inline\": true\r\n        }\r\n      ]\r\n    },\r\n    {\r\n      \"title\": \"Woah\",\r\n      \"description\": \"You can also have multiple embeds!\\n**NOTE**: The color picker does not work with multiple embeds (yet).\"\r\n    }\r\n  ]\r\n}"
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+  </script>
+  
+
+</body>
+</html>
