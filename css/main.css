@@ -18,8 +18,8 @@
 *{font-family: Arial}
 html{scroll-behavior: smooth}
 body{margin:0; padding:0;max-width:1920px;background-color:rgb(231, 219, 201);color:rgb(44, 7, 7); margin:0 auto; }
-.button{ padding:5px; outline: 5px solid rgb(235, 230, 224);}
-.button:hover{cursor: pointer;}
+.button{ padding:5px;}
+.button:hover{cursor: pointer; text-decoration: underline}
 .section{max-width: 1980px;}
 a, a:visited{color:#fff;text-decoration: none;}
 .links{color:#59090e;}
