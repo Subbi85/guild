@@ -59,7 +59,6 @@
                 Weltquests, Inselexpeditionen, alte Raids und und und... <br><br>
                 Alles im Namen der Horde, <br>
                 <span id="handwirting">Das OaC- Team</span>
-                
             </p>
         </div>
         <div class="about_box" id="pic">
@@ -121,6 +120,19 @@
         </div>
 
         <div id="BfA" class="tabcontent">
+        <h3 id="headline" class="morpheus">Der Ewige Palast</h3>
+             <div class="skillbar clearfix " data-percent="75%" onmouseenter="hintergrundWechseln('palast')">
+                <div class="skillbar-title" style="background: #a09797;"><span>Palast nhc</span></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
+                <div class="skill-bar-percent">6/8</div>
+            </div> <!-- End Skill Bar -->
+
+             <div class="skillbar clearfix " data-percent="0%" onmouseenter="hintergrundWechseln('tiegel')">
+                <div class="skillbar-title" style="background: #a09797;"><span>Palast hc</span></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
+                <div class="skill-bar-percent">0/8</div>
+            </div> <!-- End Skill Bar -->
+
             <h3 id="headline" class="morpheus">Tiegel der Stürme</h3>
              <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('tiegel')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Tiegel hc</span></div>
@@ -249,7 +261,6 @@
                 }
                 membercall.open("GET", "php/select.php", true);
                 membercall.send();
-
             </script>
             <div id="kader_container">
                 <div class="kader" id="tanks">
@@ -398,7 +409,9 @@
                     <input type="text" id="name" name="charname" class="morpheus" placeholder="Charname"> <br>
                     <label for="realm" class="morpheus">Realm</label>
                     <input type="text" id="name" name="realm" class="morpheus" placeholder="Realm"> <br>
-                    <label for="classe"></label>
+                    <label for="class"></label>
+                    <!-- Klassenauswahl-->
+                    
                     <!-- Deine Nachricht-->
                     <textarea name="message" class="morpheus" id="messagetext" cols="30" rows="7" placeholder="Deine Nachricht..."></textarea> <br>
                     <input type="submit" value="Absenden" class="morpheus">
