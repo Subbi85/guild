@@ -19,7 +19,7 @@ let createImage=(index)=>{
     if(index <=3 || index >=6){        
         newImg.setAttribute('width', '300px')
     }else{
-        newImg.setAttribute('width', '600px')
+        newImg.setAttribute('width', '605px')
     }
     newImg.setAttribute('height', '300px');
     box.appendChild(newImg);        

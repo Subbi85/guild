@@ -3,17 +3,16 @@ body{
 }
 
 .grid-container{
-    width: 900px;
-    height: 1200px;
+    width: 913px;
+    height: 1218px;
     margin: 0 auto;
-    border: 1px solid black;
-
     display: grid;
+    grid-gap: 5px;
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 300px 300px 300px 300px;
 }
 
-.box{outline: 1px solid #fff;}
+.box:hover{cursor: pointer;}
 
 /* Gridbox als Container für die Bilder */
 #box-0{ grid-column: 1/2; grid-row: 1/2;}
@@ -26,7 +25,3 @@ body{
 #box-7{grid-column: 1/2;grid-row: 4/5;}
 #box-8{grid-column: 2/3;grid-row: 4/5;}
 #box-9{grid-column: 3/4;grid-row: 4/5;}
-
-.grid-container :nth-child(odd){
-    background-color: blue;
-}
