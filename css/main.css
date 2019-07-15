@@ -85,8 +85,8 @@ a, a:visited{color:#fff;text-decoration: none;}
 }
 
 /* Hintergründe festlegen */
-#BfA{background-image: url("img/title.png")}
-#Legion{ background-image: url("img/title.png")}
+#BfA{background-image: url("img/title.png"); background-size: cover;}
+#Legion{ background-image: url("img/title.png"); background-size: cover;}
 
 /* Bars */
 .skillbar {
