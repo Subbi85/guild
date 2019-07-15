@@ -66,7 +66,7 @@
                 <!-- Palast -->
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 5</div>
-                    <img src="css/img/azsharanhc.jpg" style="width:100%">
+                    <img src="css/img/azsharanhc.png" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Der Ewige Palast nhc clear</h4>    
                         Königin Azshara wurden die Tentakel gestutzt.
