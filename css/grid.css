@@ -25,3 +25,66 @@ body{
 #box-7{grid-column: 1/2;grid-row: 4/5;}
 #box-8{grid-column: 2/3;grid-row: 4/5;}
 #box-9{grid-column: 3/4;grid-row: 4/5;}
+
+.w3-teal{
+    background-color: red;
+}
+
+.w3-container{
+    padding:0;
+}
+
+/* Galerie Modal*/
+.pic-container{
+    height:400px;
+    padding:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#pic-display{
+    width: 80%;
+    height: 90%;
+    border: 1px solid black;
+    margin: auto auto;
+    transition: 300ms all;
+}
+
+.galerie-container{
+    border-top: 1px solid black;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pics{
+    flex:1; 
+    outline:1px solid #fff;
+    cursor: pointer;
+}
+
+.pics:hover{
+    border-bottom: 2px solid red;
+}
+
+#arrow-left{
+    float:left;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 5px;
+}
+
+#arrow-right{
+    float:left;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 5px;
+}
+
+#arrow-left:hover, #arrow-right:hover{background:gray}
+
+.active{
+    border: 3px solid red;
+}

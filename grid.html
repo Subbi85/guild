@@ -5,23 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Fotogrid</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/grid.css" />
-    <script src='grid.js'></script>
+    <script src='grid.js' defer></script>
 </head>
 <body>
     <h3>Galleriebeispiel made by Subbi</h3>
     <div class='grid-container'>
-        <div class="box" id="box-0"></div>
-        <div class="box" id="box-1"></div>
-        <div class="box" id="box-2"></div>
-        <div class="box" id="box-3"></div>
-        <div class="box" id="box-4"></div>
-        <div class="box" id="box-5"></div>
-        <div class="box" id="box-6"></div>
-        <div class="box" id="box-7"></div>
-        <div class="box" id="box-8"></div>
-        <div class="box" id="box-9"></div>
+        <div class="box" id="box-0" onclick="zoomIn(event)"></div>
+        <div class="box" id="box-1" onclick="zoomIn(event)"></div>
+        <div class="box" id="box-2" onclick="zoomIn(event)"></div>
+        <div class="box" id="box-3" onclick="zoomIn(event)"></div>
+        <div class="box" id="box-4" onclick="zoomIn(event)"></div>
+        <div class="box" id="box-5" onclick="zoomIn(event)"></div>
+        <div class="box" id="box-6" onclick="zoomIn(event)"></div>
+        <div class="box" id="box-7" onclick="zoomIn(event)"></div>
+        <div class="box" id="box-8" onclick="zoomIn(event)"></div>
+        <div class="box" id="box-9" onclick="zoomIn(event)"></div>
     </div>
     
+    <!--Modal-->
+    <div class="w3-container">
+    <button onclick="initGalerie()" class="w3-button w3-black">Open Modal</button>
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+            <header class="w3-container w3-teal"> 
+                <span onclick="document.getElementById('id01').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+                <h2>Bilder Gallerie</h2>
+            </header>
+            <div class="w3-container ">
+                <div class="pic-container">
+                    <div id="arrow-left" onclick="formerSlide()"><</div>
+                    <div id="pic-display"></div>
+                    <div id="arrow-right" onclick="nextSlide()">></div>
+                </div>
+                <div class="galerie-container">
+                    <div class="pics" id='pic-0' onclick="switchPic('0')"></div>
+                    <div class="pics" id='pic-1' onclick="switchPic('1')"></div>
+                    <div class="pics" id='pic-2' onclick="switchPic('2')"></div>
+                    <div class="pics" id='pic-3' onclick="switchPic('3')"></div>
+                    <div class="pics" id='pic-4' onclick="switchPic('4')"></div>
+                    <div class="pics" id='pic-5' onclick="switchPic('5')"></div>
+                    <div class="pics" id='pic-6' onclick="switchPic('6')"></div>
+                    <div class="pics" id='pic-7' onclick="switchPic('7')"></div>
+                    <div class="pics" id='pic-8' onclick="switchPic('8')"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
 </body>
 </html>
