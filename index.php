@@ -63,9 +63,19 @@
         </div>
         <div class="about_box" id="pic">
             <div class="slideshow-container">
+                <!-- Palast -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="css/img/azsharanhc.jpg" style="width:100%">
+                    <div class="slidertext morpheus">
+                        <h4 class="morpheus">Der Ewige Palast nhc clear</h4>    
+                        Königin Azshara wurden die Tentakel gestutzt.
+                    </div>
+                </div>
+
                 <!-- Tiegel -->
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 4</div>
+                    <div class="numbertext">2 / 5</div>
                     <img src="css/img/tiegelhc.jpg" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Tiegel des Sturms Hc clear</h4>    
@@ -75,7 +85,7 @@
 
                 <!-- Tiegel -->
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 4</div>
+                    <div class="numbertext">3 / 5</div>
                     <img src="css/img/angeln.jpg" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Holt die Angeln raus...</h4>    
@@ -85,7 +95,7 @@
 
                 <!-- BoD -->
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 4</div>
+                    <div class="numbertext">4 / 5</div>
                     <img src="css/img/bod.jpg" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">BoD Hc clear</h4>    
@@ -95,7 +105,7 @@
 
                 <!-- Uldir -->
                 <div class="mySlides fade">
-                    <div class="numbertext">4 / 4</div>
+                    <div class="numbertext">5 / 5</div>
                     <img src="css/img/ghuun.png" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Uldir Hc clear</h4>
@@ -121,10 +131,10 @@
 
         <div id="BfA" class="tabcontent">
         <h3 id="headline" class="morpheus">Der Ewige Palast</h3>
-             <div class="skillbar clearfix " data-percent="75%" onmouseenter="hintergrundWechseln('palast')">
+             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('palast')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Palast nhc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">6/8</div>
+                <div class="skill-bar-percent">8/8</div>
             </div> <!-- End Skill Bar -->
 
              <div class="skillbar clearfix " data-percent="0%" onmouseenter="hintergrundWechseln('palast')">
