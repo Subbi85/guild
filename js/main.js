@@ -88,7 +88,7 @@ function progression(){
         //Verarbeitung der Daten und Anpassen der Progressbars
     }
     blizzRequest.send();
-    }
+}
 //####################### RAID PROGRESS ENDE #######################################################
 progression();
 
