@@ -137,7 +137,7 @@
                 <div class="skill-bar-percent">8/8</div>
             </div> <!-- End Skill Bar -->
 
-             <div class="skillbar clearfix " data-percent="37.5%" onmouseenter="hintergrundWechseln('palast')">
+             <div class="skillbar clearfix " data-percent="37%" onmouseenter="hintergrundWechseln('palast')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Palast hc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent">3/8</div>

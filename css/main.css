@@ -54,7 +54,7 @@ a, a:visited{color:#fff;text-decoration: none;}
 
 /* Über uns */
 #about{
-    height:110vh;
+    height:130vh;
     margin: 0 auto;
     display:flex;
     flex-direction: column;
