@@ -137,10 +137,10 @@
                 <div class="skill-bar-percent">8/8</div>
             </div> <!-- End Skill Bar -->
 
-             <div class="skillbar clearfix " data-percent="50%" onmouseenter="hintergrundWechseln('palast')">
+             <div class="skillbar clearfix " data-percent="75%" onmouseenter="hintergrundWechseln('palast')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Palast hc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">4/8</div>
+                <div class="skill-bar-percent">6/8</div>
             </div> <!-- End Skill Bar -->
 
             <h3 id="headline" class="morpheus">Tiegel der Stürme</h3>
