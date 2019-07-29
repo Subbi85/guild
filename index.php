@@ -123,11 +123,11 @@
     <!-- Raids -->
     <div class="section" id="raids">
         <div class="tab">
-            <button class="tablinks morpheus" onclick="openTab(event, 'BfA')">BfA</button>
+            <button class="tablinks morpheus" id="defaultOpen" onclick="openTab(event, 'BfA')">BfA</button>
             <button class="tablinks morpheus" onclick="openTab(event, 'Legion')">Legion</button>
             <button class="tablinks morpheus" onclick="openTab(event, 'kader')">Kader</button>
             <button class="tablinks morpheus" onclick="openTab(event, 'Infos')">Infos</button>
-            <button class="tablinks morpheus" id="defaultOpen" onclick="openTab(event, 'Kalender')">Kalender</button>
+            <button class="tablinks morpheus" onclick="openTab(event, 'Kalender')">Kalender</button>
         </div>
 
         <div id="BfA" class="tabcontent">
