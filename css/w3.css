@@ -111,7 +111,7 @@
     border: 1px solid #ccc;
     background-color: rgb(231, 219, 201);
     width:81%;
-    margin: 0 auto;
+    margin: 40px auto 0px auto;
   }
   
   .tab button {
@@ -157,6 +157,7 @@ img {vertical-align: middle;}
   max-width: 900px;
   position: relative;
   margin-top:10px;
+  margin-bottom: 10px;
   margin: auto ;
 }
 

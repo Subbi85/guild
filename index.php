@@ -45,7 +45,7 @@
     <!-- Über Uns -->
     <div class="section" id="about">
         <div class="about_box" id="text">
-                <h3 class="morpheus">Lok'thar Ogar, Freund!</h3>            
+            <h3 class="morpheus">Lok'thar Ogar, Freund!</h3>            
             <p id="about_text">
                 Wir sind die Gilde "Order and Chaos" vom Server Anetheron und sind allesamt treue und kampferprobte Streiter der Horde. <br><br>
                 Unseren kleinen, verrückten und familiären Haufen von lieben Menschen gibt es seit Legion, genauer gesagt war 
@@ -123,10 +123,11 @@
     <!-- Raids -->
     <div class="section" id="raids">
         <div class="tab">
-            <button class="tablinks morpheus" id="defaultOpen" onclick="openTab(event, 'BfA')">BfA</button>
+            <button class="tablinks morpheus" onclick="openTab(event, 'BfA')">BfA</button>
             <button class="tablinks morpheus" onclick="openTab(event, 'Legion')">Legion</button>
             <button class="tablinks morpheus" onclick="openTab(event, 'kader')">Kader</button>
             <button class="tablinks morpheus" onclick="openTab(event, 'Infos')">Infos</button>
+            <button class="tablinks morpheus" id="defaultOpen" onclick="openTab(event, 'Kalender')">Kalender</button>
         </div>
 
         <div id="BfA" class="tabcontent">
@@ -313,7 +314,11 @@
             <a href="https://www.warcraftlogs.com/guild/calendar/304372/" target="_blank"><span class="links">Warcraftlogs</span></a> <br>
             Soooo... jetzt weißt du aber wirklich so gut wie alles. <br>
             </p>
-        </div>        
+        </div>
+        <div id="Kalender" class="tabcontent">
+            <h3>Kalender </h3>
+            
+        </div>
     </div>
     <!-- Raids Ende -->
     <div class="parallax morpheus" id="para_mythic">
