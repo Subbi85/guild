@@ -331,6 +331,7 @@
             </div>
         </div>
     </div>
+    </div>
     <!-- Raids Ende -->
     <div class="parallax morpheus" id="para_mythic">
         <h2 class="morpheus">Mythic Plus</h2>
