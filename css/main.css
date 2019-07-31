@@ -169,7 +169,6 @@ a, a:visited{color:#fff;text-decoration: none;}
     flex-direction:row;
     background:black url('img/title.png');
     color: #fff;
-    
 }
 
 .kader{
@@ -182,6 +181,63 @@ a, a:visited{color:#fff;text-decoration: none;}
 /* Info*/
 #raidtext{
     font-size: calc(8px + 1.3vmin);
+}
+
+/* Kalender */
+#kalender_table {
+    width: 50%;
+    min-width: 340px;
+    margin: 0 auto;
+    background: #fff;
+    margin-bottom: 20px;
+}
+
+#kalender_table,td,caption {
+	border: 1px solid black;
+	border-collapse: collapse;
+    width: 900px;
+	text-align: center;
+}
+
+#kalender_table td:nth-of-type(6),
+#kalender_table td:nth-of-type(7) {
+	background: #ebf5d7;
+	color: #666;
+}
+
+caption,
+#kalender_table tr:first-of-type {
+	background: #59090e;
+	color: #c4ced3;
+	font-weight: bold;
+}
+
+.heute {
+	color: red;
+	font-weight: bold;
+	background: #ffebe6;
+}
+
+.log{
+    width: 100%;
+    height: 50px;
+    background-color: "yellow";
+    margin: 10px;
+    outline: 1px solid #fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.log:hover{
+    cursor: pointer;
+}
+
+#logContainer{
+    display: flex;
+    height: 80px;
 }
 
 /* Paralax */
@@ -208,6 +264,7 @@ a, a:visited{color:#fff;text-decoration: none;}
 #para_kontakt{
     background-image: url("img/kontakt.jpg");
 }
+
 
 /*Mythic */
 #mythic{
@@ -296,6 +353,7 @@ a, a:visited{color:#fff;text-decoration: none;}
 .content p{
     color: #fff;
 }
+
 
 /* Scores */
 .scores{

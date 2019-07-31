@@ -15,6 +15,7 @@
     <script src="js/scores.js"></script>
     <script src="js/slider.js"defer ></script>
     <script src="js/main.js" defer></script>
+    <script src="js/kalender.js" defer></script>
 </head>
 <body>
 <div id="wrapper">
@@ -261,17 +262,17 @@
         <div id="kader" class="tabcontent">
             <script>
             //AJAX Select
-                "use strict"
-                //Abrufen der Daten per AJAX
-                let membercall = new XMLHttpRequest();
-                    membercall.onreadystatechange = function() {
-                        if (this.readyState == 4 && this.status == 200) {
-                            let data = JSON.parse(this.responseText);
-                            tabellenBauen(data);
-                        }
-                }
-                membercall.open("GET", "php/select.php", true);
-                membercall.send();
+            "use strict"
+            //Abrufen der Daten per AJAX
+            let membercall = new XMLHttpRequest();
+                membercall.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        let data = JSON.parse(this.responseText);
+                        tabellenBauen(data);
+                    }
+            }
+            membercall.open("GET", "php/select.php", true);
+            membercall.send();
             </script>
             <div id="kader_container">
                 <div class="kader" id="tanks">
@@ -315,9 +316,19 @@
             Soooo... jetzt weißt du aber wirklich so gut wie alles. <br>
             </p>
         </div>
-        <div id="Kalender" class="tabcontent">
-            <h3>Kalender </h3>
-            
+
+        <div id="Kalender" class="tabcontent">    
+            <h1>Monatskalender</h1>
+            <!--Kalenderelement-->
+            <div id="kalender_container">
+                <table id="kalender_table"> </table>                
+            </div>
+            <button onclick="createNewKalender('prev')">Letzter</button>
+            <button onclick="createNewKalender('next')">Nächster</button>
+            <h3>Hier sind die letzten Logs</h3>
+            <div id="logContainer">
+            <!-- Log Section -->
+            </div>
         </div>
     </div>
     <!-- Raids Ende -->
