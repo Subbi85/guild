@@ -395,7 +395,7 @@
         </div>
         <div class="scores">
             <!-- Scoretabelle -->
-            <div id="table">
+            <div id="table_scores">
                 <table id="tbl">
                     <tr>
                         <th class="morpheus">Platz</th>
