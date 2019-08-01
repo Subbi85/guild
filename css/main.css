@@ -229,6 +229,7 @@ caption,
     justify-content: center;
     padding: 5px;
     flex-wrap: wrap;
+    background-color: #59090e;
 }
 
 .log:hover{
