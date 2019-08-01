@@ -75,7 +75,7 @@ let sendPHP=(obj)=>{
 
 //Ausgabe der Daten im Div
 let createDivs=(obj)=>{
-    let table = document.getElementById('tbl');
+    let display = document.getElementById('tbl');
     for(let i=0; i<10; i++){
         //Neue Reihe
         let newTr= document.createElement("tr");
