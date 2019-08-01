@@ -117,3 +117,4 @@ let createDivs=(obj)=>{
         display.appendChild(newTr);
     }
 }
+

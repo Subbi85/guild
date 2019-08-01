@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/w3.css" />
     <link rel="icon" type="image/png" href="css/img/favicon.png" sizes="32x32">
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>    
-    <script src="js/scores.js"></script>
+    <script src="js/scores.js" defer></script>
     <script src="js/slider.js"defer ></script>
     <script src="js/main.js" defer></script>
     <script src="js/kalender.js" defer></script>
@@ -390,6 +390,7 @@
                 <div class="content">
                 <h3 id="content_head_four" class="morpheus"></h3>
                     <p id="content_four"></p>
+                </div>
             </div>
             <!--###################################### -->
         </div>
