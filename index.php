@@ -1,6 +1,3 @@
-<?php
-//$pdo = new PDO("sqlsrv:server = tcp:oac-db.database.windows.net,1433; Database = guild", "Subbi", "{Kalender85}");
-?>
 <!DOCTYPE html>
 <html>
 <head>

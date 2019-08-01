@@ -3,7 +3,7 @@ let d = new Date();
 let dm = d.getMonth() + 1;
 let dj = d.getYear() + 1900;
 let data;
-let i=0;
+let i=0, y=0;
 
 //Warcraftlogs API Call
 let getLogs=()=>{
@@ -34,7 +34,7 @@ let buildLogs=(data)=>{
 }
 
 getLogs();
-Kalender(dm+i, dj);
+Kalender(dm+i, dj+y);
 
 //Kalender aufbauen
 function Kalender(Monat, Jahr) {
@@ -120,11 +120,19 @@ let createNewKalender=(direction)=>{
     newKalender.setAttribute('id', 'kalender_table');
     if (direction === 'next'){
         container.appendChild(newKalender);
-        i++;        
+        dm++
+        if(dm>12){
+            dm=1;
+            dj++;
+        }
     }
     if (direction === 'prev'){
         container.appendChild(newKalender);
-        i--;        
+        dm--;
+        if(dm<=1){
+            dm=12;
+            dj--;
+        }
     }
-    Kalender(dm+i, dj);
+    Kalender(dm, dj);
 }
