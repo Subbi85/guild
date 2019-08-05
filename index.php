@@ -136,10 +136,10 @@
                 <div class="skill-bar-percent">8/8</div>
             </div> <!-- End Skill Bar -->
 
-             <div class="skillbar clearfix " data-percent="75%" onmouseenter="hintergrundWechseln('palast')">
+             <div class="skillbar clearfix " data-percent="87%" onmouseenter="hintergrundWechseln('palast')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Palast hc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">6/8</div>
+                <div class="skill-bar-percent">7/8</div>
             </div> <!-- End Skill Bar -->
 
             <h3 id="headline" class="morpheus">Tiegel der Stürme</h3>
@@ -436,7 +436,8 @@
                     <input type="text" id="name" name="realm" class="morpheus" placeholder="Realm"> <br>
                     <label for="class"></label>
                     <!-- Klassenauswahl-->
-                    
+                    <label for="char" class="morpheus">Deine Klasse</label>
+                    <input type="text" id="class" name="class" class="morpheus">
                     <!-- Deine Nachricht-->
                     <textarea name="message" class="morpheus" id="messagetext" cols="30" rows="7" placeholder="Deine Nachricht..."></textarea> <br>
                     <input type="submit" value="Absenden" class="morpheus">
