@@ -396,6 +396,7 @@
             <div id="table_scores">
                 <table id="tbl">
                     <tr>
+                        <th class="morpheus"></th>
                         <th class="morpheus">Platz</th>
                         <th class="morpheus">Name</th>
                         <th class="morpheus">Realm</th>
