@@ -184,6 +184,11 @@ a, a:visited{color:#fff;text-decoration: none;}
 }
 
 /* Kalender */
+.kalendertag:hover{
+    background: black;
+    color: white;
+}
+
 #kalender_table {
     width: 50%;
     min-width: 340px;
@@ -192,7 +197,7 @@ a, a:visited{color:#fff;text-decoration: none;}
     margin-bottom: 20px;
 }
 
-#kalender_table,td,caption {
+#kalender_table,#tbl td,caption {
 	border: 1px solid black;
 	border-collapse: collapse;
     width: 900px;
