@@ -82,7 +82,7 @@ let createDivs=(obj)=>{
         let newTr= document.createElement("tr");
         newTr.setAttribute("id", "Rang"+(i+1));
         newTr.setAttribute("class", "score_tr");
-        newTr.setAttribute("onclick", getDetails(i));
+        newTr.setAttribute("onclick", "getDetails(i)");
         //Alle td der Reihe
         //Platz        
         let newTd = document.createElement("td");
