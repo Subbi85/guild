@@ -24,14 +24,14 @@ let getScores=(data)=>{
     if (data.realm ==="Guldan")
         data.realm="Gul'dan";
     //AJAX-Syntax
-    var blizzRequest = new XMLHttpRequest();
-    blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+data.realm+'&name='+data.charname+'&fields=mythic_plus_scores')
-    blizzRequest.onload=function(){
-        var score = JSON.parse(blizzRequest.responseText);
+    var iniRequest = new XMLHttpRequest();
+    iniRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+data.realm+'&name='+data.charname+'&fields=mythic_plus_scores')
+    iniRequest.onload=function(){
+        var score = JSON.parse(iniRequest.responseText);
         var current = score.mythic_plus_scores.all;
         text= createJSON(score, current);
     }                
-    blizzRequest.send();
+    iniRequest.send();
 }
 
 //Aufbau JSON
@@ -127,12 +127,12 @@ let getDetails=(id)=>{
     let nodeList = document.querySelectorAll('.score_tr');
     console.log(nodeList);    console.log(nodeList[id].children[1].innerHTML);
     //AJAX Call zu Raider.io
-    var blizzRequest = new XMLHttpRequest();
-    //blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+nodeList[id].children[2].innerHTML+'&name='+nodeList[id].children[1].innerHTML+'&fields=mythic_plus_scores');
-    blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=EU&realm=Anetheron&name=Subb%C3%AC&fields=mythic_plus_weekly_highest_level_runs');
-    blizzRequest.onload=function(){
-        var score = JSON.parse(blizzRequest.responseText);
-        console.log(score);
+    var iniRequest = new XMLHttpRequest();
+    //iniRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+nodeList[id].children[2].innerHTML+'&name='+nodeList[id].children[1].innerHTML+'&fields=mythic_plus_scores');
+    iniRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=EU&realm='+nodeList[id].children[2].innerHTML+'&name='+nodeList[id].children[1].innerHTML+'&fields=mythic_plus_weekly_highest_level_runs');
+    iniRequest.onload=function(){
+        var inis = JSON.parse(iniRequest.responseText);
+        console.log(inis);
     }                
-    blizzRequest.send();
+    iniRequest.send();
 }
