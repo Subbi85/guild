@@ -396,13 +396,29 @@
             <div id="table_scores">
                 <table id="tbl">
                     <tr>
+                        <th class="morpheus">mehr</th>
                         <th class="morpheus">Platz</th>
                         <th class="morpheus">Name</th>
                         <th class="morpheus">Realm</th>
                         <th class="morpheus">Score</th>
                         <th class="morpheus"></th>
                     </tr>
+                    <tr class="score_tr" onclick="getDetails(1)">
+                        <td >|click|</td>
+                        <td>1</td>
+                        <td>Kreischi</td>
+                        <td>Nathrezim</td>
+                        <td></td>
+                    </tr>
+                    <tr class="score_tr" onclick="getDetails(2)">
+                        <td >|click|</td>
+                        <td>1</td>
+                        <td>Subbì</td>
+                        <td>Anetheron</td>
+                        <td></td>
+                    </tr>
                 </table>
+            <div class="details">kjmwpdj</div>
             </div> <!-- Ende Table -->
         </div><!-- Ende Scores -->
     </div>
