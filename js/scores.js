@@ -134,7 +134,6 @@ let getDetails=(id)=>{
 }
 
 let buildInis=(inis)=>{
-    console.log(inis);
     let details = document.getElementById("details");
     let container = document.getElementById("details_container");
     //Entfernen des vorherigen Details-Feldes
@@ -142,5 +141,13 @@ let buildInis=(inis)=>{
     //Aufbau des neuen DetailsFeldes/
     container = document.createElement("div");
     container.setAttribute("id", "details_container");
+    let ul = document.createElement("ul");
+    let li, liText;
+    for (let i=0; i< inis.mythic_plus_highest_level_runs.length; i++){
+        li = document.createElement("li");
+        liText = document.createTextNode(inis.mythic_plus_highest_level_runs[i].dungeon);
+        li.appendChild(liText);
+        ul.appendChild(li);
+    }
     details.appendChild(container); 
 }
