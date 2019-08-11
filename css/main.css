@@ -521,7 +521,7 @@ th{
 
 
 .details{
-    width: 600px;
+    width: 100%;
     height:100px;
     background:red;
 }
