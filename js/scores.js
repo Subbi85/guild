@@ -139,8 +139,8 @@ let buildInis=(inis)=>{
     let container = document.querySelector("details_container");
     //Entfernen des vorherigen Details-Feldes
     details.removeChild(container);
-    //Aufbau des neuen DetailsFeldes
-    container = document.createElement("div");
+    //Aufbau des neuen DetailsFeldes/
+/*    container = document.createElement("div");
     container.setAttribute("class", "details_container");
-    details.appendChild(container);
+    details.appendChild(container); */
 }
