@@ -124,9 +124,10 @@ let createDivs=(obj)=>{
 let getDetails=(id)=>{
     console.log(id);
     let nodeList = document.querySelectorAll('.score_tr');
+    console.log(nodeList);
     //AJAX Call zu Raider.io
     var blizzRequest = new XMLHttpRequest();
-    blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+nodeList[id-1].children[3].innerHTML+'&name='+nodeList[id-1].children[2].innerHTML+'&fields=mythic_plus_scores');
+    blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+nodeList[id].children[3].innerHTML+'&name='+nodeList[id].children[2].innerHTML+'&fields=mythic_plus_scores');
     blizzRequest.onload=function(){
         var score = JSON.parse(blizzRequest.responseText);
         console.log(score);
