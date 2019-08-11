@@ -396,16 +396,16 @@
             <div id="table_scores">
                 <table id="tbl">
                     <tr>
-                        <th class="morpheus">mehr</th>
                         <th class="morpheus">Platz</th>
                         <th class="morpheus">Name</th>
                         <th class="morpheus">Realm</th>
                         <th class="morpheus">Score</th>
                         <th class="morpheus"></th>
                     </tr>
-
                 </table>
-            <div class="details">kjmwpdj</div>
+            <div class="details">
+                <div id="details_container"></div>
+            </div>
             </div> <!-- Ende Table -->
         </div><!-- Ende Scores -->
     </div>

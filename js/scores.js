@@ -135,4 +135,10 @@ let getDetails=(id)=>{
 
 let buildInis=(inis)=>{
     console.log(inis);
+    let details = document.getElementById("details");
+    let container = document.getElementById("details_container");
+    //Entfernen des vorherigen Details-Feldes
+    details.removeChild(container);
+    //Aufbau des neuen DetailsFeldes
+    
 }
