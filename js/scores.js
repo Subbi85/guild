@@ -128,12 +128,12 @@ let getDetails=(id)=>{
     iniRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=EU&realm='+nodeList[id].children[2].innerHTML+'&name='+nodeList[id].children[1].innerHTML+'&fields=mythic_plus_highest_level_runs');
     iniRequest.onload=function(){
         var inis = JSON.parse(iniRequest.responseText);
-        console.log(inis);
+
         buildInis(inis);
     }                
     iniRequest.send();
 }
 
-let buildInis=()=>{
-    
+let buildInis=(inis)=>{
+    console.log(inis);
 }
