@@ -82,7 +82,7 @@ let createDivs=(obj)=>{
         let newTr= document.createElement("tr");
         newTr.setAttribute("id", "Rang"+(i+1));
         newTr.setAttribute("class", "score_tr");
-        newTr.setAttribute("onclick", "getDetails(i)");
+        newTr.setAttribute("onclick", "getDetails("+i+")");
         //Alle td der Reihe
         //Platz        
         let newTd = document.createElement("td");
@@ -123,10 +123,10 @@ let createDivs=(obj)=>{
 //Aufbauen der Detailansicht für die Scoretabelle
 let getDetails=(id)=>{
     console.log(id);
-    let nodeList2 = document.querySelectorAll('.score_tr');
+    let nodeList = document.querySelectorAll('.score_tr');
     //AJAX Call zu Raider.io
     var blizzRequest = new XMLHttpRequest();
-    blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+nodeList2[id-1].children[3].innerHTML+'&name='+nodeList2[id-1].children[2].innerHTML+'&fields=mythic_plus_scores')
+    blizzRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+nodeList[id-1].children[3].innerHTML+'&name='+nodeList[id-1].children[2].innerHTML+'&fields=mythic_plus_scores')
     blizzRequest.onload=function(){
         var score = JSON.parse(blizzRequest.responseText);
         console.log(score);
