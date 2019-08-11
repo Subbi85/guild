@@ -11,7 +11,6 @@ let getLogs=()=>{
     logRequest.open('GET', 'https://www.warcraftlogs.com/v1/reports/guild/Order%20and%20Chaos/Anetheron/EU?api_key=4d28ab7982ae116d3249c22dbc8f3158');
     logRequest.onload=function(){
         var logJSON = JSON.parse(logRequest.responseText);
-        console.log(logJSON);
         //Calculate Dates
         calculateDates(logJSON);
         buildLogs(logJSON);
@@ -22,7 +21,6 @@ let getLogs=()=>{
 //Umrechnen der Timestamps in real Dates
 let calculateDates=(data)=>{
     const stamp = data[0].start;
-    console.log(stamp);
 }
 
 //Aufbau der Logcontainer
