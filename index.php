@@ -410,6 +410,8 @@
         </div><!-- Ende Scores -->
     </div>
 
+
+    
     </div><!-- Mythic Plus ENDE-->
     <div class="parallax morpheus" id="para_kontakt">
         <h3 class="morpheus">Kontakt</h3>
