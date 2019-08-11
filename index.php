@@ -403,7 +403,7 @@
                         <th class="morpheus"></th>
                     </tr>
                 </table>
-            <div class="details">
+            <div id="details">
                 <div id="details_container"></div>
             </div>
             </div> <!-- Ende Table -->
