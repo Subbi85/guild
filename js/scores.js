@@ -122,17 +122,18 @@ let createDivs=(obj)=>{
 
 //Aufbauen der Detailansicht für die Scoretabelle
 let getDetails=(id)=>{
-    console.log(id);
-    
     let nodeList = document.querySelectorAll('.score_tr');
-    console.log(nodeList);    console.log(nodeList[id].children[1].innerHTML);
     //AJAX Call zu Raider.io
     var iniRequest = new XMLHttpRequest();
-    //iniRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+nodeList[id].children[2].innerHTML+'&name='+nodeList[id].children[1].innerHTML+'&fields=mythic_plus_scores');
-    iniRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=EU&realm='+nodeList[id].children[2].innerHTML+'&name='+nodeList[id].children[1].innerHTML+'&fields=mythic_plus_weekly_highest_level_runs');
+    iniRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=EU&realm='+nodeList[id].children[2].innerHTML+'&name='+nodeList[id].children[1].innerHTML+'&fields=mythic_plus_highest_level_runs');
     iniRequest.onload=function(){
         var inis = JSON.parse(iniRequest.responseText);
         console.log(inis);
+        buildInis(inis);
     }                
     iniRequest.send();
+}
+
+let buildInis=()=>{
+    
 }
