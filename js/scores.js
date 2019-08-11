@@ -149,6 +149,7 @@ let buildInis=(inis)=>{
         liText = document.createTextNode(inis.mythic_plus_highest_level_runs[i].dungeon);
         li.appendChild(liText);
         ul.appendChild(li);
+        container.appendChild(ul);
     }
     details.appendChild(container); 
 }
