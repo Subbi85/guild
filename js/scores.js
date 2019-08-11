@@ -140,7 +140,7 @@ let buildInis=(inis)=>{
     //Entfernen des vorherigen Details-Feldes
     details.removeChild(container);
     //Aufbau des neuen DetailsFeldes/
-/*    container = document.createElement("div");
-    container.setAttribute("class", "details_container");
-    details.appendChild(container); */
+    container = document.createElement("div");
+    container.setAttribute("id", "details_container");
+    details.appendChild(container); 
 }
