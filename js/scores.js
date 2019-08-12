@@ -159,7 +159,7 @@ let buildInis=(inis)=>{
         //Link
         td= document.createElement("td");
         ta= document.createElement("a");
-        ta.href=inis.mythic_plus_highest_level_runs[i].+url;
+        ta.href=inis.mythic_plus_highest_level_runs[i].url;
         ta.innerText = "Zum Run";
         ta.target="_blank";
         td.appendChild(ta);
