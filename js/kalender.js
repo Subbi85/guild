@@ -12,15 +12,84 @@ let getLogs=()=>{
     logRequest.onload=function(){
         var logJSON = JSON.parse(logRequest.responseText);
         //Calculate Dates
-        calculateDates(logJSON);
+        let kalenderObject = createObject(logJSON);
         buildLogs(logJSON);
+        Kalender(dm+i, dj+y, kalenderObject);
     }
     logRequest.send();
 }
+getLogs();
 
-//Umrechnen der Timestamps in real Dates
-let calculateDates=(data)=>{
-    const stamp = data[0].start;
+//Erstellen eines bereinigten Objekts mit allen Daten
+let createObject=(data)=>{
+    let dateObjekt= [];
+    for (let i=0; i<data.length; i++){
+        dateObjekt.push({
+            id : data[i].id,
+            start : {
+                        day: parseInt(calculateDate(data[i]).split(".")[0]),
+                        month: parseInt(calculateDate(data[i]).split(".")[1]),
+                        year: parseInt(calculateDate(data[i]).split(".")[2])
+                    },
+            title : data[i].title
+        });
+    }
+    console.log(data, dateObjekt);
+    return dateObjekt;
+}
+
+//Umrechnung der Timestamps in real Dates
+let calculateDate =(data)=>{
+    let dataDate = data.start;
+    let realDate = new Date(dataDate);
+    let DateString = realDate.toString();
+    let splits = DateString.split(" ");
+    let realDateString = splits[2]+"."+calculateMonth(splits[1])+"."+splits[3];
+    return realDateString;
+}
+
+//Berechnung des Monats
+let calculateMonth=(month)=>{
+    let number =0;
+    switch (month){
+        case "Jan":
+            number = 1;
+            break;
+        case "Feb":
+            number = 2;
+            break;
+        case "Mar":
+            number = 3;
+            break;
+        case "Apr":
+            number = 4;
+            break;
+        case "May":
+            number = 5;
+            break;
+        case "Jun":
+            number = 6;
+            break;
+        case "Jul":
+            number = 7;
+            break;
+        case "Aug":
+            number = 8;
+            break;
+        case "Sep":
+            number = 9;
+            break;
+        case "Oct":
+            number = 10;
+            break;
+        case "Nov":
+            number = 11;
+            break;
+        case "Dec":
+            number = 12;
+            break;
+    }
+    return number;
 }
 
 //Aufbau der Logcontainer
@@ -40,11 +109,20 @@ let buildLogs=(data)=>{
     }
 }
 
-getLogs();
-Kalender(dm+i, dj+y);
-
 //Kalender aufbauen
-function Kalender(Monat, Jahr) {
+function Kalender(Monat, Jahr, data) {
+    let monthlyData=[];
+    console.log({data});
+
+    //Bestimmen aller monatsrelevanten Termine
+    for(let i=0; i<data.length; i++){
+        if(data[i].start.month == Monat && data[i].start.year == Jahr){
+            monthlyData.push(data[i]);
+        }
+    }
+    console.log(monthlyData);
+
+    //Kalender aufbauen
     let Monatsname = new Array("Januar", "Februar", "März", "April", "Mai", "Juni",
         "Juli", "August", "September", "Oktober", "November", "Dezember");
     let Tag = new Array("Mo", "Di", "Mi", "Do", "Fr", "Sa", "So");
@@ -101,6 +179,21 @@ function Kalender(Monat, Jahr) {
                 let cell = row.insertCell(j);
                 cell.innerHTML = Tageszahl;
                 cell.className = 'kalendertag';
+
+                //Termine Eintragen
+                if(monthlyData[0].start.day === parseInt(Tageszahl)){
+                    console.log(monthlyData[0].start.day, parseInt(Tageszahl));
+                    let termin= document.createElement("div");
+                    termin.setAttribute("class", "log");
+                    let ta = document.createElement("a");
+                    ta= document.createElement("a");
+                    ta.href= "https://www.warcraftlogs.com/reports/"+monthlyData[0].id;
+                    ta.innerText = monthlyData[0].title;
+                    ta.target="_blank";
+
+                    termin.appendChild(ta);
+                    cell.appendChild(termin);
+                }
 
                 // und der aktuelle Tag (heute) wird noch einmal speziell mit der Klasse "heute" markiert
                 if ((Jahr == DiesesJahr) && (Monat == DieserMonat) && (Tageszahl ==
