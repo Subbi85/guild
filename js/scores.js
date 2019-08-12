@@ -143,6 +143,7 @@ let buildInis=(inis)=>{
     //Aufbau des neuen DetailsFeldes/
     container = document.createElement("div");
     container.setAttribute("id", "details_container");
+    container.style.display= "inline";
     console.log(inis);
     for (let i=0; i< inis.mythic_plus_highest_level_runs.length; i++){
         li = document.createElement("li");
