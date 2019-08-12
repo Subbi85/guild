@@ -142,6 +142,12 @@ let buildInis=(inis)=>{
     //Aufbau des neuen DetailsFeldes/
     container = document.createElement("div");
     container.setAttribute("id", "details_container");
+    //Charinformationen
+    let name = document.createElement("span");
+    name.setAttribute("class", "name_span");
+    name.innerHTML = inis.name;
+    container.appendChild(name);
+
     let table = document.createElement("table");
     console.log(inis);
     for (let i=0; i< inis.mythic_plus_highest_level_runs.length; i++){
