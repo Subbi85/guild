@@ -147,12 +147,12 @@ let buildInis=(inis)=>{
     for (let i=0; i< inis.mythic_plus_highest_level_runs.length; i++){
         reihe = document.createElement("tr");
         //DungeonName
-        td.createElement("td");
+        td= document.createElement("td");
         tdText = document.createTextNode(inis.mythic_plus_highest_level_runs[i].dungeon);
         td.appendChild(tdText);
         reihe.appendChild(td);
         //Stufe
-        td.createElement("td");
+        td= document.createElement("td");
         tdText = document.createTextNode(inis.mythic_plus_highest_level_runs[i].mythic_level);
         td.appendChild(tdText);
         reihe.appendChild(td);
