@@ -134,7 +134,7 @@ let getDetails=(id)=>{
 }
 
 let buildInis=(inis)=>{
-    let tdText, td, reihe;    
+    let tdText, td, reihe, ta;    
     let details = document.getElementById("details");
     let container = document.getElementById("details_container");
     //Entfernen des vorherigen Details-Feldes
@@ -155,6 +155,13 @@ let buildInis=(inis)=>{
         td= document.createElement("td");
         tdText = document.createTextNode(inis.mythic_plus_highest_level_runs[i].mythic_level);
         td.appendChild(tdText);
+        reihe.appendChild(td);
+        //Link
+        td= document.createElement("td");
+        ta= document.createElement("a");
+        a.href=inis.mythic_plus_highest_level_runs[i].thumbnail_url;
+        a.innerText = "Zum Run";
+        td.appendChild(ta);
         reihe.appendChild(td);
         //Anhängen
         table.appendChild(reihe);    

@@ -402,14 +402,15 @@ th{
 #details{
     width: 100%;
     height:100px;
-    outline: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #details_container{
     width:100%;
     height:100%;
 }
-
 
 /* Kontakt */
 #kontakt{
