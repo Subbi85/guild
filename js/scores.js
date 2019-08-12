@@ -145,7 +145,7 @@ let buildInis=(inis)=>{
     //Charinformationen
     let name = document.createElement("span");
     name.setAttribute("class", "name_span");
-    name.innerHTML = inis.name;
+    name.innerHTML = "Charname: "+inis.name;
     container.appendChild(name);
 
     let table = document.createElement("table");
