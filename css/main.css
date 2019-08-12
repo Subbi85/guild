@@ -271,7 +271,6 @@ caption,
     background-image: url("img/kontakt.jpg");
 }
 
-
 /*Mythic */
 #mythic{
     height:100%;
@@ -360,7 +359,6 @@ caption,
     color: #fff;
 }
 
-
 /* Scores */
 .scores{
     width:70%;
@@ -399,6 +397,17 @@ th{
 #Rang1{
     font-size: calc(10px + 1.3vmin);
     color:#56090b;
+}
+
+#details{
+    width: 100%;
+    height:100px;
+    outline: 1px solid red;
+}
+
+#details_container{
+    width:100%;
+    height:100%;
 }
 
 
@@ -516,13 +525,3 @@ th{
     height: 100%;
 }
 
-#details{
-    width: 100%;
-    height:100px;
-    outline: 1px solid red;
-}
-
-#details_container{
-    width:100%;
-    height:100%;
-}

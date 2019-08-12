@@ -134,8 +134,7 @@ let getDetails=(id)=>{
 }
 
 let buildInis=(inis)=>{
-    let ul = document.createElement("ul");
-    let li, liText;    
+    let tdText, td, reihe;    
     let details = document.getElementById("details");
     let container = document.getElementById("details_container");
     //Entfernen des vorherigen Details-Feldes
@@ -143,13 +142,23 @@ let buildInis=(inis)=>{
     //Aufbau des neuen DetailsFeldes/
     container = document.createElement("div");
     container.setAttribute("id", "details_container");
+    let table = document.createElement("table");
     console.log(inis);
     for (let i=0; i< inis.mythic_plus_highest_level_runs.length; i++){
-        li = document.createElement("li");
-        liText = document.createTextNode(inis.mythic_plus_highest_level_runs[i].dungeon);
-        li.appendChild(liText);
-        ul.appendChild(li);
-        container.appendChild(ul);
+        reihe = document.createElement("tr");
+        //DungeonName
+        td.createElement("td");
+        tdText = document.createTextNode(inis.mythic_plus_highest_level_runs[i].dungeon);
+        td.appendChild(tdText);
+        reihe.appendChild(td);
+        //Stufe
+        td.createElement("td");
+        tdText = document.createTextNode(inis.mythic_plus_highest_level_runs[i].mythic_level);
+        td.appendChild(tdText);
+        reihe.appendChild(td);
+        //Anhängen
+        table.appendChild(reihe);    
     }
+    container.appendChild(table);
     details.appendChild(container); 
 }
