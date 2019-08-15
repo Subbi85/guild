@@ -106,14 +106,22 @@
 }
 
 /* Style the tab */
+
+
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: rgb(231, 219, 201);
     width:81%;
     margin: 40px auto 0px auto;
+
   }
   
+.tablinks{
+  font-size: calc(8px + 1.5vmin);
+}
+
+
   .tab button {
     background-color: inherit;
     float: left;
