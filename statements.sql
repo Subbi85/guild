@@ -12,22 +12,22 @@ PRIMARY KEY (id)
 INSERT INTO members (charname, realm, classId, roleId)
 VALUES
 ('Amaterasû','Anetheron',1,1),
-('Sinnerella','Guldan',6,1),
+('Weaver','Anetheron',10,1),
 ('Parulor','Anetheron',11,4),
 ('Tack','Guldan',12,4),
-('Corruptìon','Thrall',2,4),
-('Darkeddie','Rajaxx',7,4),
-('Sinopa','Anetheron',2,4),
-('Aywi','Rajaxx',4,4),
-('Tievy','Anetheron',7,4),
-('Subbì','Anetheron',5,2),
-('Menardinus','Anetheron',4,4),
-('Valafar','Anetheron',12,4),
 ('Lýnxx','Anetheron',8,4),
-('Nyalarthotep','Anetheron',4,4),
+('Sinopa','Anetheron',2,4),
+('Trepuur','Guldan',1,4),
+('Lâxûs','Guldan',2,4),
+('Valafar','Anetheron',12,4),
+('Menardinus','Anetheron',4,4),
+('Skairipa','Guldan',12,1),
+('Veily','Anetheron',6,4),
+('Darkeddie','Rajaxx',7,4),
 ('Kreischi','Nathrezim',7,2),
-('Büffelhüfte','Thrall',7,2),
 ('Ginflut','Anetheron',10,2),
+('Bünzli','Rajaxx',5,2),
+('Subbì','Anetheron',5,3),
 ('Damari','Rajaxx',9,3),
 ('Pitfall','Anetheron',8,3),
 ('Gefearfach','Anetheron',9,3),
@@ -37,7 +37,14 @@ VALUES
 ('Sêppêl','Guldan',3,3),
 ('Vinkly','Anetheron',9,3),
 ('Nanir','Anetheron',9,3),
-('Swarloz','Anetheron',11,3)
+('Swarloz','Anetheron',11,3),
+('Hêavy','Nathrezim',11,3)
+---('Corruptìon','Thrall',2,4),
+---('Aywi','Rajaxx',4,4),
+---('Nyalarthotep','Anetheron',4,4),
+---('Büffelhüfte','Thrall',7,2),
+
+
 
 ---Klassentabelle
 CREATE TABLE classes
@@ -64,7 +71,6 @@ VALUES
 ('Dämonenjäger','#A330C9')
 
 
-
 --- Rollentabelle
 CREATE TABLE roles
 (id int IDENTITY (1,1) not null,
@@ -79,3 +85,5 @@ VALUES
 ('heal'),
 ('ranged'),
 ('melee')
+
+

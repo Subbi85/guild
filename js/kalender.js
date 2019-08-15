@@ -13,8 +13,8 @@ let getLogs=()=>{
         var logJSON = JSON.parse(logRequest.responseText);
         //Calculate Dates
         let kalenderObject = createObject(logJSON);
-        buildLogs(logJSON);
-        Kalender(dm+i, dj+y, kalenderObject);
+        console.log(logJSON);
+        Kalender(dm, dj, kalenderObject);
     }
     logRequest.send();
 }
@@ -34,7 +34,6 @@ let createObject=(data)=>{
             title : data[i].title
         });
     }
-    console.log(data, dateObjekt);
     return dateObjekt;
 }
 
@@ -92,37 +91,17 @@ let calculateMonth=(month)=>{
     return number;
 }
 
-//Aufbau der Logcontainer
-let buildLogs=(data)=>{
-    var logContainer = document.getElementById('logContainer')
-    for (let i =0; i<10; i++){
-        let newLog = document.createElement('div');
-        let newLogText = document.createTextNode("Palast HC");
-        let link = document.createElement('a');
-        //Aufbau der Links
-        link.setAttribute("href", "https://www.warcraftlogs.com/reports/"+data[i].id);
-        link.setAttribute("target", "_blank");
-        link.appendChild(newLogText);
-        newLog.appendChild(link);
-        newLog.setAttribute('class', 'log');
-        logContainer.appendChild(newLog);
-    }
-}
 
 //Kalender aufbauen
 function Kalender(Monat, Jahr, data) {
     let monthlyData=[];
-    console.log({data});
-
     //Bestimmen aller monatsrelevanten Termine
     for(let i=0; i<data.length; i++){
         if(data[i].start.month == Monat && data[i].start.year == Jahr){
             monthlyData.push(data[i]);
         }
     }
-    console.log(monthlyData);
-
-    //Kalender aufbauen
+   //Kalender aufbauen
     let Monatsname = new Array("Januar", "Februar", "März", "April", "Mai", "Juni",
         "Juli", "August", "September", "Oktober", "November", "Dezember");
     let Tag = new Array("Mo", "Di", "Mi", "Do", "Fr", "Sa", "So");
@@ -131,6 +110,7 @@ function Kalender(Monat, Jahr, data) {
     let DieserMonat = jetzt.getMonth() + 1;
     let DiesesJahr = jetzt.getYear() + 1900;
     let DieserTag = jetzt.getDate();
+
     // ermittle Wochentag des ersten Tags im Monat halte diese Information in Start fest
     let Zeit = new Date(Jahr, Monat - 1, 1);
     let Start = Zeit.getDay();
@@ -166,6 +146,7 @@ function Kalender(Monat, Jahr, data) {
     }
     // ermittle Tag und schreibe Zeile
     let Tageszahl = 1;
+    
     for (let i = 0; i <= 4; i++) {
         let row = tabelle.insertRow(1 + i);
         for (let j = 0; j <= 6; j++) {
@@ -180,27 +161,28 @@ function Kalender(Monat, Jahr, data) {
                 cell.innerHTML = Tageszahl;
                 cell.className = 'kalendertag';
 
+                monthlyData.sort(function(a, b){return a.start.day-b.start.day});
                 //Termine Eintragen
-                if(monthlyData[0].start.day === parseInt(Tageszahl)){
-                    console.log(monthlyData[0].start.day, parseInt(Tageszahl));
-                    let termin= document.createElement("div");
-                    termin.setAttribute("class", "log");
-                    let ta = document.createElement("a");
-                    ta= document.createElement("a");
-                    ta.href= "https://www.warcraftlogs.com/reports/"+monthlyData[0].id;
-                    ta.innerText = monthlyData[0].title;
-                    ta.target="_blank";
-
-                    termin.appendChild(ta);
-                    cell.appendChild(termin);
+                if (monthlyData[0].start.day!==0){
+                    if(monthlyData[0].start.day === parseInt(Tageszahl)){
+                        let termin= document.createElement("div");
+                        termin.setAttribute("class", "log");
+                        let ta = document.createElement("a");
+                        ta= document.createElement("a");
+                        ta.href= "https://www.warcraftlogs.com/reports/"+monthlyData[0].id;
+                        ta.innerText = monthlyData[0].title;
+                        ta.target="_blank";
+                        termin.appendChild(ta);
+                        cell.appendChild(termin);
+                        monthlyData.shift();                        
+                    }
                 }
-
                 // und der aktuelle Tag (heute) wird noch einmal speziell mit der Klasse "heute" markiert
                 if ((Jahr == DiesesJahr) && (Monat == DieserMonat) && (Tageszahl ==
                         DieserTag)) {
                     cell.className = cell.className + ' heute';
                 }
-                Tageszahl++;
+            Tageszahl++;
             }
         }
     }
@@ -210,29 +192,20 @@ function Kalender(Monat, Jahr, data) {
 let deleteKalender=()=>{
     let container = document.getElementById('kalender_container');
     container.removeChild(document.getElementById('kalender_table'));
+    let table = document.createElement("table");
+    table.setAttribute("id", "kalender_table");
+    container.appendChild(table);
 }
 
 //Aufbau des neuen Kalenders
 let createNewKalender=(direction)=>{
     deleteKalender();
-    let container = document.getElementById("kalender_container");
-    let newKalender = document.createElement('table');
-    newKalender.setAttribute('id', 'kalender_table');
     if (direction === 'next'){
-        container.appendChild(newKalender);
-        dm++
-        if(dm>12){
-            dm=1;
-            dj++;
-        }
+        dm++        
+        getLogs();
     }
     if (direction === 'prev'){
-        container.appendChild(newKalender);
         dm--;
-        if(dm<=1){
-            dm=12;
-            dj--;
-        }
+        getLogs();
     }
-    Kalender(dm, dj);
 }

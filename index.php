@@ -322,10 +322,6 @@
             </div>
             <button onclick="createNewKalender('prev')">Letzter</button>
             <button onclick="createNewKalender('next')">Nächster</button>
-            <h3>Hier sind die letzten Logs</h3>
-            <div id="logContainer">
-            <!-- Log Section -->
-            </div>
         </div>
     </div>
     </div>
