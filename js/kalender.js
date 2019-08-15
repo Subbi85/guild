@@ -13,7 +13,6 @@ let getLogs=()=>{
         var logJSON = JSON.parse(logRequest.responseText);
         //Calculate Dates
         let kalenderObject = createObject(logJSON);
-        console.log(logJSON);
         Kalender(dm, dj, kalenderObject);
     }
     logRequest.send();
@@ -90,7 +89,6 @@ let calculateMonth=(month)=>{
     }
     return number;
 }
-
 
 //Kalender aufbauen
 function Kalender(Monat, Jahr, data) {
