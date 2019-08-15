@@ -22,17 +22,23 @@ getLogs();
 //Erstellen eines bereinigten Objekts mit allen Daten
 let createObject=(data)=>{
     let dateObjekt= [];
+    console.log(data);
     for (let i=0; i<data.length; i++){
-        dateObjekt.push({
+        console.log(data[i].end - data[i].start);
+        if(data[i].end - data[i].start != 0){
+            dateObjekt.push({
             id : data[i].id,
             start : {
                         day: parseInt(calculateDate(data[i]).split(".")[0]),
                         month: parseInt(calculateDate(data[i]).split(".")[1]),
                         year: parseInt(calculateDate(data[i]).split(".")[2])
                     },
+            owner : data[i].owner,
             title : data[i].title
         });
+        }
     }
+    console.log(dateObjekt);
     return dateObjekt;
 }
 
@@ -162,13 +168,13 @@ function Kalender(Monat, Jahr, data) {
                 monthlyData.sort(function(a, b){return a.start.day-b.start.day});
                 //Termine Eintragen
                 if (monthlyData[0].start.day!==0){
-                    if(monthlyData[0].start.day === parseInt(Tageszahl)){
+                    while(monthlyData[0].start.day === parseInt(Tageszahl)){
                         let termin= document.createElement("div");
                         termin.setAttribute("class", "log");
                         let ta = document.createElement("a");
                         ta= document.createElement("a");
                         ta.href= "https://www.warcraftlogs.com/reports/"+monthlyData[0].id;
-                        ta.innerText = monthlyData[0].title;
+                        ta.innerText = "von "+monthlyData[0].owner;
                         ta.target="_blank";
                         termin.appendChild(ta);
                         cell.appendChild(termin);
