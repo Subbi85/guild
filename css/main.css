@@ -190,7 +190,7 @@ a, a:visited{color:#fff;text-decoration: none;}
 }
 
 #kalender_table {
-    width: 50%;
+    width: 100%;
     min-width: 340px;
     margin: 0 auto;
     background: #fff;
@@ -449,12 +449,18 @@ th{
     font-size: calc(10px + 2vmin);
 }
 
-
 /* MEDIA QUERIES */
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1200px) {
     #kader_container{
         flex-direction:column;
     }    
+
+    #kalender_table,td,caption {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 650px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -467,6 +473,15 @@ th{
         line-height:20px;
     }
     .card_container{width:100%;}
+}
+
+@media screen and (max-width: 850px) {
+    #kalender_table,td,caption {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 450px;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 750px) {
