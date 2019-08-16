@@ -24,7 +24,6 @@ let createObject=(data)=>{
     let dateObjekt= [];
     console.log(data);
     for (let i=0; i<data.length; i++){
-        console.log(data[i].end - data[i].start);
         if(data[i].end - data[i].start != 0){
             dateObjekt.push({
             id : data[i].id,

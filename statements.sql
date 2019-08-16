@@ -21,7 +21,7 @@ VALUES
 ('Valafar','Anetheron',12,4),
 ('Veily','Anetheron',6,4),
 ('Darkeddie','Rajaxx',7,4),
-('Rishnira','Anetheron',5,2),
+('Rolock','Anetheron',5,2),
 ('Kreischi','Nathrezim',7,2),
 ('Ginflut','Anetheron',10,2),
 ('Bünzli','Rajaxx',5,2),
