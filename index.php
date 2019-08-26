@@ -63,7 +63,17 @@
             <div class="slideshow-container">
                 <!-- Palast -->
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 5</div>
+                    <div class="numbertext">1 / 6</div>
+                    <img src="css/img/palast.png" style="width:100%">
+                    <div class="slidertext morpheus">
+                        <h4 class="morpheus">Der Ewige Palast hc clear</h4>    
+                        Endlich ist der Palast auch im heroischen Modus clear!
+                    </div>
+                </div>
+
+                <!-- Palast -->
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
                     <img src="css/img/azsharanhc.png" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Der Ewige Palast nhc clear</h4>    
@@ -73,7 +83,7 @@
 
                 <!-- Tiegel -->
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 5</div>
+                    <div class="numbertext">3 / 6</div>
                     <img src="css/img/tiegelhc.jpg" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Tiegel des Sturms Hc clear</h4>    
@@ -83,7 +93,7 @@
 
                 <!-- Tiegel -->
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 5</div>
+                    <div class="numbertext">4 / 6</div>
                     <img src="css/img/angeln.jpg" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Holt die Angeln raus...</h4>    
@@ -93,7 +103,7 @@
 
                 <!-- BoD -->
                 <div class="mySlides fade">
-                    <div class="numbertext">4 / 5</div>
+                    <div class="numbertext">5 / 6</div>
                     <img src="css/img/bod.jpg" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">BoD Hc clear</h4>    
@@ -103,7 +113,7 @@
 
                 <!-- Uldir -->
                 <div class="mySlides fade">
-                    <div class="numbertext">5 / 5</div>
+                    <div class="numbertext">6 / 6</div>
                     <img src="css/img/ghuun.png" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Uldir Hc clear</h4>
@@ -136,10 +146,10 @@
                 <div class="skill-bar-percent">8/8</div>
             </div> <!-- End Skill Bar -->
 
-             <div class="skillbar clearfix " data-percent="87%" onmouseenter="hintergrundWechseln('palast')">
+             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('palast')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Palast hc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">7/8</div>
+                <div class="skill-bar-percent">8/8</div>
             </div> <!-- End Skill Bar -->
 
             <h3 id="headline" class="morpheus">Tiegel der Stürme</h3>
