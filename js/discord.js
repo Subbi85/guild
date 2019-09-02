@@ -12,11 +12,11 @@ function sendDiscordMessage (data){
                 "color": 7498194,
                 "url": "https://orderand-chaos.eu",
                 "thumbnail": {
-                    "url": "https://order-and-chaos.eu/css/img/logo.png"
+                    "url": "https://order-and-chaos.eu/css/img/classicons/"+data.class+".png"
                 },
                 "author": {
-                    "name": "Test",
-                    "url": "https://worldofwarcraft.com/de-de/character/eu/0+data.realm+/+data.char",
+                    "name": data.char+", "+data.realm,
+                    "url": "https://worldofwarcraft.com/de-de/character/eu/"+data.realm+"/"+data.char,
                 },
 
             "fields": [

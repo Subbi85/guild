@@ -431,10 +431,10 @@
     <div id="contact_container">
 
         <label for="charname">Charname:</label>
-        <input type="text" id ="charname" placeholder="Name" value="Kreischi" required="required"> <br>
+        <input type="text" id ="charname" placeholder="Charname" required="required"> <br>
 
         <label for="realm">Realm:</label>
-        <input type="text" id ="realm" placeholder="Realm" value="Nathrezim" required><br>
+        <input type="text" id ="realm" placeholder="Realm" required><br>
 
         <label for="class">Klasse:</label>
         <select id="class">
@@ -453,7 +453,7 @@
         </select>
 
         <label for="message">Deine Nachricht:</label>
-        <textarea name="messagetext" id="message" cols="30" rows="10" placeholder="Deine Nachricht"></textarea>
+        <textarea name="messagetext" id="message" cols="30" rows="10" placeholder="Deine Nachricht an uns..."></textarea>
         <div id="contact_response"></div>        
 
     <button onClick="getData()">Absenden</button>
@@ -469,9 +469,6 @@
     </div>
 </div> <!--ENDE WRAPPER -->
 <script>
-
-
-
      $(document).ready(function() {
         $('.progress .progress-bar').css("width",
             function() {
