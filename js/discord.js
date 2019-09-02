@@ -1,7 +1,6 @@
 //Senden einer Nachricht an Discord
 function sendDiscordMessage (data){
     var discordUrl = 'https://discordapp.com/api/webhooks/617101092907515905/gj89qvMQogvFJHqMrOdH10XbGN4iamFbH7qUpvkYSIZtCPNZFIgUDjyFcVrMXoSaV6la';
-    var discordUrl = 'https://discordapp.com/api/webhooks/617116859103313927/S4KkP0PLfCNTqE2pyNeW5954JNvv9jv6Uu-NcWethyM6lCSZqsojWLQJxrsbSWivO3qo';
     var method = "POST";
     var message =  'Neue Nachricht von order-and-chaos.eu';
     var payload = JSON.stringify({

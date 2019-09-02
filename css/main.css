@@ -439,6 +439,14 @@ th{
     margin: 10px;
 }
 
+#textarea_container{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    flex-direction: row;
+}
+
+
 /* Footer */
 #footer{
     height: 60px;

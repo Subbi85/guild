@@ -429,34 +429,36 @@
         </p>
     </div>
     <div id="contact_container">
+        <div id="input_container">
+            <label for="charname">Charname:</label>
+            <input type="text" id ="charname" placeholder="Charname" autocomplete="off"> <br>
 
-        <label for="charname">Charname:</label>
-        <input type="text" id ="charname" placeholder="Charname" required="required"> <br>
+            <label for="realm">Realm:</label>
+            <input type="text" id ="realm" placeholder="Realm" autocomplete="off"><br>
 
-        <label for="realm">Realm:</label>
-        <input type="text" id ="realm" placeholder="Realm" required><br>
+            <label for="class">Klasse:</label>
+            <select id="class">
+                <option value="dh">Dämonenjäger</option>
+                <option value="druid">Druide</option>
+                <option value="warlock">Hexenmeister</option>
+                <option value="hunter">Jäger</option>
+                <option value="warrior">Krieger</option>
+                <option value="mage">Magier</option>
+                <option value="monk">Mönch</option>
+                <option value="paladin">Paladin</option>
+                <option value="priest">Priester</option>
+                <option value="shaman">Schamane</option>
+                <option value="rogue">Schurke</option>
+                <option value="dk">Todesritter</option>
+            </select>
+            <button onClick="getData()">Absenden</button>  
+        </div> <!-- Ende Input Container -->
+        <div id="textarea_container">
+            <textarea name="messagetext" id="message" cols="30" rows="10" placeholder="Deine Nachricht an uns..."></textarea>
+            <div id="contact_response"></div>
 
-        <label for="class">Klasse:</label>
-        <select id="class">
-            <option value="dh">Dämonenjäger</option>
-            <option value="druid">Druide</option>
-            <option value="warlock">Hexenmeister</option>
-            <option value="hunter">Jäger</option>
-            <option value="warrior">Krieger</option>
-            <option value="mage">Magier</option>
-            <option value="monk">Mönch</option>
-            <option value="paladin">Paladin</option>
-            <option value="priest">Priester</option>
-            <option value="shaman">Schamane</option>
-            <option value="rogue">Schurke</option>
-            <option value="dk">Todesritter</option>
-        </select>
+        </div>
 
-        <label for="message">Deine Nachricht:</label>
-        <textarea name="messagetext" id="message" cols="30" rows="10" placeholder="Deine Nachricht an uns..."></textarea>
-        <div id="contact_response"></div>        
-
-    <button onClick="getData()">Absenden</button>
 
     </div>
     <!--Footer -->
