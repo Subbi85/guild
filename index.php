@@ -49,13 +49,13 @@
                 Wir sind die Gilde "Order and Chaos" vom Server Anetheron und sind allesamt treue und kampferprobte Streiter der Horde. <br><br>
                 Unseren kleinen, verrückten und familiären Haufen von lieben Menschen gibt es seit Legion, genauer gesagt war 
                 Gul'dan, der sich zu der Zeit in der Nachtfestung aufhielt, der erste Bösewicht, dem wir gemeinsam das Handwerk gelegt haben. 
-                Und seitdem? <br><br>
+                <h4 class="morpheus">Was sind eure Ziele ?</h4>
                 Gut,dass du fragst! Seitdem waren wir ziemlich erfolgreich. Wir haben die letzten Raids immer geschafft unser Gildenziel die Curve, also den Endboss in heroischer Schwierigkeit legen bevor der neue Raid rauskommt, zu erspielen. <br><br>
                 Will heißen: In unserer gemeinsamen Zeit haben alle Raids gelegen und auch der G'huun "Gott" musste sich uns geschlagen geben. Doch damit nicht genug. Auch Jaina haben wir erfolgreich aus Daza'Alor vertrieben. <br>
                 Und nach langem Kampf konnten wir auch Uu'nat, den Vorboten der Leere, besiegen und triumphieren...
-                Und was macht ihr sonst noch? <br><br>
-                Noch eine super Frage: Wir gehen gern M+ Instanzen und versuchen uns da immer weiter zu steigern. Und ansonsten halt alles was ansteht... 
-                Weltquests, Inselexpeditionen, alte Raids und und und... <br><br>
+                <h4 class="morpheus">Und was macht ihr, wenn ihr nicht raidet?</h4>
+                Noch eine super Frage: Wir gehen gern M+ Instanzen und versuchen uns da immer weiter zu steigern. Außerdem stehen Erfolgsruns in den Raids auch dann und wann auf der Tagesordnung.
+                Und ansonsten halt alles was ansteht... Weltquests, Inselexpeditionen, alte Raids und und und... <br><br>
                 Alles im Namen der Horde, <br>
                 <span id="handwirting">Das OaC- Team</span>
             </p>
@@ -424,8 +424,9 @@
     <!-- Kontakt -->
     <div class="section" id="kontakt">
         <h3 class="morpheus">Wir suchen Verstärkung...</h3>
-        <p>Du hast gefallen an unsere Gilde gefunden und willst uns kennenlernen? <br>
-            Dann schreibe uns einfach hier eine Nachricht oder besuche uns auf unserem Discord-Server.
+        <p> Du hast gefallen an unsere Gilde gefunden und willst uns kennenlernen? <br>
+            Dann trage einfach deine Informationen (Charname, Realm und Klasse) ein und schreib uns eine Nachricht. <br>
+            (Am besten mit Battle-Tag, damit wir uns auch bei dir melden können).
         </p>
     </div>
     <div id="contact_container">
@@ -456,10 +457,7 @@
         <div id="textarea_container">
             <textarea name="messagetext" id="message" cols="30" rows="10" placeholder="Deine Nachricht an uns..."></textarea>
             <div id="contact_response"></div>
-
         </div>
-
-
     </div>
     <!--Footer -->
     <div class="section" id="footer">
