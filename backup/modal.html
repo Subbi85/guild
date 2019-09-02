@@ -1,0 +1,42 @@
+<div class="button" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Nachricht schreiben</div>
+
+
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+        <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2 class="morpheus">Kontakt</h2>
+        </header>
+        <div class="w3-container" id="modal_container">
+            <!--Nachrichtenform -->
+            <form id="messageform" action="php/message.php" method="POST">
+                <!-- Charinformationen-->
+                <label for="char" class="morpheus">Charname</label>
+                <input type="text" id="char" name="charname" class="morpheus" placeholder="Charname"> <br>
+                <label for="realm" class="morpheus">Realm</label>
+                <input type="text" id="realm" name="realm" class="morpheus" placeholder="Realm"> <br>
+                <label for="class"></label>
+                <!-- Klassenauswahl-->
+                <label for="char" class="morpheus">Deine Klasse</label>
+                <input type="text" id="class" name="class" class="morpheus">
+                <!-- Deine Nachricht-->
+                <textarea name="message" class="morpheus" id="messagetext" cols="30" rows="7" placeholder="Deine Nachricht..."></textarea> <br>
+                <input type="submit" value="Absenden" class="morpheus">
+            </form>
+
+            <div id="kontaktpic"></div>
+        </div>
+        <footer class="w3-container w3-teal">Sende uns eine Nachricht</footer>
+    </div>
+</div>
+
+<script>	
+var modal = document.getElementById('id01');
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+</script>

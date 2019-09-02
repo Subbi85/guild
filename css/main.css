@@ -412,6 +412,13 @@ th{
 }
 
 /* Kontakt */
+
+#contact_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #kontakt{
     width:99vw;
     max-width:1880px;

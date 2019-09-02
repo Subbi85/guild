@@ -13,6 +13,7 @@
     <script src="js/slider.js"defer ></script>
     <script src="js/main.js" defer></script>
     <script src="js/kalender.js" defer></script>
+    <script src="js/discord.js" defer></script>
 </head>
 <body>
 <div id="wrapper">
@@ -426,35 +427,37 @@
         <p>Du hast gefallen an unsere Gilde gefunden und willst uns kennenlernen? <br>
             Dann schreibe uns einfach hier eine Nachricht oder besuche uns auf unserem Discord-Server.
         </p>
-    <div class="button" onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Nachricht schreiben</div>
     </div>
-    <div id="id01" class="w3-modal">
-        <div class="w3-modal-content w3-card-4">
-            <header class="w3-container w3-teal"> 
-            <span onclick="document.getElementById('id01').style.display='none'" 
-            class="w3-button w3-display-topright">&times;</span>
-            <h2 class="morpheus">Kontakt</h2>
-            </header>
-            <div class="w3-container" id="modal_container">
-                <!--Nachrichtenform -->
-                <form id="messageform" action="php/message.php" method="POST">
-                    <!-- Charinformationen-->
-                    <label for="char" class="morpheus">Charname</label>
-                    <input type="text" id="name" name="charname" class="morpheus" placeholder="Charname"> <br>
-                    <label for="realm" class="morpheus">Realm</label>
-                    <input type="text" id="name" name="realm" class="morpheus" placeholder="Realm"> <br>
-                    <label for="class"></label>
-                    <!-- Klassenauswahl-->
-                    <label for="char" class="morpheus">Deine Klasse</label>
-                    <input type="text" id="class" name="class" class="morpheus">
-                    <!-- Deine Nachricht-->
-                    <textarea name="message" class="morpheus" id="messagetext" cols="30" rows="7" placeholder="Deine Nachricht..."></textarea> <br>
-                    <input type="submit" value="Absenden" class="morpheus">
-                </form>
-                <div id="kontaktpic"></div>
-            </div>
-            <footer class="w3-container w3-teal">Sende uns eine Nachricht</footer>
-        </div>
+    <div id="contact_container">
+
+        <label for="charname">Charname:</label>
+        <input type="text" id ="charname" placeholder="Name" value="Kreischi" required="required"> <br>
+
+        <label for="realm">Realm:</label>
+        <input type="text" id ="realm" placeholder="Realm" value="Nathrezim" required><br>
+
+        <label for="class">Klasse:</label>
+        <select id="class">
+            <option value="dh">Dämonenjäger</option>
+            <option value="druid">Druide</option>
+            <option value="warlock">Hexenmeister</option>
+            <option value="hunter">Jäger</option>
+            <option value="warrior">Krieger</option>
+            <option value="mage">Magier</option>
+            <option value="monk">Mönch</option>
+            <option value="paladin">Paladin</option>
+            <option value="priest">Priester</option>
+            <option value="shaman">Schamane</option>
+            <option value="rogue">Schurke</option>
+            <option value="dk">Todesritter</option>
+        </select>
+
+        <label for="message">Deine Nachricht:</label>
+        <textarea name="messagetext" id="message" cols="30" rows="10" placeholder="Deine Nachricht"></textarea>
+        <div id="contact_response"></div>        
+
+    <button onClick="getData()">Absenden</button>
+
     </div>
     <!--Footer -->
     <div class="section" id="footer">
@@ -467,12 +470,7 @@
 </div> <!--ENDE WRAPPER -->
 <script>
 
-var modal = document.getElementById('id01');
-    window.onclick = function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
-        }
-    }
+
 
      $(document).ready(function() {
         $('.progress .progress-bar').css("width",
