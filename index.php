@@ -413,8 +413,7 @@
                     </tr>
                 </table>
             <div id="details">
-                <div id="details_container morpheus">
-                    
+                <div id="details_container">
                 </div>
             </div>
             </div> <!-- Ende Table -->
