@@ -54,7 +54,7 @@ a, a:visited{color:#fff;text-decoration: none;}
 
 /* Über uns */
 #about{
-    height:120vh;
+    height:130vh;
     margin: 0 auto;
     display:flex;
     flex-direction: column;
@@ -446,6 +446,17 @@ th{
     flex-direction: row;
 }
 
+.input{
+    padding: 5px;
+    margin: 5px;
+    border:none;
+    transition: 300ms all ease;
+    font-size: calc(8px + 1.2vmin);
+}
+
+.input:focus{
+    border-bottom: 2px solid #56090b;
+}
 
 /* Footer */
 #footer{
@@ -540,6 +551,10 @@ th{
 
 @media screen and (max-width: 400px) {
     .section{min-width:360px;}
+
+    #contact_container{
+        flex-direction: column-reverse;
+    }
 }
 
 #videobereich {

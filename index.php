@@ -431,14 +431,11 @@
     </div>
     <div id="contact_container">
         <div id="input_container">
-            <label for="charname">Charname:</label>
-            <input type="text" id ="charname" placeholder="Charname" autocomplete="off"> <br>
+            <input type="text" class="input morpheus" id ="charname" placeholder="Charname" autocomplete="off"> <br>
 
-            <label for="realm">Realm:</label>
-            <input type="text" id ="realm" placeholder="Realm" autocomplete="off"><br>
+            <input type="text" class="input morpheus"  id ="realm" placeholder="Realm" autocomplete="off"><br>
 
-            <label for="class">Klasse:</label>
-            <select id="class">
+            <select id="class" class="input morpheus">
                 <option value="dh">Dämonenjäger</option>
                 <option value="druid">Druide</option>
                 <option value="warlock">Hexenmeister</option>
@@ -451,11 +448,11 @@
                 <option value="shaman">Schamane</option>
                 <option value="rogue">Schurke</option>
                 <option value="dk">Todesritter</option>
-            </select>
-            <button onClick="getData()">Absenden</button>  
+            </select> <br>
+            <div class="button" onClick="getData()">Absenden</div>
         </div> <!-- Ende Input Container -->
         <div id="textarea_container">
-            <textarea name="messagetext" id="message" cols="30" rows="10" placeholder="Deine Nachricht an uns..."></textarea>
+            <textarea name="messagetext" class="input morpheus" id="message" cols="30" rows="10" placeholder="Deine Nachricht an uns..."></textarea>
             <div id="contact_response"></div>
         </div>
     </div>
