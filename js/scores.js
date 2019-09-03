@@ -149,7 +149,6 @@ let buildInis=(inis)=>{
     container.appendChild(name);
 
     let table = document.createElement("table");
-    console.log(inis);
     for (let i=0; i< inis.mythic_plus_highest_level_runs.length; i++){
         reihe = document.createElement("tr");
         //DungeonName
@@ -176,3 +175,8 @@ let buildInis=(inis)=>{
     container.appendChild(table);
     details.appendChild(container); 
 }
+
+
+
+
+

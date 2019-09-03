@@ -142,28 +142,28 @@
         <div id="BfA" class="tabcontent">
         <h3 id="headline" class="morpheus">Der Ewige Palast</h3>
              <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('palast')">
-                <div class="skillbar-title" style="background: #a09797;"><span>Palast nhc</span></div>
+                <div class="skillbar-title" style="background: #a09797;" ><span>Palast nhc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">8/8</div>
+                <div class="skill-bar-percent" style= "color:#fff">8/8</div>
             </div> <!-- End Skill Bar -->
 
              <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('palast')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Palast hc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">8/8</div>
+                <div class="skill-bar-percent" style= "color:#fff">8/8</div>
             </div> <!-- End Skill Bar -->
 
             <h3 id="headline" class="morpheus">Tiegel der Stürme</h3>
              <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('tiegel')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Tiegel hc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">2/2</div>
+                <div class="skill-bar-percent" style= "color:#fff">2/2</div>
             </div> <!-- End Skill Bar -->
         
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('tiegel')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Tiegel nhc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">2/2</div>
+                <div class="skill-bar-percent" style= "color:#fff">2/2</div>
             </div> <!-- End Skill Bar -->
 
             <!-- Dazar -->
@@ -177,13 +177,13 @@
             <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('dazar')"> 
                 <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor hc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">9/9</div>
+                <div class="skill-bar-percent" style= "color:#fff">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('dazar')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Dazar'Alor nhc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">9/9</div>
+                <div class="skill-bar-percent" style= "color:#fff">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <!-- Uldir -->
@@ -191,13 +191,13 @@
             <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('uldir')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Uldir hc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">8/8</div>
+                <div class="skill-bar-percent" style= "color:#fff">8/8</div>
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('uldir')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Uldir nhc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">8/8</div>
+                <div class="skill-bar-percent" style= "color:#fff">8/8</div>
             </div> <!-- End Skill Bar -->
         </div>
 
@@ -206,65 +206,65 @@
             <div class="skillbar clearfix" data-percent="100%" onmouseenter="hintergrundWechseln('antorus')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Antorus hc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">9/9</div>
+                <div class="skill-bar-percent" style= "color:#fff">11/11</div>
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('antorus')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Antorus nhc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">9/9</div>
+                <div class="skill-bar-percent" style= "color:#fff">11/11</div>
             </div> <!-- End Skill Bar -->
 
             <h3 id="headline" class="morpheus">Grabmal des Sageras</h3>
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('grab')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Grabmal hc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">9/9</div>
+                <div class="skill-bar-percent" style= "color:#fff">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('grab')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Grabmal nhc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">9/9</div>
+                <div class="skill-bar-percent" style= "color:#fff">9/9</div>
             </div> <!-- End Skill Bar -->
 
             <h3 id="headline" class="morpheus">Nachtfestung</h3>
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('nachtfestung')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Nachtfest. hc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">9/9</div>
+                <div class="skill-bar-percent" style= "color:#fff">10/10</div>
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('nachtfestung')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Nachtfest. nhc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">9/9</div>
+                <div class="skill-bar-percent" style= "color:#fff">10/10</div>
             </div> <!-- End Skill Bar -->
 
             <h3 id="headline"  class="morpheus">Prüfung der Tapferkeit</h3>
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('trials')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Trials hc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">9/9</div>
+                <div class="skill-bar-percent" style= "color:#fff">2/2</div>
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('trials')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Trials nhc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">9/9</div>
+                <div class="skill-bar-percent" style= "color:#fff">2/2</div>
             </div> <!-- End Skill Bar -->
 
             <h3 id="headline"  class="morpheus">Smaragdgrüner Alptraum</h3>
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('smaragd')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Alptraum hc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">9/9</div>
+                <div class="skill-bar-percent" style= "color:#fff">7/7</div>
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('smaragd')">
                 <div class="skillbar-title" style="background: #a09797;"><span>Alptraum nhc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent">9/9</div>
+                <div class="skill-bar-percent" style= "color:#fff">7/7</div>
             </div> <!-- End Skill Bar -->
         </div>
         <div id="kader" class="tabcontent">
@@ -513,6 +513,14 @@
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
     }
+
+
+    function test(){
+    let skills = document.querySelectorAll(".skillbar");
+    console.log(skills);
+}
+
+test();
 </script>
 </body>
 </html>
