@@ -411,7 +411,9 @@
                     </tr>
                 </table>
             <div id="details">
-                <div id="details_container"></div>
+                <div id="details_container morpheus">
+                    Klicke auf einen der oben aufgeführten Charaktere, um Informationen zu den besten drei Mythic Plus Instanzen des Chars zu erhalten
+                </div>
             </div>
             </div> <!-- Ende Table -->
         </div><!-- Ende Scores -->
