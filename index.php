@@ -401,6 +401,8 @@
         <div class="scores">
             <!-- Scoretabelle -->
             <div id="table_scores">
+                <span>Klicke auf einen der oben aufgeführten Charaktere, 
+                    um Informationen zu den besten drei Mythic Plus Instanzen des Chars zu erhalten</span>
                 <table id="tbl">
                     <tr>
                         <th class="morpheus">Platz</th>
@@ -412,7 +414,7 @@
                 </table>
             <div id="details">
                 <div id="details_container morpheus">
-                    Klicke auf einen der oben aufgeführten Charaktere, um Informationen zu den besten drei Mythic Plus Instanzen des Chars zu erhalten
+                    
                 </div>
             </div>
             </div> <!-- Ende Table -->
