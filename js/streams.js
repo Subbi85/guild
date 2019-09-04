@@ -1,17 +1,25 @@
 //Globals
 let info = document.getElementById("info");
+let checker = false;
 let container = document.createElement("div");
 container.setAttribute("class", "streamcontainer");
 
 //Aufbauen der divs für online Streams
 let buildResult=(name , status)=>{
     info.appendChild(container);
-    if(status === "online"){
-        let newStream = document.createElement("div");
-        newStream.classList.add("stream");
-        let streamText = document.createTextNode(name+" ist gerade "+status);
-        newStream.appendChild(streamText);
-        buildiFrame(name, newStream);
+    console.log(checker);
+    if(checker === true){
+        if(status === "online"){
+            let newStream = document.createElement("div");
+            newStream.classList.add("stream");
+            let streamText = document.createTextNode(name+" ist gerade "+status);
+            newStream.appendChild(streamText);
+            buildiFrame(name, newStream);
+        }
+    }else if(checker === false){
+        console.log("nichts gefunden");
+        let noContentText = document.createTextNode("Derzeit ist dieser Stream offline");
+        container.appendChild(noContentText);
     }
 }
 
@@ -27,7 +35,7 @@ let buildiFrame=(name)=>{
 
 //Abrufen der Streamstatus 
 let getStreamInfos=()=>{
-var streams = ["RocketbeansTV", "subbi85", "theenclase", "dasenvy"];
+var streams = ["kreischi_", "subbi85", "regulatorex"];
 info.appendChild(container);
     for(let i=0; i<streams.length; i++){
         checkStream(streams[i]);
@@ -47,6 +55,7 @@ var client_id = "5eqgnru1njtqd2r2n7hm7qm3vt3kd7";
             status = "offline"
         }else{
             status = "online"
+            checker = true;
         }
         buildResult(streamname, status);
     }
