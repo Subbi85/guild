@@ -18,8 +18,11 @@ let buildResult=(name , status)=>{
         }
     }else if(checker === false){
         console.log("nichts gefunden");
-        let noContentText = document.createTextNode("Derzeit ist dieser Stream offline");
-        container.appendChild(noContentText);
+        let noContent = document.createElement("div");
+        noContent.classList.add("noContent");
+        let noContentText = document.createTextNode(name+" ist offline! ");
+        noContent.appendChild(noContentText);
+        container.appendChild(noContent);
     }
 }
 
@@ -35,7 +38,7 @@ let buildiFrame=(name)=>{
 
 //Abrufen der Streamstatus 
 let getStreamInfos=()=>{
-var streams = ["kreischi_", "subbi85", "regulatorex"];
+var streams = ["kreischi_", "subbi85", "regulatorex", "sinnerlein"];
 info.appendChild(container);
     for(let i=0; i<streams.length; i++){
         checkStream(streams[i]);

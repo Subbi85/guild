@@ -73,6 +73,16 @@
   background-color:#fff;
 }
 
+.noContent{
+  width: 100%;
+  height:100%;
+  color: #59090e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid #59090e;
+}
+
 /* The Close Button */
 .close {
   color: #aaaaaa;
