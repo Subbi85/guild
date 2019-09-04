@@ -11,7 +11,6 @@
 .topnav {
     overflow: hidden;
     background-color: #000;
-
   }
   
   .topnav a {
@@ -39,66 +38,62 @@
     display: none;
   }
 
-/* Modal */
-.w3-modal{
-    z-index:3;
-    display:none;
-    padding-top:100px;
-    position:fixed;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
-    overflow:auto;
-    background-color:rgb(0,0,0);
-    background-color:rgba(0,0,0,0.4)
-    }
-
-.w3-modal-content{
-    margin:auto;
-    background-color:#fff;
-    position:relative;
-    padding:0;
-    outline:0;
-    width:600px
-    }
-
-.w3-card-4{
-    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-.w3-container{padding:0.01em 16px}
-.w3-responsive{display:block;overflow-x:auto}
-.w3-container:after,.w3-container:before{
-        content:"";
-        display:table;
-        clear:both
-    }
-
-.w3-display-topright, .topright{
-    cursor: pointer;
-    position:absolute;
-    font-size:20px;
-    color: red;
-    font-weight: bold;
-    right:0;
-    top:0;}
-
-.w3-teal,.w3-hover-teal:hover{
-    color:#fff!important;
-    background-color:#222!important
+/* Modal Content */
+.modal-content {
+  background-color: rgb(235, 230, 224);
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #888;
+  width: 70%;
+  height: 30%;
 }
 
-#modal_container{
-    display: flex;
-    flex-direction:row;    
+.streamcontainer{
+  width: 100%;
+  height: 220px;
+  float: right;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color:#fff;
 }
 
-#messageform{
-    flex:2;
-    margin:10px;
-    z-index: 20;
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
 
 #kontaktpic{
     flex:1;
@@ -106,8 +101,6 @@
 }
 
 /* Style the tab */
-
-
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
@@ -120,7 +113,6 @@
 .tablinks{
   font-size: calc(8px + 1.5vmin);
 }
-
 
   .tab button {
     background-color: inherit;

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/w3.css" />
+
     <link rel="icon" type="image/png" href="css/img/favicon.png" sizes="32x32">
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>    
     <script src="js/scores.js" defer></script>
@@ -14,6 +15,7 @@
     <script src="js/main.js" defer></script>
     <script src="js/kalender.js" defer></script>
     <script src="js/discord.js" defer></script>
+    <script src="js/streams.js" defer></script>
 </head>
 <body>
 <div id="wrapper">
@@ -33,7 +35,6 @@
         <a href="#about" class="nav_link">Über Uns</a>
         <a href="#raids" class="nav_link">Raids</a>
         <a href="#mythic" class="nav_link ">Mythic+</a>
-        
         <a href="#kontakt" class="nav_link">Kontakt</a>
         <a href="vids.html" target="_blank" class="nav_link">Videos</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -56,10 +57,22 @@
                 <h4 class="morpheus">Und was macht ihr, wenn ihr nicht raidet?</h4>
                 Noch eine super Frage: Wir gehen gern M+ Instanzen und versuchen uns da immer weiter zu steigern. Außerdem stehen Erfolgsruns in den Raids auch dann und wann auf der Tagesordnung.
                 Und ansonsten halt alles was ansteht... Weltquests, Inselexpeditionen, alte Raids und und und... <br><br>
+                <h4 class="morpheus">Du willst uns auch mal spielen sehen?</h4>
+                Dann schau doch einfach mal bei einem unsere Stream rein und schau, ob es dir gefällt. <br>
+                Zu den Streams geht's <span id="myBtn" class="morpheus  modal_span">hier</span>   <br> <br>
                 Alles im Namen der Horde, <br>
                 <span id="handwirting">Das OaC- Team</span>
             </p>
         </div>
+        <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content" id="info">
+                    <span class="close">&times;</span>
+                    <p class="morpheus">Unsere Streams:</p>
+                </div>
+            </div>
+        <!-- Modal ENDE  -->
         <div class="about_box" id="pic">
             <div class="slideshow-container">
                 <!-- Palast -->
@@ -452,7 +465,7 @@
                 <option value="rogue">Schurke</option>
                 <option value="dk">Todesritter</option>
             </select> <br>
-            <div class="button" onClick="getData()">Absenden</div>
+            <div class="button morpheus" onClick="getData()">Absenden</div>
         </div> <!-- Ende Input Container -->
         <div id="textarea_container">
             <textarea name="messagetext" class="input morpheus" id="message" cols="30" rows="10" placeholder="Deine Nachricht an uns..."></textarea>
@@ -514,13 +527,34 @@
         evt.currentTarget.className += " active";
     }
 
+    // Get the modal
+    var modal = document.getElementById("myModal");
 
-    function test(){
-    let skills = document.querySelectorAll(".skillbar");
-    console.log(skills);
-}
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
 
-test();
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+    }
+
+
+
 </script>
 </body>
 </html>

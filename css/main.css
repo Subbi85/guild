@@ -31,8 +31,8 @@ a, a:visited{color:#fff;text-decoration: none;}
 /* Landing */
 .section{
     max-width:1920;
-    max-height:1080px;
 }
+
 #landing{
     width:99vw;
     height:99vh;
@@ -54,7 +54,7 @@ a, a:visited{color:#fff;text-decoration: none;}
 
 /* Über uns */
 #about{
-    height:130vh;
+    height:140vh;
     margin: 0 auto;
     display:flex;
     flex-direction: column;
@@ -82,6 +82,10 @@ a, a:visited{color:#fff;text-decoration: none;}
     width:80%;
     height:300px;
     background: #111;
+}
+
+.modal_span:hover{
+    cursor: pointer;
 }
 
 /* Hintergründe festlegen */
