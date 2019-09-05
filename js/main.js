@@ -79,19 +79,6 @@ let hintergrundWechseln=(instanz)=>{
     }
 }
 
-//####################### RAID PROGRESS #######################################################
-function progression(){
-    var blizzRequest = new XMLHttpRequest();
-    blizzRequest.open('GET', 'https://raider.io/api/v1/guilds/profile?region=EU&realm=Anetheron&name=Order%20and%20Chaos&fields=raid_progression%2C%20raid_rankings');
-    blizzRequest.onload=function(){
-        var test = JSON.parse(blizzRequest.responseText);
-        //Verarbeitung der Daten und Anpassen der Progressbars
-    }
-    blizzRequest.send();
-}
-//####################### RAID PROGRESS ENDE #######################################################
-progression();
-
 //################# AFFIXE DER WOCHE #######################################################
 function affixe(){                          /* Affixe der aktuellen Woche */
 let blizzRequest = new XMLHttpRequest();

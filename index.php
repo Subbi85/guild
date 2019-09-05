@@ -1,3 +1,7 @@
+<?php
+// Login Bereich für die Membersuche
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -58,7 +62,7 @@
                 Noch eine super Frage: Wir gehen gern M+ Instanzen und versuchen uns da immer weiter zu steigern. Außerdem stehen Erfolgsruns in den Raids auch dann und wann auf der Tagesordnung.
                 Und ansonsten halt alles was ansteht... Weltquests, Inselexpeditionen, alte Raids und und und... <br><br>
                 <h4 class="morpheus">Du willst uns auch mal spielen sehen?</h4>
-                Dann schau doch einfach mal bei einem unsere Stream rein und schau, ob es dir gefällt. <br>
+                Dann schau doch einfach mal bei einem unserer Streams vorbei und finde heraus, ob es dir gefällt. <br>
                 Zu den Streams geht's <span id="myBtn" class="morpheus  modal_span">hier</span>   <br> <br>
                 Alles im Namen der Horde, <br>
                 <span id="handwirting">Das OaC- Team</span>
@@ -444,13 +448,26 @@
             Dann trage einfach deine Informationen (Charname, Realm und Klasse) ein und schreib uns eine Nachricht. <br>
             (Am besten mit Battle-Tag, damit wir uns auch bei dir melden können).
         </p>
+        <h3 class="morpheus">Und was suchen wir ?</h3>
+        <div class="search">
+            <div class="searchcontainer">
+                <p>Wir sind immer auf der Suche nach fähigen Spielern, die gemeinsam mit uns den Raid- und <br>
+                Mythic Plus Content bestreiten wollen. <br> <br>
+                Aktuell suchen wir primär nach Tanks bzw. Heilern, aber auch DDs sind immer gern gesehen. <br>  <br>              
+                Du raidest nicht, bist aber trotzdem interessiert? Macht nichts ^^ Da wir eine familiäre Gilde sind, <br>
+                haben auch Spieler abseits der Raids einen Platz bei uns. Schreib und einfach und lerne uns kennen.
+                </p>
+            </div>
+            <div class="searchpic">
+                <img src="css/img/recruit.png" alt="css/img/recruit.png">
+            </div>
+
+        </div>
     </div>
     <div id="contact_container">
         <div id="input_container">
             <input type="text" class="input morpheus" id ="charname" placeholder="Charname" autocomplete="off"> <br>
-
             <input type="text" class="input morpheus"  id ="realm" placeholder="Realm" autocomplete="off"><br>
-
             <select id="class" class="input morpheus">
                 <option value="dh">Dämonenjäger</option>
                 <option value="druid">Druide</option>
@@ -506,6 +523,7 @@
     }
     
     document.getElementById("defaultOpen").click();
+
     function openTab(evt, tabName) {
         // Declare all variables
         var i, tabcontent, tablinks;

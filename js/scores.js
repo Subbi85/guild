@@ -45,7 +45,7 @@ let createJSON=(score, current)=>{
         let obj = JSON.parse(text);
         sortJSON(obj);
         createDivs(obj);
-        //sendPHP(obj, text);
+
     }
     return text;
 }
@@ -60,17 +60,6 @@ let sortJSON=(obj)=>{
         if(Number(a.score) < Number(b.score))
             return 1;
     });
-}
-
-//Send to PHP
-let sendPHP=(obj)=>{
-    let jsonstring = JSON.stringify(obj);
-    document.getElementById("tabelle").value = jsonstring;
-    //AJAX
-    let xhr = new XMLHttpRequest();
-    xhr.open("POST", "php/receive.php");
-    xhr.setRequestHeader("Content-Type", "application/json");
-    xhr.send(jsonstring);
 }
 
 //Ausgabe der Daten im Div
@@ -175,8 +164,3 @@ let buildInis=(inis)=>{
     container.appendChild(table);
     details.appendChild(container); 
 }
-
-
-
-
-

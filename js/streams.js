@@ -7,7 +7,6 @@ container.setAttribute("class", "streamcontainer");
 //Aufbauen der divs für online Streams
 let buildResult=(name , status)=>{
     info.appendChild(container);
-    console.log(checker);
     if(checker === true){
         if(status === "online"){
             let newStream = document.createElement("div");
@@ -17,7 +16,6 @@ let buildResult=(name , status)=>{
             buildiFrame(name, newStream);
         }
     }else if(checker === false){
-        console.log("nichts gefunden");
         let noContent = document.createElement("div");
         noContent.classList.add("noContent");
         let noContentText = document.createTextNode(name+" ist offline! ");
@@ -31,7 +29,7 @@ let buildiFrame=(name)=>{
     var ifrm = document.createElement("iframe");
     ifrm.setAttribute("src", "https://player.twitch.tv/?channel="+name);
     ifrm.style.width = "200px";
-    ifrm.style.height = "200px";
+    ifrm.style.height = "200px";        
     ifrm.allowFullscreen = "true";
     container.appendChild(ifrm);
 }

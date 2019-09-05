@@ -9,7 +9,7 @@ function sendDiscordMessage (data){
             {
                 "title": "Order and Chaos.eu",
                 "color": 7498194,
-                "url": "https://orderand-chaos.eu",
+                "url": "https://order-and-chaos.eu",
                 "thumbnail": {
                     "url": "https://order-and-chaos.eu/css/img/classicons/"+data.class+".png"
                 },

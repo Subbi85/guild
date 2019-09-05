@@ -6,6 +6,7 @@
     <title>Videos - Raids</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/w3.css" />
 </head>
 <body>
     <div id="header">
@@ -14,35 +15,117 @@
             Bei unseren zahlreichen Abenteuern sind schon ein paar Videos entstanden und es werden noch weitere folgen. <br>
             Aktuell haben wir euch Videos aus der Raidinstanz "Schlacht um Dazar'Alor" und "Tiegel des Sturms" bereitgestellt und werden hier <br>
             immer mal wieder Videos bereitstellen. <br> <br>
-            <h3 class="morpheus">Uu'nat Hc Kill Video</h3> 
         </p>
 
-        <div id="videobereich">	
-        <iframe class="videoextern" width="640" height="360"
-            src="https://www.youtube.com/embed/xoM3Lt54qy0" 
-            frameborder="0" allowfullscreen></iframe>
-        </div>
+        <div class="tab">
+                <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'London')">Der Ewige Palast</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Vorherige Raids</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Sonstige</button>
+              </div>
+              
+              <div id="London" class="tabcontent">
+                <h3>Der Ewige Palast</h3>
+                <p>
+                    Natürlich haben wir auch in dem aktuellen Raidtier Videos gemacht. <br>
+                    Dieses Mal sogar ein wenig konsequemter als zuvor ;).
+                </p>
+                <iframe width="300" height="315" src="https://www.youtube.com/embed/6Jer5Z64PtY" 
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                picture-in-picture" allowfullscreen></iframe>
+
+                <h3 class="morpheus">Schwarzwasserungetüm HC</h3>
+                <iframe width="300" height="315" src="https://www.youtube.com/embed/T87Wgq0RUoE"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                picture-in-picture" allowfullscreen></iframe>
+
+                <iframe width="300" height="315" src="https://www.youtube.com/embed/VLak2L5as4Y" 
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                picture-in-picture" allowfullscreen></iframe>
+
+                <iframe width="300" height="315" src="https://www.youtube.com/embed/T-gu-5LXLPo" 
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                picture-in-picture" allowfullscreen></iframe>
+
+                <iframe width="300" height="315" src="https://www.youtube.com/embed/ikAgeQHm7pQ" 
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                picture-in-picture" allowfullscreen></iframe>
+
+                <iframe width="300" height="315" src="https://www.youtube.com/embed/g1JS3ooYoMg" 
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                picture-in-picture" allowfullscreen></iframe>
+
+                <iframe width="300" height="315" src="https://www.youtube.com/embed/u6EjpTFaDS0" 
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; 
+                picture-in-picture" allowfullscreen></iframe>
+
+                <iframe width="300" height="315" src="https://www.youtube.com/embed/u6EjpTFaDS0"
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;
+                picture-in-picture" allowfullscreen></iframe>
+              </div>
+              
+              <div id="Paris" class="tabcontent">
+                <h3>Frühere Videos</h3>
+                <p>
+                    Hier findet Ihr Videos aus den Raids 'Die Schlacht um Daza'Alor' und 'Der Tiegel des Sturms' 
+                </p>
+                <h3 class="morpheus">Uu'nat Hc Kill Video</h3> 
+
+                <iframe width="340" height="360"
+                    src="https://www.youtube.com/embed/xoM3Lt54qy0" 
+                    frameborder="0" allowfullscreen></iframe>
+
+                <h3 class="morpheus">Uu'nat nhc Kill Video</h3>
+                <iframe width="340" height="360"
+                    src="https://www.youtube.com/embed/N2nt45pWUuE" 
+                    frameborder="0" allowfullscreen></iframe>
+
+                <h3 class="morpheus">Unser bisher bester Try auf U'una</h3>
+
+                <iframe width="340" height="360"
+                    src="https://www.youtube.com/embed/rgHYsrbnfHc" 
+                    frameborder="0" allowfullscreen></iframe>
  
-        <h3 class="morpheus">Uu'nat nhc Kill Video</h3>
-        <div id="videobereich">	
-        <iframe class="videoextern" width="640" height="360"
-            src="https://www.youtube.com/embed/N2nt45pWUuE" 
-            frameborder="0" allowfullscreen></iframe>
-        </div>
+        
+                <h3 class="morpheus">Jaina heroic Kill</h3>
+                <iframe width="340" height="360"
+                    src="https://www.youtube.com/embed/zb7Y4N9x-Qc"
+                    frameborder="0" allowfullscreen></iframe>
+                    
+              </div>
+              
+              <div id="Tokyo" class="tabcontent">
+                <h3>Sonstige Videos</h3>
+                <p>
+                    kommt bald...
+                </p>
+              </div>
+              
+              <script>
 
-        <h3 class="morpheus">Unser bisher bester Try auf U'una</h3>
-        <div id="videobereich">	
-        <iframe class="videoextern" width="640" height="360"
-            src="https://www.youtube.com/embed/rgHYsrbnfHc" 
-            frameborder="0" allowfullscreen></iframe>
-        </div>
+                document.getElementById("defaultOpen").click();
+              function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                  tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                  tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+              }
+            </script>
 
-        <h3 class="morpheus">Jaina heroic Kill</h3>
-        <div id="videobereich">	
-        <iframe class="videoextern" width="640" height="360"
-            src="https://www.youtube.com/embed/zb7Y4N9x-Qc"
-            frameborder="0" allowfullscreen></iframe>
-        </div>
+
+
+
+
+
+
+
+
     </div>
 </body>
 </html>
