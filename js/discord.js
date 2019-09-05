@@ -118,7 +118,6 @@ function createCharIcon(data){
             {data.color = "#FFF569"}
         break;   
     }
-
     sendDiscordMessage(data);
 }
 
