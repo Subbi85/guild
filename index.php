@@ -455,7 +455,7 @@
                 Mythic Plus Content bestreiten wollen. <br> <br>
                 Aktuell suchen wir primär nach Tanks bzw. Heilern, aber auch DDs sind immer gern gesehen. <br>  <br>              
                 Du raidest nicht, bist aber trotzdem interessiert? Macht nichts ^^ Da wir eine familiäre Gilde sind, <br>
-                haben auch Spieler abseits der Raids einen Platz bei uns. Schreib und einfach und lerne uns kennen.
+                haben auch Spieler abseits der Raids einen Platz bei uns. Schreib uns einfach und lerne uns kennen.
                 </p>
             </div>
             <div class="searchpic">
@@ -483,10 +483,10 @@
                 <option value="dk">Todesritter</option>
             </select> <br>
             <div class="button morpheus" onClick="getData()">Absenden</div>
+            <div id="contact_response"></div>
         </div> <!-- Ende Input Container -->
         <div id="textarea_container">
             <textarea name="messagetext" class="input morpheus" id="message" cols="30" rows="10" placeholder="Deine Nachricht an uns..."></textarea>
-            <div id="contact_response"></div>
         </div>
     </div>
     <!--Footer -->

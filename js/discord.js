@@ -36,21 +36,22 @@ function sendDiscordMessage (data){
         ]
       });
 
-    console.log(data);
-    console.log(payload);
     // Sending and receiving data in JSON format using POST method
     var xhr = new XMLHttpRequest();
     xhr.open(method , discordUrl, true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
-        console.log('Status: ', xhr.status, xhr.readyState);
         if (xhr.readyState === 4 && (xhr.status === 200 || xhr.status === 204)) {
             console.log(xhr.responseText);
-
+            let response = document.getElementById("contact_response");
+            response.value = " Nachricht versendet";
+            refreshForm();
+        }else if(xhr.status === 400){
+            let response = document.getElementById("contact_response");
+            response.innerHTML ="Fehlerhafte Eingabe"
         }
     };
     xhr.send(payload);
-    
 }
 
 //Zieht sich die Informationen aus dem Formular
@@ -63,13 +64,10 @@ function getData(){
     }
 
     createCharIcon(messageObject);
-    console.log(messageObject);
 }
 
 //Aufbauen der Farben und Icons
 function createCharIcon(data){
-    console.log("test");
-    console.log(data);
     switch (data.class){
         case "dk" :
             {data.icon = "<:dk:438277556886700044>"}
@@ -120,6 +118,17 @@ function createCharIcon(data){
             {data.color = "#FFF569"}
         break;   
     }
-    console.log(data);
+
     sendDiscordMessage(data);
+}
+
+//
+function refreshForm(){
+    let charname = document.getElementById("charname");
+    let realm = document.getElementById("realm");
+    let message = document.getElementById("message");
+
+    charname.value ="";
+    realm.value ="";
+    message.value = "";
 }
