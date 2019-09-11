@@ -13,8 +13,7 @@ if ($conn->connect_error) {
 }
 
 //Abrufen der Tabelle durch SQL-Statement
-$sql = "SELECT * FROM members
-        ";
+$sql = "SELECT * FROM members";
 
 // Rückmeldung Error/Success
 $db_erg = mysqli_query( $conn, $sql);

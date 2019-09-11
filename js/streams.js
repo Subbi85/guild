@@ -36,7 +36,7 @@ let buildiFrame=(name)=>{
 
 //Abrufen der Streamstatus 
 let getStreamInfos=()=>{
-var streams = ["kreischi_", "subbi85", "regulatorex", "sinnerlein"];
+var streams = ["kreischi_", "deathranger1995", "regulatorex", "sinnerlein"];
 info.appendChild(container);
     for(let i=0; i<streams.length; i++){
         checkStream(streams[i]);
