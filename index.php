@@ -19,7 +19,7 @@
     <script src="js/main.js" defer></script>
     <script src="js/kalender.js" defer></script>
     <script src="js/discord.js" defer></script>
-    <script src="js/streams.js" defer></script>
+    <!--<script src="js/streams.js" defer></script> -->
 </head>
 <body>
 <div id="wrapper">
@@ -81,7 +81,17 @@
             <div class="slideshow-container">
                 <!-- Palast -->
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 6</div>
+                    <div class="numbertext">1 / 7</div>
+                    <img src="css/img/sivaramythic.jpg" style="width:100%">
+                    <div class="slidertext morpheus">
+                        <h4 class="morpheus">Sivara Mythic Down</h4>    
+                        Es war unser erster Abend mythic, und am Ende lag der erste Boss.. <br>
+                        Guter Anfang
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 7</div>
                     <img src="css/img/palast.png" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Der Ewige Palast hc clear</h4>    
@@ -91,7 +101,7 @@
 
                 <!-- Palast -->
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 6</div>
+                    <div class="numbertext">3 / 7</div>
                     <img src="css/img/azsharanhc.png" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Der Ewige Palast nhc clear</h4>    
@@ -101,7 +111,7 @@
 
                 <!-- Tiegel -->
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 6</div>
+                    <div class="numbertext">4 / 7</div>
                     <img src="css/img/tiegelhc.jpg" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Tiegel des Sturms Hc clear</h4>    
@@ -111,7 +121,7 @@
 
                 <!-- Tiegel -->
                 <div class="mySlides fade">
-                    <div class="numbertext">4 / 6</div>
+                    <div class="numbertext">5 / 7</div>
                     <img src="css/img/angeln.jpg" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Holt die Angeln raus...</h4>    
@@ -121,7 +131,7 @@
 
                 <!-- BoD -->
                 <div class="mySlides fade">
-                    <div class="numbertext">5 / 6</div>
+                    <div class="numbertext">6 / 7</div>
                     <img src="css/img/bod.jpg" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">BoD Hc clear</h4>    
@@ -131,7 +141,7 @@
 
                 <!-- Uldir -->
                 <div class="mySlides fade">
-                    <div class="numbertext">6 / 6</div>
+                    <div class="numbertext">7 / 7</div>
                     <img src="css/img/ghuun.png" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Uldir Hc clear</h4>
@@ -168,6 +178,12 @@
                 <div class="skillbar-title" style="background: #a09797;"><span>Palast hc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent" style= "color:#fff">8/8</div>
+            </div> <!-- End Skill Bar -->
+
+            <div class="skillbar clearfix " data-percent="10%" onmouseenter="hintergrundWechseln('palast')">
+                <div class="skillbar-title" style="background: #a09797;"><span>Palast hc</span></div>
+                <div class="skillbar-bar" style="background: #56090B;"></div>
+                <div class="skill-bar-percent" style= "color:#111">1/8</div>
             </div> <!-- End Skill Bar -->
 
             <h3 id="headline" class="morpheus">Tiegel der Stürme</h3>
@@ -549,15 +565,15 @@
     var modal = document.getElementById("myModal");
 
     // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
+    //var btn = document.getElementById("myBtn");
 
     // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
 
     // When the user clicks the button, open the modal 
-    btn.onclick = function() {
+    /*btn.onclick = function() {
     modal.style.display = "block";
-    }
+    }*/
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function() {
