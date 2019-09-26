@@ -19,7 +19,7 @@
     <script src="js/main.js" defer></script>
     <script src="js/kalender.js" defer></script>
     <script src="js/discord.js" defer></script>
-    <!--<script src="js/streams.js" defer></script> -->
+    <script src="js/streams.js" defer></script>
 </head>
 <body>
 <div id="wrapper">
@@ -180,10 +180,10 @@
                 <div class="skill-bar-percent" style= "color:#fff">8/8</div>
             </div> <!-- End Skill Bar -->
 
-            <div class="skillbar clearfix " data-percent="10%" onmouseenter="hintergrundWechseln('palast')">
-                <div class="skillbar-title" style="background: #a09797;"><span>Palast hc</span></div>
+            <div class="skillbar clearfix " data-percent="20%" onmouseenter="hintergrundWechseln('palast')">
+                <div class="skillbar-title" style="background: #a09797;"><span>Palast Mythic</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent" style= "color:#111">1/8</div>
+                <div class="skill-bar-percent" style= "color:#111">2/8</div>
             </div> <!-- End Skill Bar -->
 
             <h3 id="headline" class="morpheus">Tiegel der Stürme</h3>
