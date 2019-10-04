@@ -82,10 +82,10 @@
                 <!-- Palast -->
                 <div class="mySlides fade">
                     <div class="numbertext">1 / 7</div>
-                    <img src="css/img/sivaramythic.jpg" style="width:100%">
+                    <img src="css/img/glanz_mythic.png" style="width:100%">
                     <div class="slidertext morpheus">
-                        <h4 class="morpheus">Sivara Mythic Down</h4>    
-                        Es war unser erster Abend mythic, und am Ende lag der erste Boss.. <br>
+                        <h4 class="morpheus">Azsharas Glanz Mythic DOWN!</h4>    
+                        Es war unser erster Abend mythic, und am Ende lag auch Azsharas Glanz.. <br>
                         Guter Anfang
                     </div>
                 </div>
@@ -103,7 +103,7 @@
                 <div class="mySlides fade">
                     <div class="numbertext">3 / 7</div>
                     <img src="css/img/azsharanhc.png" style="width:100%">
-                    <div class="slidertext morpheus">
+                    <div class="slidertext morpheus">2
                         <h4 class="morpheus">Der Ewige Palast nhc clear</h4>    
                         Königin Azshara wurden die Tentakel gestutzt.
                     </div>
@@ -181,9 +181,9 @@
             </div> <!-- End Skill Bar -->
 
             <div class="skillbar clearfix " data-percent="20%" onmouseenter="hintergrundWechseln('palast')">
-                <div class="skillbar-title" style="background: #a09797;"><span>Palast Mythic</span></div>
+                <div class="skillbar-title" style="background: #a09797;"><span>Palast mythic</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent" style= "color:#111">2/8</div>
+                <div class="skill-bar-percent" style= "color:#111">3/8</div>
             </div> <!-- End Skill Bar -->
 
             <h3 id="headline" class="morpheus">Tiegel der Stürme</h3>
