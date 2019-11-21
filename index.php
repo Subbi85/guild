@@ -464,8 +464,15 @@
             Dann trage einfach deine Informationen (Charname, Realm und Klasse) ein und schreib uns eine Nachricht. <br>
             (Am besten mit Battle-Tag, damit wir uns auch bei dir melden können).
         </p>
+
+        
+        </div>
+        </div>
+    <!--         
         <h3 class="morpheus">Und was suchen wir ?</h3>
         <div class="search">
+
+       
             <div class="searchcontainer">
                 <p>Wir sind immer auf der Suche nach fähigen Spielern, die gemeinsam mit uns den Raid- und <br>
                 Mythic Plus Content bestreiten wollen. <br> <br>
@@ -477,9 +484,9 @@
             <div class="searchpic">
                 <img src="css/img/recruit.png" alt="css/img/recruit.png">
             </div>
-
         </div>
     </div>
+
     <div id="contact_container">
         <div id="input_container">
             <input type="text" class="input morpheus" id ="charname" placeholder="Charname" autocomplete="off"> <br>
@@ -500,11 +507,11 @@
             </select> <br>
             <div class="button morpheus" onClick="getData()">Absenden</div>
             <div id="contact_response"></div>
-        </div> <!-- Ende Input Container -->
+        </div>
         <div id="textarea_container">
             <textarea name="messagetext" class="input morpheus" id="message" cols="30" rows="10" placeholder="Deine Nachricht an uns..."></textarea>
         </div>
-    </div>
+    </div>-->
     <!--Footer -->
     <div class="section" id="footer">
         <ul id="footerlist">
