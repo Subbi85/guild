@@ -54,7 +54,7 @@ function sendDiscordMessage (data){
       });
 
     // Sending and receiving data in JSON format using POST method
-    
+    console.log(data.url);
     /*var xhr = new XMLHttpRequest();
     xhr.open(method , data.url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
@@ -70,7 +70,7 @@ function sendDiscordMessage (data){
         }
     };
     xhr.send(payload); */
-    console.log("sent");
+    console.log("gesendet");
 }
 
 //Zieht sich die Informationen aus dem Formular
