@@ -22,7 +22,6 @@ getLogs();
 //Erstellen eines bereinigten Objekts mit allen Daten
 let createObject=(data)=>{
     let dateObjekt= [];
-    console.log(data);
     for (let i=0; i<data.length; i++){
         if(data[i].end - data[i].start != 0){
             dateObjekt.push({
@@ -37,7 +36,6 @@ let createObject=(data)=>{
         });
         }
     }
-    console.log(dateObjekt);
     return dateObjekt;
 }
 
