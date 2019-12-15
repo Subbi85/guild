@@ -138,7 +138,7 @@ function createCharIcon(data){
             {data.color = "#FFF569"}
         break;   
     }
-    getUrl();
+    getUrl(data);
 
 }
 
