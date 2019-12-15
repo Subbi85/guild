@@ -19,7 +19,7 @@
     <script src="js/main.js" defer></script>
     <script src="js/kalender.js" defer></script>
     <script src="js/discord.js" defer></script>
-    <script src="js/streams.js" defer></script>
+    <!-- <script src="js/streams.js" defer></script> -->
 </head>
 <body>
 <div id="wrapper">

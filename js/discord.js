@@ -130,8 +130,7 @@ function createCharIcon(data){
             {data.color = "#FFF569"}
         break;   
     }
-    console.log({data});
-    sendDiscordMessage(data);
+    console.log("STOOOOOOOOOP!!!!!");
 }
 
 //
