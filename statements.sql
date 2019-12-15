@@ -67,7 +67,6 @@ VALUES
 ('Druide','#FF7D0A'),
 ('Dämonenjäger','#A330C9')
 
-
 --- Rollentabelle
 CREATE TABLE roles
 (id int IDENTITY (1,1) not null,
@@ -82,3 +81,10 @@ VALUES
 ('heal'),
 ('ranged'),
 ('melee')
+
+create table discord 
+(id int IDENTITY,
+ dcserver varchar(20),
+  dcurl varchar(255)
+  PRIMARY KEY (id)
+  )
