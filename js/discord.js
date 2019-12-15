@@ -133,10 +133,8 @@ function createCharIcon(data){
         break;   
     }
     getUrl(data);
-
 }
 
-//
 function refreshForm(){
     let charname = document.getElementById("charname");
     let realm = document.getElementById("realm");
