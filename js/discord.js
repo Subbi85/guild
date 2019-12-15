@@ -1,11 +1,12 @@
 //Globals
 function getUrl(data){
+    console.log(data);
     //Abrufen der Daten per AJAX
     let discord = new XMLHttpRequest();
     discord.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             let url = JSON.parse(this.responseText);
-            console.log(data);
+  
             console.log(url[0].url);
             data.url = url[0].url;
             sendDiscordMessage(data)
