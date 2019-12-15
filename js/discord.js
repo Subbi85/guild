@@ -5,7 +5,7 @@ window.onload=()=>{
     discord.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             let data = JSON.parse(this.responseText);
-            console.log(data[0]);
+            console.log(data[0].url);
         }
     }
     discord.open("GET", "php/dc.php", true);
