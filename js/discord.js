@@ -1,5 +1,5 @@
 //Globals
-window.onload=()=>{
+function getUrl(){
     //Abrufen der Daten per AJAX
     let discord = new XMLHttpRequest();
     discord.onreadystatechange = function() {
@@ -132,6 +132,7 @@ function createCharIcon(data){
     }
     console.log("STOOOOOOOOOP!!!!!");
     console.log(data);
+
 }
 
 //
