@@ -131,6 +131,7 @@ function createCharIcon(data){
         break;   
     }
     console.log("STOOOOOOOOOP!!!!!");
+    console.log(data);
 }
 
 //
