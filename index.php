@@ -466,7 +466,6 @@
         </p>
     </div>
     </div>
-    <!--         
         <h3 class="morpheus">Und was suchen wir ?</h3>
         <div class="search">
 
@@ -509,7 +508,7 @@
         <div id="textarea_container">
             <textarea name="messagetext" class="input morpheus" id="message" cols="30" rows="10" placeholder="Deine Nachricht an uns..."></textarea>
         </div>
-    </div>-->
+    </div>
     <!--Footer -->
     <div class="section" id="footer">
         <ul id="footerlist">
