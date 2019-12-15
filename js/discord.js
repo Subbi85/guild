@@ -1,6 +1,10 @@
+//Globals
+window.onload=()=>{
+    console.log("TEEEEEEEEEEST");
+}
+
 //Senden einer Nachricht an Discord
 function sendDiscordMessage (data){
-
     var method = "POST";
     var message =  'Neue Nachricht von order-and-chaos.eu';
     var payload = JSON.stringify({
@@ -62,7 +66,6 @@ function getData(){
         class : document.getElementById("class").value,
         message : document.getElementById("message").value
     }
-
     createCharIcon(messageObject);
 }
 
