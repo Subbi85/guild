@@ -13,7 +13,7 @@ window.onload=()=>{
 }
 
 //Senden einer Nachricht an Discord
-function sendDiscordMessage (url){
+function sendDiscordMessage (data){
     var method = "POST";
     var message =  'Neue Nachricht von order-and-chaos.eu';
     var payload = JSON.stringify({
@@ -24,32 +24,32 @@ function sendDiscordMessage (url){
                 "color": 7498194,
                 "url": "https://order-and-chaos.eu",
                 "thumbnail": {
-                    "url": "https://order-and-chaos.eu/css/img/classicons/"+url.class+".png"
+                    "url": "https://order-and-chaos.eu/css/img/classicons/"+data.class+".png"
                 },
                 "author": {
-                    "name": url.char+", "+url.realm,
-                    "url": "https://worldofwarcraft.com/de-de/character/eu/"+url.realm+"/"+url.char,
+                    "name": data.char+", "+data.realm,
+                    "url": "https://worldofwarcraft.com/de-de/character/eu/"+data.realm+"/"+data.char,
                 },
 
             "fields": [
                 {
                     "name": "Charname: ",
-                    "value": url.char
+                    "value": data.char
                 },
                 {
                     "name": "Realm: ",
-                    "value": url.realm
+                    "value": data.realm
                 },
                 {
                     "name": "Nachricht: ",
-                    "value": url.message
+                    "value": data.message
                 }
             ]
             }
         ]
       });
 
-    // Sending and receiving url in JSON format using POST method
+    // Sending and receiving data in JSON format using POST method
     var xhr = new XMLHttpRequest();
     xhr.open(method , discordUrl, true);
     xhr.setRequestHeader("Content-Type", "application/json");
@@ -68,7 +68,7 @@ function sendDiscordMessage (url){
 }
 
 //Zieht sich die Informationen aus dem Formular
-function geturl(){
+function getData(){
     let messageObject = {
         char : document.getElementById("charname").value,
         realm: document.getElementById("realm").value,
@@ -79,58 +79,58 @@ function geturl(){
 }
 
 //Aufbauen der Farben und Icons
-function createCharIcon(url){
-    switch (url.class){
+function createCharIcon(data){
+    switch (data.class){
         case "dk" :
-            {url.icon = "<:dk:438277556886700044>"}
-            {url.color = "#C41F3B"}
+            {data.icon = "<:dk:438277556886700044>"}
+            {data.color = "#C41F3B"}
         break;
         case "dh" :
-            {url.icon = "<:dh:438277557377302538>"}
-            {url.color = "#A330C9"}
+            {data.icon = "<:dh:438277557377302538>"}
+            {data.color = "#A330C9"}
         break;
         case "druid" :
-            {url.icon = "<:druid:438277557268512769>"}
-            {url.color = "#FF7D0A"}
+            {data.icon = "<:druid:438277557268512769>"}
+            {data.color = "#FF7D0A"}
         break;   
         case "warlock" :
-            {url.icon = "<:warlock:438277557213986829>"}
-            {url.color = "#9482C9"}
+            {data.icon = "<:warlock:438277557213986829>"}
+            {data.color = "#9482C9"}
         break;   
         case "hunter" :
-            {url.icon = "<:hunter:438277557083832321>"}
-            {url.color = "#ABD473"}
+            {data.icon = "<:hunter:438277557083832321>"}
+            {data.color = "#ABD473"}
         break;   
         case "warrior" :
-            {url.icon = "<:warry:438277557054603265>"}
-            {url.color = "#C79C6E"}
+            {data.icon = "<:warry:438277557054603265>"}
+            {data.color = "#C79C6E"}
         break;   
         case "mage" :
-            {url.icon = "<:mage:438277557486616576>"}
-            {url.color = "#69CCF0"}
+            {data.icon = "<:mage:438277557486616576>"}
+            {data.color = "#69CCF0"}
         break;   
         case "monk" :
-            {url.icon = "<:monk:438277557318713345>"}
-            {url.color = "#00FF96"}
+            {data.icon = "<:monk:438277557318713345>"}
+            {data.color = "#00FF96"}
         break;   
         case "paladin" :
-            {url.icon = "<:pala:438277557406793729>"}
-            {url.color = "#F58CBA"}
+            {data.icon = "<:pala:438277557406793729>"}
+            {data.color = "#F58CBA"}
         break;   
         case "priester" :
-            {url.icon = "<:priest:495430414870249472>"}
-            {url.color = "#FFFFFF"}
+            {data.icon = "<:priest:495430414870249472>"}
+            {data.color = "#FFFFFF"}
         break;   
         case "shaman" :
-            {url.icon = "<:shaman:438277557369044992>"}
-            {url.color = "#0070DE"}
+            {data.icon = "<:shaman:438277557369044992>"}
+            {data.color = "#0070DE"}
         break;   
         case "rogue" :
-            {url.icon = "<:rogue:438277557289222145>"}
-            {url.color = "#FFF569"}
+            {data.icon = "<:rogue:438277557289222145>"}
+            {data.color = "#FFF569"}
         break;   
     }
-    sendDiscordMessage(url);
+    sendDiscordMessage(data);
 }
 
 //
