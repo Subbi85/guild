@@ -45,7 +45,6 @@ let createJSON=(score, current)=>{
         let obj = JSON.parse(text);
         sortJSON(obj);
         createDivs(obj);
-
     }
     return text;
 }

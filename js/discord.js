@@ -1,6 +1,15 @@
 //Globals
 window.onload=()=>{
-    console.log("TEEEEEEEEEEST");
+    //Abrufen der Daten per AJAX
+    let discord = new XMLHttpRequest();
+    discord.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            let data = JSON.parse(this.responseText);
+            console.log(data);
+        }
+    }
+    discord.open("GET", "php/discord.php", true);
+    discord.send();
 }
 
 //Senden einer Nachricht an Discord

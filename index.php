@@ -306,11 +306,11 @@
             "use strict"
             //Abrufen der Daten per AJAX
             let membercall = new XMLHttpRequest();
-                membercall.onreadystatechange = function() {
-                    if (this.readyState == 4 && this.status == 200) {
-                        let data = JSON.parse(this.responseText);
-                        tabellenBauen(data);
-                    }
+            membercall.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    let data = JSON.parse(this.responseText);
+                    tabellenBauen(data);
+                }
             }
             membercall.open("GET", "php/select.php", true);
             membercall.send();
