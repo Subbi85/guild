@@ -16,12 +16,8 @@ function getUrl(data){
     discord.send();
 }
 
-function sendDiscordMessage (data){
-    console.log({data});
-}
-
 //Senden einer Nachricht an Discord
-function sendDiscordMessage2 (data){
+function sendDiscordMessage (data){
     var method = "POST";
     var message =  'Neue Nachricht von order-and-chaos.eu';
     var payload = JSON.stringify({
@@ -59,7 +55,7 @@ function sendDiscordMessage2 (data){
 
     // Sending and receiving data in JSON format using POST method
     var xhr = new XMLHttpRequest();
-    xhr.open(method , discordUrl, true);
+    xhr.open(method , data.url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && (xhr.status === 200 || xhr.status === 204)) {
