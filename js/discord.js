@@ -136,8 +136,7 @@ function createCharIcon(data){
             {data.color = "#FFF569"}
         break;   
     }
-    console.log("STOOOOOOOOOP!!!!!");
-    console.log(data);
+    getUrl();
 
 }
 
