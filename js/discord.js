@@ -8,7 +8,7 @@ window.onload=()=>{
             console.log("data");
         }
     }
-    discord.open("GET", "php/discord.php", true);
+    discord.open("GET", "php/dc.php", true);
     discord.send();
 }
 
