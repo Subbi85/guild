@@ -54,7 +54,8 @@ function sendDiscordMessage (data){
       });
 
     // Sending and receiving data in JSON format using POST method
-    var xhr = new XMLHttpRequest();
+    
+    /*var xhr = new XMLHttpRequest();
     xhr.open(method , data.url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
@@ -68,7 +69,8 @@ function sendDiscordMessage (data){
             response.innerHTML ="Fehlerhafte Eingabe"
         }
     };
-    xhr.send(payload);
+    xhr.send(payload); */
+    console.log("sent");
 }
 
 //Zieht sich die Informationen aus dem Formular
