@@ -1,13 +1,10 @@
 //Globals
 function getUrl(data){
-    console.log(data);
     //Abrufen der Daten per AJAX
     let discord = new XMLHttpRequest();
     discord.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             let url = JSON.parse(this.responseText);
-  
-            console.log(url[0].url);
             data.url = url[0].url;
             sendDiscordMessage(data)
         }
@@ -54,8 +51,8 @@ function sendDiscordMessage (data){
       });
 
     // Sending and receiving data in JSON format using POST method
-    console.log(data.url);
-    /*var xhr = new XMLHttpRequest();
+    
+    var xhr = new XMLHttpRequest();
     xhr.open(method , data.url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
@@ -69,7 +66,7 @@ function sendDiscordMessage (data){
             response.innerHTML ="Fehlerhafte Eingabe"
         }
     };
-    xhr.send(payload); */
+    xhr.send(payload);
     console.log("gesendet");
 }
 
