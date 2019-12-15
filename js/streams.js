@@ -52,7 +52,7 @@ var client_id = "5eqgnru1njtqd2r2n7hm7qm3vt3kd7";
     
     xhr.onreadystatechange = function() {
     if(xhr.readyState == 4) {
-        var data = JSON.parse(xhr.responseText)
+        var data = JSON.parse(xhr.responseText);
         if(data["stream"] === null){
             status = "offline"
         }else{
