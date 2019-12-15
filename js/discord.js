@@ -51,13 +51,12 @@ function sendDiscordMessage (data){
       });
 
     // Sending and receiving data in JSON format using POST method
-    
+    console.log(data.url);
     var xhr = new XMLHttpRequest();
     xhr.open(method , data.url, true);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && (xhr.status === 200 || xhr.status === 204)) {
-            console.log(xhr.responseText);
             let response = document.getElementById("contact_response");
             response.value = " Nachricht versendet";
             refreshForm();
