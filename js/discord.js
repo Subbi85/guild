@@ -14,7 +14,6 @@ window.onload=()=>{
 
 //Senden einer Nachricht an Discord
 function sendDiscordMessage (data){
-    console.log(data);
     var method = "POST";
     var message =  'Neue Nachricht von order-and-chaos.eu';
     var payload = JSON.stringify({
@@ -131,6 +130,7 @@ function createCharIcon(data){
             {data.color = "#FFF569"}
         break;   
     }
+    console.log({data});
     sendDiscordMessage(data);
 }
 

@@ -4,13 +4,10 @@ $sql = " SELECT url
          FROM discord
          WHERE name = 'OaC'
         ";
-
 $data=array();
 
 foreach ($pdo->query($sql) as $row) {
    $data[]=$row;
 }
-
 echo json_encode($data);
-
 ?>
