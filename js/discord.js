@@ -14,6 +14,7 @@ window.onload=()=>{
 
 //Senden einer Nachricht an Discord
 function sendDiscordMessage (data){
+    console.log(data);
     var method = "POST";
     var message =  'Neue Nachricht von order-and-chaos.eu';
     var payload = JSON.stringify({
