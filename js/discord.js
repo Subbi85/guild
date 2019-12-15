@@ -1,19 +1,25 @@
 //Globals
-function getUrl(){
+function getUrl(data){
     //Abrufen der Daten per AJAX
     let discord = new XMLHttpRequest();
     discord.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             let url = JSON.parse(this.responseText);
             console.log(url[0].url);
+            data.url = url[0].url;
+            sendDiscordMessage(data)
         }
     }
     discord.open("GET", "php/dc.php", true);
     discord.send();
 }
 
-//Senden einer Nachricht an Discord
 function sendDiscordMessage (data){
+    console.log({data});
+}
+
+//Senden einer Nachricht an Discord
+function sendDiscordMessage2 (data){
     var method = "POST";
     var message =  'Neue Nachricht von order-and-chaos.eu';
     var payload = JSON.stringify({
