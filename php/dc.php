@@ -13,5 +13,4 @@ foreach ($pdo->query($sql) as $row) {
 
 echo json_encode($data);
 
-echo "HALLO!";
 ?>

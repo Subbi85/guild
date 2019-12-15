@@ -14,7 +14,6 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  console.log(n);
   //Obere Grenze
   if (n > slides.length)
     {slideIndex = 1}    
