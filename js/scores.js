@@ -29,7 +29,8 @@ let getScores=(data)=>{
         iniRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+data.realm+'&name='+data.charname+'&fields=mythic_plus_scores')
         iniRequest.onload=function(){
             var score = JSON.parse(iniRequest.responseText);
-            console.log(score);
+            var current = score.mythic_plus_scores.all;
+            text= createJSON(score, current);
         }                
         iniRequest.send();
 }
