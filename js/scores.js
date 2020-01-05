@@ -10,7 +10,6 @@ member.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         let data = JSON.parse(this.responseText);
         size= data.length;
-        console.log(data);
         for (let i=0; i< data.length; i++){
             getScores(data[i]);
         }

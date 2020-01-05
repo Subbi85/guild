@@ -11,7 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/w3.css" />
-
     <link rel="icon" type="image/png" href="css/img/favicon.png" sizes="32x32">
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>    
     <script src="js/scores.js" defer></script>
