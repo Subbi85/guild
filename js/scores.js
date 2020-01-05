@@ -10,9 +10,7 @@ member.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         let data = JSON.parse(this.responseText);
         size= data.length;
-        for(let i=0; i<data.length; i++){
-            let result = getScores(data[i]);
-        } 
+        console.log(data);
     }
 }
 member.open("GET", "php/select.php");
