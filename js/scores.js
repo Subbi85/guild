@@ -11,29 +11,28 @@ member.onreadystatechange = function() {
         let data = JSON.parse(this.responseText);
         size= data.length;
         console.log(data);
-        getScores(data);
+        for (let i=0; i< data.length; i++){
+            getScores(data[i]);
+        }
     }
 }
 member.open("GET", "php/select.php");
 member.send();
+
 
 //Beschaffen der Scores
 let getScores=(data)=>{
     if (data.realm ==="Guldan")
         data.realm="Gul'dan";
     //AJAX-Syntax
-    for (let i = 0; i< data.length; i++){
-
         var iniRequest = new XMLHttpRequest();
-        iniRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+data[i].realm+'&name='+data[i].charname+'&fields=mythic_plus_scores')
+        iniRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+data.realm+'&name='+data.charname+'&fields=mythic_plus_scores')
         iniRequest.onload=function(){
             var score = JSON.parse(iniRequest.responseText);
             var current = score.mythic_plus_scores.all;
             text= createJSON(score, current);
         }                
         iniRequest.send();
-
-    }
 }
 
 //Aufbau JSON
