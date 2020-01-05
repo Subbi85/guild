@@ -24,7 +24,14 @@ let getScores=(data)=>{
     //AJAX-Syntax
     for (let i = 0; i< data.length; i++){
 
-        console.log('https://raider.io/api/v1/characters/profile?region=eu&realm='+data[i].realm+'&name='+data[i].charname+'&fields=mythic_plus_scores');
+        var iniRequest = new XMLHttpRequest();
+        iniRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+data.realm[i]+'&name='+data.charname[i]+'&fields=mythic_plus_scores')
+        iniRequest.onload=function(){
+            var score = JSON.parse(iniRequest.responseText);
+            var current = score.mythic_plus_scores.all;
+            text= createJSON(score, current);
+        }                
+        iniRequest.send();
 
     }
 }
