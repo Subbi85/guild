@@ -19,6 +19,7 @@ member.send();
 
 //Beschaffen der Scores
 let getScores=(data)=>{
+    console.log(data);
     if (data.realm ==="Guldan")
         data.realm="Gul'dan";
 
