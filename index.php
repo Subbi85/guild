@@ -464,12 +464,8 @@
             Dann trage einfach deine Informationen (Charname, Realm und Klasse) ein und schreib uns eine Nachricht. <br>
             (Am besten mit Battle-Tag, damit wir uns auch bei dir melden können).
         </p>
-    </div>
-    </div>
         <h3 class="morpheus">Und was suchen wir ?</h3>
         <div class="search">
-
-       
             <div class="searchcontainer">
                 <p>Wir sind immer auf der Suche nach fähigen Spielern, die gemeinsam mit uns den Raid- und <br>
                 Mythic Plus Content bestreiten wollen. <br> <br>

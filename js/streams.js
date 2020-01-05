@@ -48,8 +48,7 @@ function checkStream(streamname){
 var status = "";
 var xhr = new XMLHttpRequest()
 var client_id = "5eqgnru1njtqd2r2n7hm7qm3vt3kd7";
-    xhr.open("GET", "https://api.twitch.tv/kraken/streams/"+streamname+"?client_id="+client_id, true)
-    
+    xhr.open("GET", "https://api.twitch.tv/kraken/streams/kreischi_?client_id=client_id, true");
     xhr.onreadystatechange = function() {
     if(xhr.readyState == 4) {
         var data = JSON.parse(xhr.responseText);
