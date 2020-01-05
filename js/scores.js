@@ -22,7 +22,7 @@ let getScores=(data)=>{
     if (data.realm ==="Guldan")
         data.realm="Gul'dan";
 
-    console.log("https://raider.io/api/v1/characters/profile?region=eu&realm='+data.realm+'&name='+data.charname+'&fields=mythic_plus_scores");
+    console.log("https://raider.io/api/v1/characters/profile?region=eu&realm="+data.realm+"&name="+data.charname+"&fields=mythic_plus_scores");
     //AJAX-Syntax
     /*
     var iniRequest = new XMLHttpRequest();
