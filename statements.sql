@@ -54,18 +54,18 @@ PRIMARY KEY(id)
 --- Inserts Klassen
 INSERT INTO classes (name, color)
 VALUES
-('Krieger','#C79C6E'),
-('Paladin','#F58CBA'),
-('Jäger','#ABD473'),
-('Schruke','#FFF569'),
-('Priester','#FFFFFF'),
-('Todesritter','#C41F3B'),
-('Schamane','#0070DE'),
-('Magier','#69CCF0'),
-('Hexenmeister','#9482C9'),
-('Mönch','#00FF96'),
-('Druide','#FF7D0A'),
-('Dämonenjäger','#A330C9')
+('Krieger','#C79C6E'),  /*1*/
+('Paladin','#F58CBA'),  /*2*/
+('Jäger','#ABD473'),    /*3*/
+('Schruke','#FFF569'),  /*4*/
+('Priester','#FFFFFF'), /*5*/
+('Todesritter','#C41F3B'),  /*6*/
+('Schamane','#0070DE'), /*7*/
+('Magier','#69CCF0'),   /*8*/
+('Hexenmeister','#9482C9'), /*9*/
+('Mönch','#00FF96'),    /*10*/
+('Druide','#FF7D0A'),   /*11*/
+('Dämonenjäger','#A330C9')  /*12*/
 
 --- Rollentabelle
 CREATE TABLE roles

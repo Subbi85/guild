@@ -1,7 +1,6 @@
 <?php
 // Login Bereich für die Membersuche
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -80,7 +79,16 @@
             <div class="slideshow-container">
                 <!-- Palast -->
                 <div class="mySlides fade">
-                    <div class="numbertext">1 / 7</div>
+                    <div class="numbertext">1 / 8</div>
+                    <img src="css/img/ashvane.jpg" style="width:100%">
+                    <div class="slidertext morpheus">
+                        <h4 class="morpheus">Lady Aschenwind Mythic DOWN!</h4>    
+                        Und endlich sind wir bei 4/8 Mythic
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 8</div>
                     <img src="css/img/glanz_mythic.png" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Azsharas Glanz Mythic DOWN!</h4>    
@@ -90,7 +98,7 @@
                 </div>
 
                 <div class="mySlides fade">
-                    <div class="numbertext">2 / 7</div>
+                    <div class="numbertext">3 / 8</div>
                     <img src="css/img/palast.png" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Der Ewige Palast hc clear</h4>    
@@ -100,9 +108,9 @@
 
                 <!-- Palast -->
                 <div class="mySlides fade">
-                    <div class="numbertext">3 / 7</div>
+                    <div class="numbertext">4 / 8</div>
                     <img src="css/img/azsharanhc.png" style="width:100%">
-                    <div class="slidertext morpheus">2
+                    <div class="slidertext morpheus">
                         <h4 class="morpheus">Der Ewige Palast nhc clear</h4>    
                         Königin Azshara wurden die Tentakel gestutzt.
                     </div>
@@ -110,7 +118,7 @@
 
                 <!-- Tiegel -->
                 <div class="mySlides fade">
-                    <div class="numbertext">4 / 7</div>
+                    <div class="numbertext">5 / 8</div>
                     <img src="css/img/tiegelhc.jpg" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Tiegel des Sturms Hc clear</h4>    
@@ -120,7 +128,7 @@
 
                 <!-- Tiegel -->
                 <div class="mySlides fade">
-                    <div class="numbertext">5 / 7</div>
+                    <div class="numbertext">6 / 8</div>
                     <img src="css/img/angeln.jpg" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Holt die Angeln raus...</h4>    
@@ -130,7 +138,7 @@
 
                 <!-- BoD -->
                 <div class="mySlides fade">
-                    <div class="numbertext">6 / 7</div>
+                    <div class="numbertext">7 / 8</div>
                     <img src="css/img/bod.jpg" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">BoD Hc clear</h4>    
@@ -140,7 +148,7 @@
 
                 <!-- Uldir -->
                 <div class="mySlides fade">
-                    <div class="numbertext">7 / 7</div>
+                    <div class="numbertext">8 / 8</div>
                     <img src="css/img/ghuun.png" style="width:100%">
                     <div class="slidertext morpheus">
                         <h4 class="morpheus">Uldir Hc clear</h4>
@@ -167,10 +175,11 @@
 
         <div id="BfA" class="tabcontent">
         <h3 id="headline" class="morpheus">Der Ewige Palast</h3>
-             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('palast')">
-                <div class="skillbar-title" style="background: #a09797;" ><span>Palast nhc</span></div>
+
+            <div class="skillbar clearfix " data-percent="50%" onmouseenter="hintergrundWechseln('palast')">
+                <div class="skillbar-title" style="background: #a09797;"><span>Palast mythic</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent" style= "color:#fff">8/8</div>
+                <div class="skill-bar-percent" style= "color:#111">4/8</div>
             </div> <!-- End Skill Bar -->
 
              <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('palast')">
@@ -179,10 +188,10 @@
                 <div class="skill-bar-percent" style= "color:#fff">8/8</div>
             </div> <!-- End Skill Bar -->
 
-            <div class="skillbar clearfix " data-percent="20%" onmouseenter="hintergrundWechseln('palast')">
-                <div class="skillbar-title" style="background: #a09797;"><span>Palast mythic</span></div>
+             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('palast')">
+                <div class="skillbar-title" style="background: #a09797;" ><span>Palast nhc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent" style= "color:#111">3/8</div>
+                <div class="skill-bar-percent" style= "color:#fff">8/8</div>
             </div> <!-- End Skill Bar -->
 
             <h3 id="headline" class="morpheus">Tiegel der Stürme</h3>
@@ -496,6 +505,14 @@
                 <option value="shaman">Schamane</option>
                 <option value="rogue">Schurke</option>
                 <option value="dk">Todesritter</option>
+            </select> <br>
+            <select id="class" class="input morpheus">
+                <option value="dh">Anetheron</option>
+                <option value="druid">Nathrezim</option>
+                <option value="warlock">Gul'dan</option>
+                <option value="hunter">Rajaxx</option>
+                <option value="warrior">Festung der Stürme</option>
+                <option value="mage">Kil'jaeden</option>
             </select> <br>
             <div class="button morpheus" onClick="getData()">Absenden</div>
             <div id="contact_response"></div>
