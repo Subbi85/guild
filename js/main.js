@@ -76,6 +76,9 @@ let hintergrundWechseln=(instanz)=>{
         case "palast":
             hintergund_bfa.style.backgroundImage="url('css/img/palast.jpg')";
             break;
+        case "nyalotha":
+            hintergund_bfa.style.backgroundImage="url('css/img/nyalotha.jpg')";
+            break;
     }
 }
 
