@@ -9,10 +9,11 @@ let member = new XMLHttpRequest();
 member.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         let data = JSON.parse(this.responseText);
+        console.log(data);
         size= data.length;
-        for (let i=0; i< data.length; i++){
+        /** for (let i=0; i< data.length; i++){
             getScores(data[i]);
-        }
+        }*/
     }
 }
 member.open("GET", "php/select.php");
@@ -21,8 +22,10 @@ member.send();
 
 //Beschaffen der Scores
 let getScores=(data)=>{
-    if (data.realm ==="Guldan")
-        data.realm="Gul'dan";
+    if (data.realm ==="Guldan"){
+        data.realm="Gul'dan";}
+    if (data.realm == "Festung der Stürme"){
+        data.realm = "festung-der-stürme";}
     //AJAX-Syntax
         var iniRequest = new XMLHttpRequest();
         iniRequest.open('GET', 'https://raider.io/api/v1/characters/profile?region=eu&realm='+data.realm+'&name='+data.charname+'&fields=mythic_plus_scores')
@@ -44,8 +47,8 @@ let createJSON=(score, current)=>{
     if(counter==size){
         text+= ']}';
         let obj = JSON.parse(text);
-        sortJSON(obj);
-        createDivs(obj);
+        //sortJSON(obj);
+        //createDivs(obj);
     }
     return text;
 }
