@@ -11,9 +11,9 @@ member.onreadystatechange = function() {
         let data = JSON.parse(this.responseText);
         console.log(data);
         size= data.length;
-        /** for (let i=0; i< data.length; i++){
+        for (let i=0; i< data.length; i++){
             getScores(data[i]);
-        }*/
+        }
     }
 }
 member.open("GET", "php/select.php");
