@@ -47,8 +47,8 @@ let createJSON=(score, current)=>{
     if(counter==size){
         text+= ']}';
         let obj = JSON.parse(text);
-        //sortJSON(obj);
-        //createDivs(obj);
+        sortJSON(obj);
+        createDivs(obj);
     }
     return text;
 }
