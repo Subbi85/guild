@@ -512,7 +512,6 @@
     <div id="contact_container">
         <div id="input_container">
             <input type="text" class="input morpheus" id ="charname" placeholder="Charname" autocomplete="off"> <br>
-            <input type="text" class="input morpheus"  id ="realm" placeholder="Realm" autocomplete="off"><br>
             <select id="class" class="input morpheus">
                 <option value="dh">Dämonenjäger</option>
                 <option value="druid">Druide</option>
@@ -527,13 +526,13 @@
                 <option value="rogue">Schurke</option>
                 <option value="dk">Todesritter</option>
             </select> <br>
-            <select id="class" class="input morpheus">
-                <option value="dh">Anetheron</option>
-                <option value="druid">Nathrezim</option>
-                <option value="warlock">Gul'dan</option>
-                <option value="hunter">Rajaxx</option>
-                <option value="warrior">Festung der Stürme</option>
-                <option value="mage">Kil'jaeden</option>
+            <select id="realm" class="input morpheus">
+                <option value="anetheron">Anetheron</option>
+                <option value="nathrezim">Nathrezim</option>
+                <option value="guldan">Gul'dan</option>
+                <option value="rajaxx">Rajaxx</option>
+                <option value="festung-der-stürme">Festung der Stürme</option>
+                <option value="kiljaeden">Kil'jaeden</option>
             </select> <br>
             <div class="button morpheus" onClick="getData()">Absenden</div>
             <div id="contact_response"></div>
@@ -623,8 +622,6 @@
         modal.style.display = "none";
     }
     }
-
-
 
 </script>
 </body>
