@@ -190,7 +190,7 @@
                 <div class="skill-bar-percent" style= "color:#fff">5/12</div>
             </div> <!-- End Skill Bar -->
 
-             <div class="skillbar clearfix " data-percent="60/%" onmouseenter="hintergrundWechseln('nyalotha')">
+             <div class="skillbar clearfix " data-percent="60%" onmouseenter="hintergrundWechseln('nyalotha')">
                 <div class="skillbar-title" style="background: #a09797;" ><span> nhc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
                 <div class="skill-bar-percent" style= "color:#fff">7/12</div>
