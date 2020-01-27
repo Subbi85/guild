@@ -65,6 +65,11 @@ let sortJSON=(obj)=>{
     });
 }
 
+//Blizzard
+/**
+ * https://eu.api.blizzard.com/wow/character/anetheron/Subb%C3%AC?locale=en_DE&access_token=USeIZmNlEih2IqRhF8dWomDS5Cg7macn5o
+ */
+
 //Ausgabe der Daten im Div
 let createDivs=(obj)=>{
     let display = document.getElementById('tbl');
