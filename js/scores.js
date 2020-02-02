@@ -173,6 +173,13 @@ let buildInis=(inis)=>{
     details.appendChild(container); 
 }
 
+getGuild();
+
+//Get Guildmember from Blizzard API
+function getGuild(){
+
+    console.log("GIULD API")
+}
 
 
 /**
