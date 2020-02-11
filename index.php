@@ -1,8 +1,5 @@
 <?php
-// Login Bereich für die Membersuche
-/*
-*auskunft@ewo.madgeburg.de
-*/
+
 ?>
 <!DOCTYPE html>
 <html>
