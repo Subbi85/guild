@@ -184,16 +184,16 @@
                 <div class="skill-bar-percent" style= "color:#111">0/12</div>
             </div> <!-- End Skill Bar -->
 
-             <div class="skillbar clearfix " data-percent="59%" onmouseenter="hintergrundWechseln('nyalotha')">
+             <div class="skillbar clearfix " data-percent="75%" onmouseenter="hintergrundWechseln('nyalotha')">
                 <div class="skillbar-title" style="background: #a09797;"><span>heroic</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent" style= "color:#fff">7/12</div>
+                <div class="skill-bar-percent" style= "color:#fff">9/12</div>
             </div> <!-- End Skill Bar -->
 
-             <div class="skillbar clearfix " data-percent="90%" onmouseenter="hintergrundWechseln('nyalotha')">
+             <div class="skillbar clearfix " data-percent="100%" onmouseenter="hintergrundWechseln('nyalotha')">
                 <div class="skillbar-title" style="background: #a09797;" ><span> nhc</span></div>
                 <div class="skillbar-bar" style="background: #56090B;"></div>
-                <div class="skill-bar-percent" style= "color:#fff">11/12</div>
+                <div class="skill-bar-percent" style= "color:#fff">12/12</div>
             </div> <!-- End Skill Bar -->
 
             <h3 id="headline" class="morpheus">Der Ewige Palast</h3>
