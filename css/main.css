@@ -508,6 +508,24 @@ th{
     font-size: calc(10px + 2vmin);
 }
 
+/* Videos */
+.header{
+    margin-top: 10px;
+    width:100%;
+    color: #ffffff;
+    height: 300px;
+    border: 1px solid #000000;
+    background-color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/title.png"); background-size: cover;
+}
+
+.header .video-headline{
+    font-size:calc(34px + 2vmin);
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 1200px) {
     #kader_container{
