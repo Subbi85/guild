@@ -28,6 +28,35 @@ a, a:visited{color:#fff;text-decoration: none;}
 .lifecraft {font-family: lifecraft; color:#59090e}
 #handwirting{font-family: handwriting}    
 
+.container--right{
+    float:right;
+}
+
+#test{
+    width:300px;
+    height:400px;
+    background: red;
+    position: absolute;
+    top:20%;
+    right: 10px;
+    animation-name:login--ease;
+    animation-duration:2s;
+}
+
+@keyframes login--ease{
+    from {
+        width:100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+
+
+.container_toggle{
+    display:none;
+}
+
 /* Landing */
 .section{
     max-width:1920;
@@ -60,6 +89,7 @@ a, a:visited{color:#fff;text-decoration: none;}
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 #text{

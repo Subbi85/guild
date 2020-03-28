@@ -17,6 +17,7 @@
     <script src="js/main.js" defer></script>
     <script src="js/kalender.js" defer></script>
     <script src="js/discord.js" defer></script>
+    <script src="js/login.js" defer></script>
     <!-- <script src="js/streams.js" defer></script> -->
 </head>
 <body>
@@ -39,6 +40,7 @@
         <a href="#mythic" class="nav_link ">Mythic+</a>
         <a href="#kontakt" class="nav_link">Kontakt</a>
         <a href="vids.html" target="_blank" class="nav_link">Videos</a>
+        <a class="nav_link container--right" onclick="showLogin()" id="login_container">Login</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars">|||</i>      
         </a>
@@ -46,6 +48,7 @@
     <!-- Navigation ENDE -->
     <!-- Über Uns -->
     <div class="section" id="about">
+        <div class="container_toggle" id="test">Test</div>
         <div class="about_box" id="text">
             <h3 class="morpheus">Lok'thar Ogar, Freund!</h3>            
             <p id="about_text">
@@ -562,6 +565,7 @@
         });
     });
 
+    //Burger Menu
     function myFunction() {
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
