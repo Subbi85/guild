@@ -40,6 +40,7 @@
         <a href="#mythic" class="nav_link ">Mythic+</a>
         <a href="#kontakt" class="nav_link">Kontakt</a>
         <a href="vids.html" target="_blank" class="nav_link">Videos</a>
+        <a href="php/register.php" target="_blank" class="nav_link">Register</a>
         <a class="nav_link container--right" onclick="showLogin()" id="login_container">Login</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars">|||</i>      
@@ -67,6 +68,10 @@
                 Zu den Streams geht's <span id="myBtn" class="morpheus  modal_span">hier</span>   <br> <br>
                 Alles im Namen der Horde, <br>
                 <span id="handwirting">Das OaC- Team</span>
+
+
+
+                <!-- Registrierungsform ENDE -->
             </p>
         </div>
         <!-- The Modal -->
