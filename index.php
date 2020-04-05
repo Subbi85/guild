@@ -69,8 +69,6 @@
                 Alles im Namen der Horde, <br>
                 <span id="handwirting">Das OaC- Team</span>
 
-
-
                 <!-- Registrierungsform ENDE -->
             </p>
         </div>

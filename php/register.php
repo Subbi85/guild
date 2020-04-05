@@ -69,6 +69,8 @@ if(isset($_GET['register'])) {
         }    
     }
 
+
+    $group = "admin";
     //Keine Fehler, wir können den Nutzer registrieren
     if(!$error) {    
         $passwort_hash = password_hash($passwort, PASSWORD_DEFAULT);
