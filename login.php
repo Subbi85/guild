@@ -12,6 +12,10 @@ if(isset($_GET['login'])) {
     $result = $statement->execute(array('username' => $username));
     $user = $statement->fetch();
     
+    if (password_verify($passwort, $user['password'])){
+        echo "PW OK!";
+    }
+    
     //Überprüfung des Passworts
     if ($user !== false && password_verify($passwort, $user['password'])) {
         $_SESSION['userid'] = $user['id'];
@@ -60,7 +64,7 @@ Dein Passwort:<br>
         console.log(pwInput.value);
         if (pwInput.type == 'password' ) { 
             pwInput.type = 'text';
-	  }
+	  } 
 	  else {
 	        pwInput.type = 'password';
 	  }
